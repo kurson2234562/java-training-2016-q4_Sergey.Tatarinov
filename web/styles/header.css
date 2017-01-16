@@ -1,0 +1,47 @@
+#header{
+    background-color: #27ae60;
+    margin: -12px -9px 0 -9px;
+    padding: 0px 20px 0px 20px;
+    height:70px;
+    width:99%;
+    position:fixed;
+}
+
+#content{
+    padding-top:58px;
+}
+
+form{
+    display:block;
+    margin: 0;
+}
+
+#header .button{
+    background-color:#27ae60;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:20px;
+    font-weight:800;
+    padding-top:45px;
+    padding-bottom:40px;
+    margin:-16px 0 0 0;
+}
+
+#listcourses, #home{
+    display:block;
+    float:left;
+}
+
+#logout{
+    padding-left:90%;
+}
+#logout input[type="submit"]{
+    text-align:right;
+    padding-left:0;
+    width:100px
+}
+
+input[type="submit"]{
+    text-shadow: 0 1px 5px #2D2020;
+}

@@ -1,0 +1,25 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib prefix="my" uri="/WEB-INF/locale.tld"%>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../../styles/header.css">
+</head>
+<div id="header">
+    <div id="home">
+        <form action="controller" class="formlist">
+            <input type="hidden" name="command" value="loginCommand">
+            <input type="submit" value="<my:Locale value="page.people.home"/>" class="button">
+        </form>
+    </div>
+    <div id="listcourses">
+        <form action="controller" class="formlist">
+            <input type="hidden" name="command" value="courseCommand">
+            <input type="submit" value="<my:Locale value="page.courses.title"/>" class="button">
+        </form>
+    </div>
+
+    <form action="controller" method="post" id="logout">
+        <input type="hidden" name="command" value="logoutCommand">
+        <input type="submit" value="<my:Locale value="page.header.logout"/>" class="button">
+    </form>
+</div>

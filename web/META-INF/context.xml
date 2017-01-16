@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+    <Resource name="jdbc/facultaty" auth="Container" type="javax.sql.DataSource"
+              username="admin"
+              password="admin"
+              driverClassName="org.apache.derby.jdbc.ClientDriver"
+              url="jdbc:derby://localhost:1527/facultaty"
+              maxActive="10"/>
+</Context>

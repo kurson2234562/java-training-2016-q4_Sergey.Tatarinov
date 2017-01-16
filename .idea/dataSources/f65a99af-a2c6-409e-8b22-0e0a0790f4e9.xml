@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Derby (Remote) - facultaty@localhost">
+  <database-model serializer="dbm" rdbms="DERBY" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="ADMIN">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="APP"/>
+    <schema id="4" parent="1" name="NULLID"/>
+    <schema id="5" parent="1" name="SQLJ"/>
+    <schema id="6" parent="1" name="SYS"/>
+    <schema id="7" parent="1" name="SYSCAT"/>
+    <schema id="8" parent="1" name="SYSCS_DIAG"/>
+    <schema id="9" parent="1" name="SYSCS_UTIL"/>
+    <schema id="10" parent="1" name="SYSFUN"/>
+    <schema id="11" parent="1" name="SYSIBM"/>
+    <schema id="12" parent="1" name="SYSPROC"/>
+    <schema id="13" parent="1" name="SYSSTAT"/>
+    <table id="14" parent="2" name="ADMINS"/>
+    <table id="15" parent="2" name="COURSES"/>
+    <table id="16" parent="2" name="JOURNAL"/>
+    <table id="17" parent="2" name="LECTURERS"/>
+    <table id="18" parent="2" name="ROLES"/>
+    <table id="19" parent="2" name="STATES"/>
+    <table id="20" parent="2" name="STATUSES"/>
+    <table id="21" parent="2" name="STUDENTS"/>
+    <table id="22" parent="2" name="STUDENT_COURSE"/>
+    <table id="23" parent="2" name="THEMES"/>
+    <table id="24" parent="2" name="USERS"/>
+    <column id="25" parent="14" name="ID">
+      <Position>1</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DefaultExpression>AUTOINCREMENT: start 1 increment 1</DefaultExpression>
+    </column>
+    <column id="26" parent="14" name="SURNAME">
+      <Position>2</Position>
+      <DataType>VARCHAR(30)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="27" parent="14" name="NAME">
+      <Position>3</Position>
+      <DataType>VARCHAR(30)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="28" parent="14" name="PATRONYMIC">
+      <Position>4</Position>
+      <DataType>VARCHAR(20)|12</DataType>
+    </column>
+    <column id="29" parent="14" name="ID_USER">
+      <Position>5</Position>
+      <DataType>INTEGER(10)|4</DataType>
+    </column>
+    <key id="30" parent="14" name="SQL170116153733870">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="31" parent="14" name="SQL170116153733871">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_USER</ColNames>
+      <RefSchemaName>ADMIN</RefSchemaName>
+      <RefTableName>USERS</RefTableName>
+      <RefKeyName>SQL170116153732010</RefKeyName>
+      <RefColNames>ID_USER</RefColNames>
+      <OnDelete>delete</OnDelete>
+      <OnUpdate>no-action</OnUpdate>
+    </foreign-key>
+    <column id="32" parent="15" name="ID_COURSE">
+      <Position>1</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DefaultExpression>AUTOINCREMENT: start 1 increment 1</DefaultExpression>
+    </column>
+    <column id="33" parent="15" name="NAME_COURSE">
+      <Position>2</Position>
+      <DataType>VARCHAR(40)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="34" parent="15" name="DURATION">
+      <Position>3</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="35" parent="15" name="ID_THEME">
+      <Position>4</Position>
+      <DataType>INTEGER(10)|4</DataType>
+    </column>
+    <column id="36" parent="15" name="ID_LECTURER">
+      <Position>5</Position>
+      <DataType>INTEGER(10)|4</DataType>
+    </column>
+    <column id="37" parent="15" name="ID_STATUS">
+      <Position>6</Position>
+      <DataType>INTEGER(10)|4</DataType>
+    </column>
+    <index id="38" parent="15" name="SQL170116153734571">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>NAME_COURSE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="39" parent="15" name="SQL170116153734570">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_COURSE</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="40" parent="15" name="SQL170116153734572">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_THEME</ColNames>
+      <RefSchemaName>ADMIN</RefSchemaName>
+      <RefTableName>THEMES</RefTableName>
+      <RefKeyName>SQL170116153732590</RefKeyName>
+      <RefColNames>ID_THEME</RefColNames>
+      <OnDelete>delete</OnDelete>
+      <OnUpdate>no-action</OnUpdate>
+    </foreign-key>
+    <foreign-key id="41" parent="15" name="SQL170116153734573">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_LECTURER</ColNames>
+      <RefSchemaName>ADMIN</RefSchemaName>
+      <RefTableName>LECTURERS</RefTableName>
+      <RefKeyName>SQL170116153733290</RefKeyName>
+      <RefColNames>ID</RefColNames>
+      <OnDelete>delete</OnDelete>
+      <OnUpdate>no-action</OnUpdate>
+    </foreign-key>
+    <foreign-key id="42" parent="15" name="SQL170116153734574">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_STATUS</ColNames>
+      <RefSchemaName>ADMIN</RefSchemaName>
+      <RefTableName>STATUSES</RefTableName>
+      <RefKeyName>SQL170116153732960</RefKeyName>
+      <RefColNames>ID_STATUS</RefColNames>
+      <OnDelete>delete</OnDelete>
+      <OnUpdate>no-action</OnUpdate>
+    </foreign-key>
+    <column id="43" parent="16" name="ID_STUDENT_COURSE">
+      <Position>1</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="44" parent="16" name="MARK">
+      <Position>2</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="45" parent="16" name="SQL170116153736320">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_STUDENT_COURSE</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="46" parent="16" name="SQL170116153736321">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_STUDENT_COURSE</ColNames>
+      <RefSchemaName>ADMIN</RefSchemaName>
+      <RefTableName>STUDENT_COURSE</RefTableName>
+      <RefKeyName>SQL170116153735260</RefKeyName>
+      <RefColNames>ID_STUDENT_COURSE</RefColNames>
+      <OnDelete>delete</OnDelete>
+      <OnUpdate>no-action</OnUpdate>
+    </foreign-key>
+    <column id="47" parent="17" name="ID">
+      <Position>1</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DefaultExpression>AUTOINCREMENT: start 1 increment 1</DefaultExpression>
+    </column>
+    <column id="48" parent="17" name="SURNAME">
+      <Position>2</Position>
+      <DataType>VARCHAR(30)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="49" parent="17" name="NAME">
+      <Position>3</Position>
+      <DataType>VARCHAR(30)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="50" parent="17" name="PATRONYMIC">
+      <Position>4</Position>
+      <DataType>VARCHAR(20)|12</DataType>
+    </column>
+    <column id="51" parent="17" name="ID_USER">
+      <Position>5</Position>
+      <DataType>INTEGER(10)|4</DataType>
+    </column>
+    <key id="52" parent="17" name="SQL170116153733290">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="53" parent="17" name="SQL170116153733291">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_USER</ColNames>
+      <RefSchemaName>ADMIN</RefSchemaName>
+      <RefTableName>USERS</RefTableName>
+      <RefKeyName>SQL170116153732010</RefKeyName>
+      <RefColNames>ID_USER</RefColNames>
+      <OnDelete>delete</OnDelete>
+      <OnUpdate>no-action</OnUpdate>
+    </foreign-key>
+    <column id="54" parent="18" name="ID_ROLE">
+      <Position>1</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="55" parent="18" name="NAME_ROLE">
+      <Position>2</Position>
+      <DataType>VARCHAR(10)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="56" parent="18" name="SQL170116153731291">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>NAME_ROLE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="57" parent="18" name="SQL170116153731290">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_ROLE</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="58" parent="19" name="ID_STATE">
+      <Position>1</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="59" parent="19" name="NAME_STATE">
+      <Position>2</Position>
+      <DataType>VARCHAR(10)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="60" parent="19" name="SQL170116153731691">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>NAME_STATE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="61" parent="19" name="SQL170116153731690">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_STATE</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="62" parent="20" name="ID_STATUS">
+      <Position>1</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DefaultExpression>AUTOINCREMENT: start 1 increment 1</DefaultExpression>
+    </column>
+    <column id="63" parent="20" name="NAME_STATUS">
+      <Position>2</Position>
+      <DataType>VARCHAR(25)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="64" parent="20" name="SQL170116153732961">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>NAME_STATUS</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="65" parent="20" name="SQL170116153732960">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_STATUS</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="66" parent="21" name="ID">
+      <Position>1</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DefaultExpression>AUTOINCREMENT: start 1 increment 1</DefaultExpression>
+    </column>
+    <column id="67" parent="21" name="SURNAME">
+      <Position>2</Position>
+      <DataType>VARCHAR(30)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="68" parent="21" name="NAME">
+      <Position>3</Position>
+      <DataType>VARCHAR(30)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="69" parent="21" name="PATRONYMIC">
+      <Position>4</Position>
+      <DataType>VARCHAR(20)|12</DataType>
+    </column>
+    <column id="70" parent="21" name="ID_USER">
+      <Position>5</Position>
+      <DataType>INTEGER(10)|4</DataType>
+    </column>
+    <key id="71" parent="21" name="SQL170116153734240">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="72" parent="21" name="SQL170116153734241">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_USER</ColNames>
+      <RefSchemaName>ADMIN</RefSchemaName>
+      <RefTableName>USERS</RefTableName>
+      <RefKeyName>SQL170116153732010</RefKeyName>
+      <RefColNames>ID_USER</RefColNames>
+      <OnDelete>delete</OnDelete>
+      <OnUpdate>no-action</OnUpdate>
+    </foreign-key>
+    <column id="73" parent="22" name="ID_STUDENT_COURSE">
+      <Position>1</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DefaultExpression>AUTOINCREMENT: start 1 increment 1</DefaultExpression>
+    </column>
+    <column id="74" parent="22" name="ID_STUDENT">
+      <Position>2</Position>
+      <DataType>INTEGER(10)|4</DataType>
+    </column>
+    <column id="75" parent="22" name="ID_COURSE">
+      <Position>3</Position>
+      <DataType>INTEGER(10)|4</DataType>
+    </column>
+    <key id="76" parent="22" name="SQL170116153735260">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_STUDENT_COURSE</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="77" parent="22" name="SQL170116153735261">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_STUDENT</ColNames>
+      <RefSchemaName>ADMIN</RefSchemaName>
+      <RefTableName>STUDENTS</RefTableName>
+      <RefKeyName>SQL170116153734240</RefKeyName>
+      <RefColNames>ID</RefColNames>
+      <OnDelete>delete</OnDelete>
+      <OnUpdate>no-action</OnUpdate>
+    </foreign-key>
+    <foreign-key id="78" parent="22" name="SQL170116153735270">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_COURSE</ColNames>
+      <RefSchemaName>ADMIN</RefSchemaName>
+      <RefTableName>COURSES</RefTableName>
+      <RefKeyName>SQL170116153734570</RefKeyName>
+      <RefColNames>ID_COURSE</RefColNames>
+      <OnDelete>delete</OnDelete>
+      <OnUpdate>no-action</OnUpdate>
+    </foreign-key>
+    <column id="79" parent="23" name="ID_THEME">
+      <Position>1</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DefaultExpression>AUTOINCREMENT: start 1 increment 1</DefaultExpression>
+    </column>
+    <column id="80" parent="23" name="NAME_THEME">
+      <Position>2</Position>
+      <DataType>VARCHAR(30)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="81" parent="23" name="SQL170116153732591">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>NAME_THEME</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="82" parent="23" name="SQL170116153732590">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_THEME</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="83" parent="24" name="ID_USER">
+      <Position>1</Position>
+      <DataType>INTEGER(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DefaultExpression>AUTOINCREMENT: start 1 increment 1</DefaultExpression>
+    </column>
+    <column id="84" parent="24" name="LOGIN">
+      <Position>2</Position>
+      <DataType>VARCHAR(30)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="85" parent="24" name="PASSWORD">
+      <Position>3</Position>
+      <DataType>VARCHAR(40)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="86" parent="24" name="ID_ROLE">
+      <Position>4</Position>
+      <DataType>INTEGER(10)|4</DataType>
+    </column>
+    <column id="87" parent="24" name="ID_STATE">
+      <Position>5</Position>
+      <DataType>INTEGER(10)|4</DataType>
+    </column>
+    <index id="88" parent="24" name="SQL170116153732011">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>LOGIN</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="89" parent="24" name="SQL170116153732010">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_USER</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="90" parent="24" name="SQL170116153732012">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_ROLE</ColNames>
+      <RefSchemaName>ADMIN</RefSchemaName>
+      <RefTableName>ROLES</RefTableName>
+      <RefKeyName>SQL170116153731290</RefKeyName>
+      <RefColNames>ID_ROLE</RefColNames>
+      <OnDelete>delete</OnDelete>
+      <OnUpdate>no-action</OnUpdate>
+    </foreign-key>
+    <foreign-key id="91" parent="24" name="SQL170116153732013">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_STATE</ColNames>
+      <RefSchemaName>ADMIN</RefSchemaName>
+      <RefTableName>STATES</RefTableName>
+      <RefKeyName>SQL170116153731690</RefKeyName>
+      <RefColNames>ID_STATE</RefColNames>
+      <OnDelete>delete</OnDelete>
+      <OnUpdate>no-action</OnUpdate>
+    </foreign-key>
+  </database-model>
+</dataSource>

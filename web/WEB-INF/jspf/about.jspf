@@ -1,0 +1,9 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib prefix="about" uri="/WEB-INF/about.tld"%>
+
+
+<div id="info">
+    <img src="/img/you.png" height="100" width="100" id="user"/>
+    <br>
+    <about:about/>
+</div>
