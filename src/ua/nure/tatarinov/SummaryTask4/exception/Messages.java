@@ -17,6 +17,7 @@ public class Messages {
     public static final String ERR_INVALID_VALUE_LANGUAGE = "Invalid value for language";
     public static final String ERR_INVALID_PASSWORD = "Invalid password, please try again";
     public static final String ERR_CANNOT_FIND_USER_NAME="Can't find a user with the same name";
+    public static final String ERR_LOCKED = "You are locked.";
 
 
 

@@ -27,6 +27,7 @@ public class LoginCommand extends Command {
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+        LOG.trace("Start tracing LoginCommand");
         String forward = "";
         HttpSession session = request.getSession();
         String login = "", password = "";
@@ -38,17 +39,26 @@ public class LoginCommand extends Command {
             password = String.valueOf(session.getAttribute("password"));
         }
         String role = null;
+        String state = null;
         LOG.info("UserDTO " + login + " logged");
         if ((!login.isEmpty()) && (!password.isEmpty())) {
             UserDTO user = new DerbyUserDAO().findUserByLogin(login);
             if (user != null) {
                 if (user.getPassword().equals(password)) {
-                    if (user.getRoleId() == 0) {
-                        role = "admin";
-                    } else if (user.getRoleId() == 1) {
-                        role = "student";
-                    } else {
-                        role = "lecturer";
+                    switch (user.getRoleId()){
+                        case 0:
+                            role = "admin";
+                            break;
+                        case 1:
+                            role = "student";
+                            break;
+                        case 2:
+                            role = "lecturer";
+                            break;
+                    }
+                    if (user.getStateId() == 0) {
+                        request.setAttribute("errorMessage", Messages.ERR_LOCKED);
+                        return Path.PAGE_ERROR_PAGE;
                     }
                     request.setAttribute("username", login);
                     request.setAttribute("role", role);
@@ -70,16 +80,13 @@ public class LoginCommand extends Command {
         if (role != null) {
             switch (role) {
                 case "lecturer":
-                    //request.getRequestDispatcher("/WEB-INF/jsp/lecturer.jsp").forward(request, response);
                     session.setAttribute("updatecourseid", -1);
                     forward = Path.PAGE_LECTURER;
                     break;
                 case "student":
-                    //request.getRequestDispatcher("/WEB-INF/jsp/student.jsp").forward(request, response);
                     forward = Path.PAGE_STUDENT;
                     break;
                 case "admin":
-                    //request.getRequestDispatcher("/WEB-INF/jsp/admin.jsp").forward(request, response);
                     forward = Path.PAGE_ADMIN;
                     break;
             }

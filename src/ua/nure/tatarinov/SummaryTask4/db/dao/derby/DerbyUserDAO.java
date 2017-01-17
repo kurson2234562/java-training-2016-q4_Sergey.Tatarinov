@@ -43,6 +43,7 @@ public class DerbyUserDAO extends UserDTO implements UserDAO {
                     user.setLogin(resultSet.getString("login"));
                     user.setPassword(resultSet.getString("password"));
                     user.setRoleId(resultSet.getInt("id_role"));
+                    user.setStateId(resultSet.getInt("id_state"));
                 }
                 resultSet.close();
             }

@@ -6,7 +6,6 @@
 
 
     <c:set var="title" value="Error" scope="page" />
-    <%//@// include file="/WEB-INF/jspf/head.jspf" %>
     <title> <my:Locale value="page.error.page"/> </title>
     <link rel="stylesheet" type="text/css" href="../../styles/error.css">
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
