@@ -9,14 +9,14 @@
 <c:choose>
     <c:when test="${not empty sort}">
         <c:choose>
+            <c:when test="${not empty idTheme and not empty idLecturer}">
+                <sql:query dataSource="${db}" var="result"> SELECT COURSES.ID_THEME, NAME_COURSE, DURATION, NAME_THEME, SURNAME, NAME, PATRONYMIC, NAME_STATUS, count(id_student_course) as COUNT FROM COURSES INNER JOIN THEMES ON THEMES.ID_THEME=COURSES.ID_THEME INNER JOIN LECTURERS ON LECTURERS.ID=COURSES.ID_LECTURER INNER JOIN STATUSES ON STATUSES.ID_STATUS=COURSES.ID_STATUS INNER JOIN STUDENT_COURSE ON COURSES.id_course = STUDENT_COURSE.id_course WHERE ID = ${idLecturer} AND Courses.id_theme = ${idTheme} GROUP BY NAME_COURSE, DURATION, NAME_THEME, SURNAME, NAME, PATRONYMIC, NAME_STATUS, COURSES.ID_THEME ORDER BY ${sort} ${sorting} </sql:query>
+            </c:when>
             <c:when test="${not empty idLecturer}">
                 <sql:query dataSource="${db}" var="result"> SELECT COURSES.ID_THEME, NAME_COURSE, DURATION, NAME_THEME, SURNAME, NAME, PATRONYMIC, NAME_STATUS, count(id_student_course) as COUNT FROM COURSES INNER JOIN THEMES ON THEMES.ID_THEME=COURSES.ID_THEME INNER JOIN LECTURERS ON LECTURERS.ID=COURSES.ID_LECTURER INNER JOIN STATUSES ON STATUSES.ID_STATUS=COURSES.ID_STATUS INNER JOIN STUDENT_COURSE ON COURSES.id_course = STUDENT_COURSE.id_course WHERE ID = ${idLecturer} GROUP BY NAME_COURSE, DURATION, NAME_THEME, SURNAME, NAME, PATRONYMIC, NAME_STATUS, COURSES.ID_THEME ORDER BY ${sort} ${sorting} </sql:query>
             </c:when>
             <c:when test="${not empty idTheme}">
                 <sql:query dataSource="${db}" var="result"> SELECT COURSES.ID_THEME, NAME_COURSE, DURATION, NAME_THEME, SURNAME, NAME, PATRONYMIC, NAME_STATUS, count(id_student_course) as COUNT FROM COURSES INNER JOIN THEMES ON THEMES.ID_THEME=COURSES.ID_THEME INNER JOIN LECTURERS ON LECTURERS.ID=COURSES.ID_LECTURER INNER JOIN STATUSES ON STATUSES.ID_STATUS=COURSES.ID_STATUS INNER JOIN STUDENT_COURSE ON COURSES.id_course = STUDENT_COURSE.id_course WHERE COURSES.id_theme = ${idTheme} GROUP BY NAME_COURSE, DURATION, NAME_THEME, SURNAME, NAME, PATRONYMIC, NAME_STATUS, COURSES.ID_THEME ORDER BY ${sort} ${sorting} </sql:query>
-            </c:when>
-            <c:when test="${not empty idTheme and not empty idLecturer}">
-                <sql:query dataSource="${db}" var="result"> SELECT COURSES.ID_THEME, NAME_COURSE, DURATION, NAME_THEME, SURNAME, NAME, PATRONYMIC, NAME_STATUS, count(id_student_course) as COUNT FROM COURSES INNER JOIN THEMES ON THEMES.ID_THEME=COURSES.ID_THEME INNER JOIN LECTURERS ON LECTURERS.ID=COURSES.ID_LECTURER INNER JOIN STATUSES ON STATUSES.ID_STATUS=COURSES.ID_STATUS INNER JOIN STUDENT_COURSE ON COURSES.id_course = STUDENT_COURSE.id_course WHERE ID = ${idLecturer} AND Courses.id_theme = ${idTheme} GROUP BY NAME_COURSE, DURATION, NAME_THEME, SURNAME, NAME, PATRONYMIC, NAME_STATUS, COURSES.ID_THEME ORDER BY ${sort} ${sorting} </sql:query>
             </c:when>
             <c:otherwise>
                 <sql:query dataSource="${db}" var="result"> SELECT COURSES.ID_THEME, NAME_COURSE, DURATION, NAME_THEME, SURNAME, NAME, PATRONYMIC, NAME_STATUS, count(id_student_course) as COUNT FROM COURSES INNER JOIN THEMES ON THEMES.ID_THEME=COURSES.ID_THEME INNER JOIN LECTURERS ON LECTURERS.ID=COURSES.ID_LECTURER INNER JOIN STATUSES ON STATUSES.ID_STATUS=COURSES.ID_STATUS INNER JOIN STUDENT_COURSE ON COURSES.id_course = STUDENT_COURSE.id_course GROUP BY NAME_COURSE, DURATION, NAME_THEME, SURNAME, NAME, PATRONYMIC, NAME_STATUS, COURSES.ID_THEME ORDER BY ${sort} ${sorting} </sql:query>
@@ -25,14 +25,14 @@
     </c:when>
     <c:otherwise>
         <c:choose>
+            <c:when test="${not empty idTheme and not empty idLecturer}">
+                <sql:query dataSource="${db}" var="result"> SELECT COURSES.ID_THEME, NAME_COURSE, DURATION, NAME_THEME, SURNAME, NAME, PATRONYMIC, NAME_STATUS, count(id_student_course) as COUNT FROM COURSES INNER JOIN THEMES ON THEMES.ID_THEME=COURSES.ID_THEME INNER JOIN LECTURERS ON LECTURERS.ID=COURSES.ID_LECTURER INNER JOIN STATUSES ON STATUSES.ID_STATUS=COURSES.ID_STATUS INNER JOIN STUDENT_COURSE ON COURSES.id_course = STUDENT_COURSE.id_course WHERE ID = ${idLecturer} AND Courses.id_theme = ${idTheme} GROUP BY NAME_COURSE, DURATION, NAME_THEME, SURNAME, NAME, PATRONYMIC, NAME_STATUS, COURSES.ID_THEME</sql:query>
+            </c:when>
             <c:when test="${not empty idLecturer}">
                 <sql:query dataSource="${db}" var="result"> SELECT COURSES.ID_THEME, NAME_COURSE, DURATION, NAME_THEME, SURNAME, NAME, PATRONYMIC, NAME_STATUS, count(id_student_course) as COUNT FROM COURSES INNER JOIN THEMES ON THEMES.ID_THEME=COURSES.ID_THEME INNER JOIN LECTURERS ON LECTURERS.ID=COURSES.ID_LECTURER INNER JOIN STATUSES ON STATUSES.ID_STATUS=COURSES.ID_STATUS INNER JOIN STUDENT_COURSE ON COURSES.id_course = STUDENT_COURSE.id_course WHERE ID = ${idLecturer} GROUP BY NAME_COURSE, DURATION, NAME_THEME, SURNAME, NAME, PATRONYMIC, NAME_STATUS, COURSES.ID_THEME </sql:query>
             </c:when>
             <c:when test="${not empty idTheme}">
                 <sql:query dataSource="${db}" var="result"> SELECT COURSES.ID_THEME, NAME_COURSE, DURATION, NAME_THEME, SURNAME, NAME, PATRONYMIC, NAME_STATUS, count(id_student_course) as COUNT FROM COURSES INNER JOIN THEMES ON THEMES.ID_THEME=COURSES.ID_THEME INNER JOIN LECTURERS ON LECTURERS.ID=COURSES.ID_LECTURER INNER JOIN STATUSES ON STATUSES.ID_STATUS=COURSES.ID_STATUS INNER JOIN STUDENT_COURSE ON COURSES.id_course = STUDENT_COURSE.id_course WHERE COURSES.id_theme = ${idTheme} GROUP BY NAME_COURSE, DURATION, NAME_THEME, SURNAME, NAME, PATRONYMIC, NAME_STATUS, COURSES.ID_THEME</sql:query>
-            </c:when>
-            <c:when test="${not empty idTheme and not empty idLecturer}">
-                <sql:query dataSource="${db}" var="result"> SELECT COURSES.ID_THEME, NAME_COURSE, DURATION, NAME_THEME, SURNAME, NAME, PATRONYMIC, NAME_STATUS, count(id_student_course) as COUNT FROM COURSES INNER JOIN THEMES ON THEMES.ID_THEME=COURSES.ID_THEME INNER JOIN LECTURERS ON LECTURERS.ID=COURSES.ID_LECTURER INNER JOIN STATUSES ON STATUSES.ID_STATUS=COURSES.ID_STATUS INNER JOIN STUDENT_COURSE ON COURSES.id_course = STUDENT_COURSE.id_course WHERE ID = ${idLecturer} AND Courses.id_theme = ${idTheme} GROUP BY NAME_COURSE, DURATION, NAME_THEME, SURNAME, NAME, PATRONYMIC, NAME_STATUS, COURSES.ID_THEME</sql:query>
             </c:when>
             <c:otherwise>
                 <sql:query dataSource="${db}" var="result"> SELECT COURSES.ID_THEME, NAME_COURSE, DURATION, NAME_THEME, SURNAME, NAME, PATRONYMIC, NAME_STATUS, count(id_student_course) as COUNT FROM COURSES INNER JOIN THEMES ON THEMES.ID_THEME=COURSES.ID_THEME INNER JOIN LECTURERS ON LECTURERS.ID=COURSES.ID_LECTURER  INNER JOIN STATUSES ON STATUSES.ID_STATUS=COURSES.ID_STATUS INNER JOIN STUDENT_COURSE ON COURSES.id_course = STUDENT_COURSE.id_course GROUP BY NAME_COURSE, DURATION, NAME_THEME, SURNAME, NAME, PATRONYMIC, NAME_STATUS, COURSES.ID_THEME </sql:query>
@@ -61,12 +61,8 @@
                         <c:forEach items="${themes}" var="theme">
                             <option value="${theme.idTheme}"
                             <c:choose>
-                                <c:when test="${not empty idTheme}">
-                                    <c:choose>
-                                        <c:when test="${idTheme==theme.idTheme}">
-                                             selected
-                                        </c:when>
-                                    </c:choose>
+                                <c:when test="${not empty idTheme and idTheme==theme.idTheme}">
+                                    selected
                                 </c:when>
                             </c:choose>
                             >${theme.nameTheme}</option>>
@@ -77,12 +73,8 @@
                         <c:forEach items="${lecturers}" var="lecturer">
                             <option value="${lecturer.id}"
                                 <c:choose>
-                                    <c:when test="${not empty idLecturer}">
-                                        <c:choose>
-                                            <c:when test="${idLecturer==lecturer.id}">
-                                                 selected
-                                            </c:when>
-                                        </c:choose>
+                                    <c:when test="${not empty idLecturer and idLecturer==lecturer.id}">
+                                        selected
                                     </c:when>
                                 </c:choose>
                             >${lecturer.surname} ${lecturer.name} ${lecturer.patronymic}</option>>
@@ -117,7 +109,7 @@
                             </table>
                         </c:when>
                         <c:otherwise>
-                            <h3><my:Locale value="page.courses.error"></my:Locale></h3>
+                            <h3><my:Locale value="page.courses.error"/></h3>
                         </c:otherwise>
                     </c:choose>
                 </form>
