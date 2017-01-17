@@ -7,34 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa270607-73aa-463a-99a9-c5c4a5c2e6ff" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/StudentDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyStudentDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/log_file_2.log" afterPath="$PROJECT_DIR$/logs/log_file_2.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/resources.properties" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/resources.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/resources_en.properties" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/resources_en.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/resources_ru.properties" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/resources_ru.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/resources_uk.properties" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/resources_uk.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/resources.properties" afterPath="$PROJECT_DIR$/out/production/SummaryTask4/resources.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/resources_en.properties" afterPath="$PROJECT_DIR$/out/production/SummaryTask4/resources_en.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/resources_ru.properties" afterPath="$PROJECT_DIR$/out/production/SummaryTask4/resources_ru.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/resources_uk.properties" afterPath="$PROJECT_DIR$/out/production/SummaryTask4/resources_uk.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources.properties" afterPath="$PROJECT_DIR$/src/resources.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources_en.properties" afterPath="$PROJECT_DIR$/src/resources_en.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources_ru.properties" afterPath="$PROJECT_DIR$/src/resources_ru.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources_uk.properties" afterPath="$PROJECT_DIR$/src/resources_uk.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/Query.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/Query.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/StudentOnCourseDAO.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/StudentOnCourseDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyCourseDAO.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyCourseDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyLecturerDAO.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyLecturerDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyStatusDAO.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyStatusDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyStudentOnCourseDAO.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyStudentOnCourseDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyThemeDAO.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyThemeDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dto/StudentDTO.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dto/StudentDTO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dto/StudentOnCourseDTO.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dto/StudentOnCourseDTO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/exception/Messages.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/exception/Messages.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/CourseCommand.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/CourseCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/SelectStudentCommand.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/SelectStudentCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/LanguageCommand.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/LanguageCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/LockCommand.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/LockCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/LoginCommand.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/LoginCommand.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,8 +51,8 @@
       <file leaf-file-name="log_file_2.log" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/logs/log_file_2.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123167">
-              <caret line="50650" column="0" lean-forward="false" selection-start-line="50650" selection-start-column="0" selection-end-line="50650" selection-end-column="0" />
+            <state relative-caret-position="162839">
+              <caret line="52854" column="0" lean-forward="false" selection-start-line="52854" selection-start-column="0" selection-end-line="52854" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -91,31 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f65a99af-a2c6-409e-8b22-0e0a0790f4e9/console.sql">
+      <file leaf-file-name="LoginCommand.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/LoginCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="228" column="24" lean-forward="true" selection-start-line="228" selection-start-column="24" selection-end-line="228" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UpdateJournalCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/UpdateJournalCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="82" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SelectStudentCommand.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/SelectStudentCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="33" column="55" lean-forward="false" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
+            <state relative-caret-position="-152">
+              <caret line="64" column="87" lean-forward="false" selection-start-line="64" selection-start-column="87" selection-end-line="64" selection-end-column="87" />
               <folding />
             </state>
           </provider>
@@ -134,8 +91,8 @@
       <file leaf-file-name="Messages.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/exception/Messages.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="65" lean-forward="false" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
+            <state relative-caret-position="324">
+              <caret line="18" column="96" lean-forward="false" selection-start-line="18" selection-start-column="96" selection-end-line="18" selection-end-column="96" />
               <folding />
             </state>
           </provider>
@@ -201,7 +158,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/login.jsp" />
         <option value="$PROJECT_DIR$/web/styles/editjournal.css" />
         <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/UpdateCourseCommand.java" />
         <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/UpdateCourseButtonCommand.java" />
@@ -215,7 +171,6 @@
         <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/tag/StudentJournalTag.java" />
         <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/CommandContainer.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/LoginCommand.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jspf/header.jspf" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jspf/about.jspf" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/student.jsp" />
@@ -229,7 +184,6 @@
         <option value="$PROJECT_DIR$/src/resources.properties" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/lecturer.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/admin.jsp" />
-        <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/LanguageCommand.java" />
         <option value="$PROJECT_DIR$/src/resources_uk.properties" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/editJournal.jsp" />
         <option value="$PROJECT_DIR$/logs/log_file_2.log" />
@@ -246,12 +200,15 @@
         <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/StudentDAO.java" />
         <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dto/StudentDTO.java" />
         <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyStudentDAO.java" />
-        <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/exception/Messages.java" />
         <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/StudentOnCourseDAO.java" />
         <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyStudentOnCourseDAO.java" />
         <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dto/StudentOnCourseDTO.java" />
         <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/Query.java" />
         <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/SelectStudentCommand.java" />
+        <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/LockCommand.java" />
+        <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/LanguageCommand.java" />
+        <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/exception/Messages.java" />
+        <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/LoginCommand.java" />
       </list>
     </option>
   </component>
@@ -481,110 +438,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="exception" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dto" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="derby" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1339,12 +1192,12 @@
       <workItem from="1484422549031" duration="21000" />
       <workItem from="1484422838273" duration="208000" />
       <workItem from="1484423535023" duration="19277000" />
-      <workItem from="1484588192761" duration="20359000" />
+      <workItem from="1484588192761" duration="23393000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="400099000" />
+    <option name="totallyTimeSpent" value="403133000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1412,25 +1265,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dto/UserDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-54">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="method#UserDTO#0;class#UserDTO#0" expanded="false" />
-            <element signature="method#UserDTO#1;class#UserDTO#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dto/AdminDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dto/CourseDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -1443,6 +1277,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="42" column="31" lean-forward="true" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+          <folding>
+            <element signature="method#StatusDTO#0;class#StatusDTO#0" expanded="false" />
+            <element signature="method#StatusDTO#1;class#StatusDTO#0" expanded="false" />
+            <element signature="method#toString#0;class#StatusDTO#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1612,14 +1451,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/LanguageCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/filter/CommandAccessFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
@@ -1640,14 +1471,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1278">
           <caret line="71" column="49" lean-forward="false" selection-start-line="71" selection-start-column="49" selection-end-line="71" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/UpdateCourseButtonCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="22" column="58" lean-forward="false" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
           <folding />
         </state>
       </provider>
@@ -1702,14 +1525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/UpdateCourseCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-76">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/LecturerDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1736,26 +1551,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f65a99af-a2c6-409e-8b22-0e0a0790f4e9/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="228" column="24" lean-forward="true" selection-start-line="228" selection-start-column="24" selection-end-line="228" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/courses.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1734">
-          <caret line="0" column="14" lean-forward="true" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logs/log_file_2.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123167">
-          <caret line="50650" column="0" lean-forward="false" selection-start-line="50650" selection-start-column="0" selection-end-line="50650" selection-end-column="0" />
+        <state relative-caret-position="162839">
+          <caret line="52854" column="0" lean-forward="false" selection-start-line="52854" selection-start-column="0" selection-end-line="52854" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1764,14 +1563,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/exception/Messages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="65" lean-forward="false" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
           <folding />
         </state>
       </provider>
@@ -1802,10 +1593,84 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyStudentOnCourseDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="27" column="83" lean-forward="true" selection-start-line="27" selection-start-column="83" selection-end-line="27" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f65a99af-a2c6-409e-8b22-0e0a0790f4e9/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1629">
+          <caret line="228" column="24" lean-forward="true" selection-start-line="228" selection-start-column="24" selection-end-line="228" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/UpdateCourseButtonCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="22" column="58" lean-forward="false" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/UpdateCourseCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/SelectStudentCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="39" column="85" lean-forward="false" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/UpdateJournalCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="82" />
+        <state relative-caret-position="190">
+          <caret line="32" column="8" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/LockCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="31" column="12" lean-forward="false" selection-start-line="31" selection-start-column="12" selection-end-line="32" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/LanguageCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="34" column="15" lean-forward="true" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/courses.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1734">
+          <caret line="0" column="14" lean-forward="true" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/exception/Messages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="96" lean-forward="false" selection-start-line="18" selection-start-column="96" selection-end-line="18" selection-end-column="96" />
           <folding />
         </state>
       </provider>
@@ -1818,18 +1683,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyStudentOnCourseDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/LoginCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="27" column="83" lean-forward="true" selection-start-line="27" selection-start-column="83" selection-end-line="27" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/SelectStudentCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="33" column="55" lean-forward="false" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
+        <state relative-caret-position="-152">
+          <caret line="64" column="87" lean-forward="false" selection-start-line="64" selection-start-column="87" selection-end-line="64" selection-end-column="87" />
           <folding />
         </state>
       </provider>

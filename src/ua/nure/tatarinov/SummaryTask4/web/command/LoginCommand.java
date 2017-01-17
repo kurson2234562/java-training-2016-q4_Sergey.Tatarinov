@@ -10,6 +10,7 @@ import ua.nure.tatarinov.SummaryTask4.db.dto.CourseDTO;
 import ua.nure.tatarinov.SummaryTask4.db.dto.LecturerDTO;
 import ua.nure.tatarinov.SummaryTask4.db.dto.ThemeDTO;
 import ua.nure.tatarinov.SummaryTask4.db.dto.UserDTO;
+import ua.nure.tatarinov.SummaryTask4.exception.Messages;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -56,8 +57,13 @@ public class LoginCommand extends Command {
                     session.setAttribute("role", role);
                     session.setAttribute("password", password);
                 } else {
-                    forward = "/";
+                    request.setAttribute("errorMessage", Messages.ERR_INVALID_PASSWORD);
+                    return Path.PAGE_ERROR_PAGE;
                 }
+            }
+            else {
+                request.setAttribute("errorMessage", Messages.ERR_CANNOT_FIND_USER_NAME);
+                return Path.PAGE_ERROR_PAGE;
             }
             session.setAttribute("user", user);
         }

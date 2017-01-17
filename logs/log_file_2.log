@@ -50713,3 +50713,2159 @@
 2017-01-17 12:33:33 INFO  AboutTag:31 - Start tracing AboutTag
 2017-01-17 12:33:33 INFO  AboutTag:39 - login is football role is lecturer
 2017-01-17 12:33:33 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 12:39:00 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 12:39:00 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 12:39:00 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 12:39:00 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 12:39:00 TRACE Controller:26 - *****************GET*****************
+2017-01-17 12:39:00 DEBUG Controller:33 - Controller starts
+2017-01-17 12:39:00 TRACE Controller:37 - Request parameter: command --> updateJournalCommand
+2017-01-17 12:39:00 TRACE Controller:41 - Obtained command --> UpdateJournalCommand
+2017-01-17 12:39:00 TRACE UpdateJournalCommand:22 - Start tracing UpdateJournalCommand
+2017-01-17 12:39:00 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/error_page.jsp
+2017-01-17 12:39:00 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/error_page.jsp
+2017-01-17 12:39:00 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:39:00 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:39:00 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:39:00 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:39:00 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 12:39:00 INFO  AboutTag:39 - login is football role is lecturer
+2017-01-17 12:39:00 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 12:39:07 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 12:39:07 TRACE CommandAccessFilter:45 - Set the request attribute: errorMessage --> You do not have permission to access the requested resource
+2017-01-17 12:39:07 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:39:07 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:39:07 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:39:07 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:39:07 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 12:39:07 INFO  AboutTag:39 - login is football role is lecturer
+2017-01-17 12:39:07 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 12:48:28 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 12:48:28 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 12:48:28 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 12:48:28 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 12:48:28 TRACE Controller:26 - *****************GET*****************
+2017-01-17 12:48:28 DEBUG Controller:33 - Controller starts
+2017-01-17 12:48:28 TRACE Controller:37 - Request parameter: command --> loginCommand
+2017-01-17 12:48:28 TRACE Controller:41 - Obtained command --> LoginCommand
+2017-01-17 12:48:28 INFO  LoginCommand:40 - UserDTO football logged
+2017-01-17 12:48:28 TRACE DerbyUserDAO:31 - Start tracing DerbyUserDAO#findUserByLogin
+2017-01-17 12:48:28 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 12:48:28 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 12:48:28 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 12:48:28 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 12:48:28 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 12:48:28 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 12:48:28 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 12:48:28 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/lecturer.jsp
+2017-01-17 12:48:28 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/lecturer.jsp
+2017-01-17 12:48:28 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:48:28 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:48:28 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:48:28 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:48:28 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 12:48:28 INFO  AboutTag:39 - login is football role is lecturer
+2017-01-17 12:48:28 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 12:48:28 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:48:28 INFO  JournalTag:29 - Start tracing JournalTag
+2017-01-17 12:48:28 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 12:48:28 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:48:28 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:48:28 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:48:28 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:48:28 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:48:28 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:48:33 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 12:48:33 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 12:48:33 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 12:48:33 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 12:48:33 TRACE Controller:21 - *****************POST*****************
+2017-01-17 12:48:33 DEBUG Controller:33 - Controller starts
+2017-01-17 12:48:33 TRACE Controller:37 - Request parameter: command --> logoutCommand
+2017-01-17 12:48:33 TRACE Controller:41 - Obtained command --> LogoutCommand
+2017-01-17 12:48:33 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/login.jsp
+2017-01-17 12:48:33 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2017-01-17 12:48:33 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:48:33 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:48:33 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:48:33 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:48:33 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:48:33 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:48:33 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:48:49 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 12:48:49 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 12:48:49 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 12:48:49 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 12:48:49 TRACE Controller:21 - *****************POST*****************
+2017-01-17 12:48:49 DEBUG Controller:33 - Controller starts
+2017-01-17 12:48:49 TRACE Controller:37 - Request parameter: command --> loginCommand
+2017-01-17 12:48:49 TRACE Controller:41 - Obtained command --> LoginCommand
+2017-01-17 12:48:49 INFO  LoginCommand:40 - UserDTO student logged
+2017-01-17 12:48:49 TRACE DerbyUserDAO:31 - Start tracing DerbyUserDAO#findUserByLogin
+2017-01-17 12:48:49 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 12:48:49 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 12:48:49 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 12:48:49 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 12:48:49 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 12:48:49 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 12:48:49 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 12:48:49 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/student.jsp
+2017-01-17 12:48:49 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/student.jsp
+2017-01-17 12:48:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:48:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:48:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:48:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:48:49 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 12:48:49 INFO  AboutTag:39 - login is student role is student
+2017-01-17 12:48:49 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 12:48:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:48:49 INFO  UserRegisteredCoursesTag:34 - Start tracing UserRegisteredCoursesTag
+2017-01-17 12:48:49 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 12:48:49 TRACE UserRegisteredCoursesTag:70 - Data from DB successful obtained
+2017-01-17 12:48:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:48:49 INFO  UserRegisteredCoursesTag:34 - Start tracing UserRegisteredCoursesTag
+2017-01-17 12:48:49 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 12:48:49 TRACE UserRegisteredCoursesTag:70 - Data from DB successful obtained
+2017-01-17 12:48:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:48:49 INFO  ProgressTag:28 - Start tracing ProgressTag
+2017-01-17 12:48:49 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 12:49:33 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 12:49:33 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 12:49:33 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 12:49:33 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 12:49:33 TRACE Controller:21 - *****************POST*****************
+2017-01-17 12:49:33 DEBUG Controller:33 - Controller starts
+2017-01-17 12:49:33 TRACE Controller:37 - Request parameter: command --> logoutCommand
+2017-01-17 12:49:33 TRACE Controller:41 - Obtained command --> LogoutCommand
+2017-01-17 12:49:33 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/login.jsp
+2017-01-17 12:49:33 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2017-01-17 12:49:33 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:49:33 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:49:33 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:49:33 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:49:33 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:49:33 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:49:33 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:49:36 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 12:49:36 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 12:49:36 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 12:49:36 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 12:49:37 TRACE Controller:21 - *****************POST*****************
+2017-01-17 12:49:37 DEBUG Controller:33 - Controller starts
+2017-01-17 12:49:37 TRACE Controller:37 - Request parameter: command --> loginCommand
+2017-01-17 12:49:37 TRACE Controller:41 - Obtained command --> LoginCommand
+2017-01-17 12:49:37 INFO  LoginCommand:40 - UserDTO root logged
+2017-01-17 12:49:37 TRACE DerbyUserDAO:31 - Start tracing DerbyUserDAO#findUserByLogin
+2017-01-17 12:49:37 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 12:49:37 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 12:49:37 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 12:49:37 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 12:49:37 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 12:49:37 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 12:49:37 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 12:49:37 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 12:49:37 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 12:49:37 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:49:37 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:49:37 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:49:37 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:49:37 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 12:49:37 INFO  AboutTag:39 - login is root role is admin
+2017-01-17 12:49:37 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 12:49:37 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:49:37 INFO  LockTag:27 - Start tracing LockTag
+2017-01-17 12:49:37 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 12:49:37 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:49:37 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:49:37 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:49:37 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:49:37 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:49:37 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:49:37 INFO  EditCourseTag:35 - Start tracing EditCourseTag
+2017-01-17 12:49:37 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 12:49:37 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 12:49:37 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 12:49:37 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 12:49:37 TRACE DerbyStatusDAO:22 - Starting tracing DerbyStatusDAO
+2017-01-17 12:49:37 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 12:49:37 TRACE DerbyCourseDAO:73 - Starting tracing DerbyCourseDAO#getCourseByIdCourse
+2017-01-17 12:49:37 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 12:49:37 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:49:37 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:49:37 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 12:49:37 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 12:49:37 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 12:49:37 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:49:37 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:49:37 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 12:49:37 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 12:49:37 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 12:49:37 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:49:37 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:49:37 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:49:37 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:49:37 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:49:37 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:49:37 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:49:37 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:49:37 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 12:49:37 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:07:50 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:07:50 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:07:50 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:07:50 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:07:50 TRACE Controller:26 - *****************GET*****************
+2017-01-17 13:07:50 DEBUG Controller:33 - Controller starts
+2017-01-17 13:07:50 TRACE Controller:37 - Request parameter: command --> lockCommand
+2017-01-17 13:07:50 TRACE Controller:41 - Obtained command --> LockCommand
+2017-01-17 13:07:50 TRACE LockCommand:19 - Start tracing LockCommand
+2017-01-17 13:07:50 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:07:51 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 13:07:51 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 13:07:51 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:07:51 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:07:51 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:07:51 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:07:51 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 13:07:51 INFO  AboutTag:39 - login is root role is admin
+2017-01-17 13:07:51 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:07:51 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:07:51 INFO  LockTag:27 - Start tracing LockTag
+2017-01-17 13:07:51 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:07:51 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:07:51 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:07:51 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:07:51 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:07:51 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:07:51 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:07:51 INFO  EditCourseTag:35 - Start tracing EditCourseTag
+2017-01-17 13:07:51 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 13:07:51 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:07:51 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 13:07:51 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:07:51 TRACE DerbyStatusDAO:22 - Starting tracing DerbyStatusDAO
+2017-01-17 13:07:51 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:07:51 TRACE DerbyCourseDAO:73 - Starting tracing DerbyCourseDAO#getCourseByIdCourse
+2017-01-17 13:07:51 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:07:51 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:07:51 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:07:51 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 13:07:51 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:07:51 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:07:51 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:07:51 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:07:51 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 13:07:51 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:07:51 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:07:51 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:07:51 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:07:51 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:07:51 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:07:51 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:07:51 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:07:51 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:07:51 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:07:51 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:07:51 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:08 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:09:08 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:09:08 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:09:08 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:09:08 TRACE Controller:21 - *****************POST*****************
+2017-01-17 13:09:08 DEBUG Controller:33 - Controller starts
+2017-01-17 13:09:08 TRACE Controller:37 - Request parameter: command --> logoutCommand
+2017-01-17 13:09:08 TRACE Controller:41 - Obtained command --> LogoutCommand
+2017-01-17 13:09:08 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/login.jsp
+2017-01-17 13:09:08 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2017-01-17 13:09:08 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:08 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:08 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:08 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:08 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:08 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:08 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:09 TRACE EncodingFilter:17 - =========================================================================
+2017-01-17 13:09:09 INFO  EncodingFilter:18 - Filter destruction starts
+2017-01-17 13:09:09 INFO  EncodingFilter:19 - Filter destruction finished
+2017-01-17 13:09:09 DEBUG CommandAccessFilter:30 - Filter destruction starts
+2017-01-17 13:09:09 DEBUG CommandAccessFilter:32 - Filter destruction finished
+2017-01-17 13:09:09 TRACE ContextListener:32 - Servlet context destruction starts
+2017-01-17 13:09:09 TRACE ContextListener:33 - Servlet context destruction finished
+2017-01-17 13:09:14 DEBUG ContextListener:48 - Log4j has been initialized
+2017-01-17 13:09:14 TRACE ContextListener:53 - Log4J initialization finished
+2017-01-17 13:09:14 DEBUG CommandContainer:32 - Command container was successfully initialized
+2017-01-17 13:09:14 TRACE CommandContainer:33 - Number of commands --> 15
+2017-01-17 13:09:14 TRACE ContextListener:28 - Servlet context initialization finished
+2017-01-17 13:09:14 INFO  EncodingFilter:34 - Filter initialization starts
+2017-01-17 13:09:14 INFO  EncodingFilter:40 - Filter initialization finished
+2017-01-17 13:09:14 DEBUG CommandAccessFilter:94 - Filter initialization starts
+2017-01-17 13:09:14 TRACE CommandAccessFilter:100 - Access map --> {STUDENT=[], LECTURER=[selectStudentCommand, updateJournalCommand, insertInJournalCommand], ADMIN=[createLecturerCommand, createCourseCommand, deleteCourseCommand, lockCommand, updateCourseCommand, updateCourseButtonCommand]}
+2017-01-17 13:09:14 TRACE CommandAccessFilter:104 - Common commands --> [noCommand, selectThemeCommand, courseCommand]
+2017-01-17 13:09:14 TRACE CommandAccessFilter:108 - Out of control commands --> [logoutCommand, loginCommand, languageCommand, forgetPasswordCommand]
+2017-01-17 13:09:14 DEBUG CommandAccessFilter:110 - Filter initialization finished
+2017-01-17 13:09:15 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:09:15 TRACE CommandAccessFilter:45 - Set the request attribute: errorMessage --> You do not have permission to access the requested resource
+2017-01-17 13:09:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:15 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 13:09:15 INFO  AboutTag:39 - login is null role is null
+2017-01-17 13:09:16 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:09:16 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:09:16 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:09:16 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:09:16 TRACE Controller:21 - *****************POST*****************
+2017-01-17 13:09:16 DEBUG Controller:33 - Controller starts
+2017-01-17 13:09:16 TRACE Controller:37 - Request parameter: command --> logoutCommand
+2017-01-17 13:09:16 TRACE Controller:41 - Obtained command --> LogoutCommand
+2017-01-17 13:09:16 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/login.jsp
+2017-01-17 13:09:16 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2017-01-17 13:09:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:19 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:09:19 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:09:19 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:09:19 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:09:19 TRACE Controller:21 - *****************POST*****************
+2017-01-17 13:09:19 DEBUG Controller:33 - Controller starts
+2017-01-17 13:09:19 TRACE Controller:37 - Request parameter: command --> loginCommand
+2017-01-17 13:09:19 TRACE Controller:41 - Obtained command --> LoginCommand
+2017-01-17 13:09:19 INFO  LoginCommand:40 - UserDTO root logged
+2017-01-17 13:09:19 TRACE DerbyUserDAO:31 - Start tracing DerbyUserDAO#findUserByLogin
+2017-01-17 13:09:19 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:19 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:09:19 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:19 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 13:09:19 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:19 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 13:09:19 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:19 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 13:09:19 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 13:09:19 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:19 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:19 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:19 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:19 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 13:09:19 INFO  AboutTag:39 - login is root role is admin
+2017-01-17 13:09:19 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:19 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:19 INFO  LockTag:27 - Start tracing LockTag
+2017-01-17 13:09:19 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:19 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:19 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:19 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:19 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:19 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:19 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:19 INFO  EditCourseTag:35 - Start tracing EditCourseTag
+2017-01-17 13:09:19 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 13:09:19 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:19 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 13:09:19 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:19 TRACE DerbyStatusDAO:22 - Starting tracing DerbyStatusDAO
+2017-01-17 13:09:19 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:19 TRACE DerbyCourseDAO:73 - Starting tracing DerbyCourseDAO#getCourseByIdCourse
+2017-01-17 13:09:19 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:19 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:19 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:19 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 13:09:19 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:09:19 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:19 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:19 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:19 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 13:09:19 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:09:19 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:19 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:19 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:19 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:19 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:19 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:19 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:19 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:19 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:19 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:19 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:22 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:09:22 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:09:22 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:09:22 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:09:22 TRACE Controller:26 - *****************GET*****************
+2017-01-17 13:09:22 DEBUG Controller:33 - Controller starts
+2017-01-17 13:09:22 TRACE Controller:37 - Request parameter: command --> lockCommand
+2017-01-17 13:09:22 TRACE Controller:41 - Obtained command --> LockCommand
+2017-01-17 13:09:22 TRACE LockCommand:20 - Start tracing LockCommand
+2017-01-17 13:09:22 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:22 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 13:09:22 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 13:09:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:22 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 13:09:22 INFO  AboutTag:39 - login is root role is admin
+2017-01-17 13:09:22 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:22 INFO  LockTag:27 - Start tracing LockTag
+2017-01-17 13:09:22 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:22 INFO  EditCourseTag:35 - Start tracing EditCourseTag
+2017-01-17 13:09:22 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 13:09:22 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:22 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 13:09:22 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:22 TRACE DerbyStatusDAO:22 - Starting tracing DerbyStatusDAO
+2017-01-17 13:09:22 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:22 TRACE DerbyCourseDAO:73 - Starting tracing DerbyCourseDAO#getCourseByIdCourse
+2017-01-17 13:09:22 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:22 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 13:09:22 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:09:22 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:22 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 13:09:22 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:09:22 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:26 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:09:26 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:09:26 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:09:26 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:09:26 TRACE Controller:26 - *****************GET*****************
+2017-01-17 13:09:26 DEBUG Controller:33 - Controller starts
+2017-01-17 13:09:26 TRACE Controller:37 - Request parameter: command --> lockCommand
+2017-01-17 13:09:26 TRACE Controller:41 - Obtained command --> LockCommand
+2017-01-17 13:09:26 TRACE LockCommand:20 - Start tracing LockCommand
+2017-01-17 13:09:26 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/error_page.jsp
+2017-01-17 13:09:26 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/error_page.jsp
+2017-01-17 13:09:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:26 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 13:09:26 INFO  AboutTag:39 - login is root role is admin
+2017-01-17 13:09:26 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:29 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:09:29 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:09:29 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:09:29 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:09:29 TRACE Controller:26 - *****************GET*****************
+2017-01-17 13:09:29 DEBUG Controller:33 - Controller starts
+2017-01-17 13:09:29 TRACE Controller:37 - Request parameter: command --> lockCommand
+2017-01-17 13:09:29 TRACE Controller:41 - Obtained command --> LockCommand
+2017-01-17 13:09:29 TRACE LockCommand:20 - Start tracing LockCommand
+2017-01-17 13:09:29 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/error_page.jsp
+2017-01-17 13:09:29 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/error_page.jsp
+2017-01-17 13:09:29 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:29 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:29 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:29 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:29 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 13:09:29 INFO  AboutTag:39 - login is root role is admin
+2017-01-17 13:09:29 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:34 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:09:34 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:09:34 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:09:34 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:09:34 TRACE Controller:26 - *****************GET*****************
+2017-01-17 13:09:34 DEBUG Controller:33 - Controller starts
+2017-01-17 13:09:34 TRACE Controller:37 - Request parameter: command --> lockCommand
+2017-01-17 13:09:34 TRACE Controller:41 - Obtained command --> LockCommand
+2017-01-17 13:09:34 TRACE LockCommand:20 - Start tracing LockCommand
+2017-01-17 13:09:34 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/error_page.jsp
+2017-01-17 13:09:34 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/error_page.jsp
+2017-01-17 13:09:34 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:34 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:34 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:34 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:34 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 13:09:34 INFO  AboutTag:39 - login is root role is admin
+2017-01-17 13:09:34 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:38 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:09:38 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:09:38 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:09:38 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:09:38 TRACE Controller:26 - *****************GET*****************
+2017-01-17 13:09:38 DEBUG Controller:33 - Controller starts
+2017-01-17 13:09:38 TRACE Controller:37 - Request parameter: command --> loginCommand
+2017-01-17 13:09:38 TRACE Controller:41 - Obtained command --> LoginCommand
+2017-01-17 13:09:38 INFO  LoginCommand:40 - UserDTO root logged
+2017-01-17 13:09:38 TRACE DerbyUserDAO:31 - Start tracing DerbyUserDAO#findUserByLogin
+2017-01-17 13:09:38 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:38 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:09:38 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:38 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 13:09:38 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:38 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 13:09:38 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:38 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 13:09:38 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 13:09:39 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:39 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:39 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:39 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:39 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 13:09:39 INFO  AboutTag:39 - login is root role is admin
+2017-01-17 13:09:39 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:39 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:39 INFO  LockTag:27 - Start tracing LockTag
+2017-01-17 13:09:39 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:39 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:39 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:39 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:39 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:39 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:39 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:39 INFO  EditCourseTag:35 - Start tracing EditCourseTag
+2017-01-17 13:09:39 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 13:09:39 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:39 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 13:09:39 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:39 TRACE DerbyStatusDAO:22 - Starting tracing DerbyStatusDAO
+2017-01-17 13:09:39 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:39 TRACE DerbyCourseDAO:73 - Starting tracing DerbyCourseDAO#getCourseByIdCourse
+2017-01-17 13:09:39 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:39 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:39 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:39 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 13:09:39 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:09:39 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:39 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:39 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:39 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 13:09:39 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:09:39 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:39 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:39 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:39 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:39 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:39 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:39 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:39 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:39 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:39 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:39 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:41 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:09:41 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:09:41 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:09:41 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:09:41 TRACE Controller:26 - *****************GET*****************
+2017-01-17 13:09:41 DEBUG Controller:33 - Controller starts
+2017-01-17 13:09:41 TRACE Controller:37 - Request parameter: command --> lockCommand
+2017-01-17 13:09:41 TRACE Controller:41 - Obtained command --> LockCommand
+2017-01-17 13:09:41 TRACE LockCommand:20 - Start tracing LockCommand
+2017-01-17 13:09:41 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:41 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 13:09:41 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 13:09:41 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:41 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:41 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:41 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:41 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 13:09:41 INFO  AboutTag:39 - login is root role is admin
+2017-01-17 13:09:41 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:41 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:41 INFO  LockTag:27 - Start tracing LockTag
+2017-01-17 13:09:41 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:41 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:41 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:41 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:41 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:41 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:41 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:41 INFO  EditCourseTag:35 - Start tracing EditCourseTag
+2017-01-17 13:09:41 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 13:09:41 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:41 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 13:09:41 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:41 TRACE DerbyStatusDAO:22 - Starting tracing DerbyStatusDAO
+2017-01-17 13:09:41 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:41 TRACE DerbyCourseDAO:73 - Starting tracing DerbyCourseDAO#getCourseByIdCourse
+2017-01-17 13:09:41 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:41 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:41 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:41 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 13:09:41 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:09:41 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:41 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:41 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:41 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 13:09:41 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:09:41 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:41 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:41 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:41 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:41 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:41 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:41 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:41 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:41 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:41 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:41 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:45 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:09:45 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:09:45 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:09:45 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:09:45 TRACE Controller:26 - *****************GET*****************
+2017-01-17 13:09:45 DEBUG Controller:33 - Controller starts
+2017-01-17 13:09:45 TRACE Controller:37 - Request parameter: command --> lockCommand
+2017-01-17 13:09:45 TRACE Controller:41 - Obtained command --> LockCommand
+2017-01-17 13:09:45 TRACE LockCommand:20 - Start tracing LockCommand
+2017-01-17 13:09:45 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:45 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 13:09:45 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 13:09:45 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:45 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:45 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:45 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:45 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 13:09:45 INFO  AboutTag:39 - login is root role is admin
+2017-01-17 13:09:45 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:45 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:45 INFO  LockTag:27 - Start tracing LockTag
+2017-01-17 13:09:45 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:45 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:45 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:45 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:45 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:45 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:45 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:45 INFO  EditCourseTag:35 - Start tracing EditCourseTag
+2017-01-17 13:09:45 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 13:09:45 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:45 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 13:09:45 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:45 TRACE DerbyStatusDAO:22 - Starting tracing DerbyStatusDAO
+2017-01-17 13:09:45 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:45 TRACE DerbyCourseDAO:73 - Starting tracing DerbyCourseDAO#getCourseByIdCourse
+2017-01-17 13:09:45 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:45 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:45 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:45 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 13:09:45 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:09:45 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:45 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:45 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:45 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 13:09:45 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:09:45 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:09:45 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:45 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:45 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:45 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:45 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:45 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:45 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:45 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:45 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:45 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:49 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:09:49 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:09:49 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:09:49 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:09:49 TRACE Controller:26 - *****************GET*****************
+2017-01-17 13:09:49 DEBUG Controller:33 - Controller starts
+2017-01-17 13:09:49 TRACE Controller:37 - Request parameter: command --> lockCommand
+2017-01-17 13:09:49 TRACE Controller:41 - Obtained command --> LockCommand
+2017-01-17 13:09:49 TRACE LockCommand:20 - Start tracing LockCommand
+2017-01-17 13:09:49 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/error_page.jsp
+2017-01-17 13:09:49 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/error_page.jsp
+2017-01-17 13:09:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:09:49 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 13:09:49 INFO  AboutTag:39 - login is root role is admin
+2017-01-17 13:09:49 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:11:13 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:11:13 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:11:13 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:11:13 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:11:13 TRACE Controller:26 - *****************GET*****************
+2017-01-17 13:11:13 DEBUG Controller:33 - Controller starts
+2017-01-17 13:11:13 TRACE Controller:37 - Request parameter: command --> lockCommand
+2017-01-17 13:11:13 TRACE Controller:41 - Obtained command --> LockCommand
+2017-01-17 13:11:13 TRACE LockCommand:20 - Start tracing LockCommand
+2017-01-17 13:11:13 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:11:13 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 13:11:13 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 13:11:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:13 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 13:11:13 INFO  AboutTag:39 - login is root role is admin
+2017-01-17 13:11:13 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:11:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:13 INFO  LockTag:27 - Start tracing LockTag
+2017-01-17 13:11:13 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:11:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:13 INFO  EditCourseTag:35 - Start tracing EditCourseTag
+2017-01-17 13:11:13 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 13:11:13 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:11:13 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 13:11:13 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:11:13 TRACE DerbyStatusDAO:22 - Starting tracing DerbyStatusDAO
+2017-01-17 13:11:13 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:11:13 TRACE DerbyCourseDAO:73 - Starting tracing DerbyCourseDAO#getCourseByIdCourse
+2017-01-17 13:11:13 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:11:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:13 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 13:11:13 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:11:13 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:11:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:13 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 13:11:13 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:11:13 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:11:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:15 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:11:15 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:11:15 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:11:15 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:11:15 TRACE Controller:26 - *****************GET*****************
+2017-01-17 13:11:15 DEBUG Controller:33 - Controller starts
+2017-01-17 13:11:15 TRACE Controller:37 - Request parameter: command --> lockCommand
+2017-01-17 13:11:15 TRACE Controller:41 - Obtained command --> LockCommand
+2017-01-17 13:11:15 TRACE LockCommand:20 - Start tracing LockCommand
+2017-01-17 13:11:15 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:11:15 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 13:11:15 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 13:11:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:15 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 13:11:15 INFO  AboutTag:39 - login is root role is admin
+2017-01-17 13:11:15 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:11:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:15 INFO  LockTag:27 - Start tracing LockTag
+2017-01-17 13:11:15 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:11:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:15 INFO  EditCourseTag:35 - Start tracing EditCourseTag
+2017-01-17 13:11:15 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 13:11:15 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:11:15 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 13:11:15 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:11:15 TRACE DerbyStatusDAO:22 - Starting tracing DerbyStatusDAO
+2017-01-17 13:11:15 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:11:15 TRACE DerbyCourseDAO:73 - Starting tracing DerbyCourseDAO#getCourseByIdCourse
+2017-01-17 13:11:15 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:11:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:15 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 13:11:15 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:11:15 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:11:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:15 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 13:11:15 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:11:15 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:11:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:16 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:11:16 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:11:16 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:11:16 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:11:16 TRACE Controller:26 - *****************GET*****************
+2017-01-17 13:11:16 DEBUG Controller:33 - Controller starts
+2017-01-17 13:11:16 TRACE Controller:37 - Request parameter: command --> lockCommand
+2017-01-17 13:11:16 TRACE Controller:41 - Obtained command --> LockCommand
+2017-01-17 13:11:16 TRACE LockCommand:20 - Start tracing LockCommand
+2017-01-17 13:11:16 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:11:16 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 13:11:16 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 13:11:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:16 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 13:11:16 INFO  AboutTag:39 - login is root role is admin
+2017-01-17 13:11:16 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:11:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:16 INFO  LockTag:27 - Start tracing LockTag
+2017-01-17 13:11:16 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:11:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:16 INFO  EditCourseTag:35 - Start tracing EditCourseTag
+2017-01-17 13:11:16 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 13:11:16 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:11:16 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 13:11:16 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:11:16 TRACE DerbyStatusDAO:22 - Starting tracing DerbyStatusDAO
+2017-01-17 13:11:16 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:11:16 TRACE DerbyCourseDAO:73 - Starting tracing DerbyCourseDAO#getCourseByIdCourse
+2017-01-17 13:11:16 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:11:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:16 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 13:11:16 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:11:16 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:11:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:16 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 13:11:16 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:11:16 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:11:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:11:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:34 TRACE EncodingFilter:17 - =========================================================================
+2017-01-17 13:14:34 INFO  EncodingFilter:18 - Filter destruction starts
+2017-01-17 13:14:34 INFO  EncodingFilter:19 - Filter destruction finished
+2017-01-17 13:14:34 DEBUG CommandAccessFilter:30 - Filter destruction starts
+2017-01-17 13:14:34 DEBUG CommandAccessFilter:32 - Filter destruction finished
+2017-01-17 13:14:34 TRACE ContextListener:32 - Servlet context destruction starts
+2017-01-17 13:14:34 TRACE ContextListener:33 - Servlet context destruction finished
+2017-01-17 13:14:35 DEBUG ContextListener:48 - Log4j has been initialized
+2017-01-17 13:14:35 TRACE ContextListener:53 - Log4J initialization finished
+2017-01-17 13:14:35 DEBUG CommandContainer:32 - Command container was successfully initialized
+2017-01-17 13:14:35 TRACE CommandContainer:33 - Number of commands --> 15
+2017-01-17 13:14:35 TRACE ContextListener:28 - Servlet context initialization finished
+2017-01-17 13:14:35 INFO  EncodingFilter:34 - Filter initialization starts
+2017-01-17 13:14:35 INFO  EncodingFilter:40 - Filter initialization finished
+2017-01-17 13:14:35 DEBUG CommandAccessFilter:94 - Filter initialization starts
+2017-01-17 13:14:35 TRACE CommandAccessFilter:100 - Access map --> {ADMIN=[createLecturerCommand, createCourseCommand, deleteCourseCommand, lockCommand, updateCourseCommand, updateCourseButtonCommand], STUDENT=[], LECTURER=[selectStudentCommand, updateJournalCommand, insertInJournalCommand]}
+2017-01-17 13:14:35 TRACE CommandAccessFilter:104 - Common commands --> [noCommand, selectThemeCommand, courseCommand]
+2017-01-17 13:14:35 TRACE CommandAccessFilter:108 - Out of control commands --> [logoutCommand, loginCommand, languageCommand, forgetPasswordCommand]
+2017-01-17 13:14:35 DEBUG CommandAccessFilter:110 - Filter initialization finished
+2017-01-17 13:14:46 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:14:46 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:14:46 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:14:46 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:14:46 TRACE Controller:21 - *****************POST*****************
+2017-01-17 13:14:46 DEBUG Controller:33 - Controller starts
+2017-01-17 13:14:46 TRACE Controller:37 - Request parameter: command --> logoutCommand
+2017-01-17 13:14:46 TRACE Controller:41 - Obtained command --> LogoutCommand
+2017-01-17 13:14:46 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/login.jsp
+2017-01-17 13:14:46 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2017-01-17 13:14:46 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:46 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:46 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:46 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:46 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:46 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:46 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:49 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:14:49 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:14:49 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:14:49 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:14:49 TRACE Controller:21 - *****************POST*****************
+2017-01-17 13:14:49 DEBUG Controller:33 - Controller starts
+2017-01-17 13:14:49 TRACE Controller:37 - Request parameter: command --> loginCommand
+2017-01-17 13:14:49 TRACE Controller:41 - Obtained command --> LoginCommand
+2017-01-17 13:14:49 INFO  LoginCommand:40 - UserDTO root logged
+2017-01-17 13:14:49 TRACE DerbyUserDAO:31 - Start tracing DerbyUserDAO#findUserByLogin
+2017-01-17 13:14:49 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:14:49 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:14:49 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:14:49 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 13:14:49 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:14:49 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 13:14:49 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:14:49 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 13:14:49 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 13:14:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:49 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 13:14:49 INFO  AboutTag:39 - login is root role is admin
+2017-01-17 13:14:49 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:14:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:49 INFO  LockTag:27 - Start tracing LockTag
+2017-01-17 13:14:49 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:14:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:49 INFO  EditCourseTag:35 - Start tracing EditCourseTag
+2017-01-17 13:14:49 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 13:14:49 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:14:49 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 13:14:49 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:14:49 TRACE DerbyStatusDAO:22 - Starting tracing DerbyStatusDAO
+2017-01-17 13:14:49 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:14:49 TRACE DerbyCourseDAO:73 - Starting tracing DerbyCourseDAO#getCourseByIdCourse
+2017-01-17 13:14:49 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:14:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:49 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 13:14:49 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:14:49 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:14:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:49 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 13:14:49 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:14:49 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:14:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:49 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:51 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:14:51 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:14:51 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:14:51 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:14:51 TRACE Controller:26 - *****************GET*****************
+2017-01-17 13:14:51 DEBUG Controller:33 - Controller starts
+2017-01-17 13:14:51 TRACE Controller:37 - Request parameter: command --> lockCommand
+2017-01-17 13:14:51 TRACE Controller:41 - Obtained command --> LockCommand
+2017-01-17 13:14:51 TRACE LockCommand:25 - Start tracing LockCommand
+2017-01-17 13:14:51 TRACE DerbyStudentOnCourseDAO:23 - Starting tracing StudentOnCourseDAO#getAllStudentsOnCourse
+2017-01-17 13:14:51 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:14:51 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/error_page.jsp
+2017-01-17 13:14:51 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/error_page.jsp
+2017-01-17 13:14:52 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:52 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:52 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:52 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:14:52 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 13:14:52 INFO  AboutTag:39 - login is root role is admin
+2017-01-17 13:14:52 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:15:20 TRACE EncodingFilter:17 - =========================================================================
+2017-01-17 13:15:20 INFO  EncodingFilter:18 - Filter destruction starts
+2017-01-17 13:15:20 INFO  EncodingFilter:19 - Filter destruction finished
+2017-01-17 13:15:20 DEBUG CommandAccessFilter:30 - Filter destruction starts
+2017-01-17 13:15:20 DEBUG CommandAccessFilter:32 - Filter destruction finished
+2017-01-17 13:15:20 TRACE ContextListener:32 - Servlet context destruction starts
+2017-01-17 13:15:20 TRACE ContextListener:33 - Servlet context destruction finished
+2017-01-17 13:15:20 DEBUG ContextListener:48 - Log4j has been initialized
+2017-01-17 13:15:20 TRACE ContextListener:53 - Log4J initialization finished
+2017-01-17 13:15:21 DEBUG CommandContainer:32 - Command container was successfully initialized
+2017-01-17 13:15:21 TRACE CommandContainer:33 - Number of commands --> 15
+2017-01-17 13:15:21 TRACE ContextListener:28 - Servlet context initialization finished
+2017-01-17 13:15:21 INFO  EncodingFilter:34 - Filter initialization starts
+2017-01-17 13:15:21 INFO  EncodingFilter:40 - Filter initialization finished
+2017-01-17 13:15:21 DEBUG CommandAccessFilter:94 - Filter initialization starts
+2017-01-17 13:15:21 TRACE CommandAccessFilter:100 - Access map --> {LECTURER=[selectStudentCommand, updateJournalCommand, insertInJournalCommand], STUDENT=[], ADMIN=[createLecturerCommand, createCourseCommand, deleteCourseCommand, lockCommand, updateCourseCommand, updateCourseButtonCommand]}
+2017-01-17 13:15:21 TRACE CommandAccessFilter:104 - Common commands --> [noCommand, selectThemeCommand, courseCommand]
+2017-01-17 13:15:21 TRACE CommandAccessFilter:108 - Out of control commands --> [logoutCommand, loginCommand, languageCommand, forgetPasswordCommand]
+2017-01-17 13:15:21 DEBUG CommandAccessFilter:110 - Filter initialization finished
+2017-01-17 13:15:22 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:15:22 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:15:22 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:15:22 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:15:22 TRACE Controller:21 - *****************POST*****************
+2017-01-17 13:15:22 DEBUG Controller:33 - Controller starts
+2017-01-17 13:15:22 TRACE Controller:37 - Request parameter: command --> logoutCommand
+2017-01-17 13:15:22 TRACE Controller:41 - Obtained command --> LogoutCommand
+2017-01-17 13:15:22 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/login.jsp
+2017-01-17 13:15:22 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2017-01-17 13:15:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:25 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:15:25 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:15:25 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:15:25 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:15:25 TRACE Controller:21 - *****************POST*****************
+2017-01-17 13:15:25 DEBUG Controller:33 - Controller starts
+2017-01-17 13:15:25 TRACE Controller:37 - Request parameter: command --> loginCommand
+2017-01-17 13:15:25 TRACE Controller:41 - Obtained command --> LoginCommand
+2017-01-17 13:15:25 INFO  LoginCommand:40 - UserDTO root logged
+2017-01-17 13:15:25 TRACE DerbyUserDAO:31 - Start tracing DerbyUserDAO#findUserByLogin
+2017-01-17 13:15:25 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:15:25 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:15:25 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:15:25 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 13:15:25 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:15:25 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 13:15:25 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:15:25 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 13:15:25 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 13:15:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:26 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 13:15:26 INFO  AboutTag:39 - login is root role is admin
+2017-01-17 13:15:26 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:15:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:26 INFO  LockTag:27 - Start tracing LockTag
+2017-01-17 13:15:26 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:15:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:26 INFO  EditCourseTag:35 - Start tracing EditCourseTag
+2017-01-17 13:15:26 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 13:15:26 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:15:26 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 13:15:26 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:15:26 TRACE DerbyStatusDAO:22 - Starting tracing DerbyStatusDAO
+2017-01-17 13:15:26 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:15:26 TRACE DerbyCourseDAO:73 - Starting tracing DerbyCourseDAO#getCourseByIdCourse
+2017-01-17 13:15:26 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:15:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:26 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 13:15:26 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:15:26 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:15:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:26 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 13:15:26 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:15:26 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:15:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:28 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:15:28 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:15:28 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:15:28 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:15:28 TRACE Controller:26 - *****************GET*****************
+2017-01-17 13:15:28 DEBUG Controller:33 - Controller starts
+2017-01-17 13:15:28 TRACE Controller:37 - Request parameter: command --> lockCommand
+2017-01-17 13:15:28 TRACE Controller:41 - Obtained command --> LockCommand
+2017-01-17 13:15:28 TRACE LockCommand:25 - Start tracing LockCommand
+2017-01-17 13:15:28 TRACE DerbyStudentOnCourseDAO:23 - Starting tracing StudentOnCourseDAO#getAllStudentsOnCourse
+2017-01-17 13:15:28 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:15:28 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/error_page.jsp
+2017-01-17 13:15:28 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/error_page.jsp
+2017-01-17 13:15:28 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:28 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:28 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:28 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:28 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 13:15:28 INFO  AboutTag:39 - login is root role is admin
+2017-01-17 13:15:28 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:15:31 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:15:31 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:15:31 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:15:31 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:15:31 TRACE Controller:26 - *****************GET*****************
+2017-01-17 13:15:31 DEBUG Controller:33 - Controller starts
+2017-01-17 13:15:31 TRACE Controller:37 - Request parameter: command --> loginCommand
+2017-01-17 13:15:31 TRACE Controller:41 - Obtained command --> LoginCommand
+2017-01-17 13:15:31 INFO  LoginCommand:40 - UserDTO root logged
+2017-01-17 13:15:31 TRACE DerbyUserDAO:31 - Start tracing DerbyUserDAO#findUserByLogin
+2017-01-17 13:15:31 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:15:31 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:15:31 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:15:31 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 13:15:31 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:15:31 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 13:15:31 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:15:31 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 13:15:31 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 13:15:31 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:31 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:31 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:31 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:31 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 13:15:31 INFO  AboutTag:39 - login is root role is admin
+2017-01-17 13:15:31 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:15:31 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:31 INFO  LockTag:27 - Start tracing LockTag
+2017-01-17 13:15:31 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:15:31 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:31 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:31 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:31 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:31 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:31 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:31 INFO  EditCourseTag:35 - Start tracing EditCourseTag
+2017-01-17 13:15:31 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 13:15:31 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:15:31 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 13:15:31 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:15:31 TRACE DerbyStatusDAO:22 - Starting tracing DerbyStatusDAO
+2017-01-17 13:15:31 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:15:31 TRACE DerbyCourseDAO:73 - Starting tracing DerbyCourseDAO#getCourseByIdCourse
+2017-01-17 13:15:31 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:15:31 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:31 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:31 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 13:15:31 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:15:31 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:15:31 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:31 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:31 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 13:15:31 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:15:31 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:15:31 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:31 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:31 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:31 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:31 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:31 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:31 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:31 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:31 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:15:31 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:00 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:16:00 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:16:00 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:16:00 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:16:00 TRACE Controller:26 - *****************GET*****************
+2017-01-17 13:16:00 DEBUG Controller:33 - Controller starts
+2017-01-17 13:16:00 TRACE Controller:37 - Request parameter: command --> lockCommand
+2017-01-17 13:16:00 TRACE Controller:41 - Obtained command --> LockCommand
+2017-01-17 13:16:00 TRACE LockCommand:25 - Start tracing LockCommand
+2017-01-17 13:16:00 TRACE DerbyStudentOnCourseDAO:23 - Starting tracing StudentOnCourseDAO#getAllStudentsOnCourse
+2017-01-17 13:16:00 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:16:00 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/error_page.jsp
+2017-01-17 13:16:00 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/error_page.jsp
+2017-01-17 13:16:00 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:00 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:00 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:00 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:00 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 13:16:00 INFO  AboutTag:39 - login is root role is admin
+2017-01-17 13:16:00 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:16:17 TRACE EncodingFilter:17 - =========================================================================
+2017-01-17 13:16:17 INFO  EncodingFilter:18 - Filter destruction starts
+2017-01-17 13:16:17 INFO  EncodingFilter:19 - Filter destruction finished
+2017-01-17 13:16:17 DEBUG CommandAccessFilter:30 - Filter destruction starts
+2017-01-17 13:16:17 DEBUG CommandAccessFilter:32 - Filter destruction finished
+2017-01-17 13:16:17 TRACE ContextListener:32 - Servlet context destruction starts
+2017-01-17 13:16:17 TRACE ContextListener:33 - Servlet context destruction finished
+2017-01-17 13:16:18 DEBUG ContextListener:48 - Log4j has been initialized
+2017-01-17 13:16:18 TRACE ContextListener:53 - Log4J initialization finished
+2017-01-17 13:16:18 DEBUG CommandContainer:32 - Command container was successfully initialized
+2017-01-17 13:16:18 TRACE CommandContainer:33 - Number of commands --> 15
+2017-01-17 13:16:18 TRACE ContextListener:28 - Servlet context initialization finished
+2017-01-17 13:16:18 INFO  EncodingFilter:34 - Filter initialization starts
+2017-01-17 13:16:18 INFO  EncodingFilter:40 - Filter initialization finished
+2017-01-17 13:16:18 DEBUG CommandAccessFilter:94 - Filter initialization starts
+2017-01-17 13:16:18 TRACE CommandAccessFilter:100 - Access map --> {LECTURER=[selectStudentCommand, updateJournalCommand, insertInJournalCommand], STUDENT=[], ADMIN=[createLecturerCommand, createCourseCommand, deleteCourseCommand, lockCommand, updateCourseCommand, updateCourseButtonCommand]}
+2017-01-17 13:16:18 TRACE CommandAccessFilter:104 - Common commands --> [noCommand, selectThemeCommand, courseCommand]
+2017-01-17 13:16:18 TRACE CommandAccessFilter:108 - Out of control commands --> [logoutCommand, loginCommand, languageCommand, forgetPasswordCommand]
+2017-01-17 13:16:18 DEBUG CommandAccessFilter:110 - Filter initialization finished
+2017-01-17 13:16:22 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:16:22 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:16:22 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:16:22 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:16:22 TRACE Controller:21 - *****************POST*****************
+2017-01-17 13:16:22 DEBUG Controller:33 - Controller starts
+2017-01-17 13:16:22 TRACE Controller:37 - Request parameter: command --> logoutCommand
+2017-01-17 13:16:22 TRACE Controller:41 - Obtained command --> LogoutCommand
+2017-01-17 13:16:22 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/login.jsp
+2017-01-17 13:16:22 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2017-01-17 13:16:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:22 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:25 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:16:25 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:16:25 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:16:25 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:16:25 TRACE Controller:21 - *****************POST*****************
+2017-01-17 13:16:25 DEBUG Controller:33 - Controller starts
+2017-01-17 13:16:25 TRACE Controller:37 - Request parameter: command --> loginCommand
+2017-01-17 13:16:25 TRACE Controller:41 - Obtained command --> LoginCommand
+2017-01-17 13:16:25 INFO  LoginCommand:40 - UserDTO root logged
+2017-01-17 13:16:25 TRACE DerbyUserDAO:31 - Start tracing DerbyUserDAO#findUserByLogin
+2017-01-17 13:16:25 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:16:25 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:16:25 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:16:25 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 13:16:25 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:16:25 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 13:16:25 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:16:25 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 13:16:25 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 13:16:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:26 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 13:16:26 INFO  AboutTag:39 - login is root role is admin
+2017-01-17 13:16:26 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:16:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:26 INFO  LockTag:27 - Start tracing LockTag
+2017-01-17 13:16:26 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:16:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:26 INFO  EditCourseTag:35 - Start tracing EditCourseTag
+2017-01-17 13:16:26 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 13:16:26 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:16:26 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 13:16:26 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:16:26 TRACE DerbyStatusDAO:22 - Starting tracing DerbyStatusDAO
+2017-01-17 13:16:26 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:16:26 TRACE DerbyCourseDAO:73 - Starting tracing DerbyCourseDAO#getCourseByIdCourse
+2017-01-17 13:16:26 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:16:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:26 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 13:16:26 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:16:26 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:16:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:26 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 13:16:26 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:16:26 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:16:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:26 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:28 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:16:28 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:16:28 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:16:28 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:16:28 TRACE Controller:26 - *****************GET*****************
+2017-01-17 13:16:28 DEBUG Controller:33 - Controller starts
+2017-01-17 13:16:28 TRACE Controller:37 - Request parameter: command --> lockCommand
+2017-01-17 13:16:28 TRACE Controller:41 - Obtained command --> LockCommand
+2017-01-17 13:16:28 TRACE LockCommand:25 - Start tracing LockCommand
+2017-01-17 13:16:28 TRACE DerbyStudentOnCourseDAO:23 - Starting tracing StudentOnCourseDAO#getAllStudentsOnCourse
+2017-01-17 13:16:28 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:16:28 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/error_page.jsp
+2017-01-17 13:16:28 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/error_page.jsp
+2017-01-17 13:16:28 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:28 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:28 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:28 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:16:28 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 13:16:28 INFO  AboutTag:39 - login is root role is admin
+2017-01-17 13:16:28 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:03 TRACE EncodingFilter:17 - =========================================================================
+2017-01-17 13:17:03 INFO  EncodingFilter:18 - Filter destruction starts
+2017-01-17 13:17:03 INFO  EncodingFilter:19 - Filter destruction finished
+2017-01-17 13:17:03 DEBUG CommandAccessFilter:30 - Filter destruction starts
+2017-01-17 13:17:03 DEBUG CommandAccessFilter:32 - Filter destruction finished
+2017-01-17 13:17:03 TRACE ContextListener:32 - Servlet context destruction starts
+2017-01-17 13:17:03 TRACE ContextListener:33 - Servlet context destruction finished
+2017-01-17 13:17:04 DEBUG ContextListener:48 - Log4j has been initialized
+2017-01-17 13:17:04 TRACE ContextListener:53 - Log4J initialization finished
+2017-01-17 13:17:04 DEBUG CommandContainer:32 - Command container was successfully initialized
+2017-01-17 13:17:04 TRACE CommandContainer:33 - Number of commands --> 15
+2017-01-17 13:17:04 TRACE ContextListener:28 - Servlet context initialization finished
+2017-01-17 13:17:04 INFO  EncodingFilter:34 - Filter initialization starts
+2017-01-17 13:17:04 INFO  EncodingFilter:40 - Filter initialization finished
+2017-01-17 13:17:04 DEBUG CommandAccessFilter:94 - Filter initialization starts
+2017-01-17 13:17:04 TRACE CommandAccessFilter:100 - Access map --> {LECTURER=[selectStudentCommand, updateJournalCommand, insertInJournalCommand], STUDENT=[], ADMIN=[createLecturerCommand, createCourseCommand, deleteCourseCommand, lockCommand, updateCourseCommand, updateCourseButtonCommand]}
+2017-01-17 13:17:04 TRACE CommandAccessFilter:104 - Common commands --> [noCommand, selectThemeCommand, courseCommand]
+2017-01-17 13:17:04 TRACE CommandAccessFilter:108 - Out of control commands --> [logoutCommand, loginCommand, languageCommand, forgetPasswordCommand]
+2017-01-17 13:17:04 DEBUG CommandAccessFilter:110 - Filter initialization finished
+2017-01-17 13:17:08 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:17:08 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:17:08 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:17:08 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:17:08 TRACE Controller:21 - *****************POST*****************
+2017-01-17 13:17:08 DEBUG Controller:33 - Controller starts
+2017-01-17 13:17:08 TRACE Controller:37 - Request parameter: command --> logoutCommand
+2017-01-17 13:17:08 TRACE Controller:41 - Obtained command --> LogoutCommand
+2017-01-17 13:17:08 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/login.jsp
+2017-01-17 13:17:08 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2017-01-17 13:17:08 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:08 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:08 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:08 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:08 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:08 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:08 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:13 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:17:13 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:17:13 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:17:13 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:17:13 TRACE Controller:21 - *****************POST*****************
+2017-01-17 13:17:13 DEBUG Controller:33 - Controller starts
+2017-01-17 13:17:13 TRACE Controller:37 - Request parameter: command --> loginCommand
+2017-01-17 13:17:13 TRACE Controller:41 - Obtained command --> LoginCommand
+2017-01-17 13:17:13 INFO  LoginCommand:40 - UserDTO root logged
+2017-01-17 13:17:13 TRACE DerbyUserDAO:31 - Start tracing DerbyUserDAO#findUserByLogin
+2017-01-17 13:17:13 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:13 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:17:13 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:13 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 13:17:13 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:13 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 13:17:13 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:13 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 13:17:13 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 13:17:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:13 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 13:17:13 INFO  AboutTag:39 - login is root role is admin
+2017-01-17 13:17:13 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:13 INFO  LockTag:27 - Start tracing LockTag
+2017-01-17 13:17:13 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:13 INFO  EditCourseTag:35 - Start tracing EditCourseTag
+2017-01-17 13:17:13 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 13:17:13 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:13 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 13:17:13 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:13 TRACE DerbyStatusDAO:22 - Starting tracing DerbyStatusDAO
+2017-01-17 13:17:13 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:13 TRACE DerbyCourseDAO:73 - Starting tracing DerbyCourseDAO#getCourseByIdCourse
+2017-01-17 13:17:13 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:13 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 13:17:13 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:17:13 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:13 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 13:17:13 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:17:13 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:15 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:17:15 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:17:15 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:17:15 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:17:15 TRACE Controller:26 - *****************GET*****************
+2017-01-17 13:17:15 DEBUG Controller:33 - Controller starts
+2017-01-17 13:17:15 TRACE Controller:37 - Request parameter: command --> lockCommand
+2017-01-17 13:17:15 TRACE Controller:41 - Obtained command --> LockCommand
+2017-01-17 13:17:15 TRACE LockCommand:25 - Start tracing LockCommand
+2017-01-17 13:17:15 TRACE DerbyStudentOnCourseDAO:23 - Starting tracing StudentOnCourseDAO#getAllStudentsOnCourse
+2017-01-17 13:17:15 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:15 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:15 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 13:17:15 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 13:17:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:15 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 13:17:15 INFO  AboutTag:39 - login is root role is admin
+2017-01-17 13:17:15 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:15 INFO  LockTag:27 - Start tracing LockTag
+2017-01-17 13:17:15 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:15 INFO  EditCourseTag:35 - Start tracing EditCourseTag
+2017-01-17 13:17:15 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 13:17:15 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:15 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 13:17:15 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:15 TRACE DerbyStatusDAO:22 - Starting tracing DerbyStatusDAO
+2017-01-17 13:17:15 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:15 TRACE DerbyCourseDAO:73 - Starting tracing DerbyCourseDAO#getCourseByIdCourse
+2017-01-17 13:17:15 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:15 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 13:17:15 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:17:15 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:15 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 13:17:15 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:17:15 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:15 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:17 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:17:17 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:17:17 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:17:17 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:17:17 TRACE Controller:26 - *****************GET*****************
+2017-01-17 13:17:17 DEBUG Controller:33 - Controller starts
+2017-01-17 13:17:17 TRACE Controller:37 - Request parameter: command --> lockCommand
+2017-01-17 13:17:17 TRACE Controller:41 - Obtained command --> LockCommand
+2017-01-17 13:17:17 TRACE LockCommand:25 - Start tracing LockCommand
+2017-01-17 13:17:17 TRACE DerbyStudentOnCourseDAO:23 - Starting tracing StudentOnCourseDAO#getAllStudentsOnCourse
+2017-01-17 13:17:17 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:17 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:17 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 13:17:17 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 13:17:17 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:17 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:17 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:17 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:17 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 13:17:17 INFO  AboutTag:39 - login is root role is admin
+2017-01-17 13:17:17 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:17 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:17 INFO  LockTag:27 - Start tracing LockTag
+2017-01-17 13:17:17 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:17 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:17 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:17 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:17 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:17 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:17 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:17 INFO  EditCourseTag:35 - Start tracing EditCourseTag
+2017-01-17 13:17:17 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 13:17:17 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:17 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 13:17:17 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:17 TRACE DerbyStatusDAO:22 - Starting tracing DerbyStatusDAO
+2017-01-17 13:17:17 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:17 TRACE DerbyCourseDAO:73 - Starting tracing DerbyCourseDAO#getCourseByIdCourse
+2017-01-17 13:17:17 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:17 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:17 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:17 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 13:17:17 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:17:17 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:17 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:17 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:17 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 13:17:17 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:17:17 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:17 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:17 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:17 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:17 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:17 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:17 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:17 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:17 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:17 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:17 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:19 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:17:19 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:17:19 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:17:19 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:17:19 TRACE Controller:26 - *****************GET*****************
+2017-01-17 13:17:19 DEBUG Controller:33 - Controller starts
+2017-01-17 13:17:19 TRACE Controller:37 - Request parameter: command --> lockCommand
+2017-01-17 13:17:19 TRACE Controller:41 - Obtained command --> LockCommand
+2017-01-17 13:17:19 TRACE LockCommand:25 - Start tracing LockCommand
+2017-01-17 13:17:19 TRACE DerbyStudentOnCourseDAO:23 - Starting tracing StudentOnCourseDAO#getAllStudentsOnCourse
+2017-01-17 13:17:19 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:19 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/error_page.jsp
+2017-01-17 13:17:19 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/error_page.jsp
+2017-01-17 13:17:20 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:20 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:20 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:20 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:20 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 13:17:20 INFO  AboutTag:39 - login is root role is admin
+2017-01-17 13:17:20 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:25 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:17:25 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:17:25 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:17:25 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:17:25 TRACE Controller:26 - *****************GET*****************
+2017-01-17 13:17:25 DEBUG Controller:33 - Controller starts
+2017-01-17 13:17:25 TRACE Controller:37 - Request parameter: command --> lockCommand
+2017-01-17 13:17:25 TRACE Controller:41 - Obtained command --> LockCommand
+2017-01-17 13:17:25 TRACE LockCommand:25 - Start tracing LockCommand
+2017-01-17 13:17:25 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/error_page.jsp
+2017-01-17 13:17:25 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/error_page.jsp
+2017-01-17 13:17:25 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:25 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:25 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:25 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:25 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 13:17:25 INFO  AboutTag:39 - login is root role is admin
+2017-01-17 13:17:25 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:17:32 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:17:32 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:17:32 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:17:32 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:17:32 TRACE Controller:21 - *****************POST*****************
+2017-01-17 13:17:32 DEBUG Controller:33 - Controller starts
+2017-01-17 13:17:32 TRACE Controller:37 - Request parameter: command --> logoutCommand
+2017-01-17 13:17:32 TRACE Controller:41 - Obtained command --> LogoutCommand
+2017-01-17 13:17:32 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/login.jsp
+2017-01-17 13:17:32 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2017-01-17 13:17:32 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:32 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:32 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:32 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:32 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:32 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:17:32 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:18:54 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:18:54 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:18:54 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:18:54 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:18:54 TRACE Controller:21 - *****************POST*****************
+2017-01-17 13:18:54 DEBUG Controller:33 - Controller starts
+2017-01-17 13:18:54 TRACE Controller:37 - Request parameter: command --> languageCommand
+2017-01-17 13:18:54 TRACE Controller:41 - Obtained command --> LanguageCommand
+2017-01-17 13:18:54 TRACE Controller:50 - Forward address --> 
+2017-01-17 13:18:54 DEBUG Controller:52 - Controller finished, now go to forward address --> 
+2017-01-17 13:18:54 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:18:54 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:18:54 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:18:54 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:18:54 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:18:54 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:18:54 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:19:06 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:19:06 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:19:06 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:19:06 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:19:06 TRACE Controller:21 - *****************POST*****************
+2017-01-17 13:19:06 DEBUG Controller:33 - Controller starts
+2017-01-17 13:19:06 TRACE Controller:37 - Request parameter: command --> languageCommand
+2017-01-17 13:19:06 TRACE Controller:41 - Obtained command --> LanguageCommand
+2017-01-17 13:19:06 TRACE Controller:50 - Forward address --> 
+2017-01-17 13:19:06 DEBUG Controller:52 - Controller finished, now go to forward address --> 
+2017-01-17 13:19:06 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:19:06 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:19:06 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:19:06 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:19:06 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:19:06 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:19:06 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:19:12 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:19:12 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:19:12 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:19:12 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:19:12 TRACE Controller:21 - *****************POST*****************
+2017-01-17 13:19:12 DEBUG Controller:33 - Controller starts
+2017-01-17 13:19:12 TRACE Controller:37 - Request parameter: command --> languageCommand
+2017-01-17 13:19:12 TRACE Controller:41 - Obtained command --> LanguageCommand
+2017-01-17 13:19:12 TRACE Controller:50 - Forward address --> 
+2017-01-17 13:19:12 DEBUG Controller:52 - Controller finished, now go to forward address --> 
+2017-01-17 13:19:12 INFO  LocaleTag:40 - Language is switched to RU
+2017-01-17 13:19:12 INFO  LocaleTag:40 - Language is switched to RU
+2017-01-17 13:19:12 INFO  LocaleTag:40 - Language is switched to RU
+2017-01-17 13:19:12 INFO  LocaleTag:40 - Language is switched to RU
+2017-01-17 13:19:12 INFO  LocaleTag:40 - Language is switched to RU
+2017-01-17 13:19:12 INFO  LocaleTag:40 - Language is switched to RU
+2017-01-17 13:19:12 INFO  LocaleTag:40 - Language is switched to RU
+2017-01-17 13:19:17 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:19:17 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:19:17 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:19:17 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:19:17 TRACE Controller:21 - *****************POST*****************
+2017-01-17 13:19:17 DEBUG Controller:33 - Controller starts
+2017-01-17 13:19:17 TRACE Controller:37 - Request parameter: command --> languageCommand
+2017-01-17 13:19:17 TRACE Controller:41 - Obtained command --> LanguageCommand
+2017-01-17 13:19:17 TRACE Controller:50 - Forward address --> 
+2017-01-17 13:19:17 DEBUG Controller:52 - Controller finished, now go to forward address --> 
+2017-01-17 13:19:17 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:19:17 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:19:17 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:19:17 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:19:17 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:19:17 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:19:17 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:22:46 TRACE EncodingFilter:17 - =========================================================================
+2017-01-17 13:22:46 INFO  EncodingFilter:18 - Filter destruction starts
+2017-01-17 13:22:46 INFO  EncodingFilter:19 - Filter destruction finished
+2017-01-17 13:22:46 DEBUG CommandAccessFilter:30 - Filter destruction starts
+2017-01-17 13:22:46 DEBUG CommandAccessFilter:32 - Filter destruction finished
+2017-01-17 13:22:46 TRACE ContextListener:32 - Servlet context destruction starts
+2017-01-17 13:22:46 TRACE ContextListener:33 - Servlet context destruction finished
+2017-01-17 13:22:47 DEBUG ContextListener:48 - Log4j has been initialized
+2017-01-17 13:22:47 TRACE ContextListener:53 - Log4J initialization finished
+2017-01-17 13:22:47 DEBUG CommandContainer:32 - Command container was successfully initialized
+2017-01-17 13:22:47 TRACE CommandContainer:33 - Number of commands --> 15
+2017-01-17 13:22:47 TRACE ContextListener:28 - Servlet context initialization finished
+2017-01-17 13:22:47 INFO  EncodingFilter:34 - Filter initialization starts
+2017-01-17 13:22:47 INFO  EncodingFilter:40 - Filter initialization finished
+2017-01-17 13:22:47 DEBUG CommandAccessFilter:94 - Filter initialization starts
+2017-01-17 13:22:47 TRACE CommandAccessFilter:100 - Access map --> {ADMIN=[createLecturerCommand, createCourseCommand, deleteCourseCommand, lockCommand, updateCourseCommand, updateCourseButtonCommand], STUDENT=[], LECTURER=[selectStudentCommand, updateJournalCommand, insertInJournalCommand]}
+2017-01-17 13:22:47 TRACE CommandAccessFilter:104 - Common commands --> [noCommand, selectThemeCommand, courseCommand]
+2017-01-17 13:22:47 TRACE CommandAccessFilter:108 - Out of control commands --> [logoutCommand, loginCommand, languageCommand, forgetPasswordCommand]
+2017-01-17 13:22:47 DEBUG CommandAccessFilter:110 - Filter initialization finished
+2017-01-17 13:22:50 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:22:50 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:22:50 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:22:50 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:22:50 TRACE Controller:21 - *****************POST*****************
+2017-01-17 13:22:50 DEBUG Controller:33 - Controller starts
+2017-01-17 13:22:50 TRACE Controller:37 - Request parameter: command --> languageCommand
+2017-01-17 13:22:50 TRACE Controller:41 - Obtained command --> LanguageCommand
+2017-01-17 13:22:50 TRACE LanguageCommand:22 - Start tracing LanguageCommand
+2017-01-17 13:22:50 TRACE Controller:50 - Forward address --> 
+2017-01-17 13:22:50 DEBUG Controller:52 - Controller finished, now go to forward address --> 
+2017-01-17 13:22:50 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:22:50 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:22:50 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:22:50 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:22:50 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:22:50 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:22:50 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:22:52 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:22:52 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:22:52 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:22:52 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:22:52 TRACE Controller:21 - *****************POST*****************
+2017-01-17 13:22:52 DEBUG Controller:33 - Controller starts
+2017-01-17 13:22:52 TRACE Controller:37 - Request parameter: command --> languageCommand
+2017-01-17 13:22:52 TRACE Controller:41 - Obtained command --> LanguageCommand
+2017-01-17 13:22:52 TRACE LanguageCommand:22 - Start tracing LanguageCommand
+2017-01-17 13:22:52 TRACE Controller:50 - Forward address --> 
+2017-01-17 13:22:52 DEBUG Controller:52 - Controller finished, now go to forward address --> 
+2017-01-17 13:22:53 INFO  LocaleTag:40 - Language is switched to RU
+2017-01-17 13:22:53 INFO  LocaleTag:40 - Language is switched to RU
+2017-01-17 13:22:53 INFO  LocaleTag:40 - Language is switched to RU
+2017-01-17 13:22:53 INFO  LocaleTag:40 - Language is switched to RU
+2017-01-17 13:22:53 INFO  LocaleTag:40 - Language is switched to RU
+2017-01-17 13:22:53 INFO  LocaleTag:40 - Language is switched to RU
+2017-01-17 13:22:53 INFO  LocaleTag:40 - Language is switched to RU
+2017-01-17 13:22:58 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:22:58 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:22:58 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:22:58 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:22:58 TRACE Controller:26 - *****************GET*****************
+2017-01-17 13:22:58 DEBUG Controller:33 - Controller starts
+2017-01-17 13:22:58 TRACE Controller:37 - Request parameter: command --> languageCommand
+2017-01-17 13:22:58 TRACE Controller:41 - Obtained command --> LanguageCommand
+2017-01-17 13:22:58 TRACE LanguageCommand:22 - Start tracing LanguageCommand
+2017-01-17 13:22:58 TRACE Controller:50 - Forward address --> 
+2017-01-17 13:22:58 DEBUG Controller:52 - Controller finished, now go to forward address --> 
+2017-01-17 13:22:58 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:22:58 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:22:58 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:22:58 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:22:58 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:22:58 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:22:58 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:23:00 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:23:00 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:23:00 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:23:00 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:23:00 TRACE Controller:26 - *****************GET*****************
+2017-01-17 13:23:00 DEBUG Controller:33 - Controller starts
+2017-01-17 13:23:00 TRACE Controller:37 - Request parameter: command --> languageCommand
+2017-01-17 13:23:00 TRACE Controller:41 - Obtained command --> LanguageCommand
+2017-01-17 13:23:00 TRACE LanguageCommand:22 - Start tracing LanguageCommand
+2017-01-17 13:23:00 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/error_page.jsp
+2017-01-17 13:23:00 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/error_page.jsp
+2017-01-17 13:23:00 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:23:00 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:23:00 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:23:00 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:23:00 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 13:23:00 INFO  AboutTag:39 - login is null role is null
+2017-01-17 13:23:04 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:23:04 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:23:04 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:23:04 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:23:04 TRACE Controller:26 - *****************GET*****************
+2017-01-17 13:23:04 DEBUG Controller:33 - Controller starts
+2017-01-17 13:23:04 TRACE Controller:37 - Request parameter: command --> languageCommand
+2017-01-17 13:23:04 TRACE Controller:41 - Obtained command --> LanguageCommand
+2017-01-17 13:23:04 TRACE LanguageCommand:22 - Start tracing LanguageCommand
+2017-01-17 13:23:04 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/error_page.jsp
+2017-01-17 13:23:04 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/error_page.jsp
+2017-01-17 13:23:04 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:23:04 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:23:04 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:23:04 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:23:04 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 13:23:04 INFO  AboutTag:39 - login is null role is null
+2017-01-17 13:23:08 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:23:08 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:23:08 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:23:08 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:23:08 TRACE Controller:26 - *****************GET*****************
+2017-01-17 13:23:08 DEBUG Controller:33 - Controller starts
+2017-01-17 13:23:08 TRACE Controller:37 - Request parameter: command --> loginCommand
+2017-01-17 13:23:08 TRACE Controller:41 - Obtained command --> LoginCommand
+2017-01-17 13:23:08 INFO  LoginCommand:40 - UserDTO  logged
+2017-01-17 13:23:08 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:23:08 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:23:09 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 13:23:09 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:23:09 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 13:23:09 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:23:09 TRACE Controller:50 - Forward address --> 
+2017-01-17 13:23:09 DEBUG Controller:52 - Controller finished, now go to forward address --> 
+2017-01-17 13:23:09 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:23:09 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:23:09 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:23:09 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:23:09 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:23:09 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:23:09 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:23:20 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:23:20 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:23:20 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:23:20 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:23:20 TRACE Controller:21 - *****************POST*****************
+2017-01-17 13:23:20 DEBUG Controller:33 - Controller starts
+2017-01-17 13:23:20 TRACE Controller:37 - Request parameter: command --> loginCommand
+2017-01-17 13:23:20 TRACE Controller:41 - Obtained command --> LoginCommand
+2017-01-17 13:23:20 INFO  LoginCommand:40 - UserDTO root logged
+2017-01-17 13:23:20 TRACE DerbyUserDAO:31 - Start tracing DerbyUserDAO#findUserByLogin
+2017-01-17 13:23:20 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:23:20 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:23:20 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:23:20 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 13:23:20 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:23:20 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 13:23:20 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:23:20 TRACE Controller:50 - Forward address --> /
+2017-01-17 13:23:20 DEBUG Controller:52 - Controller finished, now go to forward address --> /
+2017-01-17 13:23:20 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:23:20 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:23:20 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:23:20 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:23:20 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:23:20 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:23:20 INFO  LocaleTag:40 - Language is switched to UK
+2017-01-17 13:24:09 TRACE EncodingFilter:17 - =========================================================================
+2017-01-17 13:24:09 INFO  EncodingFilter:18 - Filter destruction starts
+2017-01-17 13:24:09 INFO  EncodingFilter:19 - Filter destruction finished
+2017-01-17 13:24:09 DEBUG CommandAccessFilter:30 - Filter destruction starts
+2017-01-17 13:24:09 DEBUG CommandAccessFilter:32 - Filter destruction finished
+2017-01-17 13:24:09 TRACE ContextListener:32 - Servlet context destruction starts
+2017-01-17 13:24:09 TRACE ContextListener:33 - Servlet context destruction finished
+2017-01-17 13:24:10 DEBUG ContextListener:48 - Log4j has been initialized
+2017-01-17 13:24:10 TRACE ContextListener:53 - Log4J initialization finished
+2017-01-17 13:24:10 DEBUG CommandContainer:32 - Command container was successfully initialized
+2017-01-17 13:24:10 TRACE CommandContainer:33 - Number of commands --> 15
+2017-01-17 13:24:10 TRACE ContextListener:28 - Servlet context initialization finished
+2017-01-17 13:24:10 INFO  EncodingFilter:34 - Filter initialization starts
+2017-01-17 13:24:10 INFO  EncodingFilter:40 - Filter initialization finished
+2017-01-17 13:24:10 DEBUG CommandAccessFilter:94 - Filter initialization starts
+2017-01-17 13:24:10 TRACE CommandAccessFilter:100 - Access map --> {LECTURER=[selectStudentCommand, updateJournalCommand, insertInJournalCommand], STUDENT=[], ADMIN=[createLecturerCommand, createCourseCommand, deleteCourseCommand, lockCommand, updateCourseCommand, updateCourseButtonCommand]}
+2017-01-17 13:24:10 TRACE CommandAccessFilter:104 - Common commands --> [noCommand, selectThemeCommand, courseCommand]
+2017-01-17 13:24:10 TRACE CommandAccessFilter:108 - Out of control commands --> [logoutCommand, loginCommand, languageCommand, forgetPasswordCommand]
+2017-01-17 13:24:10 DEBUG CommandAccessFilter:110 - Filter initialization finished
+2017-01-17 13:24:13 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:24:13 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:24:13 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:24:13 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:24:13 TRACE Controller:21 - *****************POST*****************
+2017-01-17 13:24:13 DEBUG Controller:33 - Controller starts
+2017-01-17 13:24:13 TRACE Controller:37 - Request parameter: command --> loginCommand
+2017-01-17 13:24:13 TRACE Controller:41 - Obtained command --> LoginCommand
+2017-01-17 13:24:13 INFO  LoginCommand:40 - UserDTO root logged
+2017-01-17 13:24:13 TRACE DerbyUserDAO:31 - Start tracing DerbyUserDAO#findUserByLogin
+2017-01-17 13:24:13 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:24:13 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:24:13 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:24:13 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 13:24:13 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:24:13 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 13:24:13 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:24:13 TRACE Controller:50 - Forward address --> /
+2017-01-17 13:24:13 DEBUG Controller:52 - Controller finished, now go to forward address --> /
+2017-01-17 13:24:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:24:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:24:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:24:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:24:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:24:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:24:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:24:17 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:24:17 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:24:17 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:24:17 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:24:17 TRACE Controller:21 - *****************POST*****************
+2017-01-17 13:24:17 DEBUG Controller:33 - Controller starts
+2017-01-17 13:24:17 TRACE Controller:37 - Request parameter: command --> loginCommand
+2017-01-17 13:24:17 TRACE Controller:41 - Obtained command --> LoginCommand
+2017-01-17 13:24:17 INFO  LoginCommand:40 - UserDTO root logged
+2017-01-17 13:24:17 TRACE DerbyUserDAO:31 - Start tracing DerbyUserDAO#findUserByLogin
+2017-01-17 13:24:17 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:24:17 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:24:17 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:24:17 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 13:24:17 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:24:17 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 13:24:17 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:24:17 TRACE Controller:50 - Forward address --> /
+2017-01-17 13:24:17 DEBUG Controller:52 - Controller finished, now go to forward address --> /
+2017-01-17 13:24:17 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:24:17 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:24:17 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:24:17 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:24:17 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:24:17 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:24:17 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:24:21 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:24:21 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:24:21 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:24:21 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:24:21 TRACE Controller:21 - *****************POST*****************
+2017-01-17 13:24:21 DEBUG Controller:33 - Controller starts
+2017-01-17 13:24:21 TRACE Controller:37 - Request parameter: command --> languageCommand
+2017-01-17 13:24:21 TRACE Controller:41 - Obtained command --> LanguageCommand
+2017-01-17 13:24:21 TRACE LanguageCommand:22 - Start tracing LanguageCommand
+2017-01-17 13:24:21 TRACE Controller:50 - Forward address --> 
+2017-01-17 13:24:21 DEBUG Controller:52 - Controller finished, now go to forward address --> 
+2017-01-17 13:24:21 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:24:21 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:24:21 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:24:21 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:24:21 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:24:21 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:24:21 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:24:30 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:24:30 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:24:30 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:24:30 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:24:30 TRACE Controller:21 - *****************POST*****************
+2017-01-17 13:24:30 DEBUG Controller:33 - Controller starts
+2017-01-17 13:24:30 TRACE Controller:37 - Request parameter: command --> loginCommand
+2017-01-17 13:24:30 TRACE Controller:41 - Obtained command --> LoginCommand
+2017-01-17 13:24:30 INFO  LoginCommand:40 - UserDTO root logged
+2017-01-17 13:24:30 TRACE DerbyUserDAO:31 - Start tracing DerbyUserDAO#findUserByLogin
+2017-01-17 13:24:30 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:24:30 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:24:30 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:24:30 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 13:24:30 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:24:30 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 13:24:30 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:24:30 TRACE Controller:50 - Forward address --> /
+2017-01-17 13:24:30 DEBUG Controller:52 - Controller finished, now go to forward address --> /
+2017-01-17 13:24:30 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:24:30 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:24:30 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:24:30 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:24:30 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:24:30 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:24:30 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:26:14 TRACE EncodingFilter:17 - =========================================================================
+2017-01-17 13:26:14 INFO  EncodingFilter:18 - Filter destruction starts
+2017-01-17 13:26:14 INFO  EncodingFilter:19 - Filter destruction finished
+2017-01-17 13:26:14 DEBUG CommandAccessFilter:30 - Filter destruction starts
+2017-01-17 13:26:14 DEBUG CommandAccessFilter:32 - Filter destruction finished
+2017-01-17 13:26:14 TRACE ContextListener:32 - Servlet context destruction starts
+2017-01-17 13:26:14 TRACE ContextListener:33 - Servlet context destruction finished
+2017-01-17 13:26:15 DEBUG ContextListener:48 - Log4j has been initialized
+2017-01-17 13:26:15 TRACE ContextListener:53 - Log4J initialization finished
+2017-01-17 13:26:15 DEBUG CommandContainer:32 - Command container was successfully initialized
+2017-01-17 13:26:15 TRACE CommandContainer:33 - Number of commands --> 15
+2017-01-17 13:26:15 TRACE ContextListener:28 - Servlet context initialization finished
+2017-01-17 13:26:15 INFO  EncodingFilter:34 - Filter initialization starts
+2017-01-17 13:26:15 INFO  EncodingFilter:40 - Filter initialization finished
+2017-01-17 13:26:15 DEBUG CommandAccessFilter:94 - Filter initialization starts
+2017-01-17 13:26:15 TRACE CommandAccessFilter:100 - Access map --> {STUDENT=[], ADMIN=[createLecturerCommand, createCourseCommand, deleteCourseCommand, lockCommand, updateCourseCommand, updateCourseButtonCommand], LECTURER=[selectStudentCommand, updateJournalCommand, insertInJournalCommand]}
+2017-01-17 13:26:15 TRACE CommandAccessFilter:104 - Common commands --> [noCommand, selectThemeCommand, courseCommand]
+2017-01-17 13:26:15 TRACE CommandAccessFilter:108 - Out of control commands --> [logoutCommand, loginCommand, languageCommand, forgetPasswordCommand]
+2017-01-17 13:26:15 DEBUG CommandAccessFilter:110 - Filter initialization finished
+2017-01-17 13:26:19 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:26:19 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:26:19 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:26:19 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:26:19 TRACE Controller:21 - *****************POST*****************
+2017-01-17 13:26:19 DEBUG Controller:33 - Controller starts
+2017-01-17 13:26:19 TRACE Controller:37 - Request parameter: command --> languageCommand
+2017-01-17 13:26:19 TRACE Controller:41 - Obtained command --> LanguageCommand
+2017-01-17 13:26:19 TRACE LanguageCommand:22 - Start tracing LanguageCommand
+2017-01-17 13:26:19 TRACE Controller:50 - Forward address --> 
+2017-01-17 13:26:19 DEBUG Controller:52 - Controller finished, now go to forward address --> 
+2017-01-17 13:26:19 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:26:19 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:26:19 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:26:19 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:26:19 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:26:19 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:26:19 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:26:24 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:26:24 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:26:24 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:26:24 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:26:24 TRACE Controller:21 - *****************POST*****************
+2017-01-17 13:26:24 DEBUG Controller:33 - Controller starts
+2017-01-17 13:26:24 TRACE Controller:37 - Request parameter: command --> loginCommand
+2017-01-17 13:26:24 TRACE Controller:41 - Obtained command --> LoginCommand
+2017-01-17 13:26:24 INFO  LoginCommand:41 - UserDTO root logged
+2017-01-17 13:26:24 TRACE DerbyUserDAO:31 - Start tracing DerbyUserDAO#findUserByLogin
+2017-01-17 13:26:24 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:26:24 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/error_page.jsp
+2017-01-17 13:26:24 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/error_page.jsp
+2017-01-17 13:26:24 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:26:24 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:26:24 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:26:24 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:26:24 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 13:26:24 INFO  AboutTag:39 - login is null role is null
+2017-01-17 13:26:54 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:26:54 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:26:54 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:26:54 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:26:54 TRACE Controller:26 - *****************GET*****************
+2017-01-17 13:26:54 DEBUG Controller:33 - Controller starts
+2017-01-17 13:26:54 TRACE Controller:37 - Request parameter: command --> loginCommand
+2017-01-17 13:26:54 TRACE Controller:41 - Obtained command --> LoginCommand
+2017-01-17 13:26:54 INFO  LoginCommand:41 - UserDTO  logged
+2017-01-17 13:26:54 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:26:54 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:26:54 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 13:26:54 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:26:54 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 13:26:54 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:26:54 TRACE Controller:50 - Forward address --> 
+2017-01-17 13:26:54 DEBUG Controller:52 - Controller finished, now go to forward address --> 
+2017-01-17 13:26:54 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:26:54 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:26:54 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:26:54 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:26:54 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:26:54 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:26:54 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:27:00 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:27:00 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:27:00 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:27:00 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:27:00 TRACE Controller:21 - *****************POST*****************
+2017-01-17 13:27:00 DEBUG Controller:33 - Controller starts
+2017-01-17 13:27:00 TRACE Controller:37 - Request parameter: command --> loginCommand
+2017-01-17 13:27:00 TRACE Controller:41 - Obtained command --> LoginCommand
+2017-01-17 13:27:00 INFO  LoginCommand:41 - UserDTO 1231312313132 logged
+2017-01-17 13:27:00 TRACE DerbyUserDAO:31 - Start tracing DerbyUserDAO#findUserByLogin
+2017-01-17 13:27:00 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:27:00 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:27:00 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:27:00 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 13:27:00 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:27:00 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 13:27:00 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:27:00 TRACE Controller:50 - Forward address --> 
+2017-01-17 13:27:00 DEBUG Controller:52 - Controller finished, now go to forward address --> 
+2017-01-17 13:27:00 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:27:00 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:27:00 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:27:00 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:27:00 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:27:00 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:27:00 INFO  LocaleTag:40 - Language is switched to EN
+2017-01-17 13:28:09 TRACE EncodingFilter:17 - =========================================================================
+2017-01-17 13:28:09 INFO  EncodingFilter:18 - Filter destruction starts
+2017-01-17 13:28:09 INFO  EncodingFilter:19 - Filter destruction finished
+2017-01-17 13:28:09 DEBUG CommandAccessFilter:30 - Filter destruction starts
+2017-01-17 13:28:09 DEBUG CommandAccessFilter:32 - Filter destruction finished
+2017-01-17 13:28:09 TRACE ContextListener:32 - Servlet context destruction starts
+2017-01-17 13:28:09 TRACE ContextListener:33 - Servlet context destruction finished
+2017-01-17 13:28:10 DEBUG ContextListener:48 - Log4j has been initialized
+2017-01-17 13:28:10 TRACE ContextListener:53 - Log4J initialization finished
+2017-01-17 13:28:10 DEBUG CommandContainer:32 - Command container was successfully initialized
+2017-01-17 13:28:10 TRACE CommandContainer:33 - Number of commands --> 15
+2017-01-17 13:28:10 TRACE ContextListener:28 - Servlet context initialization finished
+2017-01-17 13:28:10 INFO  EncodingFilter:34 - Filter initialization starts
+2017-01-17 13:28:10 INFO  EncodingFilter:40 - Filter initialization finished
+2017-01-17 13:28:10 DEBUG CommandAccessFilter:94 - Filter initialization starts
+2017-01-17 13:28:10 TRACE CommandAccessFilter:100 - Access map --> {ADMIN=[createLecturerCommand, createCourseCommand, deleteCourseCommand, lockCommand, updateCourseCommand, updateCourseButtonCommand], LECTURER=[selectStudentCommand, updateJournalCommand, insertInJournalCommand], STUDENT=[]}
+2017-01-17 13:28:10 TRACE CommandAccessFilter:104 - Common commands --> [noCommand, selectThemeCommand, courseCommand]
+2017-01-17 13:28:10 TRACE CommandAccessFilter:108 - Out of control commands --> [logoutCommand, loginCommand, languageCommand, forgetPasswordCommand]
+2017-01-17 13:28:10 DEBUG CommandAccessFilter:110 - Filter initialization finished
+2017-01-17 13:28:13 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:28:13 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:28:13 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:28:13 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:28:13 TRACE Controller:21 - *****************POST*****************
+2017-01-17 13:28:13 DEBUG Controller:33 - Controller starts
+2017-01-17 13:28:13 TRACE Controller:37 - Request parameter: command --> loginCommand
+2017-01-17 13:28:13 TRACE Controller:41 - Obtained command --> LoginCommand
+2017-01-17 13:28:13 INFO  LoginCommand:41 - UserDTO qwe logged
+2017-01-17 13:28:13 TRACE DerbyUserDAO:31 - Start tracing DerbyUserDAO#findUserByLogin
+2017-01-17 13:28:13 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:28:13 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/error_page.jsp
+2017-01-17 13:28:13 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/error_page.jsp
+2017-01-17 13:28:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:13 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:13 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 13:28:13 INFO  AboutTag:39 - login is null role is null
+2017-01-17 13:28:16 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:28:16 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:28:16 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:28:16 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:28:16 TRACE Controller:21 - *****************POST*****************
+2017-01-17 13:28:16 DEBUG Controller:33 - Controller starts
+2017-01-17 13:28:16 TRACE Controller:37 - Request parameter: command --> logoutCommand
+2017-01-17 13:28:16 TRACE Controller:41 - Obtained command --> LogoutCommand
+2017-01-17 13:28:16 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/login.jsp
+2017-01-17 13:28:16 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2017-01-17 13:28:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:16 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:30 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:28:30 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:28:30 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:28:30 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:28:30 TRACE Controller:21 - *****************POST*****************
+2017-01-17 13:28:30 DEBUG Controller:33 - Controller starts
+2017-01-17 13:28:30 TRACE Controller:37 - Request parameter: command --> loginCommand
+2017-01-17 13:28:30 TRACE Controller:41 - Obtained command --> LoginCommand
+2017-01-17 13:28:30 INFO  LoginCommand:41 - UserDTO root logged
+2017-01-17 13:28:30 TRACE DerbyUserDAO:31 - Start tracing DerbyUserDAO#findUserByLogin
+2017-01-17 13:28:30 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:28:30 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:28:30 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:28:30 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 13:28:30 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:28:30 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 13:28:30 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:28:30 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 13:28:30 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/admin.jsp
+2017-01-17 13:28:30 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:30 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:30 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:30 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:30 INFO  AboutTag:31 - Start tracing AboutTag
+2017-01-17 13:28:30 INFO  AboutTag:39 - login is root role is admin
+2017-01-17 13:28:30 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:28:30 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:30 INFO  LockTag:27 - Start tracing LockTag
+2017-01-17 13:28:30 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:28:30 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:30 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:30 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:30 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:30 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:30 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:30 INFO  EditCourseTag:35 - Start tracing EditCourseTag
+2017-01-17 13:28:30 TRACE DerbyLecturerDAO:22 - Starting tracing DerbyLecturerDAO
+2017-01-17 13:28:30 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:28:30 TRACE DerbyThemeDAO:22 - Starting tracing DerbyThemeDAO
+2017-01-17 13:28:30 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:28:30 TRACE DerbyStatusDAO:22 - Starting tracing DerbyStatusDAO
+2017-01-17 13:28:30 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:28:30 TRACE DerbyCourseDAO:73 - Starting tracing DerbyCourseDAO#getCourseByIdCourse
+2017-01-17 13:28:30 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:28:30 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:30 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:30 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 13:28:30 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:28:30 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:28:30 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:30 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:30 INFO  SelectCourseTag:23 - Start tracing CreateCourseTag
+2017-01-17 13:28:30 TRACE DerbyCourseDAO:99 - Starting tracing DerbyStatusDAO#getAllStatuses
+2017-01-17 13:28:30 TRACE ConnectionPool:20 - Connection is successful
+2017-01-17 13:28:30 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:30 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:30 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:30 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:30 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:30 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:30 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:30 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:30 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:30 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:48 DEBUG CommandAccessFilter:36 - Filter starts
+2017-01-17 13:28:48 DEBUG CommandAccessFilter:39 - Filter finished
+2017-01-17 13:28:48 INFO  EncodingFilter:23 - Filter starts
+2017-01-17 13:28:48 INFO  EncodingFilter:29 - Filter finished
+2017-01-17 13:28:48 TRACE Controller:21 - *****************POST*****************
+2017-01-17 13:28:48 DEBUG Controller:33 - Controller starts
+2017-01-17 13:28:48 TRACE Controller:37 - Request parameter: command --> logoutCommand
+2017-01-17 13:28:48 TRACE Controller:41 - Obtained command --> LogoutCommand
+2017-01-17 13:28:48 TRACE Controller:50 - Forward address --> /WEB-INF/jsp/login.jsp
+2017-01-17 13:28:48 DEBUG Controller:52 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2017-01-17 13:28:48 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:48 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:48 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:48 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:48 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:48 INFO  LocaleTag:40 - Language is switched to NULL
+2017-01-17 13:28:48 INFO  LocaleTag:40 - Language is switched to NULL
