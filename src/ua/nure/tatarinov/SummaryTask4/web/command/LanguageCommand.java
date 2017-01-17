@@ -2,7 +2,7 @@ package ua.nure.tatarinov.SummaryTask4.web.command;
 
 import org.apache.log4j.Logger;
 import ua.nure.tatarinov.SummaryTask4.Path;
-import ua.nure.tatarinov.SummaryTask4.exception.Messages;
+import ua.nure.tatarinov.SummaryTask4.exception.Errors;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -30,7 +30,7 @@ public class LanguageCommand extends Command {
             }
         }
         if (!existLanguage){
-            request.setAttribute("errorMessage", Messages.ERR_INVALID_VALUE_LANGUAGE);
+            request.setAttribute("errorMessage", Errors.ERR_INVALID_VALUE_LANGUAGE);
             return Path.PAGE_ERROR_PAGE;
         }else {
             session.setAttribute("language", language);

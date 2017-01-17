@@ -5,7 +5,7 @@ import ua.nure.tatarinov.SummaryTask4.Path;
 import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyStudentOnCourseDAO;
 import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyUserDAO;
 import ua.nure.tatarinov.SummaryTask4.db.dto.StudentOnCourseDTO;
-import ua.nure.tatarinov.SummaryTask4.exception.Messages;
+import ua.nure.tatarinov.SummaryTask4.exception.Errors;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -29,7 +29,7 @@ public class LockCommand extends Command {
         int newValue = -1;
         boolean existStudent = false;
         if (!isDigit(test)) {
-            request.setAttribute("errorMessage", Messages.ERR_NOT_A_NUMBER);
+            request.setAttribute("errorMessage", Errors.ERR_NOT_A_NUMBER);
             return Path.PAGE_ERROR_PAGE;
         } else {
             List<StudentOnCourseDTO> students = new DerbyStudentOnCourseDAO().getAllStudentsOnCourse();
@@ -40,7 +40,7 @@ public class LockCommand extends Command {
                 }
             }
             if (!existStudent){
-                request.setAttribute("errorMessage", Messages.ERR_CANNOT_FIND_STUDENT);
+                request.setAttribute("errorMessage", Errors.ERR_CANNOT_FIND_STUDENT);
                 return Path.PAGE_ERROR_PAGE;
             }
         }
@@ -52,7 +52,7 @@ public class LockCommand extends Command {
                 newValue = 1;
                 break;
             default:
-                request.setAttribute("errorMessage", Messages.ERR_INVALID_VALUE_LOCK);
+                request.setAttribute("errorMessage", Errors.ERR_INVALID_VALUE_LOCK);
                 return Path.PAGE_ERROR_PAGE;
         }
         new DerbyUserDAO().lockUserById(Integer.parseInt(test), newValue);

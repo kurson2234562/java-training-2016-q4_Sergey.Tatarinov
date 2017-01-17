@@ -43,7 +43,7 @@
                 <button type="submit" id="login"> <my:Locale value="page.login.login"/></button>
 			</form>
 			<form action="controller" method="post">
-                <input type="hidden" name="command" value="forgetPasswordCommand">
+                <input type="hidden" name="command" value="forgetCommand">
                 <button type="submit" id="forget"><my:Locale value="page.login.forget"/> </button>
 			</form>
 		</div>

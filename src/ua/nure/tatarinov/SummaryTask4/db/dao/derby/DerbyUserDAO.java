@@ -7,6 +7,8 @@ import ua.nure.tatarinov.SummaryTask4.db.dao.UserDAO;
 import ua.nure.tatarinov.SummaryTask4.db.dto.UserDTO;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class DerbyUserDAO extends UserDTO implements UserDAO {
 
@@ -14,6 +16,7 @@ public class DerbyUserDAO extends UserDTO implements UserDAO {
 
     @Override
     public void lockUserById(int id, int state) {
+        LOG.trace("Start tracing DerbyUserDAO#lockUserById");
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if ((connection != null) && (state != -1)) {
                 PreparedStatement statement = connection.prepareStatement(Query.CHANGE_STATE_USER, Statement.RETURN_GENERATED_KEYS);
@@ -44,6 +47,7 @@ public class DerbyUserDAO extends UserDTO implements UserDAO {
                     user.setPassword(resultSet.getString("password"));
                     user.setRoleId(resultSet.getInt("id_role"));
                     user.setStateId(resultSet.getInt("id_state"));
+                    user.setEmail(resultSet.getString("email"));
                 }
                 resultSet.close();
             }
@@ -85,5 +89,46 @@ public class DerbyUserDAO extends UserDTO implements UserDAO {
         }
         user = new UserDTO(id, login, password, 2, 1);
         return user;
+    }
+
+    @Override
+    public List<UserDTO> getAllUsers() {
+        LOG.trace("Start tracing DerbyUserDAO#getAllUsers");
+        List<UserDTO> users = new ArrayList<>();
+        UserDTO user;
+
+        try (Connection connection = ConnectionPool.getConnetcion()) {
+            if (connection != null) {
+                PreparedStatement statement = connection.prepareStatement(Query.SELECT_ALL_USERS);
+                statement.execute();
+                ResultSet resultSet = statement.getResultSet();
+                while (resultSet.next()) {
+                    user = new UserDTO(resultSet.getInt("id_user"), resultSet.getString("login"),
+                            resultSet.getString("password"), resultSet.getString("email"),
+                            resultSet.getInt("id_role"), resultSet.getInt("id_state"));
+                    users.add(user);
+                }
+                resultSet.close();
+            }
+        } catch (SQLException ex) {
+            LOG.info(ex.getLocalizedMessage());
+        }
+
+        return users;
+    }
+
+    public void setNewPassword(int id, String password){
+        LOG.trace("Start tracing DerbyUserDAO#setNewPassword");
+        try (Connection connection = ConnectionPool.getConnetcion()){
+            if (connection!=null){
+                PreparedStatement statement = connection.prepareStatement(Query.UPDATE_PASSWORD);
+                statement.setString(1 ,password);
+                statement.setInt(2, id);
+                statement.executeUpdate();
+                connection.setAutoCommit(false);
+            }
+        }catch (SQLException e){
+            LOG.error(e.getLocalizedMessage());
+        }
     }
 }

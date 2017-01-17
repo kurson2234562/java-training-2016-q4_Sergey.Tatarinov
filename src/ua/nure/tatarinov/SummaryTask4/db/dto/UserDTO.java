@@ -8,8 +8,18 @@ public class UserDTO {
     private int idUser;
     private String login;
     private String password;
+    private String email;
     private int roleId = -1;
     private int stateId = 1;
+
+    public UserDTO(int idUser, String login, String password, String email, int roleId, int stateId) {
+        this.idUser = idUser;
+        this.login = login;
+        this.password = password;
+        this.email = email;
+        this.roleId = roleId;
+        this.stateId = stateId;
+    }
 
     public UserDTO(int idUser, String login, String password, int roleId, int stateId) {
         this.idUser = idUser;
@@ -76,12 +86,21 @@ public class UserDTO {
         this.roleId = roleId;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     @Override
     public String toString() {
         return "UserDTO{" +
                 "idUser=" + idUser +
                 ", login='" + login + '\'' +
                 ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
                 ", roleId=" + roleId +
                 ", stateId=" + stateId +
                 '}';

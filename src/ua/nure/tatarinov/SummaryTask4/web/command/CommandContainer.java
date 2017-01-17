@@ -28,6 +28,7 @@ public class CommandContainer {
         commands.put("createLecturerCommand", new CreateLecturerCommand());
         commands.put("forgetPasswordCommand", new ForgetPasswordCommand());
         commands.put("insertInJournalCommand", new InsertInJournalCommand());
+        commands.put("forgetCommand", new ForgetCommand());
 
         LOG.debug("Command container was successfully initialized");
         LOG.trace("Number of commands --> " + commands.size());

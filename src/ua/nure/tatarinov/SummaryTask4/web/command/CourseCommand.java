@@ -7,7 +7,7 @@ import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyLecturerDAO;
 import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyThemeDAO;
 import ua.nure.tatarinov.SummaryTask4.db.dto.LecturerDTO;
 import ua.nure.tatarinov.SummaryTask4.db.dto.ThemeDTO;
-import ua.nure.tatarinov.SummaryTask4.exception.Messages;
+import ua.nure.tatarinov.SummaryTask4.exception.Errors;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -39,10 +39,8 @@ public class CourseCommand extends Command {
         String idTheme = null;
         String idLecturer = null;
         String forward = Path.PAGE_COURSES;
-        System.out.println(session.getAttribute("state"));
         if (state == 0) {
-            System.out.println("now");
-            request.setAttribute("errorMessage", Messages.ERR_LOCKED);
+            request.setAttribute("errorMessage", Errors.ERR_LOCKED);
             forward = Path.PAGE_ERROR_PAGE;
         }
         if (request.getParameter("idTheme") != null) {
@@ -57,13 +55,13 @@ public class CourseCommand extends Command {
                         }
                     }
                     if (!existTheme) {
-                        LOG.error(Messages.ERR_CANNOT_FIND_THEME);
-                        request.setAttribute("errorMessage", Messages.ERR_CANNOT_FIND_THEME);
+                        LOG.error(Errors.ERR_CANNOT_FIND_THEME);
+                        request.setAttribute("errorMessage", Errors.ERR_CANNOT_FIND_THEME);
                         forward = Path.PAGE_ERROR_PAGE;
                     }
                 } else {
-                    LOG.error(Messages.ERR_CANNOT_FIND_THEME);
-                    request.setAttribute("errorMessage", Messages.ERR_CANNOT_FIND_THEME);
+                    LOG.error(Errors.ERR_CANNOT_FIND_THEME);
+                    request.setAttribute("errorMessage", Errors.ERR_CANNOT_FIND_THEME);
                     return Path.PAGE_ERROR_PAGE;
                 }
             }
@@ -81,13 +79,13 @@ public class CourseCommand extends Command {
                         }
                     }
                     if (!existLecturer) {
-                        LOG.error(Messages.ERR_CANNOT_FIND_LECTURER);
-                        request.setAttribute("errorMessage", Messages.ERR_CANNOT_FIND_LECTURER);
+                        LOG.error(Errors.ERR_CANNOT_FIND_LECTURER);
+                        request.setAttribute("errorMessage", Errors.ERR_CANNOT_FIND_LECTURER);
                         forward = Path.PAGE_ERROR_PAGE;
                     }
                 } else {
-                    LOG.error(Messages.ERR_CANNOT_FIND_LECTURER);
-                    request.setAttribute("errorMessage", Messages.ERR_CANNOT_FIND_LECTURER);
+                    LOG.error(Errors.ERR_CANNOT_FIND_LECTURER);
+                    request.setAttribute("errorMessage", Errors.ERR_CANNOT_FIND_LECTURER);
                     return Path.PAGE_ERROR_PAGE;
                 }
             }
@@ -117,8 +115,8 @@ public class CourseCommand extends Command {
                     }
                 }
                 if (!existField) {
-                    LOG.error(Messages.ERR_CANNOT_FIND_FIELD);
-                    request.setAttribute("errorMessage", Messages.ERR_CANNOT_FIND_FIELD);
+                    LOG.error(Errors.ERR_CANNOT_FIND_FIELD);
+                    request.setAttribute("errorMessage", Errors.ERR_CANNOT_FIND_FIELD);
                     forward = Path.PAGE_ERROR_PAGE;
                 }
             }

@@ -2,6 +2,7 @@ package ua.nure.tatarinov.SummaryTask4.web.command;
 
 import org.apache.log4j.Logger;
 import ua.nure.tatarinov.SummaryTask4.Path;
+import ua.nure.tatarinov.SummaryTask4.core.Utils;
 import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyCourseDAO;
 import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyLecturerDAO;
 import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyThemeDAO;
@@ -10,7 +11,7 @@ import ua.nure.tatarinov.SummaryTask4.db.dto.CourseDTO;
 import ua.nure.tatarinov.SummaryTask4.db.dto.LecturerDTO;
 import ua.nure.tatarinov.SummaryTask4.db.dto.ThemeDTO;
 import ua.nure.tatarinov.SummaryTask4.db.dto.UserDTO;
-import ua.nure.tatarinov.SummaryTask4.exception.Messages;
+import ua.nure.tatarinov.SummaryTask4.exception.Errors;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -45,7 +46,7 @@ public class LoginCommand extends Command {
             UserDTO user = new DerbyUserDAO().findUserByLogin(login);
             System.out.println(user);
             if (user != null) {
-                if (user.getPassword().equals(password)) {
+                if (user.getPassword().equals(Utils.encrypt(password))) {
                     switch (user.getRoleId()){
                         case 0:
                             role = "admin";
@@ -66,17 +67,17 @@ public class LoginCommand extends Command {
                     System.out.println(user.getStateId());
                     session.setAttribute("state", user.getStateId());
                 } else {
-                    request.setAttribute("errorMessage", Messages.ERR_INVALID_PASSWORD);
+                    request.setAttribute("errorMessage", Errors.ERR_INVALID_PASSWORD);
                     return Path.PAGE_ERROR_PAGE;
                 }
             }
             else {
-                request.setAttribute("errorMessage", Messages.ERR_CANNOT_FIND_USER_NAME);
+                request.setAttribute("errorMessage", Errors.ERR_CANNOT_FIND_USER_NAME);
                 return Path.PAGE_ERROR_PAGE;
             }
             session.setAttribute("user", user);
             if (user.getStateId() == 0) {
-                request.setAttribute("errorMessage", Messages.ERR_LOCKED);
+                request.setAttribute("errorMessage", Errors.ERR_LOCKED);
                 return Path.PAGE_ERROR_PAGE;
             }
         }

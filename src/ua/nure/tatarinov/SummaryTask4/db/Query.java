@@ -6,6 +6,7 @@ public class Query {
     public static final String SELECT_USER_AS_LECTURER ="SELECT * FROM USERS INNER JOIN LECTURERS ON LECTURERS.ID_USER = USERS.ID_USER WHERE LOGIN=?";
     public static final String SELECT_USER_AS_ADMIN =   "SELECT * FROM USERS INNER JOIN ADMINS ON ADMINS.ID_USER = USERS.ID_USER WHERE LOGIN=?";
 
+    public static final String SELECT_ALL_USERS =           "SELECT * FROM USERS";
     public static final String SELECT_ALL_THEMES =          "SELECT * FROM THEMES";
     public static final String SELECT_ALL_LECTURERS =       "SELECT * FROM LECTURERS";
     public static final String SELECT_ALL_STATUSES =        "SELECT * FROM STATUSES";
@@ -33,6 +34,7 @@ public class Query {
 
     public static final String UPDATE_JOURNAL =     "UPDATE JOURNAL SET MARK = ? WHERE ID_STUDENT_COURSE = ?";
     public static final String UPDATE_COURSE =      "UPDATE COURSES SET NAME_COURSE=?, DURATION=?, ID_THEME=?,ID_LECTURER=?,ID_STATUS=? WHERE ID_COURSE=?";
+    public static final String UPDATE_PASSWORD =    "UPDATE USERS SET PASSWORD = ? WHERE ID_USER = ?";
     public static final String CHANGE_STATE_USER =  "UPDATE USERS SET ID_STATE = ? WHERE ID_USER = ?";
     public static final String CHANGE_LECTURER =    "UPDATE COURSES SET ID_LECTURER = ? WHERE ID_COURSE = ?";
 

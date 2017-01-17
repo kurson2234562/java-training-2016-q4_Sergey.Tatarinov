@@ -66,7 +66,8 @@ public class AboutTag extends TagSupport {
                 statement.execute();
                 ResultSet resultSet = statement.getResultSet();
                 if (resultSet.next()) {
-                    user = new UserDTO(resultSet.getString("login"), resultSet.getString("password"),
+                    user = new UserDTO(resultSet.getInt("id_user"), resultSet.getString("login"),
+                            resultSet.getString("password"), resultSet.getString("email"),
                             resultSet.getInt("id_role"), resultSet.getInt("id_state"));
                     student = new StudentDTO();
                     student.setName(resultSet.getString("name"));
@@ -81,7 +82,12 @@ public class AboutTag extends TagSupport {
         JspWriter out = pageContext.getOut();
         StringBuffer patronymic = new StringBuffer();
         StringBuffer page = new StringBuffer();
+        StringBuffer email = new StringBuffer();
         if (user != null) {
+            if ((user.getEmail()!=null) && (!user.getEmail().isEmpty())){
+                email.append("<li><span class=\"about\">Email</span><span>")
+                        .append(user.getEmail()).append("</span></li>");
+            }
             if ((student.getPatronymic() != null) && !(student.getPatronymic().isEmpty())) {
                 patronymic.append("<li><span class=\"about\">").append(rb.getString("page.people.patronymic"))
                         .append("</span><span>").append(student.getPatronymic()).append("</span></li>");
@@ -91,10 +97,9 @@ public class AboutTag extends TagSupport {
                     .append("</span></li><li><span class=\"about\">").append(rb.getString("page.people.name"))
                     .append("</span><span>").append(student.getName()).append("</span></li>")
                     .append(patronymic)
+                    .append(email)
                     .append("<li><span class=\"about\">").append(rb.getString("page.people.login"))
                     .append("</span><span>").append(user.getLogin()).append("</span></li>")
-                    .append("<li><span class=\"about\">").append(rb.getString("page.people.password"))
-                    .append("</span><span>").append(user.getPassword()).append("</span></li>")
                     .append(localeRole);
         }
         try {

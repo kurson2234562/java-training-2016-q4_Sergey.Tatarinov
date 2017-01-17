@@ -4,7 +4,7 @@ import org.apache.log4j.Logger;
 import ua.nure.tatarinov.SummaryTask4.Path;
 import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyStudentOnCourseDAO;
 import ua.nure.tatarinov.SummaryTask4.db.dto.StudentOnCourseDTO;
-import ua.nure.tatarinov.SummaryTask4.exception.Messages;
+import ua.nure.tatarinov.SummaryTask4.exception.Errors;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -28,7 +28,7 @@ public class SelectStudentCommand extends Command {
         List<StudentOnCourseDTO> students = new DerbyStudentOnCourseDAO().getAllStudentsOnCourse();
         boolean existStudent = false;
         if (!isDigit(test)) {
-            request.setAttribute("errorMessage", Messages.ERR_NOT_A_NUMBER);
+            request.setAttribute("errorMessage", Errors.ERR_NOT_A_NUMBER);
             return Path.PAGE_ERROR_PAGE;
         } else {
             for(StudentOnCourseDTO student : students){
@@ -37,7 +37,7 @@ public class SelectStudentCommand extends Command {
                 }
             }
             if (!existStudent){
-                request.setAttribute("errorMessage", Messages.ERR_CANNOT_FIND_STUDENT);
+                request.setAttribute("errorMessage", Errors.ERR_CANNOT_FIND_STUDENT);
                 return Path.PAGE_ERROR_PAGE;
             }else {
                 session.setAttribute("id_student_course", test);

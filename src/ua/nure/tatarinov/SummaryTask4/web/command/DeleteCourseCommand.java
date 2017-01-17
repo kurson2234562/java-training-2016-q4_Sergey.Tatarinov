@@ -5,7 +5,7 @@ import ua.nure.tatarinov.SummaryTask4.Path;
 import ua.nure.tatarinov.SummaryTask4.core.Utils;
 import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyCourseDAO;
 import ua.nure.tatarinov.SummaryTask4.db.dto.CourseDTO;
-import ua.nure.tatarinov.SummaryTask4.exception.Messages;
+import ua.nure.tatarinov.SummaryTask4.exception.Errors;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -23,7 +23,7 @@ public class DeleteCourseCommand extends Command {
         List<CourseDTO> courses = new DerbyCourseDAO().getAllCourses();
         boolean existCourse = false;
         if (!Utils.isDigit(id)){
-            request.setAttribute("errorMessage", Messages.ERR_NOT_A_NUMBER);
+            request.setAttribute("errorMessage", Errors.ERR_NOT_A_NUMBER);
             return Path.PAGE_ERROR_PAGE;
         } else {
             for (CourseDTO course : courses) {
@@ -32,7 +32,7 @@ public class DeleteCourseCommand extends Command {
                 }
             }
             if (!existCourse) {
-                request.setAttribute("errorMessage", Messages.ERR_CANNOT_FIND_COURSE);
+                request.setAttribute("errorMessage", Errors.ERR_CANNOT_FIND_COURSE);
                 return Path.PAGE_ERROR_PAGE;
             }
         }
