@@ -6,6 +6,8 @@ import java.util.List;
 
 public interface StudentOnCourseDAO {
 
+    public List<StudentOnCourseDTO> getAllStudentsOnCourse();
+
     public List<StudentOnCourseDTO> getCountStudentPerCourse();
 
     public void createMarkForStudent(int mark, int studentId);

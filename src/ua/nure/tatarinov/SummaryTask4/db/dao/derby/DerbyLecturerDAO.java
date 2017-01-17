@@ -24,7 +24,7 @@ public class DerbyLecturerDAO implements LecturerDAO {
         LecturerDTO lecturer;
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
-                PreparedStatement statement = connection.prepareStatement(Query.SELECT_LECTURERS);
+                PreparedStatement statement = connection.prepareStatement(Query.SELECT_ALL_LECTURERS);
                 connection.setAutoCommit(false);
                 statement.execute();
                 ResultSet resultSet = statement.getResultSet();

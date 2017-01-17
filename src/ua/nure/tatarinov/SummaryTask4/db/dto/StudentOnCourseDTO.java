@@ -1,9 +1,11 @@
 package ua.nure.tatarinov.SummaryTask4.db.dto;
 
-/**
- * Created by kurson on 07.01.17.
- */
 public class StudentOnCourseDTO {
+
+    private int idStudentCourse;
+    private int idStudent;
+    private int idCourse;
+
     public StudentOnCourseDTO() {
     }
 
@@ -12,10 +14,6 @@ public class StudentOnCourseDTO {
         this.idStudent = idStudent;
         this.idCourse = idCourse;
     }
-
-    private int idStudentCourse;
-    private int idStudent;
-    private int idCourse;
 
     @Override
     public String toString() {

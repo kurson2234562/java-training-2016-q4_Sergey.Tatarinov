@@ -25,7 +25,7 @@ public class DerbyStatusDAO implements StatusDAO {
 
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
-                PreparedStatement statement = connection.prepareStatement(Query.SELECT_STATUSES);
+                PreparedStatement statement = connection.prepareStatement(Query.SELECT_ALL_STATUSES);
                 statement.execute();
                 ResultSet resultSet = statement.getResultSet();
                 while (resultSet.next()) {

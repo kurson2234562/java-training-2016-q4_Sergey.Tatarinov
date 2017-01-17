@@ -17,9 +17,33 @@ public class DerbyStudentOnCourseDAO implements StudentOnCourseDAO {
 
     public static final Logger LOG = Logger.getLogger(DerbyStudentOnCourseDAO.class);
 
+
+    @Override
+    public List<StudentOnCourseDTO> getAllStudentsOnCourse() {
+        LOG.trace("Starting tracing StudentOnCourseDAO#getAllStudentsOnCourse");
+        List<StudentOnCourseDTO> students = new ArrayList<>();
+        StudentOnCourseDTO studentOnCourse;
+        try (Connection connection = ConnectionPool.getConnetcion()) {
+            if (connection != null) {
+                PreparedStatement statement = connection.prepareStatement(Query.SELECT_ALL_STUDENT_ON_COURSE);
+                statement.execute();
+                ResultSet resultSet = statement.getResultSet();
+                while (resultSet.next()) {
+                    studentOnCourse = new StudentOnCourseDTO(resultSet.getInt("id_student_course"),
+                            resultSet.getInt("id_student"), resultSet.getInt("id_course"));
+                    students.add(studentOnCourse);
+                }
+                resultSet.close();
+            }
+        } catch (SQLException ex) {
+            LOG.info(ex.getLocalizedMessage());
+        }
+        return students;
+    }
+
     @Override
     public List<StudentOnCourseDTO> getCountStudentPerCourse() {
-        LOG.trace("Starting tracing StudentOnCourseDAO");
+        LOG.trace("Starting tracing StudentOnCourseDAO#getCountStudentPerCourse");
         List<StudentOnCourseDTO> counts = new ArrayList<>();
         StudentOnCourseDTO count;
         try (Connection connection = ConnectionPool.getConnetcion()) {
@@ -42,7 +66,7 @@ public class DerbyStudentOnCourseDAO implements StudentOnCourseDAO {
 
     @Override
     public void createMarkForStudent(int mark, int studentId) {
-        LOG.trace("Starting tracing StudentOnCourseDAO");
+        LOG.trace("Starting tracing StudentOnCourseDAO#createMarkForStudent");
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
                 PreparedStatement statement = connection.prepareStatement(Query.CREATE_MARK_FOR_STUDENT);

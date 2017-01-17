@@ -1,8 +1,5 @@
 package ua.nure.tatarinov.SummaryTask4.db.dto;
 
-/**
- * Created by kurson on 07.01.17.
- */
 public class StudentDTO {
 
     private int id;
@@ -10,6 +7,17 @@ public class StudentDTO {
     private String name;
     private String patronymic;
     private int idUser;
+
+    public StudentDTO() {
+    }
+
+    public StudentDTO(int id, String surname, String name, String patronymic, int idUser) {
+        this.id = id;
+        this.surname = surname;
+        this.name = name;
+        this.patronymic = patronymic;
+        this.idUser = idUser;
+    }
 
     @Override
     public String toString() {

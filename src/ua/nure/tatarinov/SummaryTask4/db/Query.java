@@ -6,11 +6,13 @@ public class Query {
     public static final String SELECT_USER_AS_LECTURER ="SELECT * FROM USERS INNER JOIN LECTURERS ON LECTURERS.ID_USER = USERS.ID_USER WHERE LOGIN=?";
     public static final String SELECT_USER_AS_ADMIN =   "SELECT * FROM USERS INNER JOIN ADMINS ON ADMINS.ID_USER = USERS.ID_USER WHERE LOGIN=?";
 
-    public static final String SELECT_THEMES =          "SELECT * FROM THEMES";
-    public static final String SELECT_LECTURERS =       "SELECT * FROM LECTURERS";
-    public static final String SELECT_STATUSES =        "SELECT * FROM STATUSES";
-    public static final String SELECT_COURSES =         "SELECT * FROM COURSES";
-    public static final String SELECT_DEFINITE_COURSE = "SELECT * FROM COURSES WHERE ID_COURSE=?";
+    public static final String SELECT_ALL_THEMES =          "SELECT * FROM THEMES";
+    public static final String SELECT_ALL_LECTURERS =       "SELECT * FROM LECTURERS";
+    public static final String SELECT_ALL_STATUSES =        "SELECT * FROM STATUSES";
+    public static final String SELECT_ALL_COURSES =         "SELECT * FROM COURSES";
+    public static final String SELECT_ALL_STUDENTS =        "SELECT * FROM STUDENTS";
+    public static final String SELECT_ALL_STUDENT_ON_COURSE="SELECT * FROM STUDENT_COURSE";
+    public static final String SELECT_ALL_DEFINITE_COURSE = "SELECT * FROM COURSES WHERE ID_COURSE=?";
 
     public static final String SELECT_PROGRESS_BY_USER = "select name_course, LECTURERS.surname, LECTURERS.name, LECTURERS.patronymic, mark from STUDENTS INNER JOIN STUDENT_COURSE ON STUDENTS.id = STUDENT_COURSE.id_student INNER JOIN COURSES ON STUDENT_COURSE.id_course = COURSES.id_course INNER JOIN STATUSES ON COURSES.id_status = STATUSES.id_status INNER JOIN JOURNAL ON STUDENT_COURSE.id_student_course = JOURNAL.id_student_course INNER JOIN LECTURERS ON COURSES.id_lecturer = LECTURERS.id INNER JOIN USERS ON STUDENTS.id_user = USERS.id_user WHERE STATUSES.id_status = 4 and USERS.login=?";
     public static final String SELECT_INFO_ABOUT_COURSE_BY_LOGIN_AND_BY_COURSE_STATUS = "select NAME_COURSE, DURATION, THEMES.name_theme, LECTURERS.surname, LECTURERS.name, LECTURERS.patronymic from students inner join student_course on student_course.id_student=students.id inner join courses on student_course.id_course=courses.id_course inner join statuses on statuses.id_status = courses.id_status inner join themes on COURSES.id_theme = THEMES.id_theme inner join LECTURERS ON COURSES.id_lecturer = LECTURERS.id inner join users ON users.id_user = students.id_user where users.login = ? AND STATUSES.name_status = ?";

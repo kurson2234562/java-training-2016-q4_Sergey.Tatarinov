@@ -74,7 +74,7 @@ public class DerbyCourseDAO implements CourseDAO {
         CourseDTO course = new CourseDTO();
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
-                PreparedStatement statement = connection.prepareStatement(Query.SELECT_DEFINITE_COURSE);
+                PreparedStatement statement = connection.prepareStatement(Query.SELECT_ALL_DEFINITE_COURSE);
                 connection.setAutoCommit(false);
                 if (id != -1) {
                     course = new CourseDTO();
@@ -102,7 +102,7 @@ public class DerbyCourseDAO implements CourseDAO {
 
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
-                PreparedStatement statement = connection.prepareStatement(Query.SELECT_COURSES);
+                PreparedStatement statement = connection.prepareStatement(Query.SELECT_ALL_COURSES);
                 statement.execute();
                 ResultSet resultSet = statement.getResultSet();
                 while (resultSet.next()) {
