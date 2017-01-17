@@ -18,6 +18,8 @@
     FROM JOURNAL
     WHERE JOURNAL.id_student_course = STUDENT_COURSE.id_student_course
     ) AND COURSES.id_status=4 AND USERS.id_user = ${user.idUser}
+
+
 </sql:query>
 <html>
     <head>

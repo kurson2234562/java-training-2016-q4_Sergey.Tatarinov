@@ -13,11 +13,13 @@ public class Messages {
     public static final String ERR_CANNOT_FIND_THEME = "Can't find the theme with the same name";
     public static final String ERR_CANNOT_FIND_FIELD = "Can't find the field with the same name";
     public static final String ERR_CANNOT_FIND_STUDENT = "Can't find a student with such parameters";
+    public static final String ERR_CANNOT_FIND_COURSE = "Can't find a course with such parameters";
     public static final String ERR_INVALID_VALUE_LOCK = "Invalid value for lock";
     public static final String ERR_INVALID_VALUE_LANGUAGE = "Invalid value for language";
     public static final String ERR_INVALID_PASSWORD = "Invalid password, please try again";
     public static final String ERR_CANNOT_FIND_USER_NAME="Can't find a user with the same name";
     public static final String ERR_LOCKED = "You are locked.";
+    public static final String ERR_MARK_NOT_NULL = "Mark can't be empty";
 
 
 

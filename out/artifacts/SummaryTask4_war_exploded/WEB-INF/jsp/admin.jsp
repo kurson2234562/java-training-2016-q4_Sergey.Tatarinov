@@ -18,6 +18,22 @@
                 <p><my:Locale value="page.admin.student.lock"/> </p>
                 <lock:lock/>
             </div>
+            <div class="course">
+                <form action="controller">
+                    <p><my:Locale value="page.admin.update.course"/></p>
+                    <input type="hidden" name="command" value="updateCourseButtonCommand">
+                    <select:selectcourse/>
+                    <input type="submit" value="<my:Locale value="page.admin.update.course"/>">
+                </form>
+            </div>
+            <div class="course">
+                <form action="controller">
+                    <p><my:Locale value="page.admin.delete.course"/></p>
+                    <input type="hidden" name="command" value="deleteCourseCommand">
+                    <select:selectcourse/>
+                    <input type="submit" value="<my:Locale value="page.admin.delete.course"/>">
+                </form>
+            </div>
             <div class="list">
                 <form>
                     <input type="hidden" name="command" value="createCourseCommand">
@@ -35,22 +51,6 @@
                             <td><input type="submit" value="<my:Locale value="page.admin.create.addcourses"/>"></td>
                         </tr>
                     </table>
-                </form>
-            </div>
-            <div class="course">
-                <form action="controller">
-                    <p><my:Locale value="page.admin.update.course"/></p>
-                    <input type="hidden" name="command" value="updateCourseButtonCommand">
-                    <select:selectcourse/>
-                    <input type="submit" value="<my:Locale value="page.admin.update.course"/>">
-                </form>
-            </div>
-            <div class="course">
-                <form action="controller">
-                    <p><my:Locale value="page.admin.delete.course"/></p>
-                    <input type="hidden" name="command" value="deleteCourseCommand">
-                    <select:selectcourse/>
-                    <input type="submit" value="<my:Locale value="page.admin.delete.course"/>">
                 </form>
             </div>
             <div class="list">

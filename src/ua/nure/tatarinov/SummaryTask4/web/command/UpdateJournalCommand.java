@@ -2,6 +2,7 @@ package ua.nure.tatarinov.SummaryTask4.web.command;
 
 import org.apache.log4j.Logger;
 import ua.nure.tatarinov.SummaryTask4.Path;
+import ua.nure.tatarinov.SummaryTask4.core.Utils;
 import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyJournalDAO;
 import ua.nure.tatarinov.SummaryTask4.exception.Messages;
 
@@ -10,8 +11,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-
-import static ua.nure.tatarinov.SummaryTask4.core.Utils.isDigit;
 
 public class UpdateJournalCommand extends Command {
 
@@ -22,7 +21,7 @@ public class UpdateJournalCommand extends Command {
         LOG.trace("Start tracing UpdateJournalCommand");
         HttpSession session = request.getSession();
         String test = request.getParameter("newValue");
-        if (!isDigit(test)) {
+        if (!Utils.isDigit(test)) {
             request.setAttribute("errorMessage", Messages.ERR_NOT_A_NUMBER);
             return Path.PAGE_ERROR_PAGE;
         } else {

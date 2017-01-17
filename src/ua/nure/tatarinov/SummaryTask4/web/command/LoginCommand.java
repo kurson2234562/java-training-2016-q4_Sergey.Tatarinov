@@ -43,6 +43,7 @@ public class LoginCommand extends Command {
         LOG.info("UserDTO " + login + " logged");
         if ((!login.isEmpty()) && (!password.isEmpty())) {
             UserDTO user = new DerbyUserDAO().findUserByLogin(login);
+            System.out.println(user);
             if (user != null) {
                 if (user.getPassword().equals(password)) {
                     switch (user.getRoleId()){
@@ -56,16 +57,14 @@ public class LoginCommand extends Command {
                             role = "lecturer";
                             break;
                     }
-                    if (user.getStateId() == 0) {
-                        request.setAttribute("errorMessage", Messages.ERR_LOCKED);
-                        return Path.PAGE_ERROR_PAGE;
-                    }
                     request.setAttribute("username", login);
                     request.setAttribute("role", role);
                     request.setAttribute("password", password);
                     session.setAttribute("username", login);
                     session.setAttribute("role", role);
                     session.setAttribute("password", password);
+                    System.out.println(user.getStateId());
+                    session.setAttribute("state", user.getStateId());
                 } else {
                     request.setAttribute("errorMessage", Messages.ERR_INVALID_PASSWORD);
                     return Path.PAGE_ERROR_PAGE;
@@ -76,6 +75,10 @@ public class LoginCommand extends Command {
                 return Path.PAGE_ERROR_PAGE;
             }
             session.setAttribute("user", user);
+            if (user.getStateId() == 0) {
+                request.setAttribute("errorMessage", Messages.ERR_LOCKED);
+                return Path.PAGE_ERROR_PAGE;
+            }
         }
         if (role != null) {
             switch (role) {

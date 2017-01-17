@@ -34,7 +34,6 @@ public class LockCommand extends Command {
         } else {
             List<StudentOnCourseDTO> students = new DerbyStudentOnCourseDAO().getAllStudentsOnCourse();
             for (StudentOnCourseDTO student : students){
-                System.out.println(student);
                 if (student.getIdStudentCourse() == Integer.parseInt(test)){
                     existStudent = true;
                     break;

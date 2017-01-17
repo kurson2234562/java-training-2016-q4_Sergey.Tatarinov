@@ -31,6 +31,7 @@ public class CourseCommand extends Command {
         HttpSession session = request.getSession();
         String language = String.valueOf(session.getAttribute("language"));
         ResourceBundle rb = ResourceBundle.getBundle("resources", new Locale(language));
+        int state = Integer.parseInt(String.valueOf(session.getAttribute("state")));
         boolean existLecturer = false;
         boolean existTheme = false;
         boolean existField = false;
@@ -38,6 +39,12 @@ public class CourseCommand extends Command {
         String idTheme = null;
         String idLecturer = null;
         String forward = Path.PAGE_COURSES;
+        System.out.println(session.getAttribute("state"));
+        if (state == 0) {
+            System.out.println("now");
+            request.setAttribute("errorMessage", Messages.ERR_LOCKED);
+            forward = Path.PAGE_ERROR_PAGE;
+        }
         if (request.getParameter("idTheme") != null) {
             idTheme = request.getParameter("idTheme");
             if (request.getParameter("idTheme").equals(rb.getString("page.courses.all.themes"))) {
