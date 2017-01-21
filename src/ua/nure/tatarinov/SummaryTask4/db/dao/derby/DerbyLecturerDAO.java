@@ -88,4 +88,31 @@ public class DerbyLecturerDAO implements LecturerDAO {
         }
 
     }
+
+    @Override
+    public List<LecturerDTO> findLecturersByString(String searchResult) {
+        LOG.trace("Start tracing DerbyLecturerDAO#findLecturersByString");
+        List<LecturerDTO> lecturers = new ArrayList<>();
+        LecturerDTO lecturer;
+        try (Connection connection = ConnectionPool.getConnetcion()) {
+            if (connection != null) {
+                PreparedStatement statement = connection.prepareStatement(Query.FIND_LECTURER_BY_STRING);
+                statement.setString(1, searchResult + "%");
+                statement.setString(2, searchResult + "%");
+                statement.setString(3, searchResult + "%");
+                statement.execute();
+                ResultSet resultSet = statement.getResultSet();
+                while (resultSet.next()) {
+                    lecturer = new LecturerDTO(resultSet.getInt("id"), resultSet.getString("surname"),
+                            resultSet.getString("name"), resultSet.getString("patronymic"),
+                            resultSet.getInt("id_user"));
+                    lecturers.add(lecturer);
+                }
+                resultSet.close();
+            }
+        } catch (SQLException ex) {
+            LOG.info(ex.getLocalizedMessage());
+        }
+        return lecturers;
+    }
 }

@@ -66,11 +66,6 @@ td {
     background: #ecf0f1;
 }
 
-span{
-    width:120px;
-    display:inline-block;
-}
-
 .about{
     padding-left:20px;
     padding-right:20px;
@@ -99,4 +94,12 @@ input[type="submit"]{
     font-weight:800;
     cursor:pointer;
     height:40px;
+}
+
+.col-lg-9{
+    padding-top:50px;
+}
+
+.col-lg-3{
+    padding-top:80px;
 }

@@ -10,4 +10,6 @@ public interface LecturerDAO {
     public int createLecturer(String surname, String name, String patronymic, int idUser);
 
     public void changeLecturer(int id, int idCourse);
+
+    public List<LecturerDTO> findLecturersByString(String search);
 }

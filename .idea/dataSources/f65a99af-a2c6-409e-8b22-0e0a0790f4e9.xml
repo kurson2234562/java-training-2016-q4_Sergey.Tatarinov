@@ -53,17 +53,17 @@
       <Position>5</Position>
       <DataType>INTEGER(10)|4</DataType>
     </column>
-    <key id="30" parent="14" name="SQL170117213644590">
+    <key id="30" parent="14" name="SQL170121203404440">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="31" parent="14" name="SQL170117213644591">
+    <foreign-key id="31" parent="14" name="SQL170121203404441">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID_USER</ColNames>
       <RefSchemaName>ADMIN</RefSchemaName>
       <RefTableName>USERS</RefTableName>
-      <RefKeyName>SQL170117213643130</RefKeyName>
+      <RefKeyName>SQL170121203403070</RefKeyName>
       <RefColNames>ID_USER</RefColNames>
       <OnDelete>delete</OnDelete>
       <OnUpdate>no-action</OnUpdate>
@@ -97,42 +97,42 @@
       <Position>6</Position>
       <DataType>INTEGER(10)|4</DataType>
     </column>
-    <index id="38" parent="15" name="SQL170117213645181">
+    <index id="38" parent="15" name="SQL170121203405201">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>NAME_COURSE</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="39" parent="15" name="SQL170117213645180">
+    <key id="39" parent="15" name="SQL170121203405200">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID_COURSE</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="40" parent="15" name="SQL170117213645182">
+    <foreign-key id="40" parent="15" name="SQL170121203405202">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID_THEME</ColNames>
       <RefSchemaName>ADMIN</RefSchemaName>
       <RefTableName>THEMES</RefTableName>
-      <RefKeyName>SQL170117213643700</RefKeyName>
+      <RefKeyName>SQL170121203403610</RefKeyName>
       <RefColNames>ID_THEME</RefColNames>
       <OnDelete>delete</OnDelete>
       <OnUpdate>no-action</OnUpdate>
     </foreign-key>
-    <foreign-key id="41" parent="15" name="SQL170117213645183">
+    <foreign-key id="41" parent="15" name="SQL170121203405203">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID_LECTURER</ColNames>
       <RefSchemaName>ADMIN</RefSchemaName>
       <RefTableName>LECTURERS</RefTableName>
-      <RefKeyName>SQL170117213644300</RefKeyName>
+      <RefKeyName>SQL170121203404140</RefKeyName>
       <RefColNames>ID</RefColNames>
       <OnDelete>delete</OnDelete>
       <OnUpdate>no-action</OnUpdate>
     </foreign-key>
-    <foreign-key id="42" parent="15" name="SQL170117213645184">
+    <foreign-key id="42" parent="15" name="SQL170121203405204">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID_STATUS</ColNames>
       <RefSchemaName>ADMIN</RefSchemaName>
       <RefTableName>STATUSES</RefTableName>
-      <RefKeyName>SQL170117213643980</RefKeyName>
+      <RefKeyName>SQL170121203403880</RefKeyName>
       <RefColNames>ID_STATUS</RefColNames>
       <OnDelete>delete</OnDelete>
       <OnUpdate>no-action</OnUpdate>
@@ -147,17 +147,17 @@
       <DataType>INTEGER(10)|4</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="45" parent="16" name="SQL170117213646350">
+    <key id="45" parent="16" name="SQL170121203406360">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID_STUDENT_COURSE</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="46" parent="16" name="SQL170117213646351">
+    <foreign-key id="46" parent="16" name="SQL170121203406361">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID_STUDENT_COURSE</ColNames>
       <RefSchemaName>ADMIN</RefSchemaName>
       <RefTableName>STUDENT_COURSE</RefTableName>
-      <RefKeyName>SQL170117213645840</RefKeyName>
+      <RefKeyName>SQL170121203405810</RefKeyName>
       <RefColNames>ID_STUDENT_COURSE</RefColNames>
       <OnDelete>delete</OnDelete>
       <OnUpdate>no-action</OnUpdate>
@@ -187,17 +187,17 @@
       <Position>5</Position>
       <DataType>INTEGER(10)|4</DataType>
     </column>
-    <key id="52" parent="17" name="SQL170117213644300">
+    <key id="52" parent="17" name="SQL170121203404140">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="53" parent="17" name="SQL170117213644301">
+    <foreign-key id="53" parent="17" name="SQL170121203404141">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID_USER</ColNames>
       <RefSchemaName>ADMIN</RefSchemaName>
       <RefTableName>USERS</RefTableName>
-      <RefKeyName>SQL170117213643130</RefKeyName>
+      <RefKeyName>SQL170121203403070</RefKeyName>
       <RefColNames>ID_USER</RefColNames>
       <OnDelete>delete</OnDelete>
       <OnUpdate>no-action</OnUpdate>
@@ -213,12 +213,12 @@
       <DataType>VARCHAR(10)|12</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="56" parent="18" name="SQL170117213642491">
+    <index id="56" parent="18" name="SQL170121203402451">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>NAME_ROLE</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="57" parent="18" name="SQL170117213642490">
+    <key id="57" parent="18" name="SQL170121203402450">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID_ROLE</ColNames>
       <Primary>1</Primary>
@@ -233,12 +233,12 @@
       <DataType>VARCHAR(10)|12</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="60" parent="19" name="SQL170117213642801">
+    <index id="60" parent="19" name="SQL170121203402771">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>NAME_STATE</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="61" parent="19" name="SQL170117213642800">
+    <key id="61" parent="19" name="SQL170121203402770">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID_STATE</ColNames>
       <Primary>1</Primary>
@@ -255,12 +255,12 @@
       <DataType>VARCHAR(25)|12</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="64" parent="20" name="SQL170117213643981">
+    <index id="64" parent="20" name="SQL170121203403881">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>NAME_STATUS</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="65" parent="20" name="SQL170117213643980">
+    <key id="65" parent="20" name="SQL170121203403880">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID_STATUS</ColNames>
       <Primary>1</Primary>
@@ -290,17 +290,17 @@
       <Position>5</Position>
       <DataType>INTEGER(10)|4</DataType>
     </column>
-    <key id="71" parent="21" name="SQL170117213644900">
+    <key id="71" parent="21" name="SQL170121203404800">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="72" parent="21" name="SQL170117213644901">
+    <foreign-key id="72" parent="21" name="SQL170121203404801">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID_USER</ColNames>
       <RefSchemaName>ADMIN</RefSchemaName>
       <RefTableName>USERS</RefTableName>
-      <RefKeyName>SQL170117213643130</RefKeyName>
+      <RefKeyName>SQL170121203403070</RefKeyName>
       <RefColNames>ID_USER</RefColNames>
       <OnDelete>delete</OnDelete>
       <OnUpdate>no-action</OnUpdate>
@@ -320,27 +320,27 @@
       <Position>3</Position>
       <DataType>INTEGER(10)|4</DataType>
     </column>
-    <key id="76" parent="22" name="SQL170117213645840">
+    <key id="76" parent="22" name="SQL170121203405810">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID_STUDENT_COURSE</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="77" parent="22" name="SQL170117213645841">
+    <foreign-key id="77" parent="22" name="SQL170121203405811">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID_STUDENT</ColNames>
       <RefSchemaName>ADMIN</RefSchemaName>
       <RefTableName>STUDENTS</RefTableName>
-      <RefKeyName>SQL170117213644900</RefKeyName>
+      <RefKeyName>SQL170121203404800</RefKeyName>
       <RefColNames>ID</RefColNames>
       <OnDelete>delete</OnDelete>
       <OnUpdate>no-action</OnUpdate>
     </foreign-key>
-    <foreign-key id="78" parent="22" name="SQL170117213645842">
+    <foreign-key id="78" parent="22" name="SQL170121203405812">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID_COURSE</ColNames>
       <RefSchemaName>ADMIN</RefSchemaName>
       <RefTableName>COURSES</RefTableName>
-      <RefKeyName>SQL170117213645180</RefKeyName>
+      <RefKeyName>SQL170121203405200</RefKeyName>
       <RefColNames>ID_COURSE</RefColNames>
       <OnDelete>delete</OnDelete>
       <OnUpdate>no-action</OnUpdate>
@@ -357,12 +357,12 @@
       <DataType>VARCHAR(30)|12</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="81" parent="23" name="SQL170117213643701">
+    <index id="81" parent="23" name="SQL170121203403611">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>NAME_THEME</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="82" parent="23" name="SQL170117213643700">
+    <key id="82" parent="23" name="SQL170121203403610">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID_THEME</ColNames>
       <Primary>1</Primary>
@@ -396,32 +396,32 @@
       <Position>6</Position>
       <DataType>INTEGER(10)|4</DataType>
     </column>
-    <index id="89" parent="24" name="SQL170117213643131">
+    <index id="89" parent="24" name="SQL170121203403071">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>LOGIN</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="90" parent="24" name="SQL170117213643130">
+    <key id="90" parent="24" name="SQL170121203403070">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID_USER</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="91" parent="24" name="SQL170117213643132">
+    <foreign-key id="91" parent="24" name="SQL170121203403072">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID_ROLE</ColNames>
       <RefSchemaName>ADMIN</RefSchemaName>
       <RefTableName>ROLES</RefTableName>
-      <RefKeyName>SQL170117213642490</RefKeyName>
+      <RefKeyName>SQL170121203402450</RefKeyName>
       <RefColNames>ID_ROLE</RefColNames>
       <OnDelete>delete</OnDelete>
       <OnUpdate>no-action</OnUpdate>
     </foreign-key>
-    <foreign-key id="92" parent="24" name="SQL170117213643133">
+    <foreign-key id="92" parent="24" name="SQL170121203403073">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID_STATE</ColNames>
       <RefSchemaName>ADMIN</RefSchemaName>
       <RefTableName>STATES</RefTableName>
-      <RefKeyName>SQL170117213642800</RefKeyName>
+      <RefKeyName>SQL170121203402770</RefKeyName>
       <RefColNames>ID_STATE</RefColNames>
       <OnDelete>delete</OnDelete>
       <OnUpdate>no-action</OnUpdate>

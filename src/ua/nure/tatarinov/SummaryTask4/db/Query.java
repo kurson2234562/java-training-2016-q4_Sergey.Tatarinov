@@ -14,6 +14,7 @@ public class Query {
     public static final String SELECT_ALL_STUDENTS =        "SELECT * FROM STUDENTS";
     public static final String SELECT_ALL_STUDENT_ON_COURSE="SELECT * FROM STUDENT_COURSE";
     public static final String SELECT_ALL_DEFINITE_COURSE = "SELECT * FROM COURSES WHERE ID_COURSE=?";
+    public static final String SELECT_STUDENT_BY_ID_USER =  "SELECT * FROM STUDENTS WHERE ID_USER=?";
 
     public static final String SELECT_PROGRESS_BY_USER = "select name_course, LECTURERS.surname, LECTURERS.name, LECTURERS.patronymic, mark from STUDENTS INNER JOIN STUDENT_COURSE ON STUDENTS.id = STUDENT_COURSE.id_student INNER JOIN COURSES ON STUDENT_COURSE.id_course = COURSES.id_course INNER JOIN STATUSES ON COURSES.id_status = STATUSES.id_status INNER JOIN JOURNAL ON STUDENT_COURSE.id_student_course = JOURNAL.id_student_course INNER JOIN LECTURERS ON COURSES.id_lecturer = LECTURERS.id INNER JOIN USERS ON STUDENTS.id_user = USERS.id_user WHERE STATUSES.id_status = 4 and USERS.login=?";
     public static final String SELECT_INFO_ABOUT_COURSE_BY_LOGIN_AND_BY_COURSE_STATUS = "select NAME_COURSE, DURATION, THEMES.name_theme, LECTURERS.surname, LECTURERS.name, LECTURERS.patronymic from students inner join student_course on student_course.id_student=students.id inner join courses on student_course.id_course=courses.id_course inner join statuses on statuses.id_status = courses.id_status inner join themes on COURSES.id_theme = THEMES.id_theme inner join LECTURERS ON COURSES.id_lecturer = LECTURERS.id inner join users ON users.id_user = students.id_user where users.login = ? AND STATUSES.name_status = ?";
@@ -23,12 +24,18 @@ public class Query {
     public static final String SELECT_STUDENTS_AND_STATES = "SELECT USERS.ID_USER, SURNAME, NAME, PATRONYMIC, LOGIN, PASSWORD, NAME_STATE FROM STUDENTS INNER JOIN USERS ON STUDENTS.id_user = USERS.id_user INNER JOIN STATES ON USERS.id_state = STATES.id_state";
     public static final String SELECT_LAST_USER_ID = "SELECT MAX(ID_USER) FROM USERS";
     public static final String SELECT_LAST_LECTURER_ID = "SELECT MAX(ID) FROM LECTURERS";
+    public static final String SELECT_COURSES_NOT_BEEN_REGISTERED = "SELECT * FROM COURSES WHERE name_course NOT IN( SELECT name_course FROM STUDENTS INNER JOIN STUDENT_COURSE ON STUDENTS.id = STUDENT_COURSE.id_student INNER JOIN COURSES ON COURSES.id_course = STUDENT_COURSE.id_course WHERE ID=?) AND id_status=1 ORDER BY name_course";
 
     public static final String SELECT_COUNT_STUDENTS_PER_COURSE = "SELECT COUNT(ID_STUDENT_COURSE), ID_COURSE FROM STUDENT_COURSE GROUP BY ID_COURSE";
 
-    public static final String CREATE_USER =        "INSERT INTO USERS VALUES       (DEFAULT, ?, ?, 2, 1)";
-    public static final String CREATE_LECTURER =    "INSERT INTO LECTURERS VALUES   (DEFAULT, ?, ?, ?, ?)";
-    public static final String CREATE_COURSE =      "INSERT INTO COURSES VALUES     (DEFAULT, ?, ?, ?, ?, ?)";
+    public static final String FIND_STUDENT_BY_STRING =     "SELECT * FROM STUDENTS WHERE UPPER(SURNAME) LIKE UPPER(?) OR NAME LIKE UPPER(?) OR PATRONYMIC LIKE UPPER(?)";
+    public static final String FIND_LECTURER_BY_STRING =    "SELECT * FROM LECTURERS WHERE UPPER(SURNAME) LIKE UPPER(?) OR NAME LIKE UPPER(?) OR PATRONYMIC LIKE UPPER(?)";
+    public static final String FIND_COURSE_BY_STRING =      "SELECT * FROM COURSES WHERE UPPER(NAME_COURSE) LIKE UPPER(?)";
+
+    public static final String CREATE_USER =            "INSERT INTO USERS          VALUES (DEFAULT, ?, ?, 2, 1)";
+    public static final String CREATE_LECTURER =        "INSERT INTO LECTURERS      VALUES (DEFAULT, ?, ?, ?, ?)";
+    public static final String CREATE_COURSE =          "INSERT INTO COURSES        VALUES (DEFAULT, ?, ?, ?, ?, ?)";
+    public static final String REGISTER_USER_ON_COURSE= "INSERT INTO STUDENT_COURSE VALUES (DEFAULT, ?, ?)";
 
     public static final String CREATE_MARK_FOR_STUDENT = "INSERT INTO JOURNAL VALUES(?, ?)";
 

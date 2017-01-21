@@ -23,7 +23,6 @@ public class AboutTag extends TagSupport {
 
     public static final Logger LOG = Logger.getLogger(AboutTag.class);
 
-    private Connection connection;
 
     @Override
     public int doStartTag() throws JspException {
@@ -34,24 +33,23 @@ public class AboutTag extends TagSupport {
         String login = String.valueOf(session.getAttribute("username"));
         String language = String.valueOf(session.getAttribute("language"));
         ResourceBundle rb = ResourceBundle.getBundle("resources", new Locale(language));
-        //String localeRole = null;
         StringBuffer localeRole = new StringBuffer();
         LOG.info("login is " + login + " role is " + role);
         switch (role) {
             case "admin":
                 query = Query.SELECT_USER_AS_ADMIN;
-                localeRole.append("<li><span class=\"about\">").append(rb.getString("page.people.role"))
-                        .append("</span><span>").append(rb.getString("page.people.role.admin")).append("</span></li></ul>");
+                localeRole.append("<dt>").append(rb.getString("page.people.role"))
+                        .append("</dt><dd>").append(rb.getString("page.people.role.admin")).append("</dd>");
                 break;
             case "student":
                 query = Query.SELECT_USER_AS_STUDENT;
-                localeRole.append("<li><span class=\"about\">").append(rb.getString("page.people.role"))
-                        .append("</span><span>").append(rb.getString("page.people.role.student")).append("</span></li></ul>");
+                localeRole.append("<dt>").append(rb.getString("page.people.role"))
+                        .append("</dt><dd>").append(rb.getString("page.people.role.student")).append("</dd>");
                 break;
             case "lecturer":
                 query = Query.SELECT_USER_AS_LECTURER;
-                localeRole.append("<li><span class=\"about\">").append(rb.getString("page.people.role"))
-                        .append("</span><span>").append(rb.getString("page.people.role.lecturer")).append("</span></li></ul>");
+                localeRole.append("<dt>").append(rb.getString("page.people.role"))
+                        .append("</dt><dd>").append(rb.getString("page.people.role.lecturer")).append("</dd>");
                 break;
             default:
                 return -1;
@@ -85,21 +83,23 @@ public class AboutTag extends TagSupport {
         StringBuffer email = new StringBuffer();
         if (user != null) {
             if ((user.getEmail()!=null) && (!user.getEmail().isEmpty())){
-                email.append("<li><span class=\"about\">Email</span><span>")
-                        .append(user.getEmail()).append("</span></li>");
+                email.append("<dt>Email</dt><dd>")
+                        .append(user.getEmail()).append("</dd>");
             }
             if ((student.getPatronymic() != null) && !(student.getPatronymic().isEmpty())) {
-                patronymic.append("<li><span class=\"about\">").append(rb.getString("page.people.patronymic"))
-                        .append("</span><span>").append(student.getPatronymic()).append("</span></li>");
+                patronymic.append("<dt>").append(rb.getString("page.people.patronymic"))
+                        .append("</dt><dd>").append(student.getPatronymic()).append("</dd>");
             }
-            page.append("<ul><li><span class=\"about\">").append(rb.getString("page.people.surname"))
-                    .append("</span><span>").append(student.getSurname())
-                    .append("</span></li><li><span class=\"about\">").append(rb.getString("page.people.name"))
-                    .append("</span><span>").append(student.getName()).append("</span></li>")
+            page.append("<dt>").append(rb.getString("page.people.surname"))
+                    .append("</dt><dd>").append(student.getSurname())
+                    .append("</dd><dt>").append(rb.getString("page.people.name"))
+                    .append("</dt><dd>").append(student.getName()).append("</dd>")
                     .append(patronymic)
                     .append(email)
-                    .append("<li><span class=\"about\">").append(rb.getString("page.people.login"))
-                    .append("</span><span>").append(user.getLogin()).append("</span></li>")
+                    .append("<dt>").append(rb.getString("page.people.password")).append("</dt><dd>")
+                    .append(user.getPassword()).append("</dd>")
+                    .append("<dt>").append(rb.getString("page.people.login"))
+                    .append("</dt><dd>").append(user.getLogin()).append("</dd>")
                     .append(localeRole);
         }
         try {

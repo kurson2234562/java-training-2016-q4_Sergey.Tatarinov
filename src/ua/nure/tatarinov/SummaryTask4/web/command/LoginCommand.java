@@ -3,14 +3,8 @@ package ua.nure.tatarinov.SummaryTask4.web.command;
 import org.apache.log4j.Logger;
 import ua.nure.tatarinov.SummaryTask4.Path;
 import ua.nure.tatarinov.SummaryTask4.core.Utils;
-import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyCourseDAO;
-import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyLecturerDAO;
-import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyThemeDAO;
-import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyUserDAO;
-import ua.nure.tatarinov.SummaryTask4.db.dto.CourseDTO;
-import ua.nure.tatarinov.SummaryTask4.db.dto.LecturerDTO;
-import ua.nure.tatarinov.SummaryTask4.db.dto.ThemeDTO;
-import ua.nure.tatarinov.SummaryTask4.db.dto.UserDTO;
+import ua.nure.tatarinov.SummaryTask4.db.dao.derby.*;
+import ua.nure.tatarinov.SummaryTask4.db.dto.*;
 import ua.nure.tatarinov.SummaryTask4.exception.Errors;
 
 import javax.servlet.ServletException;
@@ -39,15 +33,17 @@ public class LoginCommand extends Command {
             login = String.valueOf(session.getAttribute("username"));
             password = String.valueOf(session.getAttribute("password"));
         }
+        UserDTO user = null;
         String role = null;
         String state = null;
+        StudentDTO student = null;
+        List<CourseDTO> coursesForUser = null;
         LOG.info("UserDTO " + login + " logged");
         if ((!login.isEmpty()) && (!password.isEmpty())) {
-            UserDTO user = new DerbyUserDAO().findUserByLogin(login);
-            System.out.println(user);
+            user = new DerbyUserDAO().findUserByLogin(login);
             if (user != null) {
                 if (user.getPassword().equals(Utils.encrypt(password))) {
-                    switch (user.getRoleId()){
+                    switch (user.getRoleId()) {
                         case 0:
                             role = "admin";
                             break;
@@ -58,20 +54,19 @@ public class LoginCommand extends Command {
                             role = "lecturer";
                             break;
                     }
+                    String stateId = String.valueOf(user.getStateId());
                     request.setAttribute("username", login);
                     request.setAttribute("role", role);
                     request.setAttribute("password", password);
+                    session.setAttribute("state", stateId);
                     session.setAttribute("username", login);
                     session.setAttribute("role", role);
                     session.setAttribute("password", password);
-                    System.out.println(user.getStateId());
-                    session.setAttribute("state", user.getStateId());
                 } else {
                     request.setAttribute("errorMessage", Errors.ERR_INVALID_PASSWORD);
                     return Path.PAGE_ERROR_PAGE;
                 }
-            }
-            else {
+            } else {
                 request.setAttribute("errorMessage", Errors.ERR_CANNOT_FIND_USER_NAME);
                 return Path.PAGE_ERROR_PAGE;
             }
@@ -89,6 +84,10 @@ public class LoginCommand extends Command {
                     break;
                 case "student":
                     forward = Path.PAGE_STUDENT;
+                    if (user!=null) {
+                        student = new DerbyStudentDAO().findStudentByIdUser(user.getIdUser());
+                        coursesForUser = new DerbyCourseDAO().findAllCoursesThatUserNotRegistered(student.getId());
+                    }
                     break;
                 case "admin":
                     forward = Path.PAGE_ADMIN;
@@ -100,14 +99,16 @@ public class LoginCommand extends Command {
         List<LecturerDTO> lecturers = new DerbyLecturerDAO().getAllLecturers();
         session.setAttribute("themes", themes);
         session.setAttribute("lecturers", lecturers);
-        request.setAttribute("courses", courses);
         session.setAttribute("courses", courses);
-
+        request.setAttribute("courses", courses);
+        session.setAttribute("coursesForUser", coursesForUser);
+        if (student!=null) {
+            session.setAttribute("idStudent", student.getId());
+        }
         session.setAttribute("idTheme", null);
         session.setAttribute("idLecturer", null);
         session.setAttribute("sort", null);
         session.setAttribute("sorting", null);
-
         return forward;
     }
 }

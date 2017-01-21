@@ -29,7 +29,8 @@ public class SelectCourseTag extends TagSupport {
         JspWriter out = pageContext.getOut();
         Iterator coursesIt = courses.iterator();
         StringBuffer select = new StringBuffer();
-        select.append("<select name=\"id\">");
+
+        select.append("<select name=\"id\" class=\"form-control select\">");
         while (coursesIt.hasNext()) {
             course = (CourseDTO) coursesIt.next();
             select.append("<option value=\"").append(course.getIdCourse()).append("\">")

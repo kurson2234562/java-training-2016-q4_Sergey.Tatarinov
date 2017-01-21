@@ -35,7 +35,6 @@ public class CreateCourseCommand extends Command {
         //---------------------------------------------------------------------------------//
         List<CourseDTO> courses = new DerbyCourseDAO().getAllCourses();
         for (CourseDTO course : courses) {
-            System.out.println(course.getNameCourse() + " " + name);
             if (name.equals(course.getNameCourse())) {
                 existCourse = true;
             }

@@ -41,5 +41,6 @@
     </orderEntry>
     <orderEntry type="library" name="mail-1.4.7" level="project" />
     <orderEntry type="library" name="jsr311-api-1.1.1" level="project" />
+    <orderEntry type="library" name="javax.annotation" level="project" />
   </component>
 </module>

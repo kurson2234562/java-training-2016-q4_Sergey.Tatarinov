@@ -61,22 +61,45 @@ public class EditCourseTag extends TagSupport {
         Iterator statusesIt = statuses.iterator();
         StringBuffer selects = new StringBuffer();
 
-
         /*-------------------Add fields for input name of course and duration--------------------------*/
-        if (method.equals("create")) {
-            selects.append("<td><input type=\"text\" name=\"name\" required></td>" +
-                    "<td><input type=\"number\" name=\"duration\" min=\"1\" required></td>");
-        } else if (method.equals("update")) {
-            selects.append("<td><input type=\"text\" name=\"name\" required value=\"")
-                    .append(course.getNameCourse())
-                    .append("\"></td><td><input type=\"number\" name=\"duration\" min=\"1\" required value=\"")
-                    .append(course.getDuration())
-                    .append("\"></td>");
+        if (method.equals("create")){
+            selects.append("<div class=\"form-group\"><label for=\"namecourse\" class=\"col-sm-2 control-label\">")
+                    .append(rb.getString("page.admin.create.namecourse")).append("</label>")
+                    .append("<div class=\"col-sm-8\">")
+                    .append("<input type=\"text\" class=\"form-control\" id=\"namecourse\" placeholder=\"")
+                    .append(rb.getString("page.admin.create.namecourse"))
+                    .append("\" name=\"name\" required></div></div>")
+
+                    .append("<div class=\"form-group\"><label for=\"duration\" class=\"col-sm-2 control-label\">")
+                    .append(rb.getString("page.admin.create.duration")).append("</label>")
+                    .append("<div class=\"col-sm-8\">")
+                    .append("<input type=\"number\" min=\"1\" class=\"form-control\" id=\"duration\" placeholder=\"")
+                    .append(rb.getString("page.admin.create.duration"))
+                    .append("\" name=\"duration\" required></div></div>");
+        }else if (method.equals("update")){
+            selects.append("<div class=\"form-group\"><label for=\"namecourse\" class=\"col-sm-2 control-label\">")
+                    .append(rb.getString("page.admin.create.namecourse")).append("</label>")
+                    .append("<div class=\"col-sm-8\">")
+                    .append("<input type=\"text\" class=\"form-control\" id=\"namecourse\" placeholder=\"")
+                    .append(rb.getString("page.admin.create.namecourse"))
+                    .append("\" name=\"name\" required value=\"")
+                    .append(course.getNameCourse()).append("\"></div></div>")
+
+                    .append("<div class=\"form-group\"><label for=\"duration\" class=\"col-sm-2 control-label\">")
+                    .append(rb.getString("page.admin.create.duration")).append("</label>")
+                    .append("<div class=\"col-sm-8\">")
+                    .append("<input type=\"number\" min=\"1\" class=\"form-control\" id=\"duration\" placeholder=\"")
+                    .append(rb.getString("page.admin.create.duration"))
+                    .append("\" name=\"duration\" required value=\"")
+                    .append(course.getDuration()).append("\"></div></div>");
         }
         /*-----------------------------------------------------------------------------------------*/
 
+
         /*--------------------------------Add select of lecturers--------------------------------*/
-        selects.append("<td><select name=\"lecturer\">");
+        selects.append("<div class=\"form-group\"><label for=\"lecturer\" class=\"col-sm-2 control-label\">")
+                .append(rb.getString("page.admin.create.lecturer")).append("</label>")
+                .append("<div class=\"col-sm-8\"><select class=\"form-control\" name=\"lecturer\" id=\"lecturer\">");
         while (lecturerIt.hasNext()) {
             lecturer = (LecturerDTO) lecturerIt.next();
             selects.append("<option value=\"").append(lecturer.getId()).append("\"");
@@ -90,11 +113,14 @@ public class EditCourseTag extends TagSupport {
                     .append(lecturer.getName()).append(" ")
                     .append(lecturer.getPatronymic()).append(" </option>");
         }
-        selects.append("</select></td>");
+        selects.append("</select></div></div>");
         /*-----------------------------------------------------------------------------------------*/
 
+
         /*----------------------------------Add select of themes----------------------------------*/
-        selects.append("<td><select name=\"theme\">");
+        selects.append("<div class=\"form-group\"><label for=\"theme\" class=\"col-sm-2 control-label\">")
+                .append(rb.getString("page.admin.create.nametheme")).append("</label>")
+                .append("<div class=\"col-sm-8\"><select class=\"form-control\" name=\"theme\" id=\"theme\">");
         while (themeIt.hasNext()) {
             theme = (ThemeDTO) themeIt.next();
             selects.append("<option value=\"").append(theme.getIdTheme()).append("\"");
@@ -105,11 +131,13 @@ public class EditCourseTag extends TagSupport {
             }
             selects.append(">").append(theme.getNameTheme()).append("</option>");
         }
-        selects.append("</select></td>");
+        selects.append("</select></div></div>");
         /*---------------------------------------------------------------------------------------*/
 
         /*--------------------------------Add select of statuses--------------------------------*/
-        selects.append("<td><select name=\"status\">");
+        selects.append("<div class=\"form-group\"><label for=\"status\" class=\"col-sm-2 control-label\">")
+                .append(rb.getString("page.admin.create.namestatus")).append("</label>")
+                .append("<div class=\"col-sm-8\"><select class=\"form-control\" name=\"status\" id=\"status\">");
         while (statusesIt.hasNext()) {
             status = (StatusDTO) statusesIt.next();
             selects.append("<option value=\"").append(status.getIdStatus()).append("\"");
@@ -120,7 +148,7 @@ public class EditCourseTag extends TagSupport {
             }
             selects.append(">").append(status.getNameStatus()).append("</option>");
         }
-        selects.append("</select></td>");
+        selects.append("</select></div></div>");
         /*----------------------------------------------------------------------------------------*/
 
         try {

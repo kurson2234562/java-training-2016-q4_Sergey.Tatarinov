@@ -77,9 +77,10 @@ public class UserRegisteredCoursesTag extends TagSupport {
         Iterator themesIt = themes.iterator();
         StringBuffer table = new StringBuffer();
         if (hasLine) {
-            table.append("<table>").append("<th>").append(rb.getString("page.people.course.name")).append("</th><th>")
-                    .append(rb.getString("page.people.course.duration")).append("</th><th>")
-                    .append(rb.getString("page.student.theme")).append("</th><th colspan=\"3\">")
+            table.append("<table class=\"table table-bordered table-striped\">").append("<th class=\"info\">")
+                    .append(rb.getString("page.people.course.name")).append("</th><th class=\"info\">")
+                    .append(rb.getString("page.people.course.duration")).append("</th><th class=\"info\">")
+                    .append(rb.getString("page.student.theme")).append("</th><th class=\"info\" colspan=\"3\">")
                     .append(rb.getString("page.student.lecturer")).append("</th>");
             while (lecturersIt.hasNext()) {
                 lecturer = (LecturerDTO) lecturersIt.next();

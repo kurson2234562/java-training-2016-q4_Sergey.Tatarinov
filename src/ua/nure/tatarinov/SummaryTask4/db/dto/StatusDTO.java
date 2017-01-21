@@ -1,6 +1,9 @@
 package ua.nure.tatarinov.SummaryTask4.db.dto;
 
-public class StatusDTO {
+import java.io.Serializable;
+
+public class StatusDTO implements Serializable {
+    private static final long serialVersionUID = 8848503175074357512L;
     private int idStatus;
     private String nameStatus;
 

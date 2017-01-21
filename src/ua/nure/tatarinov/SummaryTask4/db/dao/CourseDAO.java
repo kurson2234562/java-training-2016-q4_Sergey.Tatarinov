@@ -16,4 +16,8 @@ public interface CourseDAO {
 
     public List<CourseDTO> getAllCourses();
 
+    public List<CourseDTO> findCourseByString(String searchResult);
+
+    public List<CourseDTO> findAllCoursesThatUserNotRegistered(int id);
+
 }

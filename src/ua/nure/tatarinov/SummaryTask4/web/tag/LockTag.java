@@ -7,6 +7,7 @@ import ua.nure.tatarinov.SummaryTask4.db.dao.ConnectionPool;
 import ua.nure.tatarinov.SummaryTask4.db.dto.StudentDTO;
 import ua.nure.tatarinov.SummaryTask4.db.dto.UserDTO;
 
+import javax.servlet.ServletRequest;
 import javax.servlet.http.HttpSession;
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.JspWriter;
@@ -25,8 +26,9 @@ public class LockTag extends TagSupport {
     @Override
     public int doStartTag() throws JspException {
         LOG.info("Start tracing LockTag");
-        int countColumn = 4;
+        int countColumn = 5;
         HttpSession session = pageContext.getSession();
+        ServletRequest request = pageContext.getRequest();
         String language = String.valueOf(session.getAttribute("language"));
         ResourceBundle rb = ResourceBundle.getBundle("resources", new Locale(language));
         List<StudentDTO> students = new ArrayList<>();
@@ -48,7 +50,7 @@ public class LockTag extends TagSupport {
                     student.setSurname(resultSet.getString("surname"));
                     student.setPatronymic(resultSet.getString("patronymic"));
                     if ((!student.getPatronymic().isEmpty()) && (student.getPatronymic() != null)) {
-                        countColumn = 5;
+                        countColumn++;
                     }
                     students.add(student);
                     user.setIdUser(resultSet.getInt("id_user"));
@@ -73,8 +75,8 @@ public class LockTag extends TagSupport {
         Iterator usersIt = users.iterator();
         Iterator statesIt = states.iterator();
         StringBuffer table = new StringBuffer();
-        table.append("<table id =\"new\">\n").append("<th colspan=\"")
-                .append(countColumn).append("\">").append(rb.getString("page.admin.student.list")).append("</th>");
+        table.append("<table class =\"table table-striped\">\n")/*.append("<th colspan=\"")
+                .append(countColumn).append("\">").append(rb.getString("page.admin.student.list")).append("</th>")*/;
         while (studentsIt.hasNext()) {
             student = (StudentDTO) studentsIt.next();
             user = (UserDTO) usersIt.next();
@@ -93,9 +95,11 @@ public class LockTag extends TagSupport {
                              "    <input type=\"hidden\" name=\"id\" value=\"")
                         .append(user.getIdUser())
                         .append("\">\n" +
-                             "    <input type=\"hidden\" name=\"lock\" value=\"true\">\n" +
-                             "    <button><img src=\"/img/lock.png\" class=\"icon\" alt=\"Заблокировать\" name></button>\n" +
-                             "</form>");
+                                "<input type=\"hidden\" name=\"lock\" value=\"true\">\n" +
+                                "<button type=\"submit\" class=\"btn btn-default btn-lg\">\n" +
+                                "<span class=\"glyphicon glyphicon-ban-circle\" aria-hidden=\"true\"></span>")
+                        .append(rb.getString("page.admin.action.lock"))
+                        .append("</button>\n</form>");
             } else if (state == State.LOCKED) {
                 table.append("<form action=\"controller\">\n" +
                              "    <input type=\"hidden\" name=\"command\" value=\"lockCommand\">\n" +
@@ -103,8 +107,10 @@ public class LockTag extends TagSupport {
                         .append(user.getIdUser())
                         .append("\">\n" +
                              "    <input type=\"hidden\" name=\"lock\" value=\"false\">\n" +
-                             "    <button><img src=\"/img/unlock.png\" class=\"icon\" alt=\"Разблокировать\"></button>\n" +
-                             "</form>");
+                             "<button type=\"submit\" class=\"btn btn-default btn-lg\">\n" +
+                             "  <span class=\"glyphicon glyphicon-ok-sign\" aria-hidden=\"true\"></span>")
+                .append(rb.getString("page.admin.action.unlock"))
+                        .append("</button>\n</form>");
             }
         }
         table.append("</table>");
@@ -113,8 +119,6 @@ public class LockTag extends TagSupport {
         } catch (IOException e) {
             LOG.error(e.getLocalizedMessage());
         }
-
-
         return EVAL_PAGE;
     }
 }

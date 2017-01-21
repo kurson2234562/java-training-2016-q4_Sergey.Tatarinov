@@ -4,98 +4,132 @@
 <%@ taglib prefix="course" uri="/WEB-INF/editcourse.tld" %>
 <%@ taglib prefix="select" uri="/WEB-INF/selectcourse.tld" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title> <my:Locale value="page.admin.title"/> </title>
+        <meta charset="UTF-8">
+        <title><my:Locale value="page.admin.title"/> </title>
         <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" type="text/css" href="../../styles/admin.css">
+        <script src="../../bootstrap/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
     </head>
     <body>
         <%@ include file="/WEB-INF/jspf/header.jspf"%>
-        <div id="content">
-            <%@ include file="/WEB-INF/jspf/about.jspf"%>
-            <div class="list">
-                <p><my:Locale value="page.admin.student.lock"/> </p>
-                <lock:lock/>
+        <link rel="stylesheet" type="text/css" href="../../styles/admin.css">
+        <div class="container-fluid bs-const">
+            <div class="col-lg-3">
+                <%@ include file="/WEB-INF/jspf/about.jspf"%>
             </div>
-            <div class="course">
-                <form action="controller">
-                    <p><my:Locale value="page.admin.update.course"/></p>
-                    <input type="hidden" name="command" value="updateCourseButtonCommand">
-                    <select:selectcourse/>
-                    <input type="submit" value="<my:Locale value="page.admin.update.course"/>">
-                </form>
-            </div>
-            <div class="course">
-                <form action="controller">
-                    <p><my:Locale value="page.admin.delete.course"/></p>
-                    <input type="hidden" name="command" value="deleteCourseCommand">
-                    <select:selectcourse/>
-                    <input type="submit" value="<my:Locale value="page.admin.delete.course"/>">
-                </form>
-            </div>
-            <div class="list">
-                <form>
-                    <input type="hidden" name="command" value="createCourseCommand">
-                    <p><my:Locale value="page.admin.create.addcourses"/></p>
-                    <table>
-                        <tr>
-                            <th><my:Locale value="page.admin.create.namecourse"/> </th>
-                            <th><my:Locale value="page.admin.create.duration"/> </th>
-                            <th><my:Locale value="page.admin.create.lecturer"/> </th>
-                            <th><my:Locale value="page.admin.create.nametheme"/> </th>
-                            <th><my:Locale value="page.admin.create.namestatus"/> </th>
-                        </tr>
-                        <tr>
-                            <course:editCourse method="create"/>
-                            <td><input type="submit" value="<my:Locale value="page.admin.create.addcourses"/>"></td>
-                        </tr>
-                    </table>
-                </form>
-            </div>
-            <div class="list">
-                <form action="controller">
-                    <input type="hidden" name="command" value="createLecturerCommand">
-                    <p><my:Locale value="page.admin.lecturer.create.title"/></p>
-                    <table id="newlect">
-                        <tr>
-                            <td><my:Locale value="page.people.name"/></td>
-                            <td><input type="text" name="name" required/></td>
-                        </tr>
-                        <tr>
-                            <td><my:Locale value="page.people.surname"/></td>
-                            <td><input type="text" name="surname" required/></td>
-                        </tr>
-                        <tr>
-                            <td><my:Locale value="page.people.patronymic"/></td>
-                            <td><input type="text" name="patronymic" required/></td>
-                        </tr>
-                        <tr>
-                            <td><my:Locale value="page.people.login"/></td>
-                            <td><input type="text" name="login" required/></td>
-                        </tr>
-                        <tr>
-                            <td><my:Locale value="page.people.password"/></td>
-                            <td><input type="password" name="password" required/></td>
-                        </tr>
-                        <tr>
-                            <td><my:Locale value="page.people.password.confirm"/></td>
-                            <td><input type="password" name="confirm" required/></td>
-                        </tr>
-                        <tr>
-                            <td><my:Locale value="page.admin.pincourse"/></td>
-                            <td>
-                                <select name="idCourse">
-                                <c:forEach items="${sessionScope.courses}" var="course">
-                                    <option value="${course.idCourse}">${course.nameCourse}</option>>
-                                </c:forEach>
-                                </select>
-                            </td>
-                        </tr>
-                    </table>
-                    <input type="submit" value="<my:Locale value="page.admin.lecturer.create.button"/>">
-                </form>
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="panel panel-primary table-responsive">
+                        <div class="panel-heading"><my:Locale value="page.admin.student.lock"/> </div>
+                        <lock:lock/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading" name="<my:Locale value="page.admin.delete.course"/>"><my:Locale value="page.admin.delete.course"/></div>
+                            <c:if test="${success}">
+                                <p class="bg-success">Курс удалён</p>
+                            </c:if>
+                            <form action="controller">
+                                <input type="hidden" name="command" value="deleteCourseCommand">
+                                <select:selectcourse/>
+                                <input type="submit" value="<my:Locale value="page.admin.delete.course"/>">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading"><my:Locale value="page.admin.update.course"/></div>
+                            <form action="controller">
+                                <input type="hidden" name="command" value="updateCourseButtonCommand">
+                                <select:selectcourse/>
+                                <input type="submit" value="<my:Locale value="page.admin.update.course"/>">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading"><my:Locale value="page.admin.create.addcourses"/></div>
+                            <form class="form-horizontal">
+                                <course:editCourse method="create"/>
+                                <input type="hidden" name="command" value="createCourseCommand">
+                                <input type="submit" value="<my:Locale value="page.admin.create.addcourses"/>">
+                            </form>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading"><my:Locale value="page.admin.lecturer.create.title"/></div>
+                            <form class="form-horizontal">
+
+                                <div class="form-group">
+                                    <label for="name" class="col-sm-2 control-label"><my:Locale value="page.people.name"/></label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="name" id="name" placeholder="<my:Locale value="page.people.name"/>" required/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="surname" class="col-sm-2 control-label"><my:Locale value="page.people.surname"/></label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="surname" id="surname" placeholder="<my:Locale value="page.people.surname"/>" required/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="patronymic" class="col-sm-2 control-label"><my:Locale value="page.people.patronymic"/></label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="patronymic" id="patronymic" placeholder="<my:Locale value="page.people.patronymic"/>" required/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="login" class="col-sm-2 control-label"><my:Locale value="page.people.login"/></label>
+                                    <div class="col-sm-8">
+                                        <input type="text" name="login" id="login" class="form-control" placeholder="<my:Locale value="page.people.login"/>" required/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="password" class="col-sm-2 control-label"><my:Locale value="page.people.password"/></label>
+                                    <div class="col-sm-8">
+                                        <input type="password" name="password" id="password" class="form-control" placeholder="<my:Locale value="page.people.password"/>" required/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="confirm" class="col-sm-2 control-label"><my:Locale value="page.people.password.confirm"/></label>
+                                    <div class="col-sm-8">
+                                        <input type="password" name="confirm" id="confirm" class="form-control" placeholder="<my:Locale value="page.people.password.confirm"/>" required/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="dropdownMenu" class="col-sm-2 control-label"><my:Locale value="page.admin.pincourse"/></label>
+                                    <div class="col-sm-8">
+                                        <select name="idCourse" id="dropdownMenu" class="form-control">
+                                            <c:forEach items="${sessionScope.courses}" var="course">
+                                                <option value="${course.idCourse}">${course.nameCourse}</option>>
+                                            </c:forEach>
+                                        </select>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="command" value="createLecturerCommand">
+                                <input type="submit" value="<my:Locale value="page.admin.lecturer.create.button"/>">
+                                <button type="submit" class="btn btn-success"><my:Locale value="page.admin.lecturer.create.button"/></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
 </html>
+

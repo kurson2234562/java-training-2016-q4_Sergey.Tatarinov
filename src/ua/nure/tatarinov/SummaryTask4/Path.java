@@ -18,6 +18,7 @@ public final class Path {
     public static final String PAGE_COURSES         = "/WEB-INF/jsp/courses.jsp";
     public static final String PAGE_EDIT_JOURNAL    = "/WEB-INF/jsp/editJournal.jsp";
     public static final String PAGE_EDIT_COURSE     = "/WEB-INF/jsp/editCourse.jsp";
+    public static final String PAGE_SEARCH          = "/WEB-INF/jsp/search.jsp";
 
     // commands
     public static final String COMMAND_LIST_ORDERS = "/controller?command=listOrders";

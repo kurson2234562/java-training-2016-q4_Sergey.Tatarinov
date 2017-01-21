@@ -1,9 +1,9 @@
 package ua.nure.tatarinov.SummaryTask4.db.dto;
 
-/**
- * Created by kurson on 07.01.17.
- */
-public class JournalDTO {
+import java.io.Serializable;
+
+public class JournalDTO implements Serializable {
+    private static final long serialVersionUID = 5563653254994171031L;
     private int idStudentCourse;
     private int mark;
 

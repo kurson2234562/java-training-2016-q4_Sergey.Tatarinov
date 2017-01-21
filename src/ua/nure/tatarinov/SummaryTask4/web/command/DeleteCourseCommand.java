@@ -24,15 +24,18 @@ public class DeleteCourseCommand extends Command {
         boolean existCourse = false;
         if (!Utils.isDigit(id)){
             request.setAttribute("errorMessage", Errors.ERR_NOT_A_NUMBER);
+            request.setAttribute("success", false);
             return Path.PAGE_ERROR_PAGE;
         } else {
             for (CourseDTO course : courses) {
                 if (Integer.parseInt(String.valueOf(request.getParameter("id"))) == course.getIdCourse()) {
+                    request.setAttribute("success", true);
                     existCourse = true;
                 }
             }
             if (!existCourse) {
                 request.setAttribute("errorMessage", Errors.ERR_CANNOT_FIND_COURSE);
+                request.setAttribute("success", false);
                 return Path.PAGE_ERROR_PAGE;
             }
         }

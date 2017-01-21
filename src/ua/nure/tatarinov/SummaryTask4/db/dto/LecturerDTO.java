@@ -1,10 +1,10 @@
 package ua.nure.tatarinov.SummaryTask4.db.dto;
 
-import org.apache.log4j.Logger;
+import java.io.Serializable;
 
-public class LecturerDTO {
+public class LecturerDTO implements Serializable {
 
-    public static final Logger LOG = Logger.getLogger(LecturerDTO.class);
+    private static final long serialVersionUID = 8839698692467044620L;
 
     private int id;
     private String surname;

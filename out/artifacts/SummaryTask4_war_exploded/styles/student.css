@@ -1,1 +1,127 @@
 
+body{
+    width:98.9%;
+    font: 17px Arial, sans-serif;
+    background-color:#ffffff;
+    margin-top:40px;
+}
+
+.list{
+    border:#bdc3c7 2px solid;
+    width:68%;
+    float:right;
+    padding:20px;
+    margin:20px 0;
+}
+
+h3{
+    color:#e74c3c;
+}
+
+#info{
+    float:left;
+    border-right: #27ae60 3px solid;
+    width :360px;
+    height:88%;
+    margin:0 30px 0 0;
+    padding:20px 0 200px 20px;
+    font: 17px Arial, sans-serif;
+}
+
+input{
+    width:200px;
+    height:40px;
+}
+
+th, td{
+    text-align:center;
+}
+
+#edit{
+    width:150px;
+    height:30px;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#other{
+    display:block;
+    float:left;
+}
+
+.icon{
+    width:10px;
+    height:10px;
+}
+
+.about{
+    padding-left:20px;
+    padding-right:20px;
+    font-weight:800;
+    color:#27ae60;
+}
+
+ul{
+    padding-left:0;
+    list-style:none;
+}
+
+#user{
+    padding-left:110px;
+    width:120px;
+    height:120px;
+    margin-bottom:10px;
+}
+
+.courses{
+    margin:0 20px;
+    width:200px;
+    height:250px;
+    display:inline-flex;
+    border:#bdc3c7 1px solid;
+    border-radius:5px;
+    background-color:#fdfdfd;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+.courses:nth-child(5n+2){
+    margin-top:30px;
+}
+
+img{
+    width:125px;
+    height:125px !important     ;
+    margin:10px 35px;
+}
+
+h3{
+    font-size:20px;
+    text-align:center;
+}
+
+.courses input{
+    margin:190px 0 0 -137px;
+    border-radius:20px;
+    width:150px;
+    background-color:#27ae60;
+    color:white;
+    text-shadow: 0 2px 3px #2D2020;
+    font-weight:800;
+    cursor:pointer;
+}
+
+.courses span{
+    margin:150px 0 0 -152px;
+    text-align:center;
+}
+
+.col-lg-9{
+    padding-top:40px;
+}
+
+.thumbnail{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}

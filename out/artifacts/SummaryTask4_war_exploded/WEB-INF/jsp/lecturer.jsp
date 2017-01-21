@@ -21,64 +21,76 @@
 
 
 </sql:query>
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
         <title> <my:Locale value="page.lecturer.title"/> </title>
-        <link rel="stylesheet" type="text/css" href="../../styles/lecturer.css">
         <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+        <script src="../../bootstrap/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
     </head>
     <body>
         <%@ include file="/WEB-INF/jspf/header.jspf"%>
-        <div id="content">
-            <%@ include file="/WEB-INF/jspf/about.jspf"%>
-            <div class="list">
-                <p><my:Locale value="page.lecturer.table.title"/> </p>
-                <a:journal/>
+        <link rel="stylesheet" type="text/css" href="../../styles/lecturer.css">
+        <div class="container-fluid bs-const">
+            <div class="col-lg-3">
+                <%@ include file="/WEB-INF/jspf/about.jspf"%>
             </div>
-            <c:choose>
-                <c:when test="${not empty result.rows}">
-                    <div class="list">
-                        <p><my:Locale value="page.lecturer.student.notmark"/> </p>
-                        <table>
-                            <tr>
-                                <th><my:Locale value="page.people.course.name"/> </th>
-                                <c:forEach items="${result.rows}" var="row" >
-                                    <c:set value="${row.patronymic}" var="patronymic"/>
-                                </c:forEach>
-                                <c:choose>
-                                    <c:when test="${not empty patronymic}">
-                                        <th colspan="3">
-                                            <my:Locale value="page.lecturer.student"/>
-                                        </th>
-                                    </c:when>
-                                    <c:otherwise>
-                                        <th colspan="2">
-                                            <my:Locale value="page.lecturer.student"/>
-                                        </th>
-                                    </c:otherwise>
-                                </c:choose>
-                                <th><my:Locale value="page.people.course.actions"/> </th>
-                            </tr>
-                            <c:forEach items="${result.rows}" var="row" >
-                                <c:set value="${row.id_user}" scope="session" var="id_student_course"/>
-                                <tr>
-                                    <form>
-                                        <input type="hidden" name="command" value="selectStudentCommand">
-                                        <input type="hidden" name="id" value="${row.id_student_course}">
-                                        <input type="hidden" name="mark" value="new">
-                                        <td>${row.name_course}</td>
-                                        <td>${row.surname}</td><td>${row.name}</td>
-                                        <c:if test="${not empty patronymic}">
-                                            <td>${row.patronymic}</td>
-                                        </c:if>
-                                        <td><input type="submit" value="<my:Locale value="page.lecturer.estimate"/> "/></td>
-                                    </form>
-                                </tr>
-                            </c:forEach>
-                        </table>
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading"><my:Locale value="page.lecturer.table.title"/></div>
+                        <a:journal/>
                     </div>
-                </c:when>
-            </c:choose>
+                </div>
+                <c:choose>
+                    <c:when test="${not empty result.rows}">
+                        <div class="row">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading"><my:Locale value="page.lecturer.student.notmark"/></div>
+                                <table>
+                                    <tr>
+                                        <th><my:Locale value="page.people.course.name"/> </th>
+                                        <c:forEach items="${result.rows}" var="row" >
+                                            <c:set value="${row.patronymic}" var="patronymic"/>
+                                        </c:forEach>
+                                        <c:choose>
+                                            <c:when test="${not empty patronymic}">
+                                                <th colspan="3">
+                                                    <my:Locale value="page.lecturer.student"/>
+                                                </th>
+                                            </c:when>
+                                            <c:otherwise>
+                                                <th colspan="2">
+                                                    <my:Locale value="page.lecturer.student"/>
+                                                </th>
+                                            </c:otherwise>
+                                        </c:choose>
+                                        <th><my:Locale value="page.people.course.actions"/> </th>
+                                    </tr>
+                                    <c:forEach items="${result.rows}" var="row" >
+                                        <c:set value="${row.id_user}" scope="session" var="id_student_course"/>
+                                        <tr>
+                                            <form>
+                                                <input type="hidden" name="command" value="selectStudentCommand">
+                                                <input type="hidden" name="id" value="${row.id_student_course}">
+                                                <input type="hidden" name="mark" value="new">
+                                                <td>${row.name_course}</td>
+                                                <td>${row.surname}</td><td>${row.name}</td>
+                                                <c:if test="${not empty patronymic}">
+                                                    <td>${row.patronymic}</td>
+                                                </c:if>
+                                                <td><input type="submit" value="<my:Locale value="page.lecturer.estimate"/> "/></td>
+                                            </form>
+                                        </tr>
+                                    </c:forEach>
+                                </table>
+                            </div>
+                        </div>
+                    </c:when>
+                </c:choose>
+            </div>
         </div>
     </body>
 </html>

@@ -4,30 +4,28 @@
 <html>
     <head>
         <title> <my:Locale value="page.editcourse.title"/> </title>
-        <link rel="stylesheet" type="text/css" href="../../styles/admin.css">
+        <link rel="stylesheet" type="text/css" href="../../styles/editcourses.css">
         <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
-
+        <script src="../../bootstrap/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
     </head>
     <body>
         <%@ include file="/WEB-INF/jspf/header.jspf"%>
-        <div id="content">
-            <%@ include file="/WEB-INF/jspf/about.jspf"%>
-            <div class="list">
-                <form>
-                    <input type="hidden" name="command" value="updateCourseCommand">
-                    <p><my:Locale value="page.editcourse.title"/></p>
-                    <table>
-                        <tr>
-                            <th><my:Locale value="page.admin.create.namecourse"/></th>
-                            <th><my:Locale value="page.admin.create.duration"/></th>
-                            <th><my:Locale value="page.admin.create.lecturer"/></th>
-                            <th><my:Locale value="page.admin.create.nametheme"/></th>
-                            <th><my:Locale value="page.admin.create.namestatus"/></th>
-                        </tr>
-                        <course:editCourse method="update"/>
-                    </table>
-                    <input type="submit" value="<my:Locale value="page.editcourse.title"/>">
-                </form>
+        <div class="container-fluid bs-const">
+            <div class="col-lg-3">
+                <%@ include file="/WEB-INF/jspf/about.jspf"%>
+            </div>
+            <div class="col-lg-9">
+                <div class="panel panel-primary table-responsive">
+                    <div class="panel-heading"><my:Locale value="page.editcourse.title"/></div>
+                    <form>
+                        <input type="hidden" name="command" value="updateCourseCommand">
+                        <table>
+                            <course:editCourse method="update"/>
+                        </table>
+                        <input type="submit" value="<my:Locale value="page.editcourse.title"/>">
+                    </form>
+                </div>
             </div>
         </div>
     </body>

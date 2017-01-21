@@ -1,6 +1,6 @@
 body{
     width:98.9%;
-    margin: 0;
+    padding-top:65px;
     font: 17px Arial, sans-serif;
 }
 
@@ -40,11 +40,6 @@ input{
     height:40px;
 }
 
-span{
-    width:120px;
-    display:inline-block;
-}
-
 .about{
     padding-left:20px;
     padding-right:20px;
@@ -63,12 +58,12 @@ ul{
     height:120px;
     margin-bottom:10px;
 }
-select, #sort{
+.sortselect, #sort{
     width:25%;
     height:30px;
 }
 
-button{
+.sortRow{
     padding:5px 10px;
     background-color: #e74c3c;
     cursor:pointer;
@@ -84,9 +79,9 @@ th {
     background: #e74c3c;
     color: white;
     text-shadow: 0 1px 1px #2D2020;
-    padding:0px;
+    padding:0;
     overflow:hidden;
-    margin:0px;
+    margin:0;
 }
 th, td {
     margin-left:10px;
@@ -119,4 +114,10 @@ input[type="submit"]{
     text-shadow: 0 1px 5px #2D2020;
     font-weight:800;
     cursor:pointer;
+}
+
+.sortselect{
+    width:33% !important;
+    float:left;
+    margin:0 10px;
 }

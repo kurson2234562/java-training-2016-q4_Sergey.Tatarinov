@@ -120,4 +120,56 @@ public class DerbyCourseDAO implements CourseDAO {
         }
         return courses;
     }
+
+    @Override
+    public List<CourseDTO> findCourseByString(String searchResult) {
+        LOG.trace("Starting tracing DerbyStudentDAO#findCourseByString");
+        List<CourseDTO> courses = new ArrayList<>();
+        CourseDTO course;
+        try (Connection connection = ConnectionPool.getConnetcion()) {
+            if (connection != null) {
+                PreparedStatement statement = connection.prepareStatement(Query.FIND_COURSE_BY_STRING);
+                statement.setString(1, "%" + searchResult + "%");
+                statement.execute();
+                ResultSet resultSet = statement.getResultSet();
+                while (resultSet.next()) {
+                    course = new CourseDTO(resultSet.getInt("id_course"), resultSet.getString("name_course"),
+                            resultSet.getInt("duration"), resultSet.getInt("id_theme"),
+                            resultSet.getInt("id_lecturer"), resultSet.getInt("id_status"));
+                    courses.add(course);
+                }
+                resultSet.close();
+
+            }
+        } catch (SQLException ex) {
+            LOG.info(ex.getLocalizedMessage());
+        }
+        return courses;
+    }
+
+    @Override
+    public List<CourseDTO> findAllCoursesThatUserNotRegistered(int id) {
+        LOG.trace("Starting tracing DerbyStudentDAO#findAllCoursesThatUserNotRegistered");
+        List<CourseDTO> courses = new ArrayList<>();
+        CourseDTO course;
+        try (Connection connection = ConnectionPool.getConnetcion()) {
+            if (connection != null) {
+                PreparedStatement statement = connection.prepareStatement(Query.SELECT_COURSES_NOT_BEEN_REGISTERED);
+                statement.setInt(1, id);
+                statement.execute();
+                ResultSet resultSet = statement.getResultSet();
+                while (resultSet.next()) {
+                    course = new CourseDTO(resultSet.getInt("id_course"), resultSet.getString("name_course"),
+                            resultSet.getInt("duration"), resultSet.getInt("id_theme"),
+                            resultSet.getInt("id_lecturer"), resultSet.getInt("id_status"));
+                    courses.add(course);
+                }
+                resultSet.close();
+
+            }
+        } catch (SQLException ex) {
+            LOG.info(ex.getLocalizedMessage());
+        }
+        return courses;
+    }
 }

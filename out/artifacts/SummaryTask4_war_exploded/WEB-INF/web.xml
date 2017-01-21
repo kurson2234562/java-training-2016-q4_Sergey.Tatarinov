@@ -35,7 +35,7 @@
         <filter-class>ua.nure.tatarinov.SummaryTask4.web.filter.CommandAccessFilter</filter-class>
         <init-param>
             <param-name>out-of-control</param-name>
-            <param-value>logoutCommand loginCommand courseCommand languageCommand forgetPasswordCommand forgetCommand</param-value>
+            <param-value>logoutCommand loginCommand courseCommand languageCommand forgetPasswordCommand forgetCommand searchCommand</param-value>
         </init-param>
         <init-param>
             <param-name>common</param-name>
@@ -43,7 +43,7 @@
         </init-param>
         <init-param>
             <param-name>student</param-name>
-            <param-value> </param-value>
+            <param-value>registerOnCourseCommand</param-value>
         </init-param>
         <init-param>
             <param-name>lecturer</param-name>

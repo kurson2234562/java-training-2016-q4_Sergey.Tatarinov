@@ -26,20 +26,16 @@ public class ForgetPasswordCommand extends Command {
             if (user.getEmail().equals(email) || user.getLogin().equals(email)) {
                 if ((user.getEmail() != null) || (!user.getEmail().isEmpty())) {
                     Utils.sendMail(user.getEmail(), Utils.generateMessage(user.getLogin()));
-                    System.out.println(0);
                     break;
                 }else {
                     request.setAttribute("errorMessage", Errors.ERR_USER_HAS_NO_EMAIL);
-                    System.out.println(1);
                     return Path.PAGE_ERROR_PAGE;
                 }
             } else {
                 request.setAttribute("errorMessage", Errors.ERR_NOT_FIND_USER);
-                System.out.println(2);
                 return Path.PAGE_ERROR_PAGE;
             }
         }
-        System.out.println(3);
         return Path.PAGE_LOGIN;
     }
 }

@@ -22,6 +22,7 @@ public class CreateLecturerCommand extends Command {
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+        LOG.trace("Start tracing CreateLecturerCommand");
         HttpSession session = request.getSession();
         int id = -1;
         String name = request.getParameter("name");

@@ -8,4 +8,8 @@ public interface StudentDAO {
 
     public List<StudentDTO> getAllStudents();
 
+    public List<StudentDTO> findStudentsByString(String searchResult);
+
+    public StudentDTO findStudentByIdUser(int id);
+
 }

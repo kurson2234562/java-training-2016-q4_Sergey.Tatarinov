@@ -25,13 +25,14 @@ public class CourseCommand extends Command {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         LOG.trace("Starting trace CourseCommand");
+        HttpSession session = request.getSession();
+
         List<LecturerDTO> lecturers = new DerbyLecturerDAO().getAllLecturers();
         List<ThemeDTO> themes = new DerbyThemeDAO().getAllThemes();
         List<String> fields = Arrays.asList("name_course", "duration", "name_theme", "surname", "name", "patronymic", "count", "name_status");
-        HttpSession session = request.getSession();
         String language = String.valueOf(session.getAttribute("language"));
         ResourceBundle rb = ResourceBundle.getBundle("resources", new Locale(language));
-        int state = Integer.parseInt(String.valueOf(session.getAttribute("state")));
+        String state = String.valueOf(session.getAttribute("state"));
         boolean existLecturer = false;
         boolean existTheme = false;
         boolean existField = false;
@@ -39,7 +40,7 @@ public class CourseCommand extends Command {
         String idTheme = null;
         String idLecturer = null;
         String forward = Path.PAGE_COURSES;
-        if (state == 0) {
+        if (Integer.parseInt(state) == 0) {
             request.setAttribute("errorMessage", Errors.ERR_LOCKED);
             forward = Path.PAGE_ERROR_PAGE;
         }

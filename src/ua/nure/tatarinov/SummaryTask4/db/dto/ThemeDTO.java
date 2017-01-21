@@ -1,7 +1,10 @@
 package ua.nure.tatarinov.SummaryTask4.db.dto;
 
-public class ThemeDTO {
+import java.io.Serializable;
 
+public class ThemeDTO implements Serializable {
+
+    private static final long serialVersionUID = 6674765258602087731L;
     private int idTheme;
     private String nameTheme;
 

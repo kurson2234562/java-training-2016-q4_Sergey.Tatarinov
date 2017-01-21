@@ -1,7 +1,10 @@
 package ua.nure.tatarinov.SummaryTask4.db.dto;
 
-public class StudentDTO {
+import java.io.Serializable;
 
+public class StudentDTO implements Serializable {
+
+    private static final long serialVersionUID = -5205879381501085376L;
     private int id;
     private String surname;
     private String name;
@@ -21,7 +24,7 @@ public class StudentDTO {
 
     @Override
     public String toString() {
-        return "LecturerDTO{" +
+        return "StudentDTO{" +
                 "id=" + id +
                 ", surname='" + surname + '\'' +
                 ", name='" + name + '\'' +

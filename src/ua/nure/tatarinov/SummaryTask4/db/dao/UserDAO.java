@@ -13,4 +13,6 @@ public interface UserDAO {
     public UserDTO createUser(String login, String password);
 
     public List<UserDTO> getAllUsers();
+
+    public void registerUserOnCourse(int id, int idCourse);
 }

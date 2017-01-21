@@ -117,6 +117,22 @@ public class DerbyUserDAO extends UserDTO implements UserDAO {
         return users;
     }
 
+    @Override
+    public void registerUserOnCourse(int id, int idCourse) {
+        LOG.trace("Start tracing DerbyUserDAO#registerUserOnCourse");
+        try (Connection connection = ConnectionPool.getConnetcion()){
+            if (connection!=null){
+                PreparedStatement statement = connection.prepareStatement(Query.REGISTER_USER_ON_COURSE);
+                statement.setInt(1 ,id);
+                statement.setInt(2, idCourse);
+                statement.executeUpdate();
+                connection.setAutoCommit(false);
+            }
+        }catch (SQLException e){
+            LOG.error(e.getLocalizedMessage());
+        }
+    }
+
     public void setNewPassword(int id, String password){
         LOG.trace("Start tracing DerbyUserDAO#setNewPassword");
         try (Connection connection = ConnectionPool.getConnetcion()){

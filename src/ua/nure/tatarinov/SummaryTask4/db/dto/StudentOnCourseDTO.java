@@ -1,7 +1,10 @@
 package ua.nure.tatarinov.SummaryTask4.db.dto;
 
-public class StudentOnCourseDTO {
+import java.io.Serializable;
 
+public class StudentOnCourseDTO implements Serializable {
+
+    private static final long serialVersionUID = 6572259975878240054L;
     private int idStudentCourse;
     private int idStudent;
     private int idCourse;

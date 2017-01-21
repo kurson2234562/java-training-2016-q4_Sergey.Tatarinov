@@ -47,72 +47,80 @@
         <title> <my:Locale value="page.courses.title"/> </title>
         <link rel="stylesheet" type="text/css" href="../../styles/courses.css">
         <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+        <script src="../../bootstrap/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
     </head>
     <body>
         <%@ include file="/WEB-INF/jspf/header.jspf"%>
-        <div id="content">
-            <%@ include file="/WEB-INF/jspf/about.jspf"%>
-            <div class="list">
-                <p><my:Locale value="page.courses.title"/> </p>
-                <form method="get">
-                    <input type="hidden" name="command" value="courseCommand">
-                    <select name ="idTheme">
-                        <option selected><my:Locale value="page.courses.all.themes"/></option>
-                        <c:forEach items="${themes}" var="theme">
-                            <option value="${theme.idTheme}"
-                            <c:choose>
-                                <c:when test="${not empty idTheme and idTheme==theme.idTheme}">
-                                    selected
-                                </c:when>
-                            </c:choose>
-                            >${theme.nameTheme}</option>>
-                        </c:forEach>
-                    </select>
-                    <select name ="idLecturer">
-                        <option selected><my:Locale value="page.courses.all.lecturers"/></option>
-                        <c:forEach items="${lecturers}" var="lecturer">
-                            <option value="${lecturer.id}"
+        <div class="container-fluid bs-const">
+            <div class="col-lg-3">
+                <%@ include file="/WEB-INF/jspf/about.jspf"%>
+            </div>
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="panel panel-primary table-responsive">
+                        <div class="panel-heading"><my:Locale value="page.student.table.title.progress"/></div>
+                        <div id="sortContainer">
+                            <form method="get">
+                                <input type="hidden" name="command" value="courseCommand">
+                                <select class="sortSelect form-control" name ="idTheme">
+                                    <option selected><my:Locale value="page.courses.all.themes"/></option>
+                                    <c:forEach items="${themes}" var="theme">
+                                        <option value="${theme.idTheme}"
+                                        <c:if test="${not empty idTheme and idTheme==theme.idTheme}">
+                                                selected
+                                        </c:if>
+                                        >${theme.nameTheme}</option>>
+                                    </c:forEach>
+                                </select>
+
+
+                                <select class="sortSelect form-control" name ="idLecturer">
+                                    <option selected><my:Locale value="page.courses.all.lecturers"/></option>
+                                    <c:forEach items="${lecturers}" var="lecturer">
+                                        <option value="${lecturer.id}"
+                                            <c:if test="${not empty idLecturer and idLecturer==lecturer.id}">
+                                                selected
+                                            </c:if>
+                                        >${lecturer.surname} ${lecturer.name} ${lecturer.patronymic}</option>>
+                                    </c:forEach>
+                                </select>
+                                <input type="submit" value="<my:Locale value="page.courses.choose"/> " id="sort">
                                 <c:choose>
-                                    <c:when test="${not empty idLecturer and idLecturer==lecturer.id}">
-                                        selected
+                                    <c:when test="${not empty result.rows}">
+                                        <table>
+                                            <tr>
+                                                <th><button name="sort" class="sortRow" value="name_course"><my:Locale value="page.people.course.name"/></button></th>
+                                                <th><button name="sort" class="sortRow" value="duration"><my:Locale value="page.people.course.duration"/></button></th>
+                                                <th><button name="sort" class="sortRow" value="name_theme"><my:Locale value="page.student.theme"/></button></th>
+                                                <th colspan="3">
+                                                    <button name="sort" class="sortRow" value="surname"><my:Locale value="page.student.lecturer"/></button>
+                                                </th>
+                                                <th><button name="sort" class="sortRow" value="name_status"><my:Locale value="page.courses.table.status"/></button></th>
+                                                <th><button name="sort" class="sortRow" value="count"><my:Locale value="page.courses.table.count"/></button></th>
+                                            </tr>
+                                            <c:forEach items="${result.rows}" var="row" >
+                                                <tr>
+                                                    <td>${row.name_course}</td>
+                                                    <td>${row.duration}</td>
+                                                    <td>${row.name_theme}</td>
+                                                    <td>${row.surname}</td>
+                                                    <td>${row.name}</td>
+                                                    <td>${row.patronymic}</td>
+                                                    <td>${row.name_status}</td>
+                                                    <td>${row.count}</td>
+                                                </tr>
+                                            </c:forEach>
+                                        </table>
                                     </c:when>
+                                    <c:otherwise>
+                                        <h3><my:Locale value="page.courses.error"/></h3>
+                                    </c:otherwise>
                                 </c:choose>
-                            >${lecturer.surname} ${lecturer.name} ${lecturer.patronymic}</option>>
-                        </c:forEach>
-                    </select>
-                    <input type="submit" value="<my:Locale value="page.courses.choose"/> " id="sort">
-                    <c:choose>
-                        <c:when test="${not empty result.rows}">
-                            <table>
-                                <tr>
-                                    <th><button name="sort" value="name_course"><my:Locale value="page.people.course.name"/></button></th>
-                                    <th><button name="sort" value="duration"><my:Locale value="page.people.course.duration"/></button></th>
-                                    <th><button name="sort" value="name_theme"><my:Locale value="page.student.theme"/></button></th>
-                                    <th colspan="3">
-                                        <button name="sort" value="surname"><my:Locale value="page.student.lecturer"/></button>
-                                    </th>
-                                    <th><button name="sort" value="name_status"><my:Locale value="page.courses.table.status"/></button></th>
-                                    <th><button name="sort" value="count"><my:Locale value="page.courses.table.count"/></button></th>
-                                </tr>
-                                <c:forEach items="${result.rows}" var="row" >
-                                    <tr>
-                                        <td>${row.name_course}</td>
-                                        <td>${row.duration}</td>
-                                        <td>${row.name_theme}</td>
-                                        <td>${row.surname}</td>
-                                        <td>${row.name}</td>
-                                        <td>${row.patronymic}</td>
-                                        <td>${row.name_status}</td>
-                                        <td>${row.count}</td>
-                                    </tr>
-                                </c:forEach>
-                            </table>
-                        </c:when>
-                        <c:otherwise>
-                            <h3><my:Locale value="page.courses.error"/></h3>
-                        </c:otherwise>
-                    </c:choose>
-                </form>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
             <cr:copyright/>
         </div>

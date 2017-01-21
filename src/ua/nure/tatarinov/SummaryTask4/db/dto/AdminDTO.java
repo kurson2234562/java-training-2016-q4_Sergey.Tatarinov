@@ -1,9 +1,10 @@
 package ua.nure.tatarinov.SummaryTask4.db.dto;
 
-/**
- * Created by kurson on 07.01.17.
- */
-public class AdminDTO {
+import java.io.Serializable;
+
+public class AdminDTO implements Serializable {
+
+    private static final long serialVersionUID = -5168076787036658486L;
 
     private int id;
     private String surname;
@@ -13,7 +14,7 @@ public class AdminDTO {
 
     @Override
     public String toString() {
-        return "LecturerDTO{" +
+        return "AdminDTO{" +
                 "id=" + id +
                 ", surname='" + surname + '\'' +
                 ", name='" + name + '\'' +

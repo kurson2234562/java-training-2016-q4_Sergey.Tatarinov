@@ -1,10 +1,13 @@
 package ua.nure.tatarinov.SummaryTask4.db.dto;
 
+import java.io.Serializable;
+
 /**
  * UserDTO dto.
  * @author Sergey Tatarinov
  */
-public class UserDTO {
+public class UserDTO implements Serializable {
+    private static final long serialVersionUID = 8218802710491337849L;
     private int idUser;
     private String login;
     private String password;
@@ -19,6 +22,7 @@ public class UserDTO {
         this.email = email;
         this.roleId = roleId;
         this.stateId = stateId;
+        toString();
     }
 
     public UserDTO(int idUser, String login, String password, int roleId, int stateId) {
@@ -54,14 +58,6 @@ public class UserDTO {
 
     }
 
-    public int getStateId() {
-        return stateId;
-    }
-
-    public void setStateId(int idState) {
-        this.stateId = idState;
-    }
-
     public String getLogin() {
         return login;
     }
@@ -92,6 +88,14 @@ public class UserDTO {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public int getStateId() {
+        return stateId;
+    }
+
+    public void setStateId(int stateId) {
+        this.stateId = stateId;
     }
 
     @Override
