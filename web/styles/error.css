@@ -5,38 +5,12 @@ body{
     height:68%;
 }
 
-.list{
-    border:#bdc3c7 2px solid;
-    width:68%;
-    float:right;
-    padding:20px;
-    margin:20px 0;
-}
-
 h3{
     color:#e74c3c;
 }
 
-#info{
-    float:left;
-    border-right: #27ae60 3px solid;
-    width :360px;
-    height:88%;
-    margin:0 30px 0 0;
-    padding:20px 0 200px 20px;
-    font: 17px Arial, sans-serif;
-}
-
-input{
-    width:200px;
-    height:40px;
-}
-
 table {
-    padding-top:25px;
     font:14px "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
-    border-radius: 10px;
-    border-spacing: 0;
     text-align: center;
 }
 
@@ -45,35 +19,21 @@ td {
     background: #ecf0f1;
 }
 
-
-.icon{
-    width:10px;
-    height:10px;
-}
-
-.about{
-    padding-left:20px;
-    padding-right:20px;
-    font-weight:800;
-    color:#27ae60;
-}
-
-ul{
-    padding-left:0;
-    list-style:none;
-}
-
-#user{
-    padding-left:110px;
-    width:120px;
-    height:120px;
-    margin-bottom:10px;
-}
-
 .message{
     width: 40px;
     height:40px;
 }
+
 .col-lg-6{
     margin-top:40px;
+}
+
+.col-lg-3{
+    padding-top:30px;
+    height:95vh;
+    border-right: #27ae60 1px solid;
+}
+
+#main-container{
+    margin-left:30px;
 }

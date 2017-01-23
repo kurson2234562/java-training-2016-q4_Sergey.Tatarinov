@@ -19,11 +19,16 @@ public class DerbyUserDAO extends UserDTO implements UserDAO {
         LOG.trace("Start tracing DerbyUserDAO#lockUserById");
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if ((connection != null) && (state != -1)) {
-                PreparedStatement statement = connection.prepareStatement(Query.CHANGE_STATE_USER, Statement.RETURN_GENERATED_KEYS);
-                statement.setInt(1, state);
-                statement.setInt(2, id);
-                statement.executeUpdate();
-                connection.setAutoCommit(false);
+                try (PreparedStatement statement = connection.prepareStatement(Query.CHANGE_STATE_USER, Statement.RETURN_GENERATED_KEYS)) {
+                    connection.setAutoCommit(false);
+                    statement.setInt(1, state);
+                    statement.setInt(2, id);
+                    statement.executeUpdate();
+                    connection.commit();
+                } catch (SQLException e) {
+                    LOG.error(e.getLocalizedMessage());
+                    connection.rollback();
+                }
             }
         } catch (SQLException e) {
             LOG.error(e.getLocalizedMessage());
@@ -35,57 +40,56 @@ public class DerbyUserDAO extends UserDTO implements UserDAO {
         UserDTO user = null;
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
-                PreparedStatement statement = connection.prepareStatement("SELECT * FROM USERS WHERE LOGIN = ?");
-                connection.setAutoCommit(false);
-                statement.setString(1, login);
-                statement.execute();
-                ResultSet resultSet = statement.getResultSet();
-                if (resultSet.next()) {
-                    user = new UserDTO();
-                    user.setIdUser(resultSet.getInt("id_user"));
-                    user.setLogin(resultSet.getString("login"));
-                    user.setPassword(resultSet.getString("password"));
-                    user.setRoleId(resultSet.getInt("id_role"));
-                    user.setStateId(resultSet.getInt("id_state"));
-                    user.setEmail(resultSet.getString("email"));
+                try (PreparedStatement statement = connection.prepareStatement(Query.SELECT_USER_BY_LOGIN)) {
+                    connection.setAutoCommit(false);
+                    statement.setString(1, login);
+                    statement.execute();
+                    ResultSet resultSet = statement.getResultSet();
+                    if (resultSet.next()) {
+                        user = new UserDTO(resultSet.getInt("id_user"), resultSet.getString("login"),
+                                resultSet.getString("password"), resultSet.getString("email"),
+                                resultSet.getInt("id_role"), resultSet.getInt("id_state"));
+                    }
+                    resultSet.close();
+                    connection.commit();
+                } catch (SQLException e) {
+                    LOG.error(e.getLocalizedMessage());
+                    connection.rollback();
                 }
-                resultSet.close();
             }
         } catch (SQLException ex) {
-            LOG.info(ex.getLocalizedMessage());
+            LOG.error(ex.getLocalizedMessage());
         }
         return user;
     }
 
     @Override
     public UserDTO createUser(String login, String password) {
+        LOG.trace("Start tracing DerbyUserDAO#createUser");
         UserDTO user = null;
         int id = -1;
-        LOG.trace("Start tracing DerbyUserDAO#createUser");
 
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
-                PreparedStatement statement = connection.prepareStatement(Query.CREATE_USER, Statement.RETURN_GENERATED_KEYS);
-                statement.setString(1, login);
-                statement.setString(2, password);
-                statement.executeUpdate();
-            }
-        } catch (SQLException ex) {
-            LOG.info(ex.getLocalizedMessage());
-        }
-        try (Connection connection = ConnectionPool.getConnetcion()) {
-            if (connection != null) {
-                PreparedStatement stmt = connection.prepareStatement(Query.SELECT_LAST_USER_ID);
-                stmt.execute();
-                ResultSet resultSet = stmt.getResultSet();
-                if (resultSet.next()) {
-                    id = resultSet.getInt("1");
+                try (PreparedStatement statement = connection.prepareStatement(Query.CREATE_USER, Statement.RETURN_GENERATED_KEYS)) {
+                    connection.setAutoCommit(false);
+                    statement.setString(1, login);
+                    statement.setString(2, password);
+                    statement.executeUpdate();
+                    PreparedStatement stmt = connection.prepareStatement(Query.SELECT_LAST_USER_ID);
+                    stmt.execute();
+                    ResultSet resultSet = stmt.getResultSet();
+                    if (resultSet.next()) {
+                        id = resultSet.getInt("1");
+                    }
+                    connection.commit();
+                } catch (SQLException ex) {
+                    LOG.error(ex.getLocalizedMessage());
+                    connection.rollback();
                 }
-                connection.setAutoCommit(false);
-                resultSet.close();
             }
         } catch (SQLException ex) {
-            LOG.info(ex.getLocalizedMessage());
+            LOG.error(ex.getLocalizedMessage());
         }
         user = new UserDTO(id, login, password, 2, 1);
         return user;
@@ -99,19 +103,25 @@ public class DerbyUserDAO extends UserDTO implements UserDAO {
 
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
-                PreparedStatement statement = connection.prepareStatement(Query.SELECT_ALL_USERS);
-                statement.execute();
-                ResultSet resultSet = statement.getResultSet();
-                while (resultSet.next()) {
-                    user = new UserDTO(resultSet.getInt("id_user"), resultSet.getString("login"),
-                            resultSet.getString("password"), resultSet.getString("email"),
-                            resultSet.getInt("id_role"), resultSet.getInt("id_state"));
-                    users.add(user);
+                try (PreparedStatement statement = connection.prepareStatement(Query.SELECT_ALL_USERS)) {
+                    connection.setAutoCommit(false);
+                    statement.execute();
+                    ResultSet resultSet = statement.getResultSet();
+                    while (resultSet.next()) {
+                        user = new UserDTO(resultSet.getInt("id_user"), resultSet.getString("login"),
+                                resultSet.getString("password"), resultSet.getString("email"),
+                                resultSet.getInt("id_role"), resultSet.getInt("id_state"));
+                        users.add(user);
+                    }
+                    resultSet.close();
+                    connection.commit();
+                } catch (SQLException ex) {
+                    LOG.error(ex.getLocalizedMessage());
+                    connection.rollback();
                 }
-                resultSet.close();
             }
         } catch (SQLException ex) {
-            LOG.info(ex.getLocalizedMessage());
+            LOG.error(ex.getLocalizedMessage());
         }
 
         return users;
@@ -120,30 +130,40 @@ public class DerbyUserDAO extends UserDTO implements UserDAO {
     @Override
     public void registerUserOnCourse(int id, int idCourse) {
         LOG.trace("Start tracing DerbyUserDAO#registerUserOnCourse");
-        try (Connection connection = ConnectionPool.getConnetcion()){
-            if (connection!=null){
-                PreparedStatement statement = connection.prepareStatement(Query.REGISTER_USER_ON_COURSE);
-                statement.setInt(1 ,id);
-                statement.setInt(2, idCourse);
-                statement.executeUpdate();
-                connection.setAutoCommit(false);
+        try (Connection connection = ConnectionPool.getConnetcion()) {
+            if (connection != null) {
+                try (PreparedStatement statement = connection.prepareStatement(Query.REGISTER_USER_ON_COURSE)) {
+                    connection.setAutoCommit(false);
+                    statement.setInt(1, id);
+                    statement.setInt(2, idCourse);
+                    statement.executeUpdate();
+                    connection.commit();
+                } catch (SQLException ex) {
+                    LOG.error(ex.getLocalizedMessage());
+                    connection.rollback();
+                }
             }
-        }catch (SQLException e){
+        } catch (SQLException e) {
             LOG.error(e.getLocalizedMessage());
         }
     }
 
-    public void setNewPassword(int id, String password){
+    public void setNewPassword(int id, String password) {
         LOG.trace("Start tracing DerbyUserDAO#setNewPassword");
-        try (Connection connection = ConnectionPool.getConnetcion()){
-            if (connection!=null){
-                PreparedStatement statement = connection.prepareStatement(Query.UPDATE_PASSWORD);
-                statement.setString(1 ,password);
-                statement.setInt(2, id);
-                statement.executeUpdate();
-                connection.setAutoCommit(false);
+        try (Connection connection = ConnectionPool.getConnetcion()) {
+            if (connection != null) {
+                try (PreparedStatement statement = connection.prepareStatement(Query.UPDATE_PASSWORD)) {
+                    connection.setAutoCommit(false);
+                    statement.setString(1, password);
+                    statement.setInt(2, id);
+                    statement.executeUpdate();
+                    connection.commit();
+                } catch (SQLException ex) {
+                    LOG.error(ex.getLocalizedMessage());
+                    connection.rollback();
+                }
             }
-        }catch (SQLException e){
+        } catch (SQLException e) {
             LOG.error(e.getLocalizedMessage());
         }
     }

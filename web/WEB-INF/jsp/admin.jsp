@@ -34,20 +34,20 @@
                             <c:if test="${success}">
                                 <p class="bg-success">Курс удалён</p>
                             </c:if>
-                            <form action="controller">
+                            <form action="controller" class="space">
                                 <input type="hidden" name="command" value="deleteCourseCommand">
                                 <select:selectcourse/>
-                                <input type="submit" value="<my:Locale value="page.admin.delete.course"/>">
+                                <button type="submit" class="btn btn-success"><my:Locale value="page.admin.delete.course"/></button>
                             </form>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="panel panel-primary">
                             <div class="panel-heading"><my:Locale value="page.admin.update.course"/></div>
-                            <form action="controller">
+                            <form action="controller" class="space">
                                 <input type="hidden" name="command" value="updateCourseButtonCommand">
                                 <select:selectcourse/>
-                                <input type="submit" value="<my:Locale value="page.admin.update.course"/>">
+                                <button type="submit" class="btn btn-success"><my:Locale value="page.admin.update.course"/></button>
                             </form>
                         </div>
                     </div>
@@ -59,7 +59,7 @@
                             <form class="form-horizontal">
                                 <course:editCourse method="create"/>
                                 <input type="hidden" name="command" value="createCourseCommand">
-                                <input type="submit" value="<my:Locale value="page.admin.create.addcourses"/>">
+                                <button type="submit" class="spacebtn btn btn-success"><my:Locale value="page.admin.create.addcourses"/></button>
                             </form>
 
                         </div>
@@ -122,8 +122,7 @@
                                     </div>
                                 </div>
                                 <input type="hidden" name="command" value="createLecturerCommand">
-                                <input type="submit" value="<my:Locale value="page.admin.lecturer.create.button"/>">
-                                <button type="submit" class="btn btn-success"><my:Locale value="page.admin.lecturer.create.button"/></button>
+                                <button type="submit" class="spacebtn btn btn-success"><my:Locale value="page.admin.lecturer.create.title"/></button>
                             </form>
                         </div>
                     </div>
@@ -132,4 +131,3 @@
         </div>
     </body>
 </html>
-

@@ -39,7 +39,7 @@ public class DerbyStudentDAO implements StudentDAO {
                 resultSet.close();
             }
         } catch (SQLException ex) {
-            LOG.info(ex.getLocalizedMessage());
+            LOG.error(ex.getLocalizedMessage());
         }
         return students;
     }
@@ -88,7 +88,7 @@ public class DerbyStudentDAO implements StudentDAO {
 
             }
         } catch (SQLException ex) {
-            LOG.info(ex.getLocalizedMessage());
+            LOG.error(ex.getLocalizedMessage());
         }
         return students;
     }

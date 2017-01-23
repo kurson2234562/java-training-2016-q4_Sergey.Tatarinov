@@ -19,15 +19,19 @@ public class DerbyJournalDAO implements JournalDAO {
         LOG.trace("Starting trace DerbyJournalDAO");
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
-                PreparedStatement statement = connection.prepareStatement(Query.UPDATE_JOURNAL, Statement.RETURN_GENERATED_KEYS);
-                statement.setString(1, String.valueOf(mark));
-                statement.setString(2, String.valueOf(id));
-                statement.executeUpdate();
-                connection.setAutoCommit(false);
+                try (PreparedStatement statement = connection.prepareStatement(Query.UPDATE_JOURNAL, Statement.RETURN_GENERATED_KEYS)) {
+                    connection.setAutoCommit(false);
+                    statement.setString(1, String.valueOf(mark));
+                    statement.setString(2, String.valueOf(id));
+                    statement.executeUpdate();
+                    connection.commit();
+                } catch (SQLException ex) {
+                    LOG.error(ex.getLocalizedMessage());
+                    connection.rollback();
+                }
             }
-        }catch (SQLException e){
+        } catch (SQLException e) {
             LOG.error(e.getLocalizedMessage());
         }
-
     }
 }

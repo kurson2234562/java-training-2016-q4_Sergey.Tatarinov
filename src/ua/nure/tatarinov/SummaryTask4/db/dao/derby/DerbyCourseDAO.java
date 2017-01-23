@@ -19,14 +19,19 @@ public class DerbyCourseDAO implements CourseDAO {
         LOG.trace("Starting tracing DerbyCourseDAO#createCourse");
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
-                PreparedStatement statement = connection.prepareStatement(Query.CREATE_COURSE, Statement.RETURN_GENERATED_KEYS);
-                statement.setString(1, name);
-                statement.setInt(2, duration);
-                statement.setInt(3, theme);
-                statement.setInt(4, lecturer);
-                statement.setInt(5, status);
-                statement.executeUpdate();
-                connection.setAutoCommit(false);
+                try (PreparedStatement statement = connection.prepareStatement(Query.CREATE_COURSE, Statement.RETURN_GENERATED_KEYS)) {
+                    connection.setAutoCommit(false);
+                    statement.setString(1, name);
+                    statement.setInt(2, duration);
+                    statement.setInt(3, theme);
+                    statement.setInt(4, lecturer);
+                    statement.setInt(5, status);
+                    statement.executeUpdate();
+                    connection.commit();
+                } catch (SQLException ex) {
+                    LOG.error(ex.getLocalizedMessage());
+                    connection.rollback();
+                }
             }
         } catch (SQLException e) {
             LOG.error(e.getLocalizedMessage());
@@ -38,15 +43,20 @@ public class DerbyCourseDAO implements CourseDAO {
         LOG.trace("Starting tracing DerbyCourseDAO#updateCourse");
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
-                PreparedStatement statement = connection.prepareStatement(Query.UPDATE_COURSE, Statement.RETURN_GENERATED_KEYS);
-                statement.setString(1, name);
-                statement.setInt(2, duration);
-                statement.setInt(3, theme);
-                statement.setInt(4, lecturer);
-                statement.setInt(5, status);
-                statement.setInt(6, id);
-                statement.executeUpdate();
-                connection.setAutoCommit(false);
+                try (PreparedStatement statement = connection.prepareStatement(Query.UPDATE_COURSE, Statement.RETURN_GENERATED_KEYS)) {
+                    connection.setAutoCommit(false);
+                    statement.setString(1, name);
+                    statement.setInt(2, duration);
+                    statement.setInt(3, theme);
+                    statement.setInt(4, lecturer);
+                    statement.setInt(5, status);
+                    statement.setInt(6, id);
+                    statement.executeUpdate();
+                    connection.commit();
+                } catch (SQLException ex) {
+                    LOG.error(ex.getLocalizedMessage());
+                    connection.rollback();
+                }
             }
         } catch (SQLException e) {
             LOG.error(e.getLocalizedMessage());
@@ -58,12 +68,17 @@ public class DerbyCourseDAO implements CourseDAO {
         LOG.trace("Starting tracing DerbyCourseDAO#deleteCourseByIdCourse");
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
-                PreparedStatement statement = connection.prepareStatement(Query.DELETE_COURSE, Statement.RETURN_GENERATED_KEYS);
-                statement.setInt(1, id);
-                statement.executeUpdate();
-                connection.setAutoCommit(false);
+                try (PreparedStatement statement = connection.prepareStatement(Query.DELETE_COURSE, Statement.RETURN_GENERATED_KEYS)) {
+                    connection.setAutoCommit(false);
+                    statement.setInt(1, id);
+                    statement.executeUpdate();
+                    connection.commit();
+                } catch (SQLException ex) {
+                    LOG.error(ex.getLocalizedMessage());
+                    connection.rollback();
+                }
             }
-        }catch (SQLException e){
+        } catch (SQLException e) {
             LOG.error(e.getLocalizedMessage());
         }
     }
@@ -74,18 +89,23 @@ public class DerbyCourseDAO implements CourseDAO {
         CourseDTO course = new CourseDTO();
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
-                PreparedStatement statement = connection.prepareStatement(Query.SELECT_ALL_DEFINITE_COURSE);
-                connection.setAutoCommit(false);
-                if (id != -1) {
-                    course = new CourseDTO();
-                    statement.setInt(1, id);
-                    statement.execute();
-                    ResultSet resultSet = statement.getResultSet();
-                    if (resultSet.next()) {
-                        course = new CourseDTO(resultSet.getInt("id_course"), resultSet.getString("name_course"),
-                                resultSet.getInt("duration"), resultSet.getInt("id_theme"),
-                                resultSet.getInt("id_lecturer"), resultSet.getInt("id_status"));
+                try (PreparedStatement statement = connection.prepareStatement(Query.SELECT_ALL_DEFINITE_COURSE)) {
+                    connection.setAutoCommit(false);
+                    if (id != -1) {
+                        course = new CourseDTO();
+                        statement.setInt(1, id);
+                        statement.execute();
+                        ResultSet resultSet = statement.getResultSet();
+                        if (resultSet.next()) {
+                            course = new CourseDTO(resultSet.getInt("id_course"), resultSet.getString("name_course"),
+                                    resultSet.getInt("duration"), resultSet.getInt("id_theme"),
+                                    resultSet.getInt("id_lecturer"), resultSet.getInt("id_status"));
+                        }
                     }
+                    connection.commit();
+                } catch (SQLException ex) {
+                    LOG.error(ex.getLocalizedMessage());
+                    connection.rollback();
                 }
             }
         } catch (SQLException e) {
@@ -102,18 +122,23 @@ public class DerbyCourseDAO implements CourseDAO {
 
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
-                PreparedStatement statement = connection.prepareStatement(Query.SELECT_ALL_COURSES);
-                statement.execute();
-                ResultSet resultSet = statement.getResultSet();
-                while (resultSet.next()) {
-                    course = new CourseDTO(resultSet.getInt("id_course"),
-                            resultSet.getString("name_course"), resultSet.getInt("duration"),
-                            resultSet.getInt("id_theme"), resultSet.getInt("id_lecturer"),
-                            resultSet.getInt("id_status"));
-                    courses.add(course);
+                try (PreparedStatement statement = connection.prepareStatement(Query.SELECT_ALL_COURSES)) {
+                    connection.setAutoCommit(false);
+                    statement.execute();
+                    ResultSet resultSet = statement.getResultSet();
+                    while (resultSet.next()) {
+                        course = new CourseDTO(resultSet.getInt("id_course"),
+                                resultSet.getString("name_course"), resultSet.getInt("duration"),
+                                resultSet.getInt("id_theme"), resultSet.getInt("id_lecturer"),
+                                resultSet.getInt("id_status"));
+                        courses.add(course);
+                    }
+                    resultSet.close();
+                    connection.commit();
+                } catch (SQLException ex) {
+                    LOG.error(ex.getLocalizedMessage());
+                    connection.rollback();
                 }
-                resultSet.close();
-
             }
         } catch (SQLException ex) {
             LOG.info(ex.getLocalizedMessage());
@@ -128,18 +153,23 @@ public class DerbyCourseDAO implements CourseDAO {
         CourseDTO course;
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
-                PreparedStatement statement = connection.prepareStatement(Query.FIND_COURSE_BY_STRING);
-                statement.setString(1, "%" + searchResult + "%");
-                statement.execute();
-                ResultSet resultSet = statement.getResultSet();
-                while (resultSet.next()) {
-                    course = new CourseDTO(resultSet.getInt("id_course"), resultSet.getString("name_course"),
-                            resultSet.getInt("duration"), resultSet.getInt("id_theme"),
-                            resultSet.getInt("id_lecturer"), resultSet.getInt("id_status"));
-                    courses.add(course);
+                try (PreparedStatement statement = connection.prepareStatement(Query.FIND_COURSE_BY_STRING)) {
+                    connection.setAutoCommit(false);
+                    statement.setString(1, "%" + searchResult + "%");
+                    statement.execute();
+                    ResultSet resultSet = statement.getResultSet();
+                    while (resultSet.next()) {
+                        course = new CourseDTO(resultSet.getInt("id_course"), resultSet.getString("name_course"),
+                                resultSet.getInt("duration"), resultSet.getInt("id_theme"),
+                                resultSet.getInt("id_lecturer"), resultSet.getInt("id_status"));
+                        courses.add(course);
+                    }
+                    resultSet.close();
+                    connection.commit();
+                } catch (SQLException ex) {
+                    LOG.error(ex.getLocalizedMessage());
+                    connection.rollback();
                 }
-                resultSet.close();
-
             }
         } catch (SQLException ex) {
             LOG.info(ex.getLocalizedMessage());
@@ -154,18 +184,23 @@ public class DerbyCourseDAO implements CourseDAO {
         CourseDTO course;
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
-                PreparedStatement statement = connection.prepareStatement(Query.SELECT_COURSES_NOT_BEEN_REGISTERED);
-                statement.setInt(1, id);
-                statement.execute();
-                ResultSet resultSet = statement.getResultSet();
-                while (resultSet.next()) {
-                    course = new CourseDTO(resultSet.getInt("id_course"), resultSet.getString("name_course"),
-                            resultSet.getInt("duration"), resultSet.getInt("id_theme"),
-                            resultSet.getInt("id_lecturer"), resultSet.getInt("id_status"));
-                    courses.add(course);
+                try (PreparedStatement statement = connection.prepareStatement(Query.SELECT_COURSES_NOT_BEEN_REGISTERED)) {
+                    connection.setAutoCommit(false);
+                    statement.setInt(1, id);
+                    statement.execute();
+                    ResultSet resultSet = statement.getResultSet();
+                    while (resultSet.next()) {
+                        course = new CourseDTO(resultSet.getInt("id_course"), resultSet.getString("name_course"),
+                                resultSet.getInt("duration"), resultSet.getInt("id_theme"),
+                                resultSet.getInt("id_lecturer"), resultSet.getInt("id_status"));
+                        courses.add(course);
+                    }
+                    resultSet.close();
+                    connection.commit();
+                } catch (SQLException ex) {
+                    LOG.error(ex.getLocalizedMessage());
+                    connection.rollback();
                 }
-                resultSet.close();
-
             }
         } catch (SQLException ex) {
             LOG.info(ex.getLocalizedMessage());

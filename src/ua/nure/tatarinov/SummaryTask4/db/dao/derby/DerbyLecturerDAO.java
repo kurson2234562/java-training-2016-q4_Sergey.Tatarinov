@@ -19,22 +19,26 @@ public class DerbyLecturerDAO implements LecturerDAO {
 
     @Override
     public List<LecturerDTO> getAllLecturers() {
-        LOG.trace("Starting tracing DerbyLecturerDAO");
+        LOG.trace("Starting tracing DerbyLecturerDAO#getAllLecturers");
         List<LecturerDTO> lecturers = new ArrayList<>();
         LecturerDTO lecturer;
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
-                PreparedStatement statement = connection.prepareStatement(Query.SELECT_ALL_LECTURERS);
-                connection.setAutoCommit(false);
-                statement.execute();
-                ResultSet resultSet = statement.getResultSet();
-                while (resultSet.next()) {
-                    lecturer = new LecturerDTO(resultSet.getInt("id"), resultSet.getString("surname"),
-                            resultSet.getString("name"), resultSet.getString("patronymic"),resultSet.getInt("id_user"));
-                    lecturers.add(lecturer);
+                try (PreparedStatement statement = connection.prepareStatement(Query.SELECT_ALL_LECTURERS)) {
+                    connection.setAutoCommit(false);
+                    statement.execute();
+                    ResultSet resultSet = statement.getResultSet();
+                    while (resultSet.next()) {
+                        lecturer = new LecturerDTO(resultSet.getInt("id"), resultSet.getString("surname"),
+                                resultSet.getString("name"), resultSet.getString("patronymic"), resultSet.getInt("id_user"));
+                        lecturers.add(lecturer);
+                    }
+                    resultSet.close();
+                    connection.commit();
+                } catch (SQLException ex) {
+                    LOG.error(ex.getLocalizedMessage());
+                    connection.rollback();
                 }
-                resultSet.close();
-
             }
         } catch (SQLException ex) {
             LOG.info(ex.getLocalizedMessage());
@@ -44,29 +48,31 @@ public class DerbyLecturerDAO implements LecturerDAO {
 
     @Override
     public int createLecturer(String surname, String name, String patronymic, int idUser) {
+        LOG.trace("Starting tracing DerbyLecturerDAO#createLecturer");
         int id = -1;
         LecturerDTO lecturer = new LecturerDTO();
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
-                PreparedStatement statement = connection.prepareStatement(Query.CREATE_LECTURER);
-                statement.setString(1, surname);
-                statement.setString(2, name);
-                statement.setString(3, patronymic);
-                statement.setInt(4, idUser);
-                statement.execute();
-            }
-        } catch (SQLException ex) {
-            LOG.info(ex.getLocalizedMessage());
-        }
-        try (Connection connection = ConnectionPool.getConnetcion()) {
-            if (connection != null) {
-                PreparedStatement statement = connection.prepareStatement(Query.SELECT_LAST_LECTURER_ID);
-                statement.execute();
-                ResultSet resultSet = statement.getResultSet();
-                if (resultSet.next()) {
-                    id = resultSet.getInt("1");
+                try (PreparedStatement statement = connection.prepareStatement(Query.CREATE_LECTURER)) {
+                    connection.setAutoCommit(false);
+                    statement.setString(1, surname);
+                    statement.setString(2, name);
+                    statement.setString(3, patronymic);
+                    statement.setInt(4, idUser);
+                    statement.execute();
+
+                    PreparedStatement stmt = connection.prepareStatement(Query.SELECT_LAST_LECTURER_ID);
+                    stmt.execute();
+                    ResultSet resultSet = stmt.getResultSet();
+                    if (resultSet.next()) {
+                        id = resultSet.getInt("1");
+                    }
+                    resultSet.close();
+                    connection.commit();
+                } catch (SQLException ex) {
+                    LOG.error(ex.getLocalizedMessage());
+                    connection.rollback();
                 }
-                resultSet.close();
             }
         } catch (SQLException ex) {
             LOG.info(ex.getLocalizedMessage());
@@ -76,12 +82,19 @@ public class DerbyLecturerDAO implements LecturerDAO {
 
     @Override
     public void changeLecturer(int id, int idCourse) {
+        LOG.trace("Starting tracing DerbyLecturerDAO#changeLecturer");
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
-                PreparedStatement statement = connection.prepareStatement(Query.CHANGE_LECTURER);
-                statement.setInt(1, id);
-                statement.setInt(2,idCourse);
-                statement.execute();
+                try(PreparedStatement statement = connection.prepareStatement(Query.CHANGE_LECTURER)) {
+                    connection.setAutoCommit(false);
+                    statement.setInt(1, id);
+                    statement.setInt(2, idCourse);
+                    statement.execute();
+                    connection.commit();
+                }catch (SQLException ex){
+                    LOG.error(ex.getLocalizedMessage());
+                    connection.rollback();
+                }
             }
         } catch (SQLException e) {
             LOG.error(e.getLocalizedMessage());

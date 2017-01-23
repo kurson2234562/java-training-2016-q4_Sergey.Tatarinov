@@ -17,7 +17,6 @@ public class DerbyStudentOnCourseDAO implements StudentOnCourseDAO {
 
     public static final Logger LOG = Logger.getLogger(DerbyStudentOnCourseDAO.class);
 
-
     @Override
     public List<StudentOnCourseDTO> getAllStudentsOnCourse() {
         LOG.trace("Starting tracing StudentOnCourseDAO#getAllStudentsOnCourse");
@@ -25,18 +24,24 @@ public class DerbyStudentOnCourseDAO implements StudentOnCourseDAO {
         StudentOnCourseDTO studentOnCourse;
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
-                PreparedStatement statement = connection.prepareStatement(Query.SELECT_ALL_STUDENT_ON_COURSE);
-                statement.execute();
-                ResultSet resultSet = statement.getResultSet();
-                while (resultSet.next()) {
-                    studentOnCourse = new StudentOnCourseDTO(resultSet.getInt("id_student_course"),
-                            resultSet.getInt("id_student"), resultSet.getInt("id_course"));
-                    students.add(studentOnCourse);
+                try (PreparedStatement statement = connection.prepareStatement(Query.SELECT_ALL_STUDENT_ON_COURSE)) {
+                    connection.setAutoCommit(false);
+                    statement.execute();
+                    ResultSet resultSet = statement.getResultSet();
+                    while (resultSet.next()) {
+                        studentOnCourse = new StudentOnCourseDTO(resultSet.getInt("id_student_course"),
+                                resultSet.getInt("id_student"), resultSet.getInt("id_course"));
+                        students.add(studentOnCourse);
+                    }
+                    resultSet.close();
+                    connection.commit();
+                } catch (SQLException ex) {
+                    LOG.error(ex.getLocalizedMessage());
+                    connection.rollback();
                 }
-                resultSet.close();
             }
         } catch (SQLException ex) {
-            LOG.info(ex.getLocalizedMessage());
+            LOG.error(ex.getLocalizedMessage());
         }
         return students;
     }
@@ -48,18 +53,24 @@ public class DerbyStudentOnCourseDAO implements StudentOnCourseDAO {
         StudentOnCourseDTO count;
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
-                PreparedStatement statement = connection.prepareStatement(Query.SELECT_COUNT_STUDENTS_PER_COURSE);
-                statement.execute();
-                ResultSet resultSet = statement.getResultSet();
-                while (resultSet.next()) {
-                    count = new StudentOnCourseDTO(resultSet.getInt("id_student_course"),
-                            resultSet.getInt("id_student"), resultSet.getInt("id_course"));
-                    counts.add(count);
+                try (PreparedStatement statement = connection.prepareStatement(Query.SELECT_COUNT_STUDENTS_PER_COURSE)) {
+                    connection.setAutoCommit(false);
+                    statement.execute();
+                    ResultSet resultSet = statement.getResultSet();
+                    while (resultSet.next()) {
+                        count = new StudentOnCourseDTO(resultSet.getInt("id_student_course"),
+                                resultSet.getInt("id_student"), resultSet.getInt("id_course"));
+                        counts.add(count);
+                    }
+                    resultSet.close();
+                    connection.commit();
+                } catch (SQLException ex) {
+                    LOG.error(ex.getLocalizedMessage());
+                    connection.rollback();
                 }
-                resultSet.close();
             }
         } catch (SQLException ex) {
-            LOG.info(ex.getLocalizedMessage());
+            LOG.error(ex.getLocalizedMessage());
         }
         return counts;
     }
@@ -69,13 +80,19 @@ public class DerbyStudentOnCourseDAO implements StudentOnCourseDAO {
         LOG.trace("Starting tracing StudentOnCourseDAO#createMarkForStudent");
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
-                PreparedStatement statement = connection.prepareStatement(Query.CREATE_MARK_FOR_STUDENT);
-                statement.setInt(1, studentId);
-                statement.setInt(2, mark);
-                statement.execute();
+                try (PreparedStatement statement = connection.prepareStatement(Query.CREATE_MARK_FOR_STUDENT)) {
+                    connection.setAutoCommit(false);
+                    statement.setInt(1, studentId);
+                    statement.setInt(2, mark);
+                    statement.execute();
+                    connection.commit();
+                } catch (SQLException ex) {
+                    LOG.error(ex.getLocalizedMessage());
+                    connection.rollback();
+                }
             }
         } catch (SQLException ex) {
-            LOG.info(ex.getLocalizedMessage());
+            LOG.error(ex.getLocalizedMessage());
         }
     }
 }

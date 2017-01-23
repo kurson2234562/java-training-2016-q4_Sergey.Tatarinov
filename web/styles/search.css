@@ -1,17 +1,7 @@
 body{
     width:98.9%;
     font: 17px Arial, sans-serif;
-    padding-top:65px;
-}
-
-h3{
-    color:#e74c3c;
-}
-
-select{
-    height:35px;
-    margin-right:10px;
-    float:left;
+    margin-top: 50px;
 }
 
 input[type="text"],input[type="number"] {
@@ -20,6 +10,10 @@ input[type="text"],input[type="number"] {
     float:left;
     margin-right:10px;
     padding:0 10px;
+}
+
+dl{
+    margin-left:-25px;
 }
 
 .panel{
@@ -67,11 +61,44 @@ dd{
     height:95vh;
 }
 
-.table-responsive .form-group{
-    margin:15px 0 !important;
+.glyphicon-ban-circle, .glyphicon-ok-sign{
+    font-size:16px;
+    padding-bottom:3px;
 }
 
-button.spacebtn{
+.glyphicon-ban-circle{
+    color:red;
+}
+
+.glyphicon-ok-sign{
+    color:green;
+}
+
+button span{
+    padding-right:5px;
+    margin-right:0;
+}
+
+table button {
+    max-width:175px;
+}
+
+.control-label{
+    width:30%;
+}
+
+.form-horizontal{
+    padding-top:10px;
+}
+
+.form-control.select{
+    float:left;
+    margin-left:15px;
+    width:45%
+}
+
+h3{
+    color:red;
     display:table;
-    margin:0 auto 20px auto;
+    margin:25px auto;
 }

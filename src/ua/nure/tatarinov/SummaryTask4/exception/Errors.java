@@ -26,7 +26,7 @@ public class Errors {
     public static final String ERR_NEGATIVE_DURATION = "The duration of the courses can not be negative";
     public static final String ERR_NOT_FIND_USER = "There is no user with that name or email";
     public static final String ERR_USER_HAS_NO_EMAIL ="This user has no e-mail address";
-
-
+    public static final String ERR_USER_NOT_LOGGER = "You are not logged. Please, login.";
+    public static final String ERR_BAD_REQUEST = "Bad request.";
 
 }

@@ -22,6 +22,9 @@ public class LogoutCommand extends Command {
         session.setAttribute("idLecturer", null);
         session.setAttribute("sort", null);
         session.setAttribute("sorting", null);
+        if (session!=null){
+            session.invalidate();
+        }
         return Path.PAGE_LOGIN;
     }
 }

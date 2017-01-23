@@ -33,13 +33,13 @@ public class LockCommand extends Command {
             return Path.PAGE_ERROR_PAGE;
         } else {
             List<StudentOnCourseDTO> students = new DerbyStudentOnCourseDAO().getAllStudentsOnCourse();
-            for (StudentOnCourseDTO student : students){
-                if (student.getIdStudentCourse() == Integer.parseInt(test)){
+            for (StudentOnCourseDTO student : students) {
+                if (student.getIdStudentCourse() == Integer.parseInt(test)) {
                     existStudent = true;
                     break;
                 }
             }
-            if (!existStudent){
+            if (!existStudent) {
                 request.setAttribute("errorMessage", Errors.ERR_CANNOT_FIND_STUDENT);
                 return Path.PAGE_ERROR_PAGE;
             }
@@ -56,6 +56,7 @@ public class LockCommand extends Command {
                 return Path.PAGE_ERROR_PAGE;
         }
         new DerbyUserDAO().lockUserById(Integer.parseInt(test), newValue);
+        request.setAttribute("params", "&id=" + test + "&lock=" + lock);
         return Path.PAGE_ADMIN;
     }
 }

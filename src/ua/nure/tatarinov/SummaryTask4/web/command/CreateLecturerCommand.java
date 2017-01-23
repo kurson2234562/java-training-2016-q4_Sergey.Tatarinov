@@ -39,6 +39,7 @@ public class CreateLecturerCommand extends Command {
         }else {
             List<UserDTO> users = new DerbyUserDAO().getAllUsers();
             for (UserDTO user : users) {
+                System.out.println(login + " " + user.getLogin());
                 if (user.getLogin().equals(login)) {
                     request.setAttribute("errorMessage", Errors.ERR_USERNAME_ALREADY_EXIST);
                     return Path.PAGE_ERROR_PAGE;

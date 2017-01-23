@@ -124,4 +124,10 @@ h3{
 
 .thumbnail{
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    margin-left:25px;
+    width:100%;
+}
+
+.thumbnail p{
+    text-align:center;
 }

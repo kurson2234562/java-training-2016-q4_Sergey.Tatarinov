@@ -22,7 +22,6 @@ public class UserDTO implements Serializable {
         this.email = email;
         this.roleId = roleId;
         this.stateId = stateId;
-        toString();
     }
 
     public UserDTO(int idUser, String login, String password, int roleId, int stateId) {

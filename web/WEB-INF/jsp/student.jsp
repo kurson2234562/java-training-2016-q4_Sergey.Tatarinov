@@ -17,14 +17,14 @@
         <%@ include file="/WEB-INF/jspf/header.jspf"%>
         <link rel="stylesheet" type="text/css" href="../../styles/student.css">
         <div class="container-fluid bs-const">
-            <div class="col-lg-3">
+            <div class="col-lg-3 info">
                 <%@ include file="/WEB-INF/jspf/about.jspf"%>
             </div>
             <div class="col-lg-9">
                 <div class="row">
                     <div class="cont">
                         <c:forEach items="${coursesForUser}" var="courseForUser">
-                            <div class="col-sm-2 col-md-3">
+                            <div class="col-lg-3">
                                 <div class="thumbnail">
                                     <c:choose>
                                         <c:when test="${courseForUser.nameCourse eq 'Java Web developing'}">

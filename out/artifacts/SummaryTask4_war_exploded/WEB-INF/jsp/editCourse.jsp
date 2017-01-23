@@ -18,12 +18,12 @@
             <div class="col-lg-9">
                 <div class="panel panel-primary table-responsive">
                     <div class="panel-heading"><my:Locale value="page.editcourse.title"/></div>
-                    <form>
+                    <form class="form-horizontal">
                         <input type="hidden" name="command" value="updateCourseCommand">
                         <table>
                             <course:editCourse method="update"/>
                         </table>
-                        <input type="submit" value="<my:Locale value="page.editcourse.title"/>">
+                        <button type="submit" class="spacebtn btn btn-success"><my:Locale value="page.editcourse.title"/></button>
                     </form>
                 </div>
             </div>

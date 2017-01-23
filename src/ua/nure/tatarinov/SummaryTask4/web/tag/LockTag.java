@@ -26,7 +26,7 @@ public class LockTag extends TagSupport {
     @Override
     public int doStartTag() throws JspException {
         LOG.info("Start tracing LockTag");
-        int countColumn = 5;
+        int countColumn = 2;
         HttpSession session = pageContext.getSession();
         ServletRequest request = pageContext.getRequest();
         String language = String.valueOf(session.getAttribute("language"));
@@ -49,9 +49,6 @@ public class LockTag extends TagSupport {
                     student.setName(resultSet.getString("name"));
                     student.setSurname(resultSet.getString("surname"));
                     student.setPatronymic(resultSet.getString("patronymic"));
-                    if ((!student.getPatronymic().isEmpty()) && (student.getPatronymic() != null)) {
-                        countColumn++;
-                    }
                     students.add(student);
                     user.setIdUser(resultSet.getInt("id_user"));
                     user.setLogin(resultSet.getString("login"));
@@ -75,8 +72,16 @@ public class LockTag extends TagSupport {
         Iterator usersIt = users.iterator();
         Iterator statesIt = states.iterator();
         StringBuffer table = new StringBuffer();
-        table.append("<table class =\"table table-striped\">\n")/*.append("<th colspan=\"")
-                .append(countColumn).append("\">").append(rb.getString("page.admin.student.list")).append("</th>")*/;
+        if (student != null) {
+            if ((!student.getPatronymic().isEmpty()) && (student.getPatronymic() != null)) {
+                countColumn++;
+            }
+        }
+        table.append("<table class=\"table table-bordered table-striped\">\n").append("<th class=\"info\" colspan=\"")
+                .append(countColumn).append("\">").append(rb.getString("page.people.role.student"))
+                .append("</th><th class=\"info\">").append(rb.getString("page.people.login"))
+                .append("</th><th class=\"info\">").append(rb.getString("page.people.password"))
+                .append("</th><th class=\"info\">").append(rb.getString("page.people.course.actions")).append("</th>");
         while (studentsIt.hasNext()) {
             student = (StudentDTO) studentsIt.next();
             user = (UserDTO) usersIt.next();
@@ -84,15 +89,15 @@ public class LockTag extends TagSupport {
             table.append("<tr>\n<td>")
                     .append(student.getSurname()).append("</td>\n<td>")
                     .append(student.getName()).append("</td>\n<td>");
-            if (countColumn == 5) {
+            if (countColumn == 3) {
                 table.append(student.getPatronymic()).append("</td><td>");
             }
-            table.append(user.getLogin()).append("</td>\n<td>")
+            table.append("<b>").append(user.getLogin()).append("</b></td>\n<td>")
                     .append(user.getPassword()).append("</td>\n<td>");
             if (state == State.UNLOCKED) {
                 table.append("<form action=\"controller\">\n" +
-                             "    <input type=\"hidden\" name=\"command\" value=\"lockCommand\">\n" +
-                             "    <input type=\"hidden\" name=\"id\" value=\"")
+                        "    <input type=\"hidden\" name=\"command\" value=\"lockCommand\">\n" +
+                        "    <input type=\"hidden\" name=\"id\" value=\"")
                         .append(user.getIdUser())
                         .append("\">\n" +
                                 "<input type=\"hidden\" name=\"lock\" value=\"true\">\n" +
@@ -102,14 +107,14 @@ public class LockTag extends TagSupport {
                         .append("</button>\n</form>");
             } else if (state == State.LOCKED) {
                 table.append("<form action=\"controller\">\n" +
-                             "    <input type=\"hidden\" name=\"command\" value=\"lockCommand\">\n" +
-                             "    <input type=\"hidden\" name=\"id\" value=\"")
+                        "    <input type=\"hidden\" name=\"command\" value=\"lockCommand\">\n" +
+                        "    <input type=\"hidden\" name=\"id\" value=\"")
                         .append(user.getIdUser())
                         .append("\">\n" +
-                             "    <input type=\"hidden\" name=\"lock\" value=\"false\">\n" +
-                             "<button type=\"submit\" class=\"btn btn-default btn-lg\">\n" +
-                             "  <span class=\"glyphicon glyphicon-ok-sign\" aria-hidden=\"true\"></span>")
-                .append(rb.getString("page.admin.action.unlock"))
+                                "    <input type=\"hidden\" name=\"lock\" value=\"false\">\n" +
+                                "<button type=\"submit\" class=\"btn btn-default btn-lg\">\n" +
+                                "  <span class=\"glyphicon glyphicon-ok-sign\" aria-hidden=\"true\"></span>")
+                        .append(rb.getString("page.admin.action.unlock"))
                         .append("</button>\n</form>");
             }
         }

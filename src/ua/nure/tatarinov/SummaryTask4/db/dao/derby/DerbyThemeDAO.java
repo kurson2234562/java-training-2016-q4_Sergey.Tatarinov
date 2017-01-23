@@ -25,14 +25,20 @@ public class DerbyThemeDAO implements ThemeDAO {
 
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
-                PreparedStatement statement = connection.prepareStatement(Query.SELECT_ALL_THEMES);
-                statement.execute();
-                ResultSet resultSet = statement.getResultSet();
-                while (resultSet.next()) {
-                    theme = new ThemeDTO(resultSet.getInt("id_theme"), resultSet.getString("name_theme"));
-                    themes.add(theme);
+                try (PreparedStatement statement = connection.prepareStatement(Query.SELECT_ALL_THEMES)) {
+                    connection.setAutoCommit(false);
+                    statement.execute();
+                    ResultSet resultSet = statement.getResultSet();
+                    while (resultSet.next()) {
+                        theme = new ThemeDTO(resultSet.getInt("id_theme"), resultSet.getString("name_theme"));
+                        themes.add(theme);
+                    }
+                    resultSet.close();
+                    connection.commit();
+                } catch (SQLException ex) {
+                    LOG.error(ex.getLocalizedMessage());
+                    connection.rollback();
                 }
-                resultSet.close();
             }
         } catch (SQLException ex) {
             LOG.info(ex.getLocalizedMessage());

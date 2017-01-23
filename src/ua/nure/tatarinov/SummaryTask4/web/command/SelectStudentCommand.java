@@ -31,15 +31,15 @@ public class SelectStudentCommand extends Command {
             request.setAttribute("errorMessage", Errors.ERR_NOT_A_NUMBER);
             return Path.PAGE_ERROR_PAGE;
         } else {
-            for(StudentOnCourseDTO student : students){
-                if (student.getIdStudentCourse()==Integer.parseInt(test)){
+            for (StudentOnCourseDTO student : students) {
+                if (student.getIdStudentCourse() == Integer.parseInt(test)) {
                     existStudent = true;
                 }
             }
-            if (!existStudent){
+            if (!existStudent) {
                 request.setAttribute("errorMessage", Errors.ERR_CANNOT_FIND_STUDENT);
                 return Path.PAGE_ERROR_PAGE;
-            }else {
+            } else {
                 session.setAttribute("id_student_course", test);
                 if (request.getParameter("mark") != null) {
                     request.setAttribute("mark", request.getParameter("mark"));

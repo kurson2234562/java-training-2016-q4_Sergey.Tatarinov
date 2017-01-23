@@ -13,6 +13,9 @@ public class ConnectionPool {
 
     private static final Logger LOG = Logger.getLogger(ConnectionPool.class);
 
+    private ConnectionPool(){
+    }
+
     public static synchronized Connection getConnetcion() {
         try {
             Context initCtx = new InitialContext();

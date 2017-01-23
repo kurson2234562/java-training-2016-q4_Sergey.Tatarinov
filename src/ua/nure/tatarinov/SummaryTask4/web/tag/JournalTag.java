@@ -75,12 +75,13 @@ public class JournalTag extends TagSupport {
         Iterator journalIt = journal.iterator();
         StringBuffer table = new StringBuffer();
         if (hasLine) {
-            table.append("<table>\n").append("<th>").append(rb.getString("page.people.course.name"))
-                    .append("</th><th>").append(rb.getString("page.people.course.duration"))
-                    .append("</th><th colspan=\"").append(countInitials).append("\">")
+            table.append("<table class=\"table table-bordered table-striped\">\n")
+                    .append("<th class=\"info\">").append(rb.getString("page.people.course.name"))
+                    .append("</th><th class=\"info\">").append(rb.getString("page.people.course.duration"))
+                    .append("</th><th class=\"info\" colspan=\"").append(countInitials).append("\">")
                     .append(rb.getString("page.lecturer.student"))
-                    .append("</th><th>").append(rb.getString("page.student.mark"))
-                    .append("</th><th>").append(rb.getString("page.people.course.actions"))
+                    .append("</th><th class=\"info\">").append(rb.getString("page.student.mark"))
+                    .append("</th><th class=\"info\">").append(rb.getString("page.people.course.actions"))
                     .append("</th>\n");
             while (studentIt.hasNext()) {
                 student = (StudentDTO) studentIt.next();
@@ -100,10 +101,10 @@ public class JournalTag extends TagSupport {
                 table.append(noteJournal.getMark())
                         .append("</td><td><form action=\"controller\">")
                         .append("<input type=\"hidden\" name=\"command\" value=\"selectStudentCommand\">")
-                        .append("<input type=\"submit\" value=\"")
+                        .append("<button type=\"submit\" class=\"btn btn-success\">")
+                        .append("<span class=\"glyphicon glyphicon glyphicon-pencil\" aria-hidden=\"true\"></span>")
                         .append(rb.getString("page.lecturer.edit.mark"))
-                        .append("\" id=\"edit\"/>\n")
-                        .append("<input type=\"hidden\" name=\"id\" value=\"")
+                        .append("</button>\n<input type=\"hidden\" name=\"id\" value=\"")
                         .append(noteJournal.getIdStudentCourse()).append("\"></form></td></tr>\n");
             }
             table.append("</table>");

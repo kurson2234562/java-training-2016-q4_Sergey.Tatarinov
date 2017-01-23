@@ -3,6 +3,7 @@ package ua.nure.tatarinov.SummaryTask4.web.filter;
 import org.apache.log4j.Logger;
 import ua.nure.tatarinov.SummaryTask4.Path;
 import ua.nure.tatarinov.SummaryTask4.db.Role;
+import ua.nure.tatarinov.SummaryTask4.exception.Errors;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
@@ -34,7 +35,8 @@ public class CommandAccessFilter implements Filter {
 
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         LOG.debug("Filter starts");
-
+        HttpServletRequest httpReq = (HttpServletRequest) request;
+        HttpSession session = httpReq.getSession();
         if (accessAllowed(request)) {
             LOG.debug("Filter finished");
             chain.doFilter(request, response);
@@ -44,6 +46,12 @@ public class CommandAccessFilter implements Filter {
             request.setAttribute("errorMessage", errorMessasge);
             LOG.trace("Set the request attribute: errorMessage --> " + errorMessasge);
 
+            request.getRequestDispatcher(Path.PAGE_ERROR_PAGE)
+                    .forward(request, response);
+        }
+
+        if (session.getAttribute("user")==null){
+            request.setAttribute("errorMessage", Errors.ERR_USER_NOT_LOGGER);
             request.getRequestDispatcher(Path.PAGE_ERROR_PAGE)
                     .forward(request, response);
         }

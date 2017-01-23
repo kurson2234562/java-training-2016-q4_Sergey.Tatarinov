@@ -19,16 +19,16 @@ public class Controller extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         LOG.trace("*****************POST*****************");
-        process(request, response);
+        process(request, response, "post");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         LOG.trace("*****************GET*****************");
-        process(request, response);
+        process(request, response, "get");
     }
 
     private void process(HttpServletRequest request,
-                         HttpServletResponse response) throws IOException, ServletException {
+                         HttpServletResponse response, String method) throws IOException, ServletException {
 
         LOG.debug("Controller starts");
 
@@ -38,6 +38,7 @@ public class Controller extends HttpServlet {
 
         // obtain command object by its name
         Command command = CommandContainer.get(commandName);
+
         LOG.trace("Obtained command --> " + command);
 
         // execute command and get forward address
@@ -52,6 +53,7 @@ public class Controller extends HttpServlet {
         LOG.debug("Controller finished, now go to forward address --> " + forward);
 
         // go to forward
+        //response.sendRedirect(request.getContextPath()+"?command="+commandName);
         request.getRequestDispatcher(forward).forward(request, response);
     }
 }

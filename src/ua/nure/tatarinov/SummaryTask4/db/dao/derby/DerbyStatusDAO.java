@@ -25,18 +25,23 @@ public class DerbyStatusDAO implements StatusDAO {
 
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
-                PreparedStatement statement = connection.prepareStatement(Query.SELECT_ALL_STATUSES);
-                statement.execute();
-                ResultSet resultSet = statement.getResultSet();
-                while (resultSet.next()) {
-                    status = new StatusDTO(resultSet.getInt("id_status"), resultSet.getString("name_status"));
-                    statuses.add(status);
+                try (PreparedStatement statement = connection.prepareStatement(Query.SELECT_ALL_STATUSES)) {
+                    connection.setAutoCommit(false);
+                    statement.execute();
+                    ResultSet resultSet = statement.getResultSet();
+                    while (resultSet.next()) {
+                        status = new StatusDTO(resultSet.getInt("id_status"), resultSet.getString("name_status"));
+                        statuses.add(status);
+                    }
+                    resultSet.close();
+                    connection.commit();
+                } catch (SQLException ex) {
+                    LOG.error(ex.getLocalizedMessage());
+                    connection.rollback();
                 }
-                resultSet.close();
-
             }
         } catch (SQLException ex) {
-            LOG.info(ex.getLocalizedMessage());
+            LOG.error(ex.getLocalizedMessage());
         }
         return statuses;
     }

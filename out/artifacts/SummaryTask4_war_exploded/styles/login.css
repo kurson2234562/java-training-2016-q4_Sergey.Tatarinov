@@ -2,18 +2,18 @@ body{
 	margin: 0 auto;
 	background: url("../img/background.png") no-repeat center center fixed;
 	background-size: cover;
-    display: block;
+	display: block;
 }
 
 #flags{
-    display: inline-flex;
-    margin-left: 91%;
+	display: inline-flex;
+	margin-left: 91%;
 }
 
 #flags input{
-    padding: 0 4px;
-    width: 30px;
-    height: 25px;
+	padding: 0 4px;
+	width: 30px;
+	height: 25px;
 }
 
 #container{
@@ -43,13 +43,13 @@ input[type="text"], input[type="password"]{
 }
 
 input[type="text"]{
-    background: white url("../img/user.png") no-repeat 10px 10px;
-    background-size: 9%;
+	background: white url("../img/user.png") no-repeat 10px 10px;
+	background-size: 9%;
 }
 
 input[type="password"]{
-    background: white url("../img/pass.png") no-repeat 10px 10px;
-    background-size: 9%;
+	background: white url("../img/pass.png") no-repeat 10px 10px;
+	background-size: 9%;
 }
 
 #login{
@@ -64,8 +64,8 @@ input[type="password"]{
 }
 
 b{
-    margin: 48%;
-    padding-top: 60%;
+	margin: 48%;
+	padding-top: 60%;
 }
 
 a{
@@ -77,4 +77,8 @@ a{
 	color:white;
 	border: rgba(52, 73, 94, 0.8) 0 solid;
 	cursor:pointer;
+}
+
+button{
+	font-size:15px;
 }

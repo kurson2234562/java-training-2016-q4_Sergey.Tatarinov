@@ -42,26 +42,26 @@
                     <c:when test="${not empty result.rows}">
                         <div class="panel panel-primary table-responsive">
                             <div class="panel-heading"><my:Locale value="page.change.mark.title"/></div>
-                            <table>
+                            <table class="table table-bordered table-striped">
                                 <tr>
                                     <c:forEach items="${result.rows}" var="row" >
                                         <c:choose>
                                             <c:when test="${not empty row.patronymic}">
-                                                <th colspan="3">
+                                                <th class="info" colspan="3">
                                                     <my:Locale value="page.lecturer.student"/>
                                                 </th>
                                             </c:when>
                                             <c:otherwise>
-                                                <th colspan="2">
+                                                <th class="info" colspan="2">
                                                     <my:Locale value="page.lecturer.student"/>
                                                 </th>
                                             </c:otherwise>
                                         </c:choose>
                                     </c:forEach>
-                                    <th><my:Locale value="page.student.mark"/></th>
+                                    <th class="info"><my:Locale value="page.student.mark"/></th>
                                 </tr>
                                 <c:forEach items="${result.rows}" var="row" >
-                                    <tr>
+                                    <tr class="active">
                                         <td>${row.surname}</td>
                                         <td>${row.name}</td>
                                         <c:choose>

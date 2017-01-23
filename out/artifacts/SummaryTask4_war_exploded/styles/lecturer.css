@@ -4,118 +4,37 @@ body{
     font: 17px Arial, sans-serif;
 }
 
-p{
-    margin:-20px -20px 5px -20px;
-    padding:20px 0 20px 30px;
-    background-color:#3498db;
-    color:#2c3e50;
-    font-size: 16px;
-    font-weight: 800;
-}
-
-.list{
-    border:#bdc3c7 2px solid;
-    width:68%;
-    float:right;
-    padding:20px;
-    margin:20px 0;
-}
-
 h3{
     color:#e74c3c;
 }
 
-#info{
-    float:left;
-    border-right: #27ae60 3px solid;
-    width :360px;
-    height:88%;
-    margin:0 30px 0 0;
-    padding:20px 0 200px 20px;
-    font: 17px Arial, sans-serif;
-}
-
-input{
-    width:200px;
-    height:40px;
-}
-
 table {
-    padding-top:15px;
     font:14px "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
-    border-radius: 10px;
-    border-spacing: 0;
     text-align: center;
 }
-th {
-    background: #e74c3c;
-    color: white;
-    text-shadow: 0 1px 1px #2D2020;
-    padding: 10px 20px;
-    height: 40px;
-}
-th, td {
-    border-style: solid;
-    border-width: 0 1px 1px 0;
-    border-color: white;
-}
-th:first-child, td:first-child {
-    text-align: left;
-}
-td {
-    padding: 10px 20px;
-    background: #ecf0f1;
+
+th, td{
+    text-align:center;
 }
 
-#edit{
-    width:150px;
-    height:30px;
+.glyphicon-exclamation-sign{
+    font-size:25px;
+    color:#a94442;
+    padding-right:10px;
 }
 
-input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+.alert-danger{
+    margin-bottom:0;
 }
 
-#other{
-    display:block;
-    float:left;
-}
-
-.icon{
-    width:10px;
-    height:10px;
-}
-
-.about{
-    padding-left:20px;
-    padding-right:20px;
-    font-weight:800;
-    color:#27ae60;
-}
-
-ul{
-    padding-left:0;
-    list-style:none;
-}
-
-#user{
-    padding-left:110px;
-    width:120px;
-    height:120px;
-    margin-bottom:10px;
-}
-
-input[type="submit"]{
-    border-radius:20px;
-    background-color:#27ae60;
+.glyphicon-pencil{
+    font-size:18px;
     color:white;
-    text-shadow: 0 1px 5px #2D2020;
-    font-weight:800;
-    cursor:pointer;
+    padding-right:10px;
 }
 
-td input[type="submit"]{
-    height:30px;
-    width:80px;
+.col-lg-3{
+    padding-top:30px;
+    height:95vh;
+    border-right: #27ae60 1px solid;
 }
