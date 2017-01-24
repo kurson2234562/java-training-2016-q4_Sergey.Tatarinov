@@ -1,4 +1,4 @@
-package ua.nure.tatarinov.SummaryTask4.db.dao.derby;
+package ua.nure.tatarinov.SummaryTask4.db.dao.mysql;
 
 import org.apache.log4j.Logger;
 import ua.nure.tatarinov.SummaryTask4.db.Query;
@@ -13,13 +13,13 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DerbyLecturerDAO implements LecturerDAO {
+public class MySQLLecturerDAO implements LecturerDAO {
 
-    public static final Logger LOG = Logger.getLogger(DerbyLecturerDAO.class);
+    public static final Logger LOG = Logger.getLogger(MySQLLecturerDAO.class);
 
     @Override
     public List<LecturerDTO> getAllLecturers() {
-        LOG.trace("Starting tracing DerbyLecturerDAO#getAllLecturers");
+        LOG.trace("Starting tracing MySQLLecturerDAO#getAllLecturers");
         List<LecturerDTO> lecturers = new ArrayList<>();
         LecturerDTO lecturer;
         try (Connection connection = ConnectionPool.getConnetcion()) {
@@ -48,9 +48,8 @@ public class DerbyLecturerDAO implements LecturerDAO {
 
     @Override
     public int createLecturer(String surname, String name, String patronymic, int idUser) {
-        LOG.trace("Starting tracing DerbyLecturerDAO#createLecturer");
+        LOG.trace("Starting tracing MySQLLecturerDAO#createLecturer");
         int id = -1;
-        LecturerDTO lecturer = new LecturerDTO();
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
                 try (PreparedStatement statement = connection.prepareStatement(Query.CREATE_LECTURER)) {
@@ -65,7 +64,7 @@ public class DerbyLecturerDAO implements LecturerDAO {
                     stmt.execute();
                     ResultSet resultSet = stmt.getResultSet();
                     if (resultSet.next()) {
-                        id = resultSet.getInt("1");
+                        id = resultSet.getInt("max(id)");
                     }
                     resultSet.close();
                     connection.commit();
@@ -82,7 +81,7 @@ public class DerbyLecturerDAO implements LecturerDAO {
 
     @Override
     public void changeLecturer(int id, int idCourse) {
-        LOG.trace("Starting tracing DerbyLecturerDAO#changeLecturer");
+        LOG.trace("Starting tracing MySQLLecturerDAO#changeLecturer");
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
                 try(PreparedStatement statement = connection.prepareStatement(Query.CHANGE_LECTURER)) {
@@ -104,7 +103,7 @@ public class DerbyLecturerDAO implements LecturerDAO {
 
     @Override
     public List<LecturerDTO> findLecturersByString(String searchResult) {
-        LOG.trace("Start tracing DerbyLecturerDAO#findLecturersByString");
+        LOG.trace("Start tracing MySQLLecturerDAO#findLecturersByString");
         List<LecturerDTO> lecturers = new ArrayList<>();
         LecturerDTO lecturer;
         try (Connection connection = ConnectionPool.getConnetcion()) {

@@ -3,7 +3,7 @@ package ua.nure.tatarinov.SummaryTask4.web.command;
 import org.apache.log4j.Logger;
 import ua.nure.tatarinov.SummaryTask4.Path;
 import ua.nure.tatarinov.SummaryTask4.core.Utils;
-import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyJournalDAO;
+import ua.nure.tatarinov.SummaryTask4.db.dao.mysql.MySQLJournalDAO;
 import ua.nure.tatarinov.SummaryTask4.exception.Errors;
 
 import javax.servlet.ServletException;
@@ -34,7 +34,7 @@ public class UpdateJournalCommand extends Command {
             }
             int id = Integer.parseInt(String.valueOf(session.getAttribute("id_student_course")));
             int newValue = Integer.parseInt(test);
-            new DerbyJournalDAO().updateJournal(id, newValue);
+            new MySQLJournalDAO().updateJournal(id, newValue);
             return Path.PAGE_LECTURER;
         }
     }

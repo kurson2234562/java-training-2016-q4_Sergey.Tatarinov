@@ -12,4 +12,5 @@ public interface StudentDAO {
 
     public StudentDTO findStudentByIdUser(int id);
 
+    public List<Integer> getStudentMarksById(int id);
 }

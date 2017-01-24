@@ -1,4 +1,4 @@
-package ua.nure.tatarinov.SummaryTask4.db.dao.derby;
+package ua.nure.tatarinov.SummaryTask4.db.dao.mysql;
 
 import org.apache.log4j.Logger;
 import ua.nure.tatarinov.SummaryTask4.db.Query;
@@ -13,13 +13,13 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DerbyThemeDAO implements ThemeDAO {
+public class MySQLThemeDAO implements ThemeDAO {
 
-    public static final Logger LOG = Logger.getLogger(DerbyThemeDAO.class);
+    public static final Logger LOG = Logger.getLogger(MySQLThemeDAO.class);
 
     @Override
     public List<ThemeDTO> getAllThemes() {
-        LOG.trace("Starting tracing DerbyThemeDAO");
+        LOG.trace("Starting tracing MySQLThemeDAO");
         List<ThemeDTO> themes = new ArrayList<>();
         ThemeDTO theme;
 

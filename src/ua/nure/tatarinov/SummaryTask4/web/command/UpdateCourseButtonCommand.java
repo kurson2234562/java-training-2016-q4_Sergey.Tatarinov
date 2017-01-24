@@ -3,7 +3,7 @@ package ua.nure.tatarinov.SummaryTask4.web.command;
 import org.apache.log4j.Logger;
 import ua.nure.tatarinov.SummaryTask4.Path;
 import ua.nure.tatarinov.SummaryTask4.core.Utils;
-import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyCourseDAO;
+import ua.nure.tatarinov.SummaryTask4.db.dao.mysql.MySQLCourseDAO;
 import ua.nure.tatarinov.SummaryTask4.db.dto.CourseDTO;
 import ua.nure.tatarinov.SummaryTask4.exception.Errors;
 
@@ -23,7 +23,7 @@ public class UpdateCourseButtonCommand extends Command {
         LOG.trace("Starting trace UpdateCourseButtonCommand");
         HttpSession session = request.getSession();
         String test = request.getParameter("id");
-        List<CourseDTO> courses = new DerbyCourseDAO().getAllCourses();
+        List<CourseDTO> courses = new MySQLCourseDAO().getAllCourses();
         boolean existCourse = false;
         if (!Utils.isDigit(test)){
             request.setAttribute("errorMessage", Errors.ERR_NOT_A_NUMBER);

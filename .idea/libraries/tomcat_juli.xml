@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="tomcat-juli">
+    <CLASSES>
+      <root url="jar:///media/kurson/Локальный диск1/Program Files/Tomcat/bin/tomcat-juli.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

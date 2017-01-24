@@ -7,6 +7,14 @@ public class JournalDTO implements Serializable {
     private int idStudentCourse;
     private int mark;
 
+    public JournalDTO(int idStudentCourse, int mark) {
+        this.idStudentCourse = idStudentCourse;
+        this.mark = mark;
+    }
+
+    public JournalDTO() {
+    }
+
     @Override
     public String toString() {
         return "JournalDTO{" +

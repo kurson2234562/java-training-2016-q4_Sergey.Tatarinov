@@ -1,4 +1,4 @@
-package ua.nure.tatarinov.SummaryTask4.db.dao.derby;
+package ua.nure.tatarinov.SummaryTask4.db.dao.mysql;
 
 import org.apache.log4j.Logger;
 import ua.nure.tatarinov.SummaryTask4.db.Query;
@@ -10,13 +10,14 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DerbyUserDAO extends UserDTO implements UserDAO {
+public class MySQLUserDAO extends UserDTO implements UserDAO {
 
-    public static final Logger LOG = Logger.getLogger(DerbyUserDAO.class);
+    public static final Logger LOG = Logger.getLogger(MySQLUserDAO.class);
+    private static final long serialVersionUID = 5566685127381260993L;
 
     @Override
     public void lockUserById(int id, int state) {
-        LOG.trace("Start tracing DerbyUserDAO#lockUserById");
+        LOG.trace("Start tracing MySQLUserDAO#lockUserById");
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if ((connection != null) && (state != -1)) {
                 try (PreparedStatement statement = connection.prepareStatement(Query.CHANGE_STATE_USER, Statement.RETURN_GENERATED_KEYS)) {
@@ -24,6 +25,12 @@ public class DerbyUserDAO extends UserDTO implements UserDAO {
                     statement.setInt(1, state);
                     statement.setInt(2, id);
                     statement.executeUpdate();
+                    /*ResultSet resultSet = statement.getResultSet();
+                    if (resultSet.next()){
+                        user = new UserDTO(resultSet.getInt("id_user"), resultSet.getString("login"),
+                                resultSet.getString("password"), resultSet.getString("email"),
+                                resultSet.getInt("id_role"), resultSet.getInt("id_state"));
+                    }*/
                     connection.commit();
                 } catch (SQLException e) {
                     LOG.error(e.getLocalizedMessage());
@@ -36,7 +43,7 @@ public class DerbyUserDAO extends UserDTO implements UserDAO {
     }
 
     public UserDTO findUserByLogin(String login) {
-        LOG.trace("Start tracing DerbyUserDAO#findUserByLogin");
+        LOG.trace("Start tracing MySQLUserDAO#findUserByLogin");
         UserDTO user = null;
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
@@ -65,7 +72,7 @@ public class DerbyUserDAO extends UserDTO implements UserDAO {
 
     @Override
     public UserDTO createUser(String login, String password) {
-        LOG.trace("Start tracing DerbyUserDAO#createUser");
+        LOG.trace("Start tracing MySQLUserDAO#createUser");
         UserDTO user = null;
         int id = -1;
 
@@ -97,7 +104,7 @@ public class DerbyUserDAO extends UserDTO implements UserDAO {
 
     @Override
     public List<UserDTO> getAllUsers() {
-        LOG.trace("Start tracing DerbyUserDAO#getAllUsers");
+        LOG.trace("Start tracing MySQLUserDAO#getAllUsers");
         List<UserDTO> users = new ArrayList<>();
         UserDTO user;
 
@@ -129,7 +136,8 @@ public class DerbyUserDAO extends UserDTO implements UserDAO {
 
     @Override
     public void registerUserOnCourse(int id, int idCourse) {
-        LOG.trace("Start tracing DerbyUserDAO#registerUserOnCourse");
+        LOG.trace("Start tracing MySQLUserDAO#registerUserOnCourse");
+        UserDTO user = null;
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
                 try (PreparedStatement statement = connection.prepareStatement(Query.REGISTER_USER_ON_COURSE)) {
@@ -149,7 +157,7 @@ public class DerbyUserDAO extends UserDTO implements UserDAO {
     }
 
     public void setNewPassword(int id, String password) {
-        LOG.trace("Start tracing DerbyUserDAO#setNewPassword");
+        LOG.trace("Start tracing MySQLUserDAO#setNewPassword");
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
                 try (PreparedStatement statement = connection.prepareStatement(Query.UPDATE_PASSWORD)) {

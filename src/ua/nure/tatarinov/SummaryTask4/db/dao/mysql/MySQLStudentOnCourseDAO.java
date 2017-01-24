@@ -1,4 +1,4 @@
-package ua.nure.tatarinov.SummaryTask4.db.dao.derby;
+package ua.nure.tatarinov.SummaryTask4.db.dao.mysql;
 
 import org.apache.log4j.Logger;
 import ua.nure.tatarinov.SummaryTask4.db.Query;
@@ -13,9 +13,9 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DerbyStudentOnCourseDAO implements StudentOnCourseDAO {
+public class MySQLStudentOnCourseDAO implements StudentOnCourseDAO {
 
-    public static final Logger LOG = Logger.getLogger(DerbyStudentOnCourseDAO.class);
+    public static final Logger LOG = Logger.getLogger(MySQLStudentOnCourseDAO.class);
 
     @Override
     public List<StudentOnCourseDTO> getAllStudentsOnCourse() {

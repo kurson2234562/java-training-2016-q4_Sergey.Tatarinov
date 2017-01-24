@@ -2,9 +2,9 @@ package ua.nure.tatarinov.SummaryTask4.web.command;
 
 import org.apache.log4j.Logger;
 import ua.nure.tatarinov.SummaryTask4.Path;
-import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyCourseDAO;
-import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyLecturerDAO;
-import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyUserDAO;
+import ua.nure.tatarinov.SummaryTask4.db.dao.mysql.MySQLCourseDAO;
+import ua.nure.tatarinov.SummaryTask4.db.dao.mysql.MySQLLecturerDAO;
+import ua.nure.tatarinov.SummaryTask4.db.dao.mysql.MySQLUserDAO;
 import ua.nure.tatarinov.SummaryTask4.db.dto.CourseDTO;
 import ua.nure.tatarinov.SummaryTask4.db.dto.UserDTO;
 import ua.nure.tatarinov.SummaryTask4.exception.Errors;
@@ -37,15 +37,14 @@ public class CreateLecturerCommand extends Command {
             request.setAttribute("errorMessage", Errors.ERR_PASS_NO_MATCH);
             return Path.PAGE_ERROR_PAGE;
         }else {
-            List<UserDTO> users = new DerbyUserDAO().getAllUsers();
+            List<UserDTO> users = new MySQLUserDAO().getAllUsers();
             for (UserDTO user : users) {
-                System.out.println(login + " " + user.getLogin());
                 if (user.getLogin().equals(login)) {
                     request.setAttribute("errorMessage", Errors.ERR_USERNAME_ALREADY_EXIST);
                     return Path.PAGE_ERROR_PAGE;
                 }
             }
-            List<CourseDTO> courses = new DerbyCourseDAO().getAllCourses();
+            List<CourseDTO> courses = new MySQLCourseDAO().getAllCourses();
             for (CourseDTO course : courses) {
                 if (course.getIdCourse() == idCourse) {
                     existCourse = true;
@@ -56,10 +55,10 @@ public class CreateLecturerCommand extends Command {
                 return Path.PAGE_ERROR_PAGE;
             }
         }
-        UserDTO user = new DerbyUserDAO().createUser(login, password);
-        id = new DerbyLecturerDAO().createLecturer(surname, name, patronymic, user.getIdUser());
+        UserDTO user = new MySQLUserDAO().createUser(login, password);
+        id = new MySQLLecturerDAO().createLecturer(surname, name, patronymic, user.getIdUser());
         if (id != -1) {
-            new DerbyLecturerDAO().changeLecturer(id, idCourse);
+            new MySQLLecturerDAO().changeLecturer(id, idCourse);
         }
         return Path.PAGE_COURSES;
     }

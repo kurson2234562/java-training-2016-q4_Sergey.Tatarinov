@@ -92,3 +92,7 @@ h3{
     height:95vh;
     border-right: #27ae60 1px solid;
 }
+
+ul form{
+    margin-bottom:0;
+}

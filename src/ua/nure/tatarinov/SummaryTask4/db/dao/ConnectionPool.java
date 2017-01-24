@@ -16,7 +16,7 @@ public class ConnectionPool {
     private ConnectionPool(){
     }
 
-    public static synchronized Connection getConnetcion() {
+    public static synchronized Connection getDerbyConnetcion() {
         try {
             Context initCtx = new InitialContext();
             DataSource ds = (DataSource) initCtx.lookup("java:comp/env/jdbc/facultaty");
@@ -30,4 +30,21 @@ public class ConnectionPool {
             return null;
         }
     }
+
+    public static synchronized Connection getConnetcion() {
+        try {
+            Context initCtx = new InitialContext();
+            Context envContext = (Context) initCtx.lookup("java:/comp/env");
+            DataSource ds = (DataSource) envContext.lookup("jdbc/courses");
+            LOG.trace("Connection is successful");
+            return ds.getConnection();
+        } catch (NamingException ex) {
+            LOG.error("Cannot find the data source");
+            return null;
+        } catch (SQLException ex) {
+            LOG.error("Cannot get connection from data source");
+            return null;
+        }
+    }
+
 }

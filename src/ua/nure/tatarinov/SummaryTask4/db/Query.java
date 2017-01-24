@@ -16,6 +16,7 @@ public class Query {
     public static final String SELECT_ALL_DEFINITE_COURSE = "SELECT * FROM COURSES WHERE ID_COURSE=?";
     public static final String SELECT_STUDENT_BY_ID_USER =  "SELECT * FROM STUDENTS WHERE ID_USER=?";
     public static final String SELECT_USER_BY_LOGIN =       "SELECT * FROM USERS WHERE LOGIN = ?";
+    public static final String SELECT_STUDENT_MARK_BY_ID =  "SELECT mark, JOURNAL.id_student_course FROM JOURNAL INNER JOIN STUDENT_COURSE ON JOURNAL.id_student_course = STUDENT_COURSE.id_student_course INNER JOIN STUDENTS ON STUDENT_COURSE.id_student = STUDENTS.id WHERE JOURNAL.ID_STUDENT_COURSE=?";
 
     public static final String SELECT_LAST_LECTURER_ID =                                "SELECT MAX(ID) FROM LECTURERS";
     public static final String SELECT_LAST_USER_ID =                                    "SELECT MAX(ID_USER) FROM USERS";
@@ -29,7 +30,7 @@ public class Query {
 
     public static final String SELECT_COUNT_STUDENTS_PER_COURSE = "SELECT COUNT(ID_STUDENT_COURSE), ID_COURSE FROM STUDENT_COURSE GROUP BY ID_COURSE";
 
-    public static final String FIND_STUDENT_BY_STRING =     "SELECT * FROM STUDENTS WHERE UPPER(SURNAME) LIKE UPPER(?) OR NAME LIKE UPPER(?) OR PATRONYMIC LIKE UPPER(?)";
+    public static final String FIND_STUDENT_BY_STRING =     "SELECT * FROM STUDENTS WHERE UCASE(SURNAME) LIKE UCASE(?) OR NAME LIKE UCASE(?) OR PATRONYMIC LIKE UCASE(?)";
     public static final String FIND_LECTURER_BY_STRING =    "SELECT * FROM LECTURERS WHERE UPPER(SURNAME) LIKE UPPER(?) OR NAME LIKE UPPER(?) OR PATRONYMIC LIKE UPPER(?)";
     public static final String FIND_COURSE_BY_STRING =      "SELECT * FROM COURSES WHERE UPPER(NAME_COURSE) LIKE UPPER(?)";
 

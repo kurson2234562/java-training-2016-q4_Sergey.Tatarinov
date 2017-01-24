@@ -1,10 +1,10 @@
 package ua.nure.tatarinov.SummaryTask4.web.tag;
 
 import org.apache.log4j.Logger;
-import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyCourseDAO;
-import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyLecturerDAO;
-import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyStatusDAO;
-import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyThemeDAO;
+import ua.nure.tatarinov.SummaryTask4.db.dao.mysql.MySQLCourseDAO;
+import ua.nure.tatarinov.SummaryTask4.db.dao.mysql.MySQLLecturerDAO;
+import ua.nure.tatarinov.SummaryTask4.db.dao.mysql.MySQLStatusDAO;
+import ua.nure.tatarinov.SummaryTask4.db.dao.mysql.MySQLThemeDAO;
 import ua.nure.tatarinov.SummaryTask4.db.dto.CourseDTO;
 import ua.nure.tatarinov.SummaryTask4.db.dto.LecturerDTO;
 import ua.nure.tatarinov.SummaryTask4.db.dto.StatusDTO;
@@ -50,10 +50,10 @@ public class EditCourseTag extends TagSupport {
         LecturerDTO lecturer = null;
         CourseDTO course = null;
 
-        List<LecturerDTO> lecturers = new DerbyLecturerDAO().getAllLecturers();
-        List<ThemeDTO> themes = new DerbyThemeDAO().getAllThemes();
-        List<StatusDTO> statuses = new DerbyStatusDAO().getAllStatuses();
-        course = new DerbyCourseDAO().getCourseByIdCourse(id);
+        List<LecturerDTO> lecturers = new MySQLLecturerDAO().getAllLecturers();
+        List<ThemeDTO> themes = new MySQLThemeDAO().getAllThemes();
+        List<StatusDTO> statuses = new MySQLStatusDAO().getAllStatuses();
+        course = new MySQLCourseDAO().getCourseByIdCourse(id);
 
         JspWriter out = pageContext.getOut();
         Iterator lecturerIt = lecturers.iterator();

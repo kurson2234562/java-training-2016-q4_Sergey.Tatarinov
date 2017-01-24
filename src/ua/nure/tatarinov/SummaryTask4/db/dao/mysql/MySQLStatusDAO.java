@@ -1,4 +1,4 @@
-package ua.nure.tatarinov.SummaryTask4.db.dao.derby;
+package ua.nure.tatarinov.SummaryTask4.db.dao.mysql;
 
 import org.apache.log4j.Logger;
 import ua.nure.tatarinov.SummaryTask4.db.Query;
@@ -13,13 +13,13 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DerbyStatusDAO implements StatusDAO {
+public class MySQLStatusDAO implements StatusDAO {
 
-    public static final Logger LOG = Logger.getLogger(DerbyStatusDAO.class);
+    public static final Logger LOG = Logger.getLogger(MySQLStatusDAO.class);
 
     @Override
     public List<StatusDTO> getAllStatuses() {
-        LOG.trace("Starting tracing DerbyStatusDAO");
+        LOG.trace("Starting tracing MySQLStatusDAO");
         List<StatusDTO> statuses = new ArrayList<>();
         StatusDTO status;
 

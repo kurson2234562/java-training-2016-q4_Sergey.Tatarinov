@@ -1,7 +1,7 @@
 package ua.nure.tatarinov.SummaryTask4.web.tag;
 
 import org.apache.log4j.Logger;
-import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyCourseDAO;
+import ua.nure.tatarinov.SummaryTask4.db.dao.mysql.MySQLCourseDAO;
 import ua.nure.tatarinov.SummaryTask4.db.dto.CourseDTO;
 
 import javax.servlet.http.HttpSession;
@@ -24,7 +24,7 @@ public class SelectCourseTag extends TagSupport {
         HttpSession session = pageContext.getSession();
         String language = String.valueOf(session.getAttribute("language"));
         ResourceBundle rb = ResourceBundle.getBundle("resources", new Locale(language));
-        List<CourseDTO> courses = new DerbyCourseDAO().getAllCourses();
+        List<CourseDTO> courses = new MySQLCourseDAO().getAllCourses();
         CourseDTO course = null;
         JspWriter out = pageContext.getOut();
         Iterator coursesIt = courses.iterator();

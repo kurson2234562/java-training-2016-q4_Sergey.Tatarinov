@@ -3,7 +3,7 @@ package ua.nure.tatarinov.SummaryTask4.web.command;
 import org.apache.log4j.Logger;
 import ua.nure.tatarinov.SummaryTask4.Path;
 import ua.nure.tatarinov.SummaryTask4.core.Utils;
-import ua.nure.tatarinov.SummaryTask4.db.dao.derby.*;
+import ua.nure.tatarinov.SummaryTask4.db.dao.mysql.*;
 import ua.nure.tatarinov.SummaryTask4.db.dto.CourseDTO;
 import ua.nure.tatarinov.SummaryTask4.db.dto.LecturerDTO;
 import ua.nure.tatarinov.SummaryTask4.db.dto.StatusDTO;
@@ -33,7 +33,7 @@ public class CreateCourseCommand extends Command {
         boolean existLecturer = false;
         boolean existStatus = false;
         //---------------------------------------------------------------------------------//
-        List<CourseDTO> courses = new DerbyCourseDAO().getAllCourses();
+        List<CourseDTO> courses = new MySQLCourseDAO().getAllCourses();
         for (CourseDTO course : courses) {
             if (name.equals(course.getNameCourse())) {
                 existCourse = true;
@@ -55,7 +55,7 @@ public class CreateCourseCommand extends Command {
                 request.setAttribute("errorMessage", Errors.ERR_NOT_A_NUMBER);
                 return Path.PAGE_ERROR_PAGE;
             } else {
-                List<ThemeDTO> themes = new DerbyThemeDAO().getAllThemes();
+                List<ThemeDTO> themes = new MySQLThemeDAO().getAllThemes();
                 for (ThemeDTO themeDTO : themes) {
                     if (themeDTO.getIdTheme() == Integer.parseInt(theme)) {
                         existTheme = true;
@@ -70,7 +70,7 @@ public class CreateCourseCommand extends Command {
                 request.setAttribute("errorMessage", Errors.ERR_NOT_A_NUMBER);
                 return Path.PAGE_ERROR_PAGE;
             } else {
-                List<LecturerDTO> lecturers = new DerbyLecturerDAO().getAllLecturers();
+                List<LecturerDTO> lecturers = new MySQLLecturerDAO().getAllLecturers();
                 for (LecturerDTO lecturerDTO : lecturers) {
                     if (lecturerDTO.getId() == Integer.parseInt(lecturer)) {
                         existLecturer = true;
@@ -85,7 +85,7 @@ public class CreateCourseCommand extends Command {
                 request.setAttribute("errorMessage", Errors.ERR_NOT_A_NUMBER);
                 return Path.PAGE_ERROR_PAGE;
             } else {
-                List<StatusDTO> statuses = new DerbyStatusDAO().getAllStatuses();
+                List<StatusDTO> statuses = new MySQLStatusDAO().getAllStatuses();
                 for (StatusDTO statusDTO : statuses) {
                     if (statusDTO.getIdStatus() == Integer.parseInt(status)) {
                         existStatus = true;
@@ -96,7 +96,7 @@ public class CreateCourseCommand extends Command {
                     return Path.PAGE_ERROR_PAGE;
                 }
             }
-            new DerbyCourseDAO().createCourse(name, Integer.parseInt(duration),
+            new MySQLCourseDAO().createCourse(name, Integer.parseInt(duration),
                     Integer.parseInt(theme), Integer.parseInt(lecturer), Integer.parseInt(status));
             return Path.PAGE_ADMIN;
         }

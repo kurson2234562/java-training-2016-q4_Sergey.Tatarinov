@@ -10,5 +10,15 @@
       <user-name>admin</user-name>
       <resolve-scope>:ADMIN,APP</resolve-scope>
     </data-source>
+    <data-source name="courses@localhost" uuid="895154e5-d83a-413d-a015-050aa61ff206">
+      <database-info product="MySQL" version="5.7.17-0ubuntu0.16.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <resolve-scope>courses:</resolve-scope>
+    </data-source>
   </component>
 </project>

@@ -2,8 +2,8 @@ package ua.nure.tatarinov.SummaryTask4.web.command;
 
 import org.apache.log4j.Logger;
 import ua.nure.tatarinov.SummaryTask4.Path;
-import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyStudentOnCourseDAO;
-import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyUserDAO;
+import ua.nure.tatarinov.SummaryTask4.db.dao.mysql.MySQLStudentOnCourseDAO;
+import ua.nure.tatarinov.SummaryTask4.db.dao.mysql.MySQLUserDAO;
 import ua.nure.tatarinov.SummaryTask4.db.dto.StudentOnCourseDTO;
 import ua.nure.tatarinov.SummaryTask4.exception.Errors;
 
@@ -32,7 +32,7 @@ public class LockCommand extends Command {
             request.setAttribute("errorMessage", Errors.ERR_NOT_A_NUMBER);
             return Path.PAGE_ERROR_PAGE;
         } else {
-            List<StudentOnCourseDTO> students = new DerbyStudentOnCourseDAO().getAllStudentsOnCourse();
+            List<StudentOnCourseDTO> students = new MySQLStudentOnCourseDAO().getAllStudentsOnCourse();
             for (StudentOnCourseDTO student : students) {
                 if (student.getIdStudentCourse() == Integer.parseInt(test)) {
                     existStudent = true;
@@ -55,7 +55,7 @@ public class LockCommand extends Command {
                 request.setAttribute("errorMessage", Errors.ERR_INVALID_VALUE_LOCK);
                 return Path.PAGE_ERROR_PAGE;
         }
-        new DerbyUserDAO().lockUserById(Integer.parseInt(test), newValue);
+        new MySQLUserDAO().lockUserById(Integer.parseInt(test), newValue);
         request.setAttribute("params", "&id=" + test + "&lock=" + lock);
         return Path.PAGE_ADMIN;
     }

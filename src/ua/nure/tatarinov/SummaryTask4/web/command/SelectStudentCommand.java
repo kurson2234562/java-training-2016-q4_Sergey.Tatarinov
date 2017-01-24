@@ -2,7 +2,7 @@ package ua.nure.tatarinov.SummaryTask4.web.command;
 
 import org.apache.log4j.Logger;
 import ua.nure.tatarinov.SummaryTask4.Path;
-import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyStudentOnCourseDAO;
+import ua.nure.tatarinov.SummaryTask4.db.dao.mysql.MySQLStudentOnCourseDAO;
 import ua.nure.tatarinov.SummaryTask4.db.dto.StudentOnCourseDTO;
 import ua.nure.tatarinov.SummaryTask4.exception.Errors;
 
@@ -25,7 +25,7 @@ public class SelectStudentCommand extends Command {
         LOG.trace("Start tracing SelectStudentCommand");
         String test = request.getParameter("id");
         HttpSession session = request.getSession();
-        List<StudentOnCourseDTO> students = new DerbyStudentOnCourseDAO().getAllStudentsOnCourse();
+        List<StudentOnCourseDTO> students = new MySQLStudentOnCourseDAO().getAllStudentsOnCourse();
         boolean existStudent = false;
         if (!isDigit(test)) {
             request.setAttribute("errorMessage", Errors.ERR_NOT_A_NUMBER);

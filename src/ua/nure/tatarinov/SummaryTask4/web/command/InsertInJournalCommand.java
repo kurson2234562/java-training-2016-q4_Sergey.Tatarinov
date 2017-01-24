@@ -2,7 +2,7 @@ package ua.nure.tatarinov.SummaryTask4.web.command;
 
 import org.apache.log4j.Logger;
 import ua.nure.tatarinov.SummaryTask4.Path;
-import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyStudentOnCourseDAO;
+import ua.nure.tatarinov.SummaryTask4.db.dao.mysql.MySQLStudentOnCourseDAO;
 import ua.nure.tatarinov.SummaryTask4.exception.Errors;
 
 import javax.servlet.ServletException;
@@ -35,7 +35,7 @@ public class InsertInJournalCommand extends Command {
             }
             int mark = Integer.parseInt(request.getParameter("newValue"));
             int id = Integer.parseInt(String.valueOf(session.getAttribute("id_student_course")));
-            new DerbyStudentOnCourseDAO().createMarkForStudent(mark, id);
+            new MySQLStudentOnCourseDAO().createMarkForStudent(mark, id);
             return Path.PAGE_LECTURER;
         }
     }

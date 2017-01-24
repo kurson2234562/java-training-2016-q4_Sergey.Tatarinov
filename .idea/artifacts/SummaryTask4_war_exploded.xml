@@ -10,6 +10,20 @@
         <element id="directory" name="lib">
           <element id="library" level="project" name="log4j" />
           <element id="file-copy" path="$PROJECT_DIR$/lib/log4j.jar" />
+          <element id="library" level="project" name="derby" />
+          <element id="library" level="project" name="derbyclient-10.9.1.0" />
+          <element id="library" level="project" name="derbynet" />
+          <element id="library" level="project" name="jstl-1.2" />
+          <element id="library" level="project" name="jsr311-api-1.1.1" />
+          <element id="library" level="project" name="mail-1.4.7" />
+          <element id="file-copy" path="$USER_HOME$/Загрузки/javax.servlet.jsp.jstl-1.2.1.jar" />
+          <element id="library" level="project" name="javax.annotation" />
+          <element id="library" level="project" name="junit-4.12" />
+          <element id="library" level="project" name="catalina" />
+          <element id="library" level="project" name="tomcat-api" />
+          <element id="library" level="project" name="tomcat-jni" />
+          <element id="library" level="project" name="tomcat-juli" />
+          <element id="library" level="project" name="mysql-connector-java-5.1.27" />
         </element>
       </element>
     </root>

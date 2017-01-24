@@ -3,7 +3,7 @@ package ua.nure.tatarinov.SummaryTask4.web.command;
 import org.apache.log4j.Logger;
 import ua.nure.tatarinov.SummaryTask4.Path;
 import ua.nure.tatarinov.SummaryTask4.core.Utils;
-import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyUserDAO;
+import ua.nure.tatarinov.SummaryTask4.db.dao.mysql.MySQLUserDAO;
 import ua.nure.tatarinov.SummaryTask4.db.dto.UserDTO;
 import ua.nure.tatarinov.SummaryTask4.exception.Errors;
 
@@ -21,7 +21,7 @@ public class ForgetPasswordCommand extends Command {
     public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         LOG.trace("Start tracing ForgetPasswordCommand");
         String email = request.getParameter("email");
-        List<UserDTO> users = new DerbyUserDAO().getAllUsers();
+        List<UserDTO> users = new MySQLUserDAO().getAllUsers();
         for (UserDTO user : users) {
             if (user.getEmail().equals(email) || user.getLogin().equals(email)) {
                 if ((user.getEmail() != null) || (!user.getEmail().isEmpty())) {

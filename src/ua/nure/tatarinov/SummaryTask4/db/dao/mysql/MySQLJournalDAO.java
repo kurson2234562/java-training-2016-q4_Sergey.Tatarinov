@@ -1,4 +1,4 @@
-package ua.nure.tatarinov.SummaryTask4.db.dao.derby;
+package ua.nure.tatarinov.SummaryTask4.db.dao.mysql;
 
 import org.apache.log4j.Logger;
 import ua.nure.tatarinov.SummaryTask4.db.Query;
@@ -10,13 +10,13 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class DerbyJournalDAO implements JournalDAO {
+public class MySQLJournalDAO implements JournalDAO {
 
-    public static final Logger LOG = Logger.getLogger(DerbyJournalDAO.class);
+    public static final Logger LOG = Logger.getLogger(MySQLJournalDAO.class);
 
     @Override
     public void updateJournal(int id, int mark) {
-        LOG.trace("Starting trace DerbyJournalDAO");
+        LOG.trace("Starting trace MySQLJournalDAO");
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
                 try (PreparedStatement statement = connection.prepareStatement(Query.UPDATE_JOURNAL, Statement.RETURN_GENERATED_KEYS)) {

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="tomcat-jni">
+    <CLASSES>
+      <root url="jar:///media/kurson/Локальный диск1/Program Files/Tomcat/lib/tomcat-jni.jar!/" />
+      <root url="jar:///media/kurson/Локальный диск1/Program Files/Tomcat/lib/tomcat-util.jar!/" />
+      <root url="jar:///media/kurson/Локальный диск1/Program Files/Tomcat/lib/tomcat-jdbc.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

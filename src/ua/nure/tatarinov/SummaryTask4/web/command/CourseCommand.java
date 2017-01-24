@@ -3,8 +3,8 @@ package ua.nure.tatarinov.SummaryTask4.web.command;
 import org.apache.log4j.Logger;
 import ua.nure.tatarinov.SummaryTask4.Path;
 import ua.nure.tatarinov.SummaryTask4.core.Utils;
-import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyLecturerDAO;
-import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyThemeDAO;
+import ua.nure.tatarinov.SummaryTask4.db.dao.mysql.MySQLLecturerDAO;
+import ua.nure.tatarinov.SummaryTask4.db.dao.mysql.MySQLThemeDAO;
 import ua.nure.tatarinov.SummaryTask4.db.dto.LecturerDTO;
 import ua.nure.tatarinov.SummaryTask4.db.dto.ThemeDTO;
 import ua.nure.tatarinov.SummaryTask4.exception.Errors;
@@ -28,8 +28,8 @@ public class CourseCommand extends Command {
         HttpSession session = request.getSession();
         String forward = Path.PAGE_COURSES;
         if (session.getAttribute("user") != null) {
-            List<LecturerDTO> lecturers = new DerbyLecturerDAO().getAllLecturers();
-            List<ThemeDTO> themes = new DerbyThemeDAO().getAllThemes();
+            List<LecturerDTO> lecturers = new MySQLLecturerDAO().getAllLecturers();
+            List<ThemeDTO> themes = new MySQLThemeDAO().getAllThemes();
             List<String> fields = Arrays.asList("name_course", "duration", "name_theme", "surname", "name", "patronymic", "count", "name_status");
             String language = String.valueOf(session.getAttribute("language"));
             ResourceBundle rb = ResourceBundle.getBundle("resources", new Locale(language));

@@ -2,7 +2,7 @@ package ua.nure.tatarinov.SummaryTask4.web.command;
 
 import org.apache.log4j.Logger;
 import ua.nure.tatarinov.SummaryTask4.Path;
-import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyCourseDAO;
+import ua.nure.tatarinov.SummaryTask4.db.dao.mysql.MySQLCourseDAO;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -25,7 +25,7 @@ public class UpdateCourseCommand extends Command {
         int newLecturer = Integer.parseInt(request.getParameter("lecturer"));
         int newStatus = Integer.parseInt(request.getParameter("status"));
         id = Integer.parseInt(String.valueOf(session.getAttribute("updatecourseid")));
-        new DerbyCourseDAO().updateCourse(newName, newDuration, newTheme, newLecturer, newStatus, id);
+        new MySQLCourseDAO().updateCourse(newName, newDuration, newTheme, newLecturer, newStatus, id);
         return Path.PAGE_ADMIN;
     }
 }

@@ -3,7 +3,7 @@ package ua.nure.tatarinov.SummaryTask4.web.command;
 import org.apache.log4j.Logger;
 import ua.nure.tatarinov.SummaryTask4.Path;
 import ua.nure.tatarinov.SummaryTask4.core.Utils;
-import ua.nure.tatarinov.SummaryTask4.db.dao.derby.*;
+import ua.nure.tatarinov.SummaryTask4.db.dao.mysql.*;
 import ua.nure.tatarinov.SummaryTask4.db.dto.*;
 import ua.nure.tatarinov.SummaryTask4.exception.Errors;
 
@@ -40,7 +40,7 @@ public class LoginCommand extends Command {
         List<CourseDTO> coursesForUser = null;
         LOG.info("UserDTO " + login + " logged");
         if ((!login.isEmpty()) && (!password.isEmpty())) {
-            user = new DerbyUserDAO().findUserByLogin(login);
+            user = new MySQLUserDAO().findUserByLogin(login);
             if (user != null) {
                 if (user.getPassword().equals(Utils.encrypt(password))) {
                     switch (user.getRoleId()) {
@@ -85,8 +85,8 @@ public class LoginCommand extends Command {
                 case "student":
                     forward = Path.PAGE_STUDENT;
                     if (user!=null) {
-                        student = new DerbyStudentDAO().findStudentByIdUser(user.getIdUser());
-                        coursesForUser = new DerbyCourseDAO().findAllCoursesThatUserNotRegistered(student.getId());
+                        student = new MySQLStudentDAO().findStudentByIdUser(user.getIdUser());
+                        coursesForUser = new MySQLCourseDAO().findAllCoursesThatUserNotRegistered(student.getId());
                     }
                     break;
                 case "admin":
@@ -94,9 +94,9 @@ public class LoginCommand extends Command {
                     break;
             }
         }
-        List<CourseDTO> courses = new DerbyCourseDAO().getAllCourses();
-        List<ThemeDTO> themes = new DerbyThemeDAO().getAllThemes();
-        List<LecturerDTO> lecturers = new DerbyLecturerDAO().getAllLecturers();
+        List<CourseDTO> courses = new MySQLCourseDAO().getAllCourses();
+        List<ThemeDTO> themes = new MySQLThemeDAO().getAllThemes();
+        List<LecturerDTO> lecturers = new MySQLLecturerDAO().getAllLecturers();
         session.setAttribute("themes", themes);
         session.setAttribute("lecturers", lecturers);
         session.setAttribute("courses", courses);

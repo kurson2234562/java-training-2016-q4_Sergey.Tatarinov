@@ -1,7 +1,7 @@
 package ua.nure.tatarinov.SummaryTask4.core;
 
 import org.apache.log4j.Logger;
-import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyUserDAO;
+import ua.nure.tatarinov.SummaryTask4.db.dao.mysql.MySQLUserDAO;
 import ua.nure.tatarinov.SummaryTask4.db.dto.UserDTO;
 
 import javax.mail.*;
@@ -79,22 +79,20 @@ public class Utils {
 
         } catch (MessagingException ex) {
             LOG.error("Message wasn't sent to email -->" + recipient, ex);
-
-            System.out.println("Message wasn't sent to email -->" + recipient);
         }
 
     }
 
     public static String generateMessage(String login) {
         String alphabet = "abcdefghijklmnopqrstuvwxyz1234567890";
-        UserDTO user = new DerbyUserDAO().findUserByLogin(login);
+        UserDTO user = new MySQLUserDAO().findUserByLogin(login);
         StringBuilder newPass = new StringBuilder();
         int count = (int) ((Math.random() * 30) + 4);
         for (int i = 0; i < count; i++) {
             newPass.append(alphabet.charAt((int) (Math.random() * alphabet.length())));
         }
         String encryptPass = Utils.encrypt(String.valueOf(newPass));
-        new DerbyUserDAO().setNewPassword(user.getIdUser(), String.valueOf(encryptPass));
+        new MySQLUserDAO().setNewPassword(user.getIdUser(), String.valueOf(encryptPass));
         StringBuffer textMail = new StringBuffer();
         textMail.append("<h4>Hi! Your new login details:<br><br>").append("login: ")
                 .append(user.getLogin()).append("<br>password: ").append(newPass)

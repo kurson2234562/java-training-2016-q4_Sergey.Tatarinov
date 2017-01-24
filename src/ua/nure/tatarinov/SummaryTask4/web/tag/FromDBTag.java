@@ -1,7 +1,7 @@
 package ua.nure.tatarinov.SummaryTask4.web.tag;
 
 import org.apache.log4j.Logger;
-import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyThemeDAO;
+import ua.nure.tatarinov.SummaryTask4.db.dao.mysql.MySQLThemeDAO;
 import ua.nure.tatarinov.SummaryTask4.db.dto.ThemeDTO;
 
 import javax.servlet.http.HttpSession;
@@ -18,7 +18,7 @@ public class FromDBTag extends TagSupport {
 
     @Override
     public int doStartTag() throws JspException {
-        List<ThemeDTO> themes = new DerbyThemeDAO().getAllThemes();
+        List<ThemeDTO> themes = new MySQLThemeDAO().getAllThemes();
         HttpSession session = pageContext.getSession();
         JspWriter out = pageContext.getOut();
         StringBuffer page = new StringBuffer();

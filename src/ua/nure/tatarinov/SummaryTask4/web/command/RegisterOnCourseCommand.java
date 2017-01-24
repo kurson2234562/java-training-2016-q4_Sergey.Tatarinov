@@ -2,8 +2,8 @@ package ua.nure.tatarinov.SummaryTask4.web.command;
 
 import org.apache.log4j.Logger;
 import ua.nure.tatarinov.SummaryTask4.Path;
-import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyCourseDAO;
-import ua.nure.tatarinov.SummaryTask4.db.dao.derby.DerbyUserDAO;
+import ua.nure.tatarinov.SummaryTask4.db.dao.mysql.MySQLCourseDAO;
+import ua.nure.tatarinov.SummaryTask4.db.dao.mysql.MySQLUserDAO;
 import ua.nure.tatarinov.SummaryTask4.db.dto.CourseDTO;
 
 import javax.servlet.ServletException;
@@ -23,8 +23,8 @@ public class RegisterOnCourseCommand extends Command {
         HttpSession session = request.getSession();
         int id = Integer.parseInt(String.valueOf(session.getAttribute("idStudent")));
         int idCourse = Integer.parseInt(request.getParameter("idCourse"));
-        new DerbyUserDAO().registerUserOnCourse(id, idCourse);
-        List<CourseDTO> courses = new DerbyCourseDAO().findAllCoursesThatUserNotRegistered(id);
+        new MySQLUserDAO().registerUserOnCourse(id, idCourse);
+        List<CourseDTO> courses = new MySQLCourseDAO().findAllCoursesThatUserNotRegistered(id);
         session.setAttribute("coursesForUser", courses);
         return Path.PAGE_STUDENT;
     }

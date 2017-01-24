@@ -1,4 +1,4 @@
-package ua.nure.tatarinov.SummaryTask4.db.dao.derby;
+package ua.nure.tatarinov.SummaryTask4.db.dao.mysql;
 
 import org.apache.log4j.Logger;
 import ua.nure.tatarinov.SummaryTask4.db.Query;
@@ -10,13 +10,13 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DerbyCourseDAO implements CourseDAO {
+public class MySQLCourseDAO implements CourseDAO {
 
-    public static final Logger LOG = Logger.getLogger(DerbyCourseDAO.class);
+    public static final Logger LOG = Logger.getLogger(MySQLCourseDAO.class);
 
     @Override
     public void createCourse(String name, int duration, int theme, int lecturer, int status) {
-        LOG.trace("Starting tracing DerbyCourseDAO#createCourse");
+        LOG.trace("Starting tracing MySQLCourseDAO#createCourse");
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
                 try (PreparedStatement statement = connection.prepareStatement(Query.CREATE_COURSE, Statement.RETURN_GENERATED_KEYS)) {
@@ -40,7 +40,7 @@ public class DerbyCourseDAO implements CourseDAO {
 
     @Override
     public void updateCourse(String name, int duration, int theme, int lecturer, int status, int id) {
-        LOG.trace("Starting tracing DerbyCourseDAO#updateCourse");
+        LOG.trace("Starting tracing MySQLCourseDAO#updateCourse");
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
                 try (PreparedStatement statement = connection.prepareStatement(Query.UPDATE_COURSE, Statement.RETURN_GENERATED_KEYS)) {
@@ -65,7 +65,7 @@ public class DerbyCourseDAO implements CourseDAO {
 
     @Override
     public void deleteCourseByIdCourse(int id) {
-        LOG.trace("Starting tracing DerbyCourseDAO#deleteCourseByIdCourse");
+        LOG.trace("Starting tracing MySQLCourseDAO#deleteCourseByIdCourse");
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
                 try (PreparedStatement statement = connection.prepareStatement(Query.DELETE_COURSE, Statement.RETURN_GENERATED_KEYS)) {
@@ -85,7 +85,7 @@ public class DerbyCourseDAO implements CourseDAO {
 
     @Override
     public CourseDTO getCourseByIdCourse(int id) {
-        LOG.trace("Starting tracing DerbyCourseDAO#getCourseByIdCourse");
+        LOG.trace("Starting tracing MySQLCourseDAO#getCourseByIdCourse");
         CourseDTO course = new CourseDTO();
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
@@ -116,7 +116,7 @@ public class DerbyCourseDAO implements CourseDAO {
 
     @Override
     public List<CourseDTO> getAllCourses() {
-        LOG.trace("Starting tracing DerbyStatusDAO#getAllStatuses");
+        LOG.trace("Starting tracing MySQLStatusDAO#getAllStatuses");
         List<CourseDTO> courses = new ArrayList<>();
         CourseDTO course;
 
@@ -148,7 +148,7 @@ public class DerbyCourseDAO implements CourseDAO {
 
     @Override
     public List<CourseDTO> findCourseByString(String searchResult) {
-        LOG.trace("Starting tracing DerbyStudentDAO#findCourseByString");
+        LOG.trace("Starting tracing MySQLStudentDAO#findCourseByString");
         List<CourseDTO> courses = new ArrayList<>();
         CourseDTO course;
         try (Connection connection = ConnectionPool.getConnetcion()) {
@@ -179,7 +179,7 @@ public class DerbyCourseDAO implements CourseDAO {
 
     @Override
     public List<CourseDTO> findAllCoursesThatUserNotRegistered(int id) {
-        LOG.trace("Starting tracing DerbyStudentDAO#findAllCoursesThatUserNotRegistered");
+        LOG.trace("Starting tracing MySQLStudentDAO#findAllCoursesThatUserNotRegistered");
         List<CourseDTO> courses = new ArrayList<>();
         CourseDTO course;
         try (Connection connection = ConnectionPool.getConnetcion()) {
