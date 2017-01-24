@@ -4,7 +4,7 @@
 <%@ taglib prefix="b" uri="/WEB-INF/db.tld"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql"%>
-<sql:setDataSource var="db" driver="org.apache.derby.jdbc.ClientDriver" url="jdbc:derby://localhost:1527/facultaty" user="admin" password="admin"/>
+<sql:setDataSource var="db" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/courses?encoding=UTF-8&amp;useUnicode=true&amp;characterEncoding=UTF-8" user="root" password="remdigga4237"/>
 
 <c:choose>
     <c:when test="${not empty sort}">
@@ -55,12 +55,13 @@
         <div class="container-fluid bs-const">
             <div class="col-lg-3">
                 <%@ include file="/WEB-INF/jspf/about.jspf"%>
+                <%@ include file="/WEB-INF/jspf/endabout.jspf"%>
             </div>
             <div class="col-lg-9">
                 <div class="panel panel-primary table-responsive">
                     <div class="panel-heading"><my:Locale value="page.student.table.title.progress"/></div>
                     <div id="sortContainer">
-                        <form method="get">
+                        <form method="post">
                             <input type="hidden" name="command" value="courseCommand">
                             <select class="sortSelect form-control" name ="idTheme">
                                 <option selected><my:Locale value="page.courses.all.themes"/></option>
@@ -72,7 +73,6 @@
                                     >${theme.nameTheme}</option>
                                 </c:forEach>
                             </select>
-
 
                             <select class="sortSelect form-control" name ="idLecturer">
                                 <option selected><my:Locale value="page.courses.all.lecturers"/></option>

@@ -95,7 +95,7 @@ public class LockTag extends TagSupport {
             table.append("<b>").append(user.getLogin()).append("</b></td>\n<td>")
                     .append(user.getPassword()).append("</td>\n<td>");
             if (state == State.UNLOCKED) {
-                table.append("<form action=\"controller\">\n" +
+                table.append("<form method=\"post\" action=\"controller\">\n" +
                         "    <input type=\"hidden\" name=\"command\" value=\"lockCommand\">\n" +
                         "    <input type=\"hidden\" name=\"id\" value=\"")
                         .append(user.getIdUser())

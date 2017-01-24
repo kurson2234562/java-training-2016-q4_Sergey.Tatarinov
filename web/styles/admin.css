@@ -43,7 +43,7 @@ dl{
 .col-lg-3{
     padding-top:30px;
     height:187%;
-    border-right: #27ae60 1px solid;
+
 }
 
 .col-lg-6{
@@ -92,7 +92,9 @@ dd{
 
 button span{
     padding-right:5px;
+    margin-bottom:-2px;
     margin-right:0;
+    font-size:17px;
 }
 
 table button {
@@ -121,4 +123,8 @@ th,td{
 button.spacebtn{
     display:table;
     margin:0 auto 20px auto;
+}
+
+.glyphicon-plus, .glyphicon-pencil, .glyphicon-trash{
+    color:white;
 }

@@ -1,8 +1,10 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="about" uri="/WEB-INF/about.tld"%>
-<div id="icon">
-    <span class="glyphicon glyphicon-user img-circle" aria-hidden="true"></span>
-</div>
-<dl class="dl-horizontal">
-    <about:about/>
-</dl>
+<div class="navigation">
+
+    <div id="icon">
+        <span class="glyphicon glyphicon-user img-circle" aria-hidden="true"></span>
+    </div>
+    <dl class="dl-horizontal">
+        <about:about/>
+    </dl>

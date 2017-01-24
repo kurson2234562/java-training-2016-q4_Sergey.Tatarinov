@@ -122,8 +122,7 @@ public class CourseCommand extends Command {
                     }
                 }
             }
-        }
-        else {
+        } else {
             LOG.error(Errors.ERR_USER_NOT_LOGGER);
             request.setAttribute("errorMessage", Errors.ERR_USER_NOT_LOGGER);
             forward = Path.PAGE_ERROR_PAGE;

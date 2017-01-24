@@ -14,7 +14,6 @@ dl{
 .col-lg-3.info{
     padding-top:30px;
     height:95vh;
-    border-right: #27ae60 1px solid;
 }
 
 .col-lg-6{
@@ -30,7 +29,12 @@ dl{
     margin-bottom:20px;
     border:gray 1px solid;
 }
-span{
+
+#icon{
+    margin-top:30px;
+}
+
+.glyphicon-user{
     font-size:160px;
     margin-bottom:-4px;
     margin-left:-1px;
@@ -98,4 +102,39 @@ input[type="text"],input[type="number"], input[type="password"]{
 
 .search{
     padding-left:30px !important;
+}
+
+.navigation{
+    top:45px;
+    margin-bottom:100px !important;
+    position:fixed;
+    width:350px;
+    border-right: #27ae60 2px solid;
+    height:100%;
+}
+
+.navbar-right a:hover{
+    text-decoration:none;
+}
+
+.navbar-right{
+    padding:16px 20px 0 0 !important;
+}
+
+.nav-pills{
+    padding-top:30%;
+}
+
+.nav-pills>li{
+    width:90%;
+}
+
+.nav-pills>li>a{
+    color:#27ae60;
+}
+
+.nav-pills>li>a:hover{
+    background-color:#27ae60 !important;
+    color:white;
+    cursor:pointer;
 }

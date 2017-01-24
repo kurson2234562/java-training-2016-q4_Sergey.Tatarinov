@@ -19,47 +19,64 @@
         <div class="container-fluid bs-const">
             <div class="col-lg-3">
                 <%@ include file="/WEB-INF/jspf/about.jspf"%>
+                <div class="bs-example" data-example-id="simple-nav-stacked">
+                    <ul class="nav nav-pills nav-stacked nav-pills-stacked-example">
+                        <li role="presentation">
+                            <a href="#lock"><my:Locale value="page.admin.leftbar.lock"/></a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#course"><my:Locale value="page.admin.leftbar.course"/></a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#add"><my:Locale value="page.admin.leftbar.add"/></a>
+                        </li>
+                    </ul>
+                </div>
+                <%@ include file="/WEB-INF/jspf/endabout.jspf"%>
             </div>
             <div class="col-lg-9">
                 <div class="row">
+                    <a name="lock"></a>
                     <div class="panel panel-primary table-responsive">
                         <div class="panel-heading"><my:Locale value="page.admin.student.lock"/> </div>
                         <lock:lock/>
                     </div>
                 </div>
                 <div class="row">
+                    <a name="course"></a>
                     <div class="col-lg-6">
                         <div class="panel panel-primary">
                             <div class="panel-heading" name="<my:Locale value="page.admin.delete.course"/>"><my:Locale value="page.admin.delete.course"/></div>
                             <c:if test="${success}">
                                 <p class="bg-success">Курс удалён</p>
                             </c:if>
-                            <form action="controller" class="space">
+                            <form method="post" action="controller" class="space">
                                 <input type="hidden" name="command" value="deleteCourseCommand">
                                 <select:selectcourse/>
-                                <button type="submit" class="btn btn-success"><my:Locale value="page.admin.delete.course"/></button>
+                                <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-trash"></span><my:Locale value="page.admin.delete.course"/></button>
                             </form>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="panel panel-primary">
                             <div class="panel-heading"><my:Locale value="page.admin.update.course"/></div>
-                            <form action="controller" class="space">
+                            <form method="post" action="controller" class="space">
                                 <input type="hidden" name="command" value="updateCourseButtonCommand">
                                 <select:selectcourse/>
-                                <button type="submit" class="btn btn-success"><my:Locale value="page.admin.update.course"/></button>
+                                <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span><my:Locale value="page.admin.update.course"/></button>
                             </form>
                         </div>
                     </div>
                 </div>
                 <div class="row">
+                    <a name="add"></a>
                     <div class="col-lg-6">
                         <div class="panel panel-primary">
                             <div class="panel-heading"><my:Locale value="page.admin.create.addcourses"/></div>
-                            <form class="form-horizontal">
+                            <form method="post" class="form-horizontal">
                                 <course:editCourse method="create"/>
                                 <input type="hidden" name="command" value="createCourseCommand">
-                                <button type="submit" class="spacebtn btn btn-success"><my:Locale value="page.admin.create.addcourses"/></button>
+                                <button type="submit" class="spacebtn btn btn-success"><span class="glyphicon glyphicon-plus"></span><my:Locale value="page.admin.create.addcourses"/></button>
                             </form>
 
                         </div>
@@ -67,7 +84,7 @@
                     <div class="col-lg-6">
                         <div class="panel panel-primary">
                             <div class="panel-heading"><my:Locale value="page.admin.lecturer.create.title"/></div>
-                            <form class="form-horizontal">
+                            <form method="post" class="form-horizontal">
 
                                 <div class="form-group">
                                     <label for="name" class="col-sm-2 control-label"><my:Locale value="page.people.name"/></label>
@@ -122,7 +139,7 @@
                                     </div>
                                 </div>
                                 <input type="hidden" name="command" value="createLecturerCommand">
-                                <button type="submit" class="spacebtn btn btn-success"><my:Locale value="page.admin.lecturer.create.title"/></button>
+                                <button type="submit" class="spacebtn btn btn-success"><span class="glyphicon glyphicon-plus"></span> <my:Locale value="page.admin.lecturer.create.title"/></button>
                             </form>
                         </div>
                     </div>

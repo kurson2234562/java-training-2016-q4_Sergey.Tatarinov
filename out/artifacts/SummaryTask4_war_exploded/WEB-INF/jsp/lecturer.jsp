@@ -3,7 +3,7 @@
 <%@ taglib prefix="a" uri="/WEB-INF/journal.tld" %>
 <%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<sql:setDataSource var="db" driver="org.apache.derby.jdbc.ClientDriver" url="jdbc:derby://localhost:1527/facultaty" user="admin" password="admin"/>
+<sql:setDataSource var="db" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/courses?encoding=UTF-8&amp;useUnicode=true&amp;characterEncoding=UTF-8" user="root" password="remdigga4237"/>
 
 <sql:query dataSource="${db}" var="result">
     SELECT USERS.id_user, STUDENT_COURSE.id_student_course, COURSES.name_course, STUDENTS.surname, STUDENTS.name, STUDENTS.PATRONYMIC, STUDENTS.id_user
@@ -36,9 +36,23 @@
         <div class="container-fluid bs-const">
             <div class="col-lg-3">
                 <%@ include file="/WEB-INF/jspf/about.jspf"%>
+                <div class="bs-example" data-example-id="simple-nav-stacked">
+                    <ul class="nav nav-pills nav-stacked nav-pills-stacked-example">
+                        <li role="presentation">
+                            <a href="#ratings"><my:Locale value="page.lecturer.table.title"/></a>
+                        </li>
+                        <c:if test="${not empty result.rows}">
+                            <li role="presentation">
+                                <a href="#evaluate"><my:Locale value="page.lecturer.leftbar.notevaluatedcourses"/></a>
+                            </li>
+                        </c:if>
+                    </ul>
+                </div>
+                <%@ include file="/WEB-INF/jspf/endabout.jspf"%>
             </div>
             <div class="col-lg-9">
                 <div class="row">
+                    <a name="ratings"></a>
                     <div class="panel panel-primary table-responsive">
                         <div class="panel-heading"><my:Locale value="page.lecturer.table.title"/></div>
                         <a:journal/>
@@ -47,6 +61,7 @@
                 <c:choose>
                     <c:when test="${not empty result.rows}">
                         <div class="row">
+                            <a name="evaluate"></a>
                             <div class="panel panel-primary">
                                 <div class="panel-heading"><my:Locale value="page.lecturer.student.notmark"/></div>
                                 <div class="table-responsive">
@@ -74,7 +89,7 @@
                                         <c:forEach items="${result.rows}" var="row" >
                                             <c:set value="${row.id_user}" scope="session" var="id_student_course"/>
                                             <tr>
-                                                <form>
+                                                <form method="post">
                                                     <input type="hidden" name="command" value="selectStudentCommand">
                                                     <input type="hidden" name="id" value="${row.id_student_course}">
                                                     <input type="hidden" name="mark" value="new">

@@ -84,13 +84,13 @@ public class MySQLLecturerDAO implements LecturerDAO {
         LOG.trace("Starting tracing MySQLLecturerDAO#changeLecturer");
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
-                try(PreparedStatement statement = connection.prepareStatement(Query.CHANGE_LECTURER)) {
+                try (PreparedStatement statement = connection.prepareStatement(Query.CHANGE_LECTURER)) {
                     connection.setAutoCommit(false);
                     statement.setInt(1, id);
                     statement.setInt(2, idCourse);
                     statement.execute();
                     connection.commit();
-                }catch (SQLException ex){
+                } catch (SQLException ex) {
                     LOG.error(ex.getLocalizedMessage());
                     connection.rollback();
                 }
@@ -108,19 +108,25 @@ public class MySQLLecturerDAO implements LecturerDAO {
         LecturerDTO lecturer;
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
-                PreparedStatement statement = connection.prepareStatement(Query.FIND_LECTURER_BY_STRING);
-                statement.setString(1, searchResult + "%");
-                statement.setString(2, searchResult + "%");
-                statement.setString(3, searchResult + "%");
-                statement.execute();
-                ResultSet resultSet = statement.getResultSet();
-                while (resultSet.next()) {
-                    lecturer = new LecturerDTO(resultSet.getInt("id"), resultSet.getString("surname"),
-                            resultSet.getString("name"), resultSet.getString("patronymic"),
-                            resultSet.getInt("id_user"));
-                    lecturers.add(lecturer);
+                try (PreparedStatement statement = connection.prepareStatement(Query.FIND_LECTURER_BY_STRING)) {
+                    connection.setAutoCommit(false);
+                    statement.setString(1, searchResult + "%");
+                    statement.setString(2, searchResult + "%");
+                    statement.setString(3, searchResult + "%");
+                    statement.execute();
+                    ResultSet resultSet = statement.getResultSet();
+                    while (resultSet.next()) {
+                        lecturer = new LecturerDTO(resultSet.getInt("id"), resultSet.getString("surname"),
+                                resultSet.getString("name"), resultSet.getString("patronymic"),
+                                resultSet.getInt("id_user"));
+                        lecturers.add(lecturer);
+                    }
+                    resultSet.close();
+                    connection.commit();
+                } catch (SQLException ex) {
+                    LOG.error(ex.getLocalizedMessage());
+                    connection.rollback();
                 }
-                resultSet.close();
             }
         } catch (SQLException ex) {
             LOG.info(ex.getLocalizedMessage());

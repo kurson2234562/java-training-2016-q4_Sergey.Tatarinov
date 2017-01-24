@@ -19,8 +19,26 @@
         <div class="container-fluid bs-const">
             <div class="col-lg-3 info">
                 <%@ include file="/WEB-INF/jspf/about.jspf"%>
+                <div class="bs-example" data-example-id="simple-nav-stacked">
+                    <ul class="nav nav-pills nav-stacked nav-pills-stacked-example">
+                        <li role="presentation">
+                            <a href="#courses"><my:Locale value="page.student.leftbar.courses"/></a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#dontstartcourses"><my:Locale value="page.student.leftbar.notstartedcourse"/></a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#begancourses"><my:Locale value="page.student.leftbar.begancourses"/></a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#progress"><my:Locale value="page.student.table.title.progress"/></a>
+                        </li>
+                    </ul>
+                </div>
+                <%@ include file="/WEB-INF/jspf/endabout.jspf"%>
             </div>
             <div class="col-lg-9">
+                <a name="courses"></a>
                 <div class="row">
                     <div class="cont">
                         <c:forEach items="${coursesForUser}" var="courseForUser">
@@ -64,18 +82,18 @@
                                             <img src="/img/courses/groovy.png" alt="Groovy">
                                         </c:when>
                                         <c:otherwise>
-                                            <img src="" alt="?">
+                                            <span class="glyphicon glyphicon-question-sign"></span>
                                         </c:otherwise>
                                     </c:choose>
                                     <div class="caption">
-                                        <form>
+                                        <form method="post">
                                             <input type="hidden" name="command" value="registerOnCourseCommand">
                                             <input type="hidden" name="idCourse" value="${courseForUser.idCourse}">
                                             <h3>${courseForUser.nameCourse}</h3>
-                                            <p>Длительность: ${courseForUser.duration} недели</p>
-                                            <p>Начало: март 2017</p>
+                                            <p><my:Locale value="page.student.duration"/>: ${courseForUser.duration} <my:Locale value="page.student.week"/></p>
+                                            <p><my:Locale value="page.student.course.start"/>: март 2017</p>
                                             <p>
-                                                <a onclick="$(this).closest('form').submit()" href="#" class="btn btn-success" role="button">Зарегистрироваться</a>
+                                                <a onclick="$(this).closest('form').submit()" href="#" class="btn btn-success" role="button"><my:Locale value="page.student.register"/></a>
                                             </p>
                                         </form>
                                     </div>
@@ -85,6 +103,7 @@
                     </div>
                 </div>
                 <div class="row">
+                    <a name="dontstartcourses"></a>
                     <div class="panel panel-primary">
                         <div class="panel-heading"><my:Locale value="page.student.table.title.opened"/></div>
                         <div class="table-responsive">
@@ -93,6 +112,7 @@
                     </div>
                 </div>
                 <div class="row">
+                    <a name="begancourses"></a>
                     <div class="panel panel-primary">
                         <div class="panel-heading"><my:Locale value="page.student.table.title.inprogress"/> </div>
                         <div class="table-responsive">
@@ -101,8 +121,9 @@
                     </div>
                 </div>
                 <div class="row">
+                    <a name="progress"></a>
                     <div class="panel panel-primary">
-                        <div class="panel-heading"><my:Locale value="page.student.table.title.progress"/></div>
+                        <div class="panel-heading"><my:Locale value="page.student.table.title.progress"/>:</div>
                         <div class="table-responsive">
                             <pr:progress/>
                         </div>

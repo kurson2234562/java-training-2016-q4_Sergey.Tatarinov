@@ -17,6 +17,7 @@
         <div class="container-fluid bs-const">
             <div class="col-lg-3">
                 <%@ include file="/WEB-INF/jspf/about.jspf"%>
+                <%@ include file="/WEB-INF/jspf/endabout.jspf"%>
             </div>
             <div class="col-lg-6">
                 <table id="main-container">

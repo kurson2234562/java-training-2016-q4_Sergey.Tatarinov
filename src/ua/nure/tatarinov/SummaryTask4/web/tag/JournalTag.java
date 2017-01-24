@@ -99,7 +99,7 @@ public class JournalTag extends TagSupport {
                     table.append(student.getPatronymic()).append("</td><td>");
                 }
                 table.append(noteJournal.getMark())
-                        .append("</td><td><form action=\"controller\">")
+                        .append("</td><td><form method=\"post\" action=\"controller\">")
                         .append("<input type=\"hidden\" name=\"command\" value=\"selectStudentCommand\">")
                         .append("<button type=\"submit\" class=\"btn btn-success\">")
                         .append("<span class=\"glyphicon glyphicon glyphicon-pencil\" aria-hidden=\"true\"></span>")

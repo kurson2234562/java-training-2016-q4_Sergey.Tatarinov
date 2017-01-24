@@ -3,8 +3,7 @@
 <%@ taglib prefix="x" uri="/WEB-INF/student_journal.tld" %>
 <%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<sql:setDataSource var="db" driver="org.apache.derby.jdbc.ClientDriver" url="jdbc:derby://localhost:1527/facultaty" user="admin" password="admin"/>
-<c:choose>
+<sql:setDataSource var="db" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/courses?encoding=UTF-8&amp;useUnicode=true&amp;characterEncoding=UTF-8" user="root" password="remdigga4237"/><c:choose>
     <c:when test="${not empty mark}">
         <sql:query dataSource="${db}" var="result">
             SELECT surname, name, patronymic
@@ -36,6 +35,7 @@
         <div class="container-fluid bs-const">
             <div class="col-lg-3">
                 <%@ include file="/WEB-INF/jspf/about.jspf"%>
+                <%@ include file="/WEB-INF/jspf/endabout.jspf"%>
             </div>
             <div class="col-lg-9">
                 <c:choose>
@@ -80,7 +80,7 @@
                                     </tr>
                                 </c:forEach>
                             </table>
-                            <form>
+                            <form method="post">
                                 <c:choose>
                                     <c:when test="${not empty mark}">
                                         <input type="hidden" name="command" value="insertInJournalCommand">

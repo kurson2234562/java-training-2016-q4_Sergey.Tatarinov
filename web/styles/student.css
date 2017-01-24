@@ -131,3 +131,9 @@ h3{
 .thumbnail p{
     text-align:center;
 }
+
+.glyphicon-question-sign{
+    color:gray;
+    font-size:126px;
+    margin: 15px 0 0 50px;
+}

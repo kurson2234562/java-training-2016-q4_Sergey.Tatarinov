@@ -7,129 +7,75 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa270607-73aa-463a-99a9-c5c4a5c2e6ff" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.0.8-bin.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/catalina.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_27.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/tomcat_api.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/tomcat_jni.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/tomcat_juli.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/AllTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/TestMySQLCourseDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/TestMySQLJournalDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/TestMySQLLecturerDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/TestMySQLStatusDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/TestMySQLStudentDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/TestMySQLStudentOnCourseDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/TestMySQLThemeDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/TestMySQLUserDAO.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyCourseDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyJournalDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyLecturerDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyStatusDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyStudentDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyStudentOnCourseDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyThemeDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyUserDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyCourseDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyJournalDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyLecturerDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyStatusDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyStudentDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyStudentOnCourseDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyThemeDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyUserDAO.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyCourseDAO.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/MySQLCourseDAO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyJournalDAO.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/MySQLJournalDAO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyLecturerDAO.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/MySQLLecturerDAO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyStatusDAO.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/MySQLStatusDAO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyStudentDAO.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/MySQLStudentDAO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyStudentOnCourseDAO.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/MySQLStudentOnCourseDAO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyThemeDAO.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/MySQLThemeDAO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyUserDAO.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/MySQLUserDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/core/Utils.class" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/core/Utils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/db/Query.class" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/db/Query.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/db/dao/ConnectionPool.class" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/db/dao/ConnectionPool.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/db/dao/StudentDAO.class" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/db/dao/StudentDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/db/dao/UserDAO.class" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/db/dao/UserDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/db/dto/JournalDTO.class" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/db/dto/JournalDTO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/db/dto/UserDTO.class" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/db/dto/UserDTO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/exception/Errors.class" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/exception/Errors.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/jspf/endabout.jspf" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/editCoursebackup.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/editJournalbackup.jsp" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/command/CourseCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/command/CourseCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/command/CreateCourseCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/command/CreateCourseCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/command/CreateLecturerCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/command/CreateLecturerCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/command/DeleteCourseCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/command/DeleteCourseCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/command/ForgetPasswordCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/command/ForgetPasswordCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/command/InsertInJournalCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/command/InsertInJournalCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/command/LockCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/command/LockCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/command/LoginCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/command/LoginCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/command/SelectStudentCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/command/SelectStudentCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/command/UpdateCourseButtonCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/command/UpdateCourseButtonCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/command/UpdateCourseCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/command/UpdateCourseCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/command/UpdateJournalCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/command/UpdateJournalCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/tag/EditCourseTag.class" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/tag/EditCourseTag.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/tag/FromDBTag.class" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/tag/FromDBTag.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/tag/SelectCourseTag.class" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/tag/SelectCourseTag.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/tag/UserRegisteredCoursesTag.class" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/tag/UserRegisteredCoursesTag.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/core/Utils.class" afterPath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/core/Utils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/db/Query.class" afterPath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/db/Query.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/db/dao/ConnectionPool.class" afterPath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/db/dao/ConnectionPool.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/db/dao/StudentDAO.class" afterPath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/db/dao/StudentDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/db/dto/JournalDTO.class" afterPath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/db/dto/JournalDTO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/db/dto/UserDTO.class" afterPath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/db/dto/UserDTO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/exception/Errors.class" afterPath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/exception/Errors.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/tag/JournalTag.class" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/tag/JournalTag.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/tag/LockTag.class" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/ua/nure/tatarinov/SummaryTask4/web/tag/LockTag.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/command/CourseCommand.class" afterPath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/command/CourseCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/command/CreateCourseCommand.class" afterPath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/command/CreateCourseCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/command/CreateLecturerCommand.class" afterPath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/command/CreateLecturerCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/command/DeleteCourseCommand.class" afterPath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/command/DeleteCourseCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/command/ForgetPasswordCommand.class" afterPath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/command/ForgetPasswordCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/command/InsertInJournalCommand.class" afterPath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/command/InsertInJournalCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/command/LockCommand.class" afterPath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/command/LockCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/command/LoginCommand.class" afterPath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/command/LoginCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/command/SelectStudentCommand.class" afterPath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/command/SelectStudentCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/command/UpdateCourseButtonCommand.class" afterPath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/command/UpdateCourseButtonCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/command/UpdateCourseCommand.class" afterPath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/command/UpdateCourseCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/command/UpdateJournalCommand.class" afterPath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/command/UpdateJournalCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/tag/EditCourseTag.class" afterPath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/tag/EditCourseTag.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/tag/FromDBTag.class" afterPath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/tag/FromDBTag.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/tag/SelectCourseTag.class" afterPath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/tag/SelectCourseTag.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/tag/UserRegisteredCoursesTag.class" afterPath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/tag/UserRegisteredCoursesTag.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/SummaryTask4_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/SummaryTask4_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/f65a99af-a2c6-409e-8b22-0e0a0790f4e9.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/f65a99af-a2c6-409e-8b22-0e0a0790f4e9.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/tag/JournalTag.class" afterPath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/tag/JournalTag.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/tag/LockTag.class" afterPath="$PROJECT_DIR$/out/production/SummaryTask4/ua/nure/tatarinov/SummaryTask4/web/tag/LockTag.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SummaryTask4.iml" afterPath="$PROJECT_DIR$/SummaryTask4.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/META-INF/context.xml" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/META-INF/context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/resources.properties" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/resources.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/resources_en.properties" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/resources_en.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/resources_ru.properties" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/resources_ru.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/resources_uk.properties" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/classes/resources_uk.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/jsp/admin.jsp" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/jsp/admin.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/jsp/courses.jsp" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/jsp/courses.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/jsp/editCourse.jsp" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/jsp/editCourse.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/jsp/editJournal.jsp" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/jsp/editJournal.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/jsp/error_page.jsp" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/jsp/error_page.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/jsp/lecturer.jsp" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/jsp/lecturer.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/jsp/student.jsp" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/jsp/student.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/jspf/about.jspf" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/jspf/about.jspf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/jspf/header.jspf" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/jspf/header.jspf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/log4j.properties" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/WEB-INF/log4j.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/styles/admin.css" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/styles/admin.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/styles/courses.css" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/styles/courses.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/core/Utils.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/core/Utils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/Query.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/Query.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/ConnectionPool.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/ConnectionPool.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/StudentDAO.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/StudentDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dto/JournalDTO.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dto/JournalDTO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/styles/editjournal.css" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/styles/editjournal.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/styles/error.css" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/styles/error.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/styles/header.css" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/styles/header.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/styles/lecturer.css" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/styles/lecturer.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/styles/student.css" afterPath="$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded/styles/student.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/resources.properties" afterPath="$PROJECT_DIR$/out/production/SummaryTask4/resources.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/resources_en.properties" afterPath="$PROJECT_DIR$/out/production/SummaryTask4/resources_en.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/resources_ru.properties" afterPath="$PROJECT_DIR$/out/production/SummaryTask4/resources_ru.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SummaryTask4/resources_uk.properties" afterPath="$PROJECT_DIR$/out/production/SummaryTask4/resources_uk.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources.properties" afterPath="$PROJECT_DIR$/src/resources.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources_en.properties" afterPath="$PROJECT_DIR$/src/resources_en.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources_ru.properties" afterPath="$PROJECT_DIR$/src/resources_ru.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources_uk.properties" afterPath="$PROJECT_DIR$/src/resources_uk.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/MySQLLecturerDAO.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/MySQLLecturerDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/MySQLUserDAO.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/MySQLUserDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/CourseCommand.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/CourseCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/CreateCourseCommand.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/CreateCourseCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/CreateLecturerCommand.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/CreateLecturerCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/DeleteCourseCommand.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/DeleteCourseCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/ForgetPasswordCommand.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/ForgetPasswordCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/InsertInJournalCommand.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/InsertInJournalCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/LockCommand.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/LockCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/LoginCommand.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/LoginCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/RegisterOnCourseCommand.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/RegisterOnCourseCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/SearchCommand.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/SearchCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/SelectStudentCommand.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/SelectStudentCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/UpdateCourseButtonCommand.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/UpdateCourseButtonCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/UpdateCourseCommand.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/UpdateCourseCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/UpdateJournalCommand.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/UpdateJournalCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/tag/EditCourseTag.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/tag/EditCourseTag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/tag/FromDBTag.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/tag/FromDBTag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/tag/SelectCourseTag.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/tag/SelectCourseTag.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/tag/JournalTag.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/tag/JournalTag.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/tag/LockTag.java" afterPath="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/tag/LockTag.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/TestMySQLLecturerDAO.java" afterPath="$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/TestMySQLLecturerDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/TestMySQLStudentDAO.java" afterPath="$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/TestMySQLStudentDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/META-INF/context.xml" afterPath="$PROJECT_DIR$/web/META-INF/context.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/admin.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/admin.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/courses.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/courses.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/editCourse.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/editCourse.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/editJournal.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/editJournal.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/error_page.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/error_page.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/lecturer.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/lecturer.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/login.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/student.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/student.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jspf/about.jspf" afterPath="$PROJECT_DIR$/web/WEB-INF/jspf/about.jspf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jspf/header.jspf" afterPath="$PROJECT_DIR$/web/WEB-INF/jspf/header.jspf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/log4j.properties" afterPath="$PROJECT_DIR$/web/WEB-INF/log4j.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/styles/admin.css" afterPath="$PROJECT_DIR$/web/styles/admin.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/styles/courses.css" afterPath="$PROJECT_DIR$/web/styles/courses.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/styles/editcourses.css" afterPath="$PROJECT_DIR$/web/styles/editcourses.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/styles/editjournal.css" afterPath="$PROJECT_DIR$/web/styles/editjournal.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/styles/error.css" afterPath="$PROJECT_DIR$/web/styles/error.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/styles/header.css" afterPath="$PROJECT_DIR$/web/styles/header.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/styles/lecturer.css" afterPath="$PROJECT_DIR$/web/styles/lecturer.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/styles/login.css" afterPath="$PROJECT_DIR$/web/styles/login.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/styles/search.css" afterPath="$PROJECT_DIR$/web/styles/search.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/styles/student.css" afterPath="$PROJECT_DIR$/web/styles/student.css" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -143,7 +89,7 @@
     <SUITE FILE_PATH="coverage/SummaryTask4$TestMySQLCourseDAO_findAllCoursesThatUserNotRegistered.coverage" NAME="TestMySQLCourseDAO.findAllCoursesThatUserNotRegistered Coverage Results" MODIFIED="1485204429125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ua.nure.tatarinov.SummaryTask4.db.dao.mysql.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/SummaryTask4$TestMySQLStudentDAO.coverage" NAME="TestMySQLStudentDAO Coverage Results" MODIFIED="1485217559467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/SummaryTask4$TestMySQLStudentDAO.coverage" NAME="TestMySQLStudentDAO Coverage Results" MODIFIED="1485249832233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ua.nure.tatarinov.SummaryTask4.db.dao.mysql.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/SummaryTask4$TestMySQLUserDAO_setNewPassword.coverage" NAME="TestMySQLUserDAO.setNewPassword Coverage Results" MODIFIED="1485216009113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -179,13 +125,16 @@
     <SUITE FILE_PATH="coverage/SummaryTask4$TestMySQLUserDAO_createUser.coverage" NAME="TestMySQLUserDAO.createUser Coverage Results" MODIFIED="1485192631931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ua.nure.tatarinov.SummaryTask4.db.dao.mysql.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/SummaryTask4$TestMySQLLecturerDAO_findLecturersByString.coverage" NAME="TestMySQLLecturerDAO.findLecturersByString Coverage Results" MODIFIED="1485251695851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ua.nure.tatarinov.SummaryTask4.db.dao.mysql.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/SummaryTask4$TestMySQLCourseDAO_getAllCourses.coverage" NAME="TestMySQLCourseDAO.getAllCourses Coverage Results" MODIFIED="1485204602520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ua.nure.tatarinov.SummaryTask4.db.dao.mysql.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/SummaryTask4$TestMySQLJournalDAO_updateJournal.coverage" NAME="TestMySQLJournalDAO.updateJournal Coverage Results" MODIFIED="1485211861974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ua.nure.tatarinov.SummaryTask4.db.dao.mysql.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/SummaryTask4$AllTests.coverage" NAME="AllTests Coverage Results" MODIFIED="1485217390951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/SummaryTask4$AllTests.coverage" NAME="AllTests Coverage Results" MODIFIED="1485252332243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ua.nure.tatarinov.SummaryTask4.db.dao.mysql.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/SummaryTask4$TestMySQLStudentDAO_findStudentsByString.coverage" NAME="TestMySQLStudentDAO.findStudentsByString Coverage Results" MODIFIED="1485212397195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -247,63 +196,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestMySQLStudentDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/TestMySQLStudentDAO.java">
+      <file leaf-file-name="student.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/student.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#findStudentByIdUser#0;class#TestMySQLStudentDAO#0" expanded="false" />
-                <element signature="method#getAllStudents#0;class#TestMySQLStudentDAO#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MySQLStudentDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/MySQLStudentDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="32" column="63" lean-forward="true" selection-start-line="32" selection-start-column="63" selection-end-line="32" selection-end-column="63" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Query.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/Query.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="33" column="4" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+            <state relative-caret-position="283">
+              <caret line="130" column="22" lean-forward="true" selection-start-line="130" selection-start-column="22" selection-end-line="130" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestMySQLLecturerDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/TestMySQLLecturerDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="71" column="69" lean-forward="true" selection-start-line="71" selection-start-column="69" selection-end-line="71" selection-end-column="69" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+      <file leaf-file-name="resources.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/resources.properties">
+          <provider selected="true" editor-type-id="ResourceBundle">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="28" column="18" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MySQLLecturerDAO.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/MySQLLecturerDAO.java">
+      <file leaf-file-name="lecturer.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/lecturer.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="66" column="57" lean-forward="true" selection-start-line="66" selection-start-column="57" selection-end-line="66" selection-end-column="57" />
-              <folding>
-                <element signature="method#getAllLecturers#0;class#MySQLLecturerDAO#0" expanded="false" />
-                <element signature="method#changeLecturer#0;class#MySQLLecturerDAO#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="214">
+              <caret line="50" column="54" lean-forward="true" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -314,35 +235,19 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Jsp File" />
         <option value="jsf" />
         <option value="facelets" />
         <option value="Jspx File" />
         <option value="Enum" />
         <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>gly</find>
-      <find>horiz</find>
-      <find>ho</find>
-      <find>butto</find>
-      <find>f</find>
-      <find>tabl</find>
-      <find>type</find>
-      <find>glyp</find>
-      <find>button</find>
-      <find>searc</find>
-      <find>col-l</find>
-      <find>col</find>
-      <find>user</find>
-      <find>поиск</find>
-      <find>преподавате</find>
       <find>sess</find>
-      <find>form</find>
       <find>by_log</find>
       <find>create</find>
       <find>tomcat.</find>
@@ -351,11 +256,27 @@
       <find>fa</find>
       <find>sys</find>
       <find>colla</find>
-      <find>as</find>
       <find>userDTO.set</find>
       <find>syste</find>
       <find>userDTO</find>
       <find>\</find>
+      <find>utf</find>
+      <find>resultset.getint</find>
+      <find>as</find>
+      <find>count</find>
+      <find>&lt;c:ou</find>
+      <find>ERROR</find>
+      <find>dura</find>
+      <find>regist</find>
+      <find>длите</find>
+      <find>длитель</find>
+      <find>name</find>
+      <find>&lt;%@ include file=&quot;/WEB-INF/jspf/endabout.jspf&quot;%&gt;</find>
+      <find>for</find>
+      <find>form</find>
+      <find>week</find>
+      <find>page.lecturer.table.title</find>
+      <find>progress</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -369,36 +290,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/styles/login.css" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jspf/header.jspf" />
-        <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/ResponseType.java" />
-        <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/LogoutCommand.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/login.jsp" />
-        <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/LockCommand.java" />
-        <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/tag/LockTag.java" />
-        <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/filter/CommandAccessFilter.java" />
-        <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/Command.java" />
-        <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/controller/Controller.java" />
-        <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dto/UserDTO.java" />
-        <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyStudentDAO.java" />
-        <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyThemeDAO.java" />
-        <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyJournalDAO.java" />
-        <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyStatusDAO.java" />
-        <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyStudentOnCourseDAO.java" />
-        <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyCourseDAO.java" />
-        <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyLecturerDAO.java" />
-        <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/exception/Errors.java" />
-        <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/CreateLecturerCommand.java" />
-        <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/core/Utils.java" />
-        <option value="$PROJECT_DIR$/web/styles/courses.css" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f65a99af-a2c6-409e-8b22-0e0a0790f4e9/console.sql" />
-        <option value="$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyUserDAOTest.java" />
-        <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/derby/DerbyUserDAO.java" />
-        <option value="$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/derby/TestDerbyUserDAO.java" />
-        <option value="$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/derby/AllTests.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/TestDerbyUserDAO.java" />
-        <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/MySQLCourseDAO.java" />
         <option value="$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/TestMySQLThemeDAO.java" />
         <option value="$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/TestMySQLStatusDAO.java" />
         <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/StudentDAO.java" />
@@ -406,20 +297,50 @@
         <option value="$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/TestMySQLJournalDAO.java" />
         <option value="$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/TestMySQLStudentOnCourseDAO.java" />
         <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/ConnectionPool.java" />
-        <option value="$PROJECT_DIR$/logs/log_file_3.log" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/895154e5-d83a-413d-a015-050aa61ff206/console.sql" />
-        <option value="$PROJECT_DIR$/web/META-INF/context.xml" />
         <option value="$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/AllTests.java" />
         <option value="$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/TestMySQLCourseDAO.java" />
         <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/SearchCommand.java" />
-        <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/MySQLUserDAO.java" />
         <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/UserDAO.java" />
         <option value="$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/TestMySQLUserDAO.java" />
+        <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/MySQLStudentDAO.java" />
+        <option value="$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/TestMySQLStudentDAO.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/web/META-INF/context.xml" />
         <option value="$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/TestMySQLLecturerDAO.java" />
+        <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/MySQLUserDAO.java" />
         <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/Query.java" />
         <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/MySQLLecturerDAO.java" />
-        <option value="$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/TestMySQLStudentDAO.java" />
-        <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/MySQLStudentDAO.java" />
+        <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/CourseCommand.java" />
+        <option value="$PROJECT_DIR$/web/styles/student.css" />
+        <option value="$PROJECT_DIR$/src/resources_uk.properties" />
+        <option value="$PROJECT_DIR$/src/resources_ru.properties" />
+        <option value="$PROJECT_DIR$/web/styles/admin.css" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/895154e5-d83a-413d-a015-050aa61ff206/console.sql" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jspf/endhead.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jspf/endheader.jspf" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jspf/about.jspf" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/search.jsp" />
+        <option value="$PROJECT_DIR$/logs/log_file_3.log" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/log4j.properties" />
+        <option value="$PROJECT_DIR$/web/styles/header.css" />
+        <option value="$PROJECT_DIR$/web/styles/editcourses.css" />
+        <option value="$PROJECT_DIR$/web/styles/editjournal.css" />
+        <option value="$PROJECT_DIR$/web/styles/courses.css" />
+        <option value="$PROJECT_DIR$/web/styles/error.css" />
+        <option value="$PROJECT_DIR$/web/styles/lecturer.css" />
+        <option value="$PROJECT_DIR$/web/styles/search.css" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/error_page.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/courses.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/editCourse.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/editJournal.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/forget.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jspf/header.jspf" />
+        <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/tag/JournalTag.java" />
+        <option value="$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/tag/LockTag.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/admin.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/lecturer.jsp" />
+        <option value="$PROJECT_DIR$/src/resources.properties" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/student.jsp" />
       </list>
     </option>
   </component>
@@ -492,8 +413,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -537,6 +458,14 @@
               <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jspf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -552,7 +481,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="META-INF" />
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -566,25 +499,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mysql" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryTask4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -602,7 +517,51 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Resource Bundle 'resources'" />
+              <option name="myItemType" value="com.intellij.lang.properties.projectView.ResourceBundleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
               <option name="myItemId" value="SummaryTask4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SummaryTask4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SummaryTask4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SummaryTask4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SummaryTask4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SummaryTask4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tag" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -823,7 +782,7 @@
       <recent name="$PROJECT_DIR$/web/WEB-INF" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestMySQLStudentDAO">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.9">
     <configuration default="false" name="AllTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -863,32 +822,6 @@
       <option name="PACKAGE_NAME" value="ua.nure.tatarinov.SummaryTask4.db.dao.mysql" />
       <option name="MAIN_CLASS_NAME" value="ua.nure.tatarinov.SummaryTask4.db.dao.mysql.TestMySQLLecturerDAO" />
       <option name="METHOD_NAME" value="createLecturer" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="TestMySQLUserDAO.findUserByLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="ua.nure.tatarinov.SummaryTask4.db.dao.mysql.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="SummaryTask4" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ua.nure.tatarinov.SummaryTask4.db.dao.mysql" />
-      <option name="MAIN_CLASS_NAME" value="ua.nure.tatarinov.SummaryTask4.db.dao.mysql.TestMySQLUserDAO" />
-      <option name="METHOD_NAME" value="findUserByLogin" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -942,6 +875,32 @@
       <option name="MAIN_CLASS_NAME" value="ua.nure.tatarinov.SummaryTask4.db.dao.mysql.TestMySQLStudentDAO" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestMySQLLecturerDAO.findLecturersByString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ua.nure.tatarinov.SummaryTask4.db.dao.mysql.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="SummaryTask4" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ua.nure.tatarinov.SummaryTask4.db.dao.mysql" />
+      <option name="MAIN_CLASS_NAME" value="ua.nure.tatarinov.SummaryTask4.db.dao.mysql.TestMySQLLecturerDAO" />
+      <option name="METHOD_NAME" value="findLecturersByString" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -1489,17 +1448,17 @@
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 8.5.9" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.AllTests" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.TestMySQLLecturerDAO.createLecturer" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TestMySQLUserDAO.findUserByLogin" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestMySQLUserDAO.lockUserById" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.TestMySQLStudentDAO" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestMySQLUserDAO.lockUserById" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestMySQLStudentDAO" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.TestMySQLLecturerDAO.findLecturersByString" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestMySQLStudentDAO" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.AllTests" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TestMySQLLecturerDAO.createLecturer" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TestMySQLUserDAO.lockUserById" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TestMySQLUserDAO.findUserByLogin" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.AllTests" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestMySQLLecturerDAO.findLecturersByString" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestMySQLStudentDAO" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestMySQLLecturerDAO.createLecturer" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestMySQLUserDAO.lockUserById" />
       </list>
     </recent_temporary>
   </component>
@@ -1562,7 +1521,8 @@
       <workItem from="1484905991027" duration="69843000" />
       <workItem from="1485101928332" duration="28679000" />
       <workItem from="1485172271488" duration="20519000" />
-      <workItem from="1485200352924" duration="17340000" />
+      <workItem from="1485200352924" duration="36823000" />
+      <workItem from="1485293398695" duration="3373000" />
     </task>
     <task id="LOCAL-00001" summary="All pages rewriting using Bootstrap 3.">
       <created>1485032840647</created>
@@ -1578,43 +1538,50 @@
       <option name="project" value="LOCAL" />
       <updated>1485129720535</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="For best using database changed from Derby to MySQL. Rewriting tables of DB and methods for working with DB. Almost all methods coverage a Unit Test by JUnit4.">
+      <created>1485217881710</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1485217881710</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AllTests - 2017.01.24 at 02h 17m 29s.xml">
+    <history-entry file="AllTests - 2017.01.24 at 11h 55m 45s.xml">
       <configuration name="AllTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllTests - 2017.01.24 at 02h 19m 30s.xml">
+    <history-entry file="AllTests - 2017.01.24 at 11h 56m 38s.xml">
       <configuration name="AllTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllTests - 2017.01.24 at 02h 21m 06s.xml">
+    <history-entry file="AllTests - 2017.01.24 at 11h 58m 58s.xml">
       <configuration name="AllTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllTests - 2017.01.24 at 02h 23m 16s.xml">
+    <history-entry file="AllTests - 2017.01.24 at 12h 00m 02s.xml">
       <configuration name="AllTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestMySQLLecturerDAO_createLecturer - 2017.01.24 at 02h 11m 48s.xml">
-      <configuration name="TestMySQLLecturerDAO.createLecturer" configurationId="JUnit" />
+    <history-entry file="AllTests - 2017.01.24 at 12h 04m 40s.xml">
+      <configuration name="AllTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestMySQLLecturerDAO_createLecturer - 2017.01.24 at 02h 15m 24s.xml">
-      <configuration name="TestMySQLLecturerDAO.createLecturer" configurationId="JUnit" />
+    <history-entry file="AllTests - 2017.01.24 at 12h 05m 37s.xml">
+      <configuration name="AllTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestMySQLLecturerDAO_createLecturer - 2017.01.24 at 02h 16m 22s.xml">
-      <configuration name="TestMySQLLecturerDAO.createLecturer" configurationId="JUnit" />
+    <history-entry file="TestMySQLLecturerDAO_findLecturersByString - 2017.01.24 at 11h 50m 15s.xml">
+      <configuration name="TestMySQLLecturerDAO.findLecturersByString" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestMySQLLecturerDAO_createLecturer - 2017.01.24 at 02h 16m 30s.xml">
-      <configuration name="TestMySQLLecturerDAO.createLecturer" configurationId="JUnit" />
+    <history-entry file="TestMySQLLecturerDAO_findLecturersByString - 2017.01.24 at 11h 54m 16s.xml">
+      <configuration name="TestMySQLLecturerDAO.findLecturersByString" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestMySQLStudentDAO - 2017.01.24 at 02h 23m 56s.xml">
-      <configuration name="TestMySQLStudentDAO" configurationId="JUnit" />
+    <history-entry file="TestMySQLLecturerDAO_findLecturersByString - 2017.01.24 at 11h 54m 36s.xml">
+      <configuration name="TestMySQLLecturerDAO.findLecturersByString" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestMySQLStudentDAO - 2017.01.24 at 02h 26m 02s.xml">
-      <configuration name="TestMySQLStudentDAO" configurationId="JUnit" />
+    <history-entry file="TestMySQLLecturerDAO_findLecturersByString - 2017.01.24 at 11h 54m 58s.xml">
+      <configuration name="TestMySQLLecturerDAO.findLecturersByString" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="619769000" />
+    <option name="totallyTimeSpent" value="642625000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1627,7 +1594,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="714" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1638,7 +1605,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32954547" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32711864" sideWeight="0.43636364" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32711864" sideWeight="0.43030304" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.49413735" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1650,12 +1617,10 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998326" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3101695" sideWeight="0.6878788" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3101695" sideWeight="0.6689394" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3101695" sideWeight="0.3121212" order="15" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32542372" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3219697" sideWeight="0.59166664" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24545455" sideWeight="0.46566164" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24924242" sideWeight="0.46566164" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23484848" sideWeight="0.53433836" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.50586265" order="7" side_tool="true" content_ui="tabs" />
@@ -1664,6 +1629,8 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3101695" sideWeight="0.33106062" order="15" side_tool="true" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.320339" sideWeight="0.59166664" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3220339" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1731,7 +1698,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="All pages rewriting using Bootstrap 3." />
     <MESSAGE value="Added transaction support for DB methods. Some pages are not using Bootstrap. Optimized search algorithm." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added transaction support for DB methods. Some pages are not using Bootstrap. Optimized search algorithm." />
+    <MESSAGE value="For best using database changed from Derby to MySQL. Rewriting tables of DB and methods for working with DB. Almost all methods coverage a Unit Test by JUnit4." />
+    <MESSAGE value="Bug fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1744,171 +1713,54 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/controller/Controller.java">
+    <entry file="file://$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/TestMySQLStudentOnCourseDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="56" column="8" lean-forward="false" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
+        <state relative-caret-position="144">
+          <caret line="54" column="22" lean-forward="true" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/tag/LockTag.java">
+    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/CourseCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="95" column="42" lean-forward="true" selection-start-line="95" selection-start-column="42" selection-end-line="95" selection-end-column="42" />
+        <state relative-caret-position="2032">
+          <caret line="131" column="1" lean-forward="false" selection-start-line="131" selection-start-column="1" selection-end-line="131" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/login.jsp">
+    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/MySQLLecturerDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="47" column="18" lean-forward="false" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dto/UserDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="31" lean-forward="false" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/exception/Errors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="29" column="64" lean-forward="false" selection-start-line="29" selection-start-column="64" selection-end-line="29" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources_uk.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/CreateLecturerCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="40" column="40" lean-forward="false" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/courses.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/styles/courses.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="97" column="1" lean-forward="false" selection-start-line="97" selection-start-column="1" selection-end-line="97" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/SelectStudentCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/TestDerbyUserDAO.java" />
-    <entry file="jar://$PROJECT_DIR$/lib/log4j.jar!/org/apache/log4j/Logger.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/LockCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="57" column="27" lean-forward="false" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/LoginCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret line="35" column="16" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/filter/CommandAccessFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="68" column="13" lean-forward="true" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/listener/ContextListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="25" column="31" lean-forward="true" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/core/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="39" column="30" lean-forward="true" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f65a99af-a2c6-409e-8b22-0e0a0790f4e9/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="200" column="26" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="206" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/df34ff0d/895154e5-d83a-413d-a015-050aa61ff206/courses.USERS">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+        <state relative-caret-position="228">
+          <caret line="124" column="40" lean-forward="true" selection-start-line="124" selection-start-column="40" selection-end-line="124" selection-end-column="40" />
+          <folding>
+            <element signature="method#changeLecturer#0;class#MySQLLecturerDAO#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/RegisterOnCourseCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
+        <state relative-caret-position="202">
           <caret line="24" column="27" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/CourseDAO.java">
+    <entry file="file://$PROJECT_DIR$/web/styles/student.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        <state relative-caret-position="369">
+          <caret line="138" column="1" lean-forward="false" selection-start-line="138" selection-start-column="1" selection-end-line="138" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/Query.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="24" column="4" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -1916,157 +1768,45 @@
     <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/MySQLCourseDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="149" column="27" lean-forward="false" selection-start-line="149" selection-start-column="27" selection-end-line="149" selection-end-column="27" />
+          <caret line="186" column="93" lean-forward="false" selection-start-line="186" selection-start-column="93" selection-end-line="186" selection-end-column="93" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/StudentDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/MySQLUserDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/MySQLThemeDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="36" column="20" lean-forward="false" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/default-java/jre/lib/rt.jar!/java/lang/Exception.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/tag/ProgressTag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="48" column="34" lean-forward="false" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dto/JournalDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/MySQLStatusDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-59">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/MySQLJournalDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="21" column="91" lean-forward="true" selection-start-line="21" selection-start-column="91" selection-end-line="21" selection-end-column="91" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/MySQLStudentOnCourseDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="78" column="16" lean-forward="false" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/ConnectionPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="22" column="50" lean-forward="true" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="61" lean-forward="false" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
+        <state relative-caret-position="283">
+          <caret line="24" column="38" lean-forward="false" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/META-INF/context.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        <state relative-caret-position="90">
+          <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/AllTests.java">
+    <entry file="file://$PROJECT_DIR$/src/resources_uk.properties">
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        <state relative-caret-position="-342">
+          <caret line="20" column="39" lean-forward="false" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/TestMySQLStudentOnCourseDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="59" column="45" lean-forward="true" selection-start-line="59" selection-start-column="45" selection-end-line="59" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+    <entry file="file://$PROJECT_DIR$/src/resources_ru.properties">
+      <provider editor-type-id="ResourceBundle">
+        <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/TestMySQLStatusDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="39" column="62" lean-forward="true" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/TestMySQLThemeDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="19" column="3" lean-forward="false" selection-start-line="19" selection-start-column="3" selection-end-line="43" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/TestMySQLCourseDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#updateCourse#0;class#TestMySQLCourseDAO#0" expanded="false" />
-            <element signature="method#getCourseByIdCourse#0;class#TestMySQLCourseDAO#0" expanded="false" />
-            <element signature="method#getAllCourses#0;class#TestMySQLCourseDAO#0" expanded="false" />
-            <element signature="method#findCourseByString#0;class#TestMySQLCourseDAO#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/TestMySQLJournalDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        <state relative-caret-position="106">
+          <caret line="48" column="40" lean-forward="false" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -2074,106 +1814,318 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/895154e5-d83a-413d-a015-050aa61ff206/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="18" column="41" lean-forward="false" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
-          <folding />
+          <caret line="62" column="33" lean-forward="false" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/command/SearchCommand.java">
+    <entry file="file://$PROJECT_DIR$/logs/log_file_1.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="29" column="59" lean-forward="false" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
-          <folding />
+        <state relative-caret-position="228">
+          <caret line="92469" column="0" lean-forward="true" selection-start-line="92469" selection-start-column="0" selection-end-line="92469" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/UserDAO.java">
+    <entry file="file://$PROJECT_DIR$/logs/log_file_2.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="8" column="15" lean-forward="false" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/TestMySQLUserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="70" column="22" lean-forward="false" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#findUserByLogin#0;class#TestMySQLUserDAO#0" expanded="false" />
-            <element signature="method#createUser#0;class#TestMySQLUserDAO#0" expanded="false" />
-            <element signature="method#getAllUsers#0;class#TestMySQLUserDAO#0" expanded="false" />
-            <element signature="method#registerUserOnCourse#0;class#TestMySQLUserDAO#0" expanded="false" />
-            <element signature="method#setNewPassword#0;class#TestMySQLUserDAO#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/MySQLUserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <caret line="18" column="15" lean-forward="false" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/TestMySQLLecturerDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="71" column="69" lean-forward="true" selection-start-line="71" selection-start-column="69" selection-end-line="71" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/Query.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="33" column="4" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/MySQLStudentDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="32" column="63" lean-forward="true" selection-start-line="32" selection-start-column="63" selection-end-line="32" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/TestMySQLStudentDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#findStudentByIdUser#0;class#TestMySQLStudentDAO#0" expanded="false" />
-            <element signature="method#getAllStudents#0;class#TestMySQLStudentDAO#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="228">
+          <caret line="90980" column="0" lean-forward="true" selection-start-line="90980" selection-start-column="0" selection-end-line="90980" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logs/log_file_3.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="80527" column="0" lean-forward="true" selection-start-line="80527" selection-start-column="0" selection-end-line="80527" selection-end-column="0" />
+        <state relative-caret-position="242">
+          <caret line="90778" column="0" lean-forward="true" selection-start-line="90778" selection-start-column="0" selection-end-line="90778" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/db/dao/mysql/MySQLLecturerDAO.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="66" column="57" lean-forward="true" selection-start-line="66" selection-start-column="57" selection-end-line="66" selection-end-column="57" />
-          <folding>
-            <element signature="method#getAllLecturers#0;class#MySQLLecturerDAO#0" expanded="false" />
-            <element signature="method#changeLecturer#0;class#MySQLLecturerDAO#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="90">
+          <caret line="5" column="66" lean-forward="false" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/styles/admin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="130" column="0" lean-forward="true" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/styles/header.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="139" column="1" lean-forward="false" selection-start-line="139" selection-start-column="1" selection-end-line="139" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/styles/editcourses.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="31" column="16" lean-forward="false" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/styles/editjournal.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/styles/courses.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="91" column="16" lean-forward="false" selection-start-line="91" selection-start-column="16" selection-end-line="91" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/styles/error.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="32" column="16" lean-forward="false" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/styles/forget.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/styles/lecturer.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="37" column="16" lean-forward="false" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/styles/search.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="25" column="16" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/courses.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="118" column="30" lean-forward="false" selection-start-line="118" selection-start-column="26" selection-end-line="118" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/editCourse.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="21" column="39" lean-forward="false" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/editJournal.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="82" column="33" lean-forward="false" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/error_page.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="33" column="61" lean-forward="false" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/forget.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="34" column="17" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/search.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jspf/endabout.jspf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/tag/AboutTag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="107" column="20" lean-forward="false" selection-start-line="107" selection-start-column="20" selection-end-line="107" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/tag/CoursesTag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="25" column="16" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/tag/FromDBTag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/tag/EditCourseTag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="139" column="69" lean-forward="false" selection-start-line="139" selection-start-column="65" selection-end-line="139" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/tag/JournalTag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="101" column="63" lean-forward="false" selection-start-line="101" selection-start-column="63" selection-end-line="101" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/tag/LockTag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="97" column="51" lean-forward="false" selection-start-line="97" selection-start-column="51" selection-end-line="97" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/tag/ProgressTag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="70" column="105" lean-forward="false" selection-start-line="70" selection-start-column="105" selection-end-line="70" selection-end-column="105" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/tag/SelectCourseTag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="32" column="55" lean-forward="false" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/tag/StudentJournalTag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="27" column="16" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/nure/tatarinov/SummaryTask4/web/tag/UserRegisteredCoursesTag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="33" column="16" lean-forward="false" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/about.tld">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jspf/header.jspf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jspf/about.jspf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/admin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="30" column="83" lean-forward="false" selection-start-line="30" selection-start-column="83" selection-end-line="30" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/lecturer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="50" column="54" lean-forward="true" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources.properties">
+      <provider selected="true" editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="28" column="18" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/student.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="130" column="22" lean-forward="true" selection-start-line="130" selection-start-column="22" selection-end-line="130" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>

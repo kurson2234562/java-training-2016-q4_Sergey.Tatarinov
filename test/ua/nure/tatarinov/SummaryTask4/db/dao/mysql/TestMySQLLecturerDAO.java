@@ -15,7 +15,6 @@ import javax.sql.DataSource;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotNull;
 
 public class TestMySQLLecturerDAO {
@@ -55,10 +54,10 @@ public class TestMySQLLecturerDAO {
     @Test
     public void createLecturer() throws Exception {
         int size = new MySQLLecturerDAO().getAllLecturers().size();
-        UserDTO user = new MySQLUserDAO().createUser("log", "pass");
+        UserDTO user = new MySQLUserDAO().createUser("loglog", "passpass");
         user.setIdUser(new MySQLUserDAO().getAllUsers().size());
         new MySQLLecturerDAO().createLecturer("Surname", "Name", "Patronymic", user.getIdUser());
-        assertNotEquals(size, new MySQLLecturerDAO().getAllLecturers().size());
+        assertEquals(size + 1, new MySQLLecturerDAO().getAllLecturers().size());
     }
 
     @Test
@@ -69,8 +68,8 @@ public class TestMySQLLecturerDAO {
 
     @Test
     public void findLecturersByString() throws Exception {
-        List<LecturerDTO> lecturers = new MySQLLecturerDAO().findLecturersByString("Ми");
-        assertEquals(lecturers.get(0).getSurname(),"Мищеряков");
+        List<LecturerDTO> lecturers = new MySQLLecturerDAO().findLecturersByString("Ko");
+        assertEquals(lecturers.get(0).getSurname(),"Kolesnikov");
     }
 
 }

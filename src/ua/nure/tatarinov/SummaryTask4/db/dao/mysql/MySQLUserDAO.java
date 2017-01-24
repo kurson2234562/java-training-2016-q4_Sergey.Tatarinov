@@ -87,7 +87,7 @@ public class MySQLUserDAO extends UserDTO implements UserDAO {
                     stmt.execute();
                     ResultSet resultSet = stmt.getResultSet();
                     if (resultSet.next()) {
-                        id = resultSet.getInt("1");
+                        id = resultSet.getInt("max(id_user)");
                     }
                     connection.commit();
                 } catch (SQLException ex) {

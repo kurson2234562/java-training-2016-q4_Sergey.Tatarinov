@@ -46,8 +46,8 @@ public class TestMySQLStudentDAO {
 
     @Test
     public void findStudentsByString() throws Exception {
-        List<StudentDTO> students = new MySQLStudentDAO().findStudentsByString("Ше");
-        assertEquals(students.get(0).getSurname(),"Шендрик");
+        List<StudentDTO> students = new MySQLStudentDAO().findStudentsByString("pi");
+        assertEquals(students.get(0).getSurname(),"Pischoha");
     }
 
     @Test

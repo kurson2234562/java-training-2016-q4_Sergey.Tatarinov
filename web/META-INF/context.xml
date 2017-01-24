@@ -2,7 +2,7 @@
 <Context>
     <Resource name="jdbc/courses" type="javax.sql.DataSource"
               maxActive="100"  maxIdle="30" maxWait="10000"
-              url="jdbc:mysql://localhost:3306/courses?characterEncoding=UTF-8"
+              url="jdbc:mysql://localhost:3306/courses?encoding=UTF-8&amp;useUnicode=true&amp;characterEncoding=UTF-8"
               driverClassName="com.mysql.jdbc.Driver"
               validationQuery="SELECT 1"
               username="root" password="remdigga4237"/>

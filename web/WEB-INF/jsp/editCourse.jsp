@@ -14,11 +14,12 @@
         <div class="container-fluid bs-const">
             <div class="col-lg-3">
                 <%@ include file="/WEB-INF/jspf/about.jspf"%>
+                <%@ include file="/WEB-INF/jspf/endabout.jspf"%>
             </div>
             <div class="col-lg-9">
                 <div class="panel panel-primary table-responsive">
                     <div class="panel-heading"><my:Locale value="page.editcourse.title"/></div>
-                    <form class="form-horizontal">
+                    <form method="post" class="form-horizontal">
                         <input type="hidden" name="command" value="updateCourseCommand">
                         <table>
                             <course:editCourse method="update"/>
