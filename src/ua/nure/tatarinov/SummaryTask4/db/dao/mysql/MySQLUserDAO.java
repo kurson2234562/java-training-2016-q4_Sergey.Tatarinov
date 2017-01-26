@@ -10,6 +10,13 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Data access object for User.
+ *
+ * @author S. Tatarinov
+ *
+ */
+
 public class MySQLUserDAO extends UserDTO implements UserDAO {
 
     public static final Logger LOG = Logger.getLogger(MySQLUserDAO.class);
@@ -42,6 +49,7 @@ public class MySQLUserDAO extends UserDTO implements UserDAO {
         }
     }
 
+    @Override
     public UserDTO findUserByLogin(String login) {
         LOG.trace("Start tracing MySQLUserDAO#findUserByLogin");
         UserDTO user = null;
@@ -156,6 +164,7 @@ public class MySQLUserDAO extends UserDTO implements UserDAO {
         }
     }
 
+    @Override
     public void setNewPassword(int id, String password) {
         LOG.trace("Start tracing MySQLUserDAO#setNewPassword");
         try (Connection connection = ConnectionPool.getConnetcion()) {

@@ -13,9 +13,22 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Language command
+ * @author S. Tatarinov
+ */
 @WebServlet(name = "ChangeLanguage")
 public class LanguageCommand extends Command {
+
+    /**
+     * Logger for this command
+     */
     private static final Logger LOG = Logger.getLogger(LanguageCommand.class);
+
+    /**
+     * Serial version UID
+     */
+    private static final long serialVersionUID = 5063715519941606153L;
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {

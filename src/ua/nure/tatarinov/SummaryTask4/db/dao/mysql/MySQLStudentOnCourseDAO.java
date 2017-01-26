@@ -13,6 +13,13 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Data access object for Student on Course.
+ *
+ * @author S. Tatarinov
+ *
+ */
+
 public class MySQLStudentOnCourseDAO implements StudentOnCourseDAO {
 
     public static final Logger LOG = Logger.getLogger(MySQLStudentOnCourseDAO.class);

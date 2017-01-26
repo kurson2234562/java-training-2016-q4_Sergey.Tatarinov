@@ -13,6 +13,13 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Data access object for Status.
+ *
+ * @author S. Tatarinov
+ *
+ */
+
 public class MySQLStatusDAO implements StatusDAO {
 
     public static final Logger LOG = Logger.getLogger(MySQLStatusDAO.class);

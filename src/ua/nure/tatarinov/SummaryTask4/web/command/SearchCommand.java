@@ -17,9 +17,20 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * Search command
+ * @author S. Tatarinov
+ */
 public class SearchCommand extends Command {
 
+    /**
+     * Logger for this command
+     */
     private static final Logger LOG = Logger.getLogger(SearchCommand.class);
+
+    /**
+     * Serial version UID
+     */
     private static final long serialVersionUID = -5598542401929015124L;
 
     @Override
@@ -27,7 +38,7 @@ public class SearchCommand extends Command {
         LOG.trace("Start tracing SearchCommand");
         HttpSession session = request.getSession();
         if (session.getAttribute("user") != null) {
-            String search = request.getParameter("search");
+            String search = new String(request.getParameter("search").getBytes("ISO-8859-1"), "UTF-8");
             if ((!search.contains("%")) || (!search.equals("%")) || (!search.equals("_")) || (!search.contains("_"))) {
                 List<StudentDTO> students = null;
                 List<LecturerDTO> lecturers = null;

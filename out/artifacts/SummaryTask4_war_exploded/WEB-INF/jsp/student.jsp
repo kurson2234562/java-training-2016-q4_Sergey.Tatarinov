@@ -35,6 +35,10 @@
                         </li>
                     </ul>
                 </div>
+                <form method="post" action="controller">
+                    <input type="hidden" name="command" value="loadInformationCommand">
+                    <button type="submit" class="btn btn-success">Редактировать личную информацию</button>
+                </form>
                 <%@ include file="/WEB-INF/jspf/endabout.jspf"%>
             </div>
             <div class="col-lg-9">

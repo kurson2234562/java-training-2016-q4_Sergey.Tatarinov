@@ -14,11 +14,23 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
 
-import static ua.nure.tatarinov.SummaryTask4.core.Utils.isDigit;
+import static ua.nure.tatarinov.SummaryTask4.core.Utils.isNumber;
 
+/**
+ * Lock command
+ * @author S. Tatarinov
+ */
 public class LockCommand extends Command {
 
+    /**
+     * Logger for this command
+     */
     private static final Logger LOG = Logger.getLogger(LockCommand.class);
+
+    /**
+     * Serial version UID
+     */
+    private static final long serialVersionUID = 3919270375661910620L;
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
@@ -28,7 +40,7 @@ public class LockCommand extends Command {
         String lock = request.getParameter("lock");
         int newValue = -1;
         boolean existStudent = false;
-        if (!isDigit(test)) {
+        if (!isNumber(test)) {
             request.setAttribute("errorMessage", Errors.ERR_NOT_A_NUMBER);
             return Path.PAGE_ERROR_PAGE;
         } else {

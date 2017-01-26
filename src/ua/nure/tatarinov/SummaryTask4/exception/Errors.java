@@ -1,7 +1,13 @@
 package ua.nure.tatarinov.SummaryTask4.exception;
 
+/**
+ * Contains all errors constants
+ */
 public class Errors {
 
+    /**
+     * Default constructor of Errors
+     */
     private Errors(){
     }
 
@@ -28,5 +34,6 @@ public class Errors {
     public static final String ERR_USER_HAS_NO_EMAIL ="This user has no e-mail address";
     public static final String ERR_USER_NOT_LOGGER = "You are not logged. Please, login.";
     public static final String ERR_BAD_REQUEST = "Bad request.";
+    public static final String ERR_DONT_ENTER_SUFFICIENT_PARAMETERS= "You did not enter a sufficient number of parameters";
 
 }

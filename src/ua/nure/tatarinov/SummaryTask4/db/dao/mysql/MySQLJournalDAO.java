@@ -10,6 +10,13 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+/**
+ * Data access object for Journal.
+ *
+ * @author S. Tatarinov
+ *
+ */
+
 public class MySQLJournalDAO implements JournalDAO {
 
     public static final Logger LOG = Logger.getLogger(MySQLJournalDAO.class);

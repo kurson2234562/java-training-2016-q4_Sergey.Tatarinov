@@ -13,9 +13,21 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * Register on course command
+ * @author S. Tatarinov
+ */
 public class RegisterOnCourseCommand extends Command {
 
+    /**
+     * Logger for this command
+     */
     private static final Logger LOG = Logger.getLogger(RegisterOnCourseCommand.class);
+
+    /**
+     * Serial version UID
+     */
+    private static final long serialVersionUID = 8391517597550426880L;
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {

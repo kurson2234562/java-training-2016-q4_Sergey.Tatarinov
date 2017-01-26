@@ -25,3 +25,8 @@ table {
 th, td{
     text-align:center;
 }
+
+.btn-success{
+    display:table;
+    margin:25px 43% 0px auto;
+}

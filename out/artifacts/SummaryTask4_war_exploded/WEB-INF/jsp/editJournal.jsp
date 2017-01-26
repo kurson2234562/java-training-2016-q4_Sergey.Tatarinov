@@ -89,10 +89,18 @@
                                         <input type="hidden" name="command" value="updateJournalCommand">
                                     </c:otherwise>
                                 </c:choose>
-                                <my:Locale value="page.lecturer.journal.hint"/>
-                                <input type="number" name="newValue" min="0" max="100" required>
-                                <input type="submit" value="<my:Locale value="page.change.mark"/>">
+
+
+                                <div class="form-group">
+                                    <label for="newmark" class="col-sm-2 control-label"><my:Locale value="page.lecturer.journal.hint"/></label>
+                                    <div class="col-sm-10">
+                                        <input type="number" class="form-control" id="newmark" placeholder="New mark" name="newValue" min="0" max="100" required>
+                                    </div>
+                                </div>
+                                <br>
+                                <button type="submit" class="btn btn-success"><my:Locale value="page.change.mark"/></button>
                             </form>
+
                         </div>
                     </c:when>
                     <c:otherwise>

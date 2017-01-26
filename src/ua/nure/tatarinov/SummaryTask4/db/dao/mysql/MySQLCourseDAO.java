@@ -10,6 +10,13 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Data access object for Course.
+ *
+ * @author S. Tatarinov
+ *
+ */
+
 public class MySQLCourseDAO implements CourseDAO {
 
     public static final Logger LOG = Logger.getLogger(MySQLCourseDAO.class);
@@ -39,8 +46,8 @@ public class MySQLCourseDAO implements CourseDAO {
     }
 
     @Override
-    public void updateCourse(String name, int duration, int theme, int lecturer, int status, int id) {
-        LOG.trace("Starting tracing MySQLCourseDAO#updateCourse");
+    public void updateCourseById(String name, int duration, int theme, int lecturer, int status, int id) {
+        LOG.trace("Starting tracing MySQLCourseDAO#updateCourseById");
         try (Connection connection = ConnectionPool.getConnetcion()) {
             if (connection != null) {
                 try (PreparedStatement statement = connection.prepareStatement(Query.UPDATE_COURSE, Statement.RETURN_GENERATED_KEYS)) {

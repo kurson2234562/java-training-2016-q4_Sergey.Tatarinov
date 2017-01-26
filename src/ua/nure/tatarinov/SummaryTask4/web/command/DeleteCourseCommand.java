@@ -13,16 +13,28 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * Delete course command
+ * @author S. Tatarinov
+ */
 public class DeleteCourseCommand extends Command {
 
+    /**
+     * Logger for this command
+     */
     public static final Logger LOG = Logger.getLogger(DeleteCourseCommand.class);
+
+    /**
+     * Serial version UID
+     */
+    private static final long serialVersionUID = -2476707802297780588L;
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         String id = request.getParameter("id");
         List<CourseDTO> courses = new MySQLCourseDAO().getAllCourses();
         boolean existCourse = false;
-        if (!Utils.isDigit(id)){
+        if (!Utils.isNumber(id)){
             request.setAttribute("errorMessage", Errors.ERR_NOT_A_NUMBER);
             request.setAttribute("success", false);
             return Path.PAGE_ERROR_PAGE;

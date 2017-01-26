@@ -1,0 +1,6 @@
+1. Java Servlet API 1.2.1
+2. JavaMail API 1.4.7
+3. JSTL 1.2
+4. Log4J
+5. MySQL connector 5.0.8
+6. Bootstrap 3.3.7

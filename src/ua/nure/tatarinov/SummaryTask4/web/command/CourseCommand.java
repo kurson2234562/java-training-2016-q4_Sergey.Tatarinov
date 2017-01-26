@@ -19,8 +19,21 @@ import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
+/**
+ * Course command
+ * @author S.Tatarinov
+ */
 public class CourseCommand extends Command {
+
+    /**
+     * Logger for this command
+     */
     public static final Logger LOG = Logger.getLogger(CourseCommand.class);
+
+    /**
+     * Serial version UID
+     */
+    private static final long serialVersionUID = 5908769609880924971L;
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
@@ -45,11 +58,11 @@ public class CourseCommand extends Command {
                 forward = Path.PAGE_ERROR_PAGE;
             }
             if (request.getParameter("idTheme") != null) {
-                idTheme = request.getParameter("idTheme");
-                if (request.getParameter("idTheme").equals(rb.getString("page.courses.all.themes"))) {
+                idTheme = new String(request.getParameter("idTheme").getBytes("ISO-8859-1"), "UTF-8");
+                if (idTheme.equals(rb.getString("page.courses.all.themes"))) {
                     idTheme = null;
                 } else {
-                    if (Utils.isDigit(idTheme)) {
+                    if (Utils.isNumber(idTheme)) {
                         for (ThemeDTO theme : themes) {
                             if (theme.getIdTheme() == Integer.parseInt(idTheme)) {
                                 existTheme = true;
@@ -69,11 +82,12 @@ public class CourseCommand extends Command {
                 session.setAttribute("idTheme", idTheme);
             }
             if (request.getParameter("idLecturer") != null) {
-                idLecturer = request.getParameter("idLecturer");
-                if (request.getParameter("idLecturer").equals(rb.getString("page.courses.all.lecturers"))) {
+                idLecturer = new String(request.getParameter("idLecturer").getBytes("ISO-8859-1"), "UTF-8");
+                System.out.println(idLecturer);
+                if (idLecturer.equals(rb.getString("page.courses.all.lecturers"))) {
                     idLecturer = null;
                 } else {
-                    if (Utils.isDigit(idLecturer)) {
+                    if (Utils.isNumber(idLecturer)) {
                         for (LecturerDTO lecturer : lecturers) {
                             if (lecturer.getId() == Integer.parseInt(idLecturer)) {
                                 existLecturer = true;

@@ -6,6 +6,10 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
 import java.io.IOException;
 
+/**
+ * Encoding Filter
+ * @author S. Tatarinov
+ */
 @WebFilter(filterName = "EncodingFilter")
 public class EncodingFilter implements Filter {
 

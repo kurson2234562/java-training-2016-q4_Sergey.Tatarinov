@@ -9,6 +9,12 @@ import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.SQLException;
 
+/**
+ * The class provides connection pool.
+ *
+ * @author S. Tatarinov
+ */
+
 public class ConnectionPool {
 
     private static final Logger LOG = Logger.getLogger(ConnectionPool.class);
@@ -16,6 +22,11 @@ public class ConnectionPool {
     private ConnectionPool(){
     }
 
+    /**
+     * Establish connection with Derby
+     *
+     * @return Connection with Derby
+     */
     public static synchronized Connection getDerbyConnetcion() {
         try {
             Context initCtx = new InitialContext();
@@ -31,6 +42,11 @@ public class ConnectionPool {
         }
     }
 
+    /**
+     * Establish connection with MySQL
+     *
+     * @return Connection with MySQL
+     */
     public static synchronized Connection getConnetcion() {
         try {
             Context initCtx = new InitialContext();

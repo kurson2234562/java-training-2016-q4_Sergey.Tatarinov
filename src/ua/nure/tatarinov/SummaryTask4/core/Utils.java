@@ -12,11 +12,22 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Properties;
 
+
+/**
+ * Utils methods for commands
+ */
+
 public class Utils {
 
     public static final Logger LOG = Logger.getLogger(Utils.class);
 
-    public static boolean isDigit(String string) {
+    /**
+     *
+     * @param string
+     * @return true if the string is a number
+     */
+
+    public static boolean isNumber(String string) {
         if (string == null || string.length() == 0) return false;
 
         int i = 0;
@@ -37,6 +48,12 @@ public class Utils {
         return true;
     }
 
+
+    /**
+     * Hash the input string in the md5
+     * @param pass
+     * @return
+     */
     public static String encrypt(String pass) {
         StringBuilder hex = new StringBuilder();
         try {
@@ -52,6 +69,11 @@ public class Utils {
         return hex.toString();
     }
 
+    /**
+     * Mail recipient sends the specified string
+     * @param recipient
+     * @param text
+     */
     public static void sendMail(String recipient, String text) {
         Properties props = new Properties();
         props.put("mail.smtp.host", "smtp.gmail.com");
@@ -83,6 +105,11 @@ public class Utils {
 
     }
 
+    /**
+     * Generate a message with new password
+     * @param login
+     * @return message with new password
+     */
     public static String generateMessage(String login) {
         String alphabet = "abcdefghijklmnopqrstuvwxyz1234567890";
         UserDTO user = new MySQLUserDAO().findUserByLogin(login);

@@ -12,11 +12,8 @@ import java.io.IOException;
 import java.util.*;
 
 /**
- * Security filter. Disabled by default. Uncomment Security filter
- * section in web.xml to enable.
- *
- * @author D.Kolesnikov
- *
+ * Security filter.
+ * @author S. Tatarinov
  */
 public class CommandAccessFilter implements Filter {
 

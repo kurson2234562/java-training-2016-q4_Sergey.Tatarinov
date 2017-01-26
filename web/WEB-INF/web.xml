@@ -4,6 +4,12 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
 
+    <context-param>
+        <param-name>javax.servlet.jsp.jstl.fmt.request.charset</param-name>
+        <param-value>UTF-8</param-value>
+    </context-param>
+
+
     <resource-env-ref>
         <resource-env-ref-name>jdbc/courses</resource-env-ref-name>
         <resource-env-ref-type>javax.sql.DataSource</resource-env-ref-type>
@@ -48,15 +54,15 @@
         </init-param>
         <init-param>
             <param-name>student</param-name>
-            <param-value>registerOnCourseCommand</param-value>
+            <param-value>registerOnCourseCommand loadInformationCommand editInformationCommand</param-value>
         </init-param>
         <init-param>
             <param-name>lecturer</param-name>
-            <param-value>selectStudentCommand updateJournalCommand insertInJournalCommand</param-value>
+            <param-value>selectStudentCommand updateJournalCommand insertInJournalCommand loadInformationCommand editInformationCommand</param-value>
         </init-param>
         <init-param>
             <param-name>admin</param-name>
-            <param-value>createLecturerCommand createCourseCommand deleteCourseCommand lockCommand updateCourseCommand updateCourseButtonCommand</param-value>
+            <param-value>createLecturerCommand createCourseCommand deleteCourseCommand lockCommand updateCourseCommand updateCourseButtonCommand loadInformationCommand editInformationCommand</param-value>
         </init-param>
 
     </filter>

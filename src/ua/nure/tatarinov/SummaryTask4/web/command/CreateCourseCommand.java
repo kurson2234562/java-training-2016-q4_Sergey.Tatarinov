@@ -16,18 +16,30 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * Create course command
+ * @author S. Tatarinov
+ */
 public class CreateCourseCommand extends Command {
 
+    /**
+     * Logger for this command
+     */
     private static final Logger LOG = Logger.getLogger(CreateCourseCommand.class);
+
+    /**
+     * Serial version UID
+     */
+    private static final long serialVersionUID = 1469808156144861750L;
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         LOG.trace("Start tracing CreateCourseCommand");
-        String name = request.getParameter("name");
-        String duration = request.getParameter("duration");
-        String theme = request.getParameter("theme");
-        String lecturer = request.getParameter("lecturer");
-        String status = request.getParameter("status");
+        String name = new String(request.getParameter("name").getBytes("ISO-8859-1"), "UTF-8");
+        String duration = new String(request.getParameter("duration").getBytes("ISO-8859-1"), "UTF-8");
+        String theme = new String(request.getParameter("theme").getBytes("ISO-8859-1"), "UTF-8");
+        String lecturer = new String(request.getParameter("lecturer").getBytes("ISO-8859-1"), "UTF-8");
+        String status = new String(request.getParameter("status").getBytes("ISO-8859-1"), "UTF-8");
         boolean existCourse = false;
         boolean existTheme = false;
         boolean existLecturer = false;
@@ -43,7 +55,7 @@ public class CreateCourseCommand extends Command {
             request.setAttribute("errorMessage", Errors.ERR_COURSE_ALREADY_EXIST);
             return Path.PAGE_ERROR_PAGE;
         } else {
-            if (!Utils.isDigit(duration)) {
+            if (!Utils.isNumber(duration)) {
                 request.setAttribute("errorMessage", Errors.ERR_NOT_A_NUMBER);
                 return Path.PAGE_ERROR_PAGE;
             } else if (Integer.parseInt(duration) < 0) {
@@ -51,7 +63,7 @@ public class CreateCourseCommand extends Command {
                 return Path.PAGE_ERROR_PAGE;
             }
 
-            if (!Utils.isDigit(theme)) {
+            if (!Utils.isNumber(theme)) {
                 request.setAttribute("errorMessage", Errors.ERR_NOT_A_NUMBER);
                 return Path.PAGE_ERROR_PAGE;
             } else {
@@ -66,7 +78,7 @@ public class CreateCourseCommand extends Command {
                     return Path.PAGE_ERROR_PAGE;
                 }
             }
-            if (!Utils.isDigit(lecturer)) {
+            if (!Utils.isNumber(lecturer)) {
                 request.setAttribute("errorMessage", Errors.ERR_NOT_A_NUMBER);
                 return Path.PAGE_ERROR_PAGE;
             } else {
@@ -81,7 +93,7 @@ public class CreateCourseCommand extends Command {
                     return Path.PAGE_ERROR_PAGE;
                 }
             }
-            if (!Utils.isDigit(status)) {
+            if (!Utils.isNumber(status)) {
                 request.setAttribute("errorMessage", Errors.ERR_NOT_A_NUMBER);
                 return Path.PAGE_ERROR_PAGE;
             } else {

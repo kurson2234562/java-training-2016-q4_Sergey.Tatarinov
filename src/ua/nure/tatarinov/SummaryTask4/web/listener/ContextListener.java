@@ -1,7 +1,4 @@
-package ua.nure.tatarinov.SummaryTask4.web.listener; /**
- * Created by kurson on 07.01.17.
- */
-
+package ua.nure.tatarinov.SummaryTask4.web.listener;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
@@ -10,6 +7,10 @@ import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
+/**
+ * Context Listener
+ * @author S. Tatarinov
+ */
 @WebListener()
 public class ContextListener implements ServletContextListener{
 
@@ -41,6 +42,10 @@ public class ContextListener implements ServletContextListener{
         }
     }
 
+    /**
+     * Initialize log4j at startup web application
+     * @param servletContext Context of servlet
+     */
     private void initLog4J(ServletContext servletContext) {
         LOG.trace("Log4J initialization started");
         try {

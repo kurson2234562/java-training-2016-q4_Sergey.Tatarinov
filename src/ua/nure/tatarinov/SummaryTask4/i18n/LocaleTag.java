@@ -10,9 +10,14 @@ import java.io.IOException;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
+/**
+ * Custom tag for support i18n.
+ * @author S. Tatarinov
+ */
 public class LocaleTag extends TagSupport {
 
     private static final Logger LOG = Logger.getLogger(LocaleTag.class);
+    private static final long serialVersionUID = 823688264936004139L;
 
     private String value;
 

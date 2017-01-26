@@ -18,25 +18,33 @@ import java.util.List;
 
 public class CreateLecturerCommand extends Command {
 
+    /**
+     * Logger for this command
+     */
     private static final Logger LOG = Logger.getLogger(CreateLecturerCommand.class);
+
+    /**
+     * Serial version UID
+     */
+    private static final long serialVersionUID = -3234967330527893569L;
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         LOG.trace("Start tracing CreateLecturerCommand");
         HttpSession session = request.getSession();
         int id = -1;
-        String name = request.getParameter("name");
-        String surname = request.getParameter("surname");
-        String patronymic = request.getParameter("patronymic");
-        String login = request.getParameter("login");
-        String password = request.getParameter("password");
-        String confirm = request.getParameter("confirm");
+        String name = new String(request.getParameter("name").getBytes("ISO-8859-1"), "UTF-8");
+        String surname = new String(request.getParameter("surname").getBytes("ISO-8859-1"), "UTF-8");
+        String patronymic = new String(request.getParameter("patronymic").getBytes("ISO-8859-1"), "UTF-8");
+        String login = new String(request.getParameter("login").getBytes("ISO-8859-1"), "UTF-8");
+        String password = new String(request.getParameter("password").getBytes("ISO-8859-1"), "UTF-8");
+        String confirm = new String(request.getParameter("confirm").getBytes("ISO-8859-1"), "UTF-8");
         boolean existCourse = false;
         int idCourse = Integer.parseInt(request.getParameter("idCourse"));
-        if (!confirm.equals(password)){
+        if (!confirm.equals(password)) {
             request.setAttribute("errorMessage", Errors.ERR_PASS_NO_MATCH);
             return Path.PAGE_ERROR_PAGE;
-        }else {
+        } else {
             List<UserDTO> users = new MySQLUserDAO().getAllUsers();
             for (UserDTO user : users) {
                 if (user.getLogin().equals(login)) {
@@ -50,7 +58,7 @@ public class CreateLecturerCommand extends Command {
                     existCourse = true;
                 }
             }
-            if (!existCourse){
+            if (!existCourse) {
                 request.setAttribute("errorMessage", Errors.ERR_CANNOT_FIND_COURSE);
                 return Path.PAGE_ERROR_PAGE;
             }

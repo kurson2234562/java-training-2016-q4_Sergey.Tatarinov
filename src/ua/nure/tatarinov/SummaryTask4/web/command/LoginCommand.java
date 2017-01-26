@@ -15,10 +15,22 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * Login command
+ * @author S. Tatarinov
+ */
 @WebServlet(name = "LoginCommand")
 public class LoginCommand extends Command {
 
+    /**
+     * Logger for this command
+     */
     private static final Logger LOG = Logger.getLogger(LoginCommand.class);
+
+    /**
+     * Serial version UID
+     */
+    private static final long serialVersionUID = -7190245479634943129L;
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
@@ -27,8 +39,8 @@ public class LoginCommand extends Command {
         HttpSession session = request.getSession();
         String login = "", password = "";
         if ((request.getParameter("username") != null) && (request.getParameter("password") != null)) {
-            login = request.getParameter("username");
-            password = request.getParameter("password");
+            login = new String(request.getParameter("username").getBytes("ISO-8859-1"), "UTF-8");
+            password = new String(request.getParameter("password").getBytes("ISO-8859-1"), "UTF-8");
         } else if ((session.getAttribute("username") != null) && (session.getAttribute("password") != null)) {
             login = String.valueOf(session.getAttribute("username"));
             password = String.valueOf(session.getAttribute("password"));
@@ -84,7 +96,7 @@ public class LoginCommand extends Command {
                     break;
                 case "student":
                     forward = Path.PAGE_STUDENT;
-                    if (user!=null) {
+                    if (user != null) {
                         student = new MySQLStudentDAO().findStudentByIdUser(user.getIdUser());
                         coursesForUser = new MySQLCourseDAO().findAllCoursesThatUserNotRegistered(student.getId());
                     }
@@ -102,13 +114,16 @@ public class LoginCommand extends Command {
         session.setAttribute("courses", courses);
         request.setAttribute("courses", courses);
         session.setAttribute("coursesForUser", coursesForUser);
-        if (student!=null) {
+        if (student != null) {
             session.setAttribute("idStudent", student.getId());
         }
         session.setAttribute("idTheme", null);
         session.setAttribute("idLecturer", null);
         session.setAttribute("sort", null);
         session.setAttribute("sorting", null);
+        if (user != null) {
+            session.setAttribute("idUser", user.getIdUser());
+        }
         return forward;
     }
 }

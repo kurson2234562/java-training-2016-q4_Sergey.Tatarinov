@@ -13,14 +13,26 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * Forget password command
+ * @author S. Tatarinov
+ */
 public class ForgetPasswordCommand extends Command {
 
+    /**
+     * Logger for this command
+     */
     public static final Logger LOG = Logger.getLogger(ForgetPasswordCommand.class);
+
+    /**
+     * Serial version UID
+     */
+    private static final long serialVersionUID = -5453190283513368229L;
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         LOG.trace("Start tracing ForgetPasswordCommand");
-        String email = request.getParameter("email");
+        String email = new String(request.getParameter("email").getBytes("ISO-8859-1"), "UTF-8");
         List<UserDTO> users = new MySQLUserDAO().getAllUsers();
         for (UserDTO user : users) {
             if (user.getEmail().equals(email) || user.getLogin().equals(email)) {

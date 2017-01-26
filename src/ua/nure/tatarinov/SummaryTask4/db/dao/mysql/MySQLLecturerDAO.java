@@ -13,6 +13,13 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Data access object for Lecturer.
+ *
+ * @author S. Tatarinov
+ *
+ */
+
 public class MySQLLecturerDAO implements LecturerDAO {
 
     public static final Logger LOG = Logger.getLogger(MySQLLecturerDAO.class);
@@ -132,5 +139,36 @@ public class MySQLLecturerDAO implements LecturerDAO {
             LOG.info(ex.getLocalizedMessage());
         }
         return lecturers;
+    }
+
+    @Override
+    public void updateLecturerById(int idUser, String surname, String name, String patronymic, String login, String email) {
+        LOG.trace("Start tracing MySQLLecturerDAO#updateLecturerById");
+        try (Connection connection = ConnectionPool.getConnetcion()) {
+            if (connection != null) {
+                try (PreparedStatement statement = connection.prepareStatement(Query.UPDATE_LECTURER)) {
+                    connection.setAutoCommit(false);
+                    statement.setString(1, surname);
+                    statement.setString(2, name);
+                    statement.setString(3, patronymic);
+                    statement.setInt(4, idUser);
+                    statement.execute();
+
+                    PreparedStatement stmt = connection.prepareStatement(Query.UPDATE_USER);
+                    stmt.setString(1, login);
+                    stmt.setString(2, email);
+                    stmt.setInt(3, idUser);
+                    stmt.execute();
+
+                    connection.commit();
+                } catch (SQLException ex) {
+                    LOG.error(ex.getLocalizedMessage());
+                    connection.rollback();
+                }
+            }
+        } catch (SQLException ex) {
+            LOG.info(ex.getLocalizedMessage());
+        }
+
     }
 }

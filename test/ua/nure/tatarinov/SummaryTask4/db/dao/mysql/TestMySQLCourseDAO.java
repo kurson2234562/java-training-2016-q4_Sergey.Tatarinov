@@ -65,7 +65,7 @@ public class TestMySQLCourseDAO {
 
     @Test
     public void updateCourse() throws Exception {
-        new MySQLCourseDAO().updateCourse("SQL course", 10, 1, 4, 1, 6);
+        new MySQLCourseDAO().updateCourseById("SQL course", 10, 1, 4, 1, 6);
         assertEquals(new MySQLCourseDAO().getCourseByIdCourse(6).getNameCourse(), "SQL course");
     }
 

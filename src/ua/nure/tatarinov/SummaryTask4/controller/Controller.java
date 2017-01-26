@@ -12,6 +12,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+/**
+ * Main servlet controller.
+ *
+ * @author S. Tatarinov
+ *
+ */
+
+
 @WebServlet(name = "Controller")
 public class Controller extends HttpServlet {
 
@@ -26,6 +34,10 @@ public class Controller extends HttpServlet {
         LOG.trace("*****************GET*****************");
         process(request, response, "get");
     }
+
+    /**
+     * Main method of this controller.
+     */
 
     private void process(HttpServletRequest request,
                          HttpServletResponse response, String method) throws IOException, ServletException {
@@ -52,8 +64,6 @@ public class Controller extends HttpServlet {
 
         LOG.debug("Controller finished, now go to forward address --> " + forward);
 
-        // go to forward
-        //response.sendRedirect(request.getContextPath()+"?command="+commandName);
         request.getRequestDispatcher(forward).forward(request, response);
     }
 }

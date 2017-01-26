@@ -13,6 +13,13 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Data access object for Theme.
+ *
+ * @author S. Tatarinov
+ *
+ */
+
 public class MySQLThemeDAO implements ThemeDAO {
 
     public static final Logger LOG = Logger.getLogger(MySQLThemeDAO.class);

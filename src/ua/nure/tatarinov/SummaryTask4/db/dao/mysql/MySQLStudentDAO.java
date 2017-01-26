@@ -14,10 +14,16 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Data access object for Student.
+ *
+ * @author S. Tatarinov
+ *
+ */
+
 public class MySQLStudentDAO implements StudentDAO {
 
     public static final Logger LOG = Logger.getLogger(MySQLStudentDAO.class);
-
 
     @Override
     public List<StudentDTO> findStudentsByString(String searchResult) {
@@ -49,7 +55,6 @@ public class MySQLStudentDAO implements StudentDAO {
         } catch (SQLException ex) {
             LOG.error(ex.getLocalizedMessage());
         }
-        System.out.println(students);
         return students;
     }
 
@@ -109,6 +114,36 @@ public class MySQLStudentDAO implements StudentDAO {
             LOG.error(ex.getLocalizedMessage());
         }
         return marks;
+    }
+
+    @Override
+    public void updateStudentById(int idUser, String surname, String name, String patronymic, String login, String email) {
+        LOG.trace("Start tracing MySQLStudentDAO#updateStudentById");
+        try (Connection connection = ConnectionPool.getConnetcion()) {
+            if (connection != null) {
+                try (PreparedStatement statement = connection.prepareStatement(Query.UPDATE_STUDENT)) {
+                    connection.setAutoCommit(false);
+                    statement.setString(1, surname);
+                    statement.setString(2, name);
+                    statement.setString(3, patronymic);
+                    statement.setInt(4, idUser);
+                    statement.execute();
+
+                    PreparedStatement stmt = connection.prepareStatement(Query.UPDATE_USER);
+                    stmt.setString(1, login);
+                    stmt.setString(2, email);
+                    stmt.setInt(3, idUser);
+                    stmt.execute();
+
+                    connection.commit();
+                } catch (SQLException ex) {
+                    LOG.error(ex.getLocalizedMessage());
+                    connection.rollback();
+                }
+            }
+        } catch (SQLException ex) {
+            LOG.info(ex.getLocalizedMessage());
+        }
     }
 
     @Override

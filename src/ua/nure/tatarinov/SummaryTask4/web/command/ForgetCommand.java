@@ -8,9 +8,21 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+/**
+ * Forget command
+ * @author S. Tatarinov
+ */
 public class ForgetCommand extends Command{
 
+    /**
+     * Logger for this command
+     */
     public static final Logger LOG = Logger.getLogger(ForgetCommand.class);
+
+    /**
+     * Serial version UID
+     */
+    private static final long serialVersionUID = 5797482214822872805L;
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {

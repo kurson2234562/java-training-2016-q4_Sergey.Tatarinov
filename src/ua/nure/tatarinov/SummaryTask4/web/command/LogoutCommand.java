@@ -9,8 +9,17 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
+/**
+ * Logout command
+ * @author S. Tatarinov
+ */
 @WebServlet(name = "LogoutCommand")
 public class LogoutCommand extends Command {
+
+    /**
+     * Serial version UID
+     */
+    private static final long serialVersionUID = 6913068962189385112L;
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
