@@ -1,6 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="my" uri="/WEB-INF/locale.tld"%>
-<%@ taglib prefix="x" uri="/WEB-INF/student_journal.tld" %>
 <%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <sql:setDataSource var="db" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/courses?encoding=UTF-8&amp;useUnicode=true&amp;characterEncoding=UTF-8" user="root" password="remdigga4237"/><c:choose>
@@ -94,7 +93,7 @@
                                 <div class="form-group">
                                     <label for="newmark" class="col-sm-2 control-label"><my:Locale value="page.lecturer.journal.hint"/></label>
                                     <div class="col-sm-10">
-                                        <input type="number" class="form-control" id="newmark" placeholder="New mark" name="newValue" min="0" max="100" required>
+                                        <input type="number" class="form-control" id="newmark" placeholder="<my:Locale value="page.editmark.newmark"/>" name="newValue" min="0" max="100" required>
                                     </div>
                                 </div>
                                 <br>

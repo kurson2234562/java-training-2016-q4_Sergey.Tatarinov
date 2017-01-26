@@ -35,9 +35,9 @@
             <form action="controller" method="post">
                 <input type="hidden" name="command" value="forgetPasswordCommand">
                 <div id="form-input">
-                    <input type="text" name="email" placeholder="<my:Locale value="page.login.enter"/> email or login" required>
+                    <input type="text" name="email" placeholder="<my:Locale value="page.login.enter"/> email <my:Locale value="page.forger.orlogin"/>" required>
                 </div>
-                <button type="submit" id="login"> Continue</button>
+                <button type="submit" id="login"> <my:Locale value="page.forger.continue"/></button>
             </form>
         </div>
     </body>

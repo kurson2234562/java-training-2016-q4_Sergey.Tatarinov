@@ -1,9 +1,8 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="my" uri="/WEB-INF/locale.tld"%>
 <%@ taglib prefix="t" uri="/WEB-INF/tables.tld"%>
-<%@ taglib prefix="cr" tagdir="/WEB-INF/tags" %>
 <%@ taglib prefix="pr" uri="/WEB-INF/progress.tld" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -19,6 +18,10 @@
         <div class="container-fluid bs-const">
             <div class="col-lg-3 info">
                 <%@ include file="/WEB-INF/jspf/about.jspf"%>
+                <form method="post" action="controller">
+                    <input type="hidden" name="command" value="loadInformationCommand">
+                    <button type="submit" class="btn btn-success profile">Редактировать личную информацию</button>
+                </form>
                 <div class="bs-example" data-example-id="simple-nav-stacked">
                     <ul class="nav nav-pills nav-stacked nav-pills-stacked-example">
                         <li role="presentation">
@@ -35,10 +38,6 @@
                         </li>
                     </ul>
                 </div>
-                <form method="post" action="controller">
-                    <input type="hidden" name="command" value="loadInformationCommand">
-                    <button type="submit" class="btn btn-success">Редактировать личную информацию</button>
-                </form>
                 <%@ include file="/WEB-INF/jspf/endabout.jspf"%>
             </div>
             <div class="col-lg-9">
@@ -95,7 +94,6 @@
                                             <input type="hidden" name="idCourse" value="${courseForUser.idCourse}">
                                             <h3>${courseForUser.nameCourse}</h3>
                                             <p><my:Locale value="page.student.duration"/>: ${courseForUser.duration} <my:Locale value="page.student.week"/></p>
-                                            <p><my:Locale value="page.student.course.start"/>: март 2017</p>
                                             <p>
                                                 <a onclick="$(this).closest('form').submit()" href="#" class="btn btn-success" role="button"><my:Locale value="page.student.register"/></a>
                                             </p>

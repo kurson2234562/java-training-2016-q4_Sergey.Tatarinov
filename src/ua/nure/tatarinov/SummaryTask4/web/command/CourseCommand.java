@@ -83,7 +83,6 @@ public class CourseCommand extends Command {
             }
             if (request.getParameter("idLecturer") != null) {
                 idLecturer = new String(request.getParameter("idLecturer").getBytes("ISO-8859-1"), "UTF-8");
-                System.out.println(idLecturer);
                 if (idLecturer.equals(rb.getString("page.courses.all.lecturers"))) {
                     idLecturer = null;
                 } else {

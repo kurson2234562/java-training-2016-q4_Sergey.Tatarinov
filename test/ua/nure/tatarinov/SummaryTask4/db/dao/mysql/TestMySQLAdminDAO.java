@@ -6,17 +6,14 @@ import org.apache.naming.java.javaURLContextFactory;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import ua.nure.tatarinov.SummaryTask4.db.dto.StudentDTO;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
-import java.util.List;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
 
-public class TestMySQLStudentDAO {
+public class TestMySQLAdminDAO {
 
     static Context context;
 
@@ -45,27 +42,9 @@ public class TestMySQLStudentDAO {
     }
 
     @Test
-    public void findStudentsByString() throws Exception {
-        List<StudentDTO> students = new MySQLStudentDAO().findStudentsByString("pi");
-        assertEquals(students.get(0).getSurname(),"Pischoha");
-    }
-
-    @Test
-    public void findStudentByIdUser() throws Exception {
-        StudentDTO student = new MySQLStudentDAO().findStudentByIdUser(11);
-        assertEquals(student.getSurname(),"Шендрик");
-    }
-
-    @Test
-    public void getAllStudents() throws Exception {
-        List<StudentDTO> list = new MySQLStudentDAO().getAllStudents();
-        assertNotNull(list);
-    }
-
-    @Test
-    public void updateStudentById()throws Exception{
-        new MySQLStudentDAO().updateStudentById(15, "Соколов", "Дмитрий", "Юрьевич", "sokol", "a@nure.ua");
-        assertEquals(new MySQLUserDAO().getAllUsers().get(8).getEmail(), "a@nure.ua");
+    public void updateAdminById() throws Exception {
+        new MySQLAdminDAO().updateAdminById(4, "Админов", "Админ", "Админович", "admin", "a@nure.ua");
+        assertEquals(new MySQLUserDAO().getAllUsers().get(3).getEmail(), "a@nure.ua");
     }
 
 }

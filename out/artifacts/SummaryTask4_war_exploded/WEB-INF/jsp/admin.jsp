@@ -19,6 +19,10 @@
         <div class="container-fluid bs-const">
             <div class="col-lg-3">
                 <%@ include file="/WEB-INF/jspf/about.jspf"%>
+                <form method="post" action="controller">
+                    <input type="hidden" name="command" value="loadInformationCommand">
+                    <button type="submit" class="btn btn-success profile">Редактировать личную информацию</button>
+                </form>
                 <div class="bs-example" data-example-id="simple-nav-stacked">
                     <ul class="nav nav-pills nav-stacked nav-pills-stacked-example">
                         <li role="presentation">

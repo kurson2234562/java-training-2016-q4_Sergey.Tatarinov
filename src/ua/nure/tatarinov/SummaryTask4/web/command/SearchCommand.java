@@ -39,7 +39,7 @@ public class SearchCommand extends Command {
         HttpSession session = request.getSession();
         if (session.getAttribute("user") != null) {
             String search = new String(request.getParameter("search").getBytes("ISO-8859-1"), "UTF-8");
-            if ((!search.contains("%")) || (!search.equals("%")) || (!search.equals("_")) || (!search.contains("_"))) {
+            if ((!search.contains("%")) && (!search.equals("%")) && (!search.equals("_")) && (!search.contains("_"))) {
                 List<StudentDTO> students = null;
                 List<LecturerDTO> lecturers = null;
                 List<CourseDTO> courses = null;

@@ -101,3 +101,7 @@ h3{
     display:table;
     margin:25px auto;
 }
+
+.panel-primary{
+    padding-bottom:20px;
+}

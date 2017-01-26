@@ -1,89 +1,81 @@
--- noinspection SqlDialectInspectionForFile
+DROP DATABASE IF EXISTS courses;
 
-DROP TABLE JOURNAL;
-DROP TABLE STUDENT_COURSE;
-DROP TABLE STUDENTS;
-DROP TABLE COURSES;
-DROP TABLE ADMINS;
-DROP TABLE LECTURERS;
-DROP TABLE STATUSES;
-DROP TABLE THEMES;
-DROP TABLE USERS;
-DROP TABLE STATES;
-DROP TABLE ROLES;
-
-CREATE TABLE ROLES(
+CREATE DATABASE IF NOT EXISTS courses DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE courses;
+CREATE TABLE IF NOT EXISTS ROLES(
   id_role INT PRIMARY KEY,
   name_role VARCHAR(10) NOT NULL UNIQUE
-);
+) DEFAULT CHARSET utf8;
 
-CREATE TABLE STATES(
+CREATE TABLE IF NOT EXISTS  STATES(
   id_state INT PRIMARY KEY,
   name_state VARCHAR(10) NOT NULL UNIQUE
-);
+) DEFAULT CHARSET utf8;
 
-CREATE TABLE USERS(
-  id_user INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+CREATE TABLE IF NOT EXISTS  USERS(
+  id_user INT PRIMARY KEY AUTO_INCREMENT,
   login VARCHAR(30) NOT NULL UNIQUE,
   password VARCHAR (40) NOT NULL,
   email VARCHAR (70),
   id_role INT REFERENCES ROLES(id_role) ON DELETE CASCADE ON UPDATE RESTRICT,
   id_state INT REFERENCES STATES(id_state) ON DELETE CASCADE ON UPDATE RESTRICT
-);
+) DEFAULT CHARSET utf8;
 
-CREATE TABLE THEMES(
-  id_theme INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+CREATE TABLE IF NOT EXISTS  THEMES(
+  id_theme INT PRIMARY KEY AUTO_INCREMENT,
   name_theme VARCHAR (30) NOT NULL UNIQUE
-);
+) DEFAULT CHARSET utf8;
 
-CREATE TABLE STATUSES(
-  id_status INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+CREATE TABLE IF NOT EXISTS  STATUSES(
+  id_status INT PRIMARY KEY AUTO_INCREMENT,
   name_status VARCHAR (25) NOT NULL UNIQUE
-);
+) DEFAULT CHARSET utf8;
 
-CREATE TABLE LECTURERS(
-  id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+CREATE TABLE IF NOT EXISTS  LECTURERS(
+  id INT PRIMARY KEY AUTO_INCREMENT,
   surname VARCHAR(30) NOT NULL,
   name VARCHAR (30) NOT NULL,
   patronymic VARCHAR (20),
   id_user INT REFERENCES USERS(id_user) ON DELETE CASCADE ON UPDATE RESTRICT
-);
+) DEFAULT CHARSET utf8;
 
-CREATE TABLE ADMINS(
-  id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+CREATE TABLE IF NOT EXISTS  ADMINS(
+  id INT PRIMARY KEY AUTO_INCREMENT,
   surname VARCHAR(30) NOT NULL,
   name VARCHAR (30) NOT NULL,
   patronymic VARCHAR (20),
   id_user INT REFERENCES USERS(id_user) ON DELETE CASCADE ON UPDATE RESTRICT
-);
+) DEFAULT CHARSET utf8;
 
-CREATE TABLE STUDENTS(
-  id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+CREATE TABLE IF NOT EXISTS  STUDENTS(
+  id INT PRIMARY KEY AUTO_INCREMENT,
   surname VARCHAR(30) NOT NULL,
   name VARCHAR (30) NOT NULL,
   patronymic VARCHAR (20),
   id_user INT REFERENCES USERS(id_user) ON DELETE CASCADE ON UPDATE RESTRICT
-);
+) DEFAULT CHARSET utf8;
 
-CREATE TABLE COURSES(
-  id_course INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+CREATE TABLE IF NOT EXISTS  COURSES(
+  id_course INT PRIMARY KEY AUTO_INCREMENT,
   name_course VARCHAR (40) NOT NULL UNIQUE,
   duration INT NOT NULL,
+  /*start_month TINYINT NOT NULL,
+  start_year SMALLINT NOT NULL,*/
   id_theme INT REFERENCES THEMES(id_theme) ON DELETE CASCADE ON UPDATE RESTRICT,
   id_lecturer INT REFERENCES LECTURERS(id) ON DELETE CASCADE ON UPDATE RESTRICT,
   id_status INT REFERENCES STATUSES(id_status) ON DELETE CASCADE ON UPDATE RESTRICT
-);
+) DEFAULT CHARSET utf8;
 
-CREATE TABLE STUDENT_COURSE(
-  id_student_course INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+CREATE TABLE IF NOT EXISTS  STUDENT_COURSE(
+  id_student_course INT PRIMARY KEY AUTO_INCREMENT,
   id_student INT REFERENCES STUDENTS(id) ON DELETE CASCADE ON UPDATE RESTRICT,
   id_course INT REFERENCES COURSES(id_course) ON DELETE CASCADE ON UPDATE RESTRICT
-);
+) DEFAULT CHARSET utf8;
 
-CREATE TABLE JOURNAL(
+CREATE TABLE IF NOT EXISTS  JOURNAL(
   id_student_course INT PRIMARY KEY REFERENCES STUDENT_COURSE(id_student_course) ON DELETE CASCADE ON UPDATE RESTRICT,
   mark INT NOT NULL
-);
+) DEFAULT CHARSET utf8;
 
 
 /*==================================================INSERT QUERIES==================================================*/
@@ -142,66 +134,66 @@ INSERT INTO ADMINS VALUES
   (DEFAULT, 'Админов', 'Админ', 'Админович', 4);
 
 INSERT INTO STUDENTS VALUES
-  (DEFAULT, 'Шендрик', 'Алексей', '', 11),     --1
-  (DEFAULT, 'Pischoha', 'Konstantin', 'Sergeevich', 2),--2
-  (DEFAULT, 'Shylo', 'Rodion', '', 6),--3
-  (DEFAULT, 'Radchenko', 'Vadim', '', 5),--4
-  (DEFAULT, 'Serenko', 'Ivan', '', 8),--5
-  (DEFAULT, 'Мирошниченко', 'Егор', '', 12),--6
-  (DEFAULT, 'Кругликов', 'Данил', '', 13),--7
-  (DEFAULT, 'Соколов', 'Дмитрий', 'Сергеевич', 15),--8
-  (DEFAULT, 'Перцева', 'Вероника', 'Ильинична', 16);--9
+  (DEFAULT, 'Шендрик', 'Алексей', '', 11),
+  (DEFAULT, 'Pischoha', 'Konstantin', 'Sergeevich', 2),
+  (DEFAULT, 'Shylo', 'Rodion', '', 6),
+  (DEFAULT, 'Radchenko', 'Vadim', '', 5),
+  (DEFAULT, 'Serenko', 'Ivan', '', 8),
+  (DEFAULT, 'Мирошниченко', 'Егор', '', 12),
+  (DEFAULT, 'Кругликов', 'Данил', '', 13),
+  (DEFAULT, 'Соколов', 'Дмитрий', 'Сергеевич', 15),
+  (DEFAULT, 'Перцева', 'Вероника', 'Ильинична', 16);
 
-/*id_course name_course duration id_theme id_lecutrer id_status*/
+/*id_course name_course duration start_month, start_year id_theme id_lecutrer id_status*/
 INSERT INTO COURSES VALUES
-  (DEFAULT, 'Java Web developing'  , 14, 1, 1, 1),
-  (DEFAULT, 'C# developing'        , 17, 2, 2, 1),
-  (DEFAULT, 'ASP.Net'              , 15, 2, 3, 2),
-  (DEFAULT, 'JavaScript developing', 16, 3, 3, 3),
-  (DEFAULT, 'HTML+CSS developing'  , 16, 3, 3, 1),
-  (DEFAULT, 'Python developing'    , 20, 3, 2, 4),
-  (DEFAULT, 'QA testing'           , 10, 3, 1, 4),
-  (DEFAULT, 'PHP developing'       , 14, 3, 1, 3),
-  (DEFAULT, 'Kotlin developing'    ,  7, 1, 2, 1),
-  (DEFAULT, 'Groovy developing'    ,  9, 1, 2, 1),
-  (DEFAULT, 'Scala developing'     , 12, 1, 5, 2),
-  (DEFAULT, 'Ruby developing'      , 13, 3, 5, 1);
+(DEFAULT, 'Java Web developing'  , 14, 1, 1, 1),
+(DEFAULT, 'C# developing'        , 17, 2, 2, 1),
+(DEFAULT, 'ASP.Net'              , 15, 2, 3, 2),
+(DEFAULT, 'JavaScript developing', 16, 3, 3, 3),
+(DEFAULT, 'HTML+CSS developing'  , 16, 3, 3, 1),
+(DEFAULT, 'Python developing'    , 20, 3, 2, 4),
+(DEFAULT, 'QA testing'           , 10, 3, 1, 4),
+(DEFAULT, 'PHP developing'       , 14, 3, 1, 3),
+(DEFAULT, 'Kotlin developing'    ,  7, 1, 2, 1),
+(DEFAULT, 'Groovy developing'    ,  9, 1, 2, 1),
+(DEFAULT, 'Scala developing'     , 12, 1, 5, 2),
+(DEFAULT, 'Ruby developing'      , 13, 3, 5, 1);
 
---9--12
+
 INSERT INTO STUDENT_COURSE VALUES
-  (DEFAULT, 2,  1),--1
-  (DEFAULT, 3,  1),--2
-  (DEFAULT, 5,  1),--3
-  (DEFAULT, 1,  6),--4
-  (DEFAULT, 4,  3),--5
-  (DEFAULT, 6,  2),--6
-  (DEFAULT, 7,  4),--7
-  (DEFAULT, 2,  2),--8
-  (DEFAULT, 2,  6),--9
-  (DEFAULT, 2,  3),--10
-  (DEFAULT, 2,  7),--11
-  (DEFAULT, 1,  7),--12
-  (DEFAULT, 6,  7),--13
-  (DEFAULT, 1, 11),--14
-  (DEFAULT, 1, 12),--15
-  (DEFAULT, 7,  1),--16
-  (DEFAULT, 8,  5),--17
-  (DEFAULT, 9,  2),--18
-  (DEFAULT, 9,  7),--19
-  (DEFAULT, 9,  3),--20
-  (DEFAULT, 9,  5),--21
-  (DEFAULT, 3,  8),--22
-  (DEFAULT, 4,  9),--23
-  (DEFAULT, 5, 10),--24
-  (DEFAULT, 8, 11),--25
-  (DEFAULT, 7, 12),--26
-  (DEFAULT, 2, 11),--27
-  (DEFAULT, 4, 12);--28
+(DEFAULT, 2,  1),
+(DEFAULT, 3,  1),
+(DEFAULT, 5,  1),
+(DEFAULT, 1,  6),
+(DEFAULT, 4,  3),
+(DEFAULT, 6,  2),
+(DEFAULT, 7,  4),
+(DEFAULT, 2,  2),
+(DEFAULT, 2,  6),
+(DEFAULT, 2,  3),
+(DEFAULT, 2,  7),
+(DEFAULT, 1,  7),
+(DEFAULT, 6,  7),
+(DEFAULT, 1, 11),
+(DEFAULT, 1, 12),
+(DEFAULT, 7,  1),
+(DEFAULT, 8,  5),
+(DEFAULT, 9,  2),
+(DEFAULT, 9,  7),
+(DEFAULT, 9,  3),
+(DEFAULT, 9,  5),
+(DEFAULT, 3,  8),
+(DEFAULT, 4,  9),
+(DEFAULT, 5, 10),
+(DEFAULT, 8, 11),
+(DEFAULT, 7, 12),
+(DEFAULT, 2, 11),
+(DEFAULT, 4, 12);
 
 INSERT INTO JOURNAL VALUES
-  (4, 75),
-  (9, 90),
-  (11, 80),
-  (12, 95),
-  (13, 70),
-  (15, 85);
+(4, 75),
+(9, 90),
+(11, 80),
+(12, 95),
+(13, 70),
+(15, 85);

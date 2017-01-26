@@ -72,4 +72,10 @@ public class TestMySQLLecturerDAO {
         assertEquals(lecturers.get(0).getSurname(),"Kolesnikov");
     }
 
+    @Test
+    public void updateLecturerById() throws Exception {
+        new MySQLLecturerDAO().updateLecturerById(9, "Мищеряков", "Юрий", "Валентинович", "temp", "a@nure.ua");
+        assertEquals(new MySQLUserDAO().getAllUsers().get(8).getEmail(), "a@nure.ua");
+    }
+
 }

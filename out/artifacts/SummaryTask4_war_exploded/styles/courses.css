@@ -95,3 +95,9 @@ h3{
 ul form{
     margin-bottom:0;
 }
+
+.sortselect, .btn-success{
+    margin-top:10px !important;
+    margin-bottom:12px;
+    margin-left:55px;
+}

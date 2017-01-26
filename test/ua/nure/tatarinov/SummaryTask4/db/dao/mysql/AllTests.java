@@ -7,7 +7,7 @@ import org.junit.runners.Suite.SuiteClasses;
 @RunWith(Suite.class)
 @SuiteClasses({TestMySQLUserDAO.class, TestMySQLLecturerDAO.class, TestMySQLStudentDAO.class,
         TestMySQLCourseDAO.class, TestMySQLJournalDAO.class, TestMySQLStatusDAO.class,
-        TestMySQLStudentOnCourseDAO.class, TestMySQLThemeDAO.class})
+        TestMySQLStudentOnCourseDAO.class, TestMySQLThemeDAO.class, TestMySQLAdminDAO.class})
 public class AllTests {
 
 }
