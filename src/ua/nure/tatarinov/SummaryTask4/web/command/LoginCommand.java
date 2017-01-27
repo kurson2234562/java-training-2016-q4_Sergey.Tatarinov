@@ -50,6 +50,7 @@ public class LoginCommand extends Command {
         String state = null;
         StudentDTO student = null;
         List<CourseDTO> coursesForUser = null;
+        List<Object> list = null;
         LOG.info("UserDTO " + login + " logged");
         if ((!login.isEmpty()) && (!password.isEmpty())) {
             user = new MySQLUserDAO().findUserByLogin(login);
@@ -103,12 +104,18 @@ public class LoginCommand extends Command {
                     break;
                 case "admin":
                     forward = Path.PAGE_ADMIN;
+                    String page = new MySQLAdminDAO().selectAvgMark();
+                    String pageTop = new MySQLAdminDAO().selectTopMark();
+                    request.setAttribute("list",page);
+                    request.setAttribute("listTop", pageTop);
+                    //System.out.println(list);
                     break;
             }
         }
         List<CourseDTO> courses = new MySQLCourseDAO().getAllCourses();
         List<ThemeDTO> themes = new MySQLThemeDAO().getAllThemes();
         List<LecturerDTO> lecturers = new MySQLLecturerDAO().getAllLecturers();
+
         session.setAttribute("themes", themes);
         session.setAttribute("lecturers", lecturers);
         session.setAttribute("courses", courses);

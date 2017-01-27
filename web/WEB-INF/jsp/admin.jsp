@@ -4,6 +4,7 @@
 <%@ taglib prefix="course" uri="/WEB-INF/editcourse.tld" %>
 <%@ taglib prefix="select" uri="/WEB-INF/selectcourse.tld" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="cr" tagdir="/WEB-INF/tags" %>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -142,12 +143,42 @@
                                         </select>
                                     </div>
                                 </div>
+
+
                                 <input type="hidden" name="command" value="createLecturerCommand">
                                 <button type="submit" class="spacebtn btn btn-success"><span class="glyphicon glyphicon-plus"></span> <my:Locale value="page.admin.lecturer.create.title"/></button>
                             </form>
                         </div>
+                        <hr>
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">Average Mark</div>
+                            <table class="table table-bordered table-striped">
+                                <tr >
+                                    <th  class="info"> name </th>
+                                    <th  class="info"> surname </th>
+                                    <th  class="info"> patr. </th>
+                                    <th  class="info"> mark </th>
+                                </tr>
+                                ${list}
+                            </table>
+                        </div>
+                        <hr>
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">                        Top mark</div>
+                            <table class="table table-bordered table-striped">
+                                <tr>
+                                    <th class="info"> name course </th>
+                                    <th class="info"> mark </th>
+                                </tr>
+                                ${listTop}
+                            </table>
+                        </div>
+                        <hr>
                     </div>
                 </div>
+            </div>
+            <div id="copyright">
+                <cr:copyright/>
             </div>
         </div>
     </body>

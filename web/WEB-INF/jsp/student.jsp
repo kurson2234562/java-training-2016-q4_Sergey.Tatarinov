@@ -3,6 +3,7 @@
 <%@ taglib prefix="t" uri="/WEB-INF/tables.tld"%>
 <%@ taglib prefix="pr" uri="/WEB-INF/progress.tld" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="cr" tagdir="/WEB-INF/tags" %>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -132,7 +133,9 @@
                     </div>
                 </div>
             </div>
+            <div id="copyright">
+                <cr:copyright/>
+            </div>
         </div>
     </body>
 </html>
-

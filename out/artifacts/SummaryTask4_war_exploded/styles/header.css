@@ -142,3 +142,8 @@ input[type="text"],input[type="number"], input[type="password"]{
 .btn-success{
     background-color:#27ae60 !important;
 }
+
+#copyright{
+    margin-top:92% !important;
+    padding-left:70%;
+}

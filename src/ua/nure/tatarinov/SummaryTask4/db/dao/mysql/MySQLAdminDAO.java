@@ -4,10 +4,16 @@ import org.apache.log4j.Logger;
 import ua.nure.tatarinov.SummaryTask4.db.Query;
 import ua.nure.tatarinov.SummaryTask4.db.dao.AdminDAO;
 import ua.nure.tatarinov.SummaryTask4.db.dao.ConnectionPool;
+import ua.nure.tatarinov.SummaryTask4.db.dto.CourseDTO;
+import ua.nure.tatarinov.SummaryTask4.db.dto.JournalDTO;
+import ua.nure.tatarinov.SummaryTask4.db.dto.StudentDTO;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Data access object for Admin.
@@ -48,5 +54,78 @@ public class MySQLAdminDAO implements AdminDAO {
         } catch (SQLException ex) {
             LOG.info(ex.getLocalizedMessage());
         }
+    }
+
+    @Override
+    public String selectTopMark() {
+        List<Object> list = new ArrayList<>();
+        StringBuilder page = new StringBuilder();
+        JournalDTO journalDTO = null;
+        CourseDTO courseDTO = null;
+        LOG.trace("Start tracing MySQLAdminDAO#selectTopMark");
+        try (Connection connection = ConnectionPool.getConnetcion()) {
+            if (connection != null) {
+                try (PreparedStatement statement = connection.prepareStatement(Query.TOP_MARK)) {
+                    connection.setAutoCommit(false);
+                    statement.execute();
+                    ResultSet resultSet = statement.getResultSet();
+                    while (resultSet.next()) {
+                        journalDTO = new JournalDTO();
+                        courseDTO =new CourseDTO();
+                        journalDTO.setMark(resultSet.getInt("max(mark)"));
+                        courseDTO.setNameCourse(resultSet.getString("name_course"));
+                        page.append("<tr><td>").append(courseDTO.getNameCourse())
+                                .append("</td><td>").append(journalDTO.getMark())
+                                .append("</td></tr>");
+                    }
+
+                    connection.commit();
+                } catch (SQLException ex) {
+                    LOG.error(ex.getLocalizedMessage());
+                    connection.rollback();
+                }
+            }
+        } catch (SQLException ex) {
+            LOG.info(ex.getLocalizedMessage());
+        }
+        return page.toString();
+    }
+
+    @Override
+    public String selectAvgMark() {
+        StudentDTO studentDTO = null;
+        JournalDTO journalDTO = null;
+        StringBuilder page = new StringBuilder();
+        LOG.trace("Start tracing MySQLAdminDAO#selectAvgMark");
+        try (Connection connection = ConnectionPool.getConnetcion()) {
+            if (connection != null) {
+                try (PreparedStatement statement = connection.prepareStatement(Query.AVG_MARK)) {
+                    connection.setAutoCommit(false);
+                    statement.execute();
+                    ResultSet resultSet = statement.getResultSet();
+                    while (resultSet.next()){
+                        studentDTO = new StudentDTO();
+                        journalDTO = new JournalDTO();
+                        studentDTO.setName(resultSet.getString("name"));
+                        studentDTO.setPatronymic(resultSet.getString("patronymic"));
+                        studentDTO.setSurname(resultSet.getString("surname"));
+                        journalDTO.setMark(resultSet.getInt("avg(mark)"));
+                        page.append("<tr><td>").append(studentDTO.getSurname())
+                                .append("</td><td>").append(studentDTO.getName()).append("</td><td>")
+                                .append(studentDTO.getPatronymic()).append("</td><td>").append(journalDTO.getMark())
+                                .append("</td></tr>");
+                    }
+                    resultSet.close();
+                    connection.commit();
+                } catch (SQLException ex) {
+                    LOG.error(ex.getLocalizedMessage());
+                    connection.rollback();
+                }
+            }
+        } catch (SQLException ex) {
+            LOG.info(ex.getLocalizedMessage());
+        }
+
+        return page.toString();
     }
 }

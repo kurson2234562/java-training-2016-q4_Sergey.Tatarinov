@@ -5,6 +5,8 @@ import ua.nure.tatarinov.SummaryTask4.Path;
 import ua.nure.tatarinov.SummaryTask4.db.dao.mysql.MySQLAdminDAO;
 import ua.nure.tatarinov.SummaryTask4.db.dao.mysql.MySQLLecturerDAO;
 import ua.nure.tatarinov.SummaryTask4.db.dao.mysql.MySQLStudentDAO;
+import ua.nure.tatarinov.SummaryTask4.db.dao.mysql.MySQLUserDAO;
+import ua.nure.tatarinov.SummaryTask4.db.dto.UserDTO;
 import ua.nure.tatarinov.SummaryTask4.exception.Errors;
 
 import javax.servlet.ServletException;
@@ -12,6 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.List;
 
 /**
  * Edit information command
@@ -40,20 +43,43 @@ public class EditInformationCommand extends Command {
         String patronymic = new String(request.getParameter("patronymic").getBytes("ISO-8859-1"), "UTF-8");
         String login = new String(request.getParameter("login").getBytes("ISO-8859-1"), "UTF-8");
         String email = new String(request.getParameter("email").getBytes("ISO-8859-1"), "UTF-8");
-        if ((!name.equals(null)) || (!name.isEmpty()) || (!login.equals(null)) || (!login.isEmpty()) || (!surname.equals(null)) || (!surname.isEmpty())) {
-            switch (role) {
-                case "student":
-                    new MySQLStudentDAO().updateStudentById(idUser, surname, name, patronymic, login, email);
+        List<UserDTO> users = new MySQLUserDAO().getAllUsers();
+        boolean existUser = false;
+        for (UserDTO user : users) {
+            if (user.getLogin().equals(login)) {
+                System.out.println(1);
+                existUser = true;
+                break;
+            }
+            if (user.getEmail() != null) {
+                System.out.println(2);
+                if (user.getEmail().equals(email)) {
+                    existUser = true;
                     break;
-                case "lecturer":
-                    new MySQLLecturerDAO().updateLecturerById(idUser, surname, name, patronymic, login, email);
-                    break;
-                case "admin":
-                    new MySQLAdminDAO().updateAdminById(idUser, surname, name, patronymic, login, email);
-                    break;
+                }
+            }
+        }
+        System.out.println(existUser);
+        if (!existUser) {
+            if ((!name.equals(null)) || (!name.isEmpty()) || (!login.equals(null)) || (!login.isEmpty()) || (!surname.equals(null)) || (!surname.isEmpty())) {
+                switch (role) {
+                    case "student":
+                        new MySQLStudentDAO().updateStudentById(idUser, surname, name, patronymic, login, email);
+                        break;
+                    case "lecturer":
+                        new MySQLLecturerDAO().updateLecturerById(idUser, surname, name, patronymic, login, email);
+                        break;
+                    case "admin":
+                        new MySQLAdminDAO().updateAdminById(idUser, surname, name, patronymic, login, email);
+                        break;
+                }
+                session.setAttribute("username", login);
+            } else {
+                request.setAttribute("errorMessage", Errors.ERR_DONT_ENTER_SUFFICIENT_PARAMETERS);
             }
         }else {
-            request.setAttribute("errorMessage", Errors.ERR_DONT_ENTER_SUFFICIENT_PARAMETERS);
+            request.setAttribute("errorMessage", Errors.ERR_USERNAME_ALREADY_EXIST);
+            return Path.PAGE_ERROR_PAGE;
         }
         return Path.PAGE_HOME;
     }
