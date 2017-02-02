@@ -62,7 +62,7 @@ public class Query {
     //Delete queries
     public static final String DELETE_COURSE =      "DELETE FROM COURSES WHERE ID_COURSE=?";
 
-    //
+    //Statistics queries
     public static final String TOP_MARK = "SELECT NAME_COURSE, MAX(MARK) FROM STUDENTS INNER JOIN STUDENT_COURSE ON STUDENTS.id = STUDENT_COURSE.id_student INNER JOIN JOURNAL ON STUDENT_COURSE.id_student_course = JOURNAL.id_student_course INNER JOIN COURSES ON STUDENT_COURSE.id_course = COURSES.id_course GROUP BY NAME_COURSE ORDER BY MAX(MARK) DESC";
     public static final String AVG_MARK = "SELECT surname, name, patronymic, AVG(mark) FROM STUDENTS INNER JOIN STUDENT_COURSE ON STUDENTS.id = STUDENT_COURSE.id_student INNER JOIN JOURNAL ON STUDENT_COURSE.id_student_course = JOURNAL.id_student_course GROUP BY surname, name, patronymic ORDER BY AVG(MARK) DESC";
 }

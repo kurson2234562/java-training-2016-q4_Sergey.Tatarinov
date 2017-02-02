@@ -12,6 +12,7 @@ import javax.naming.InitialContext;
 import javax.sql.DataSource;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class TestMySQLAdminDAO {
 
@@ -45,6 +46,16 @@ public class TestMySQLAdminDAO {
     public void updateAdminById() throws Exception {
         new MySQLAdminDAO().updateAdminById(4, "Админов", "Админ", "Админович", "admin", "a@nure.ua");
         assertEquals(new MySQLUserDAO().getAllUsers().get(3).getEmail(), "a@nure.ua");
+    }
+
+    @Test
+    public void selectAvgMark() throws Exception{
+        assertNotNull(new MySQLAdminDAO().selectAvgMark());
+    }
+
+    @Test
+    public void selectTopMark() throws Exception{
+        assertNotNull(new MySQLAdminDAO().selectTopMark());
     }
 
 }

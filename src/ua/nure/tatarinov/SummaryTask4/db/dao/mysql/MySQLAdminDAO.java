@@ -12,14 +12,10 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Data access object for Admin.
- *
  * @author S. Tatarinov
- *
  */
 
 public class MySQLAdminDAO implements AdminDAO {
@@ -58,7 +54,6 @@ public class MySQLAdminDAO implements AdminDAO {
 
     @Override
     public String selectTopMark() {
-        List<Object> list = new ArrayList<>();
         StringBuilder page = new StringBuilder();
         JournalDTO journalDTO = null;
         CourseDTO courseDTO = null;
@@ -125,7 +120,6 @@ public class MySQLAdminDAO implements AdminDAO {
         } catch (SQLException ex) {
             LOG.info(ex.getLocalizedMessage());
         }
-
         return page.toString();
     }
 }
